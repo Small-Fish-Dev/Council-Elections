@@ -262,105 +262,65 @@
       "Name": "NPC",
       "Position": "64,0,0",
       "Rotation": "0,0,1,-0.00000004371139",
+      "Tags": "person",
       "Enabled": true,
-      "Components": [
-        {
-          "__type": "Candidate",
-          "__guid": "5c7b793d-2e37-44f6-b59e-e01cbe26d02e",
-          "Collider": {
-            "_type": "component",
-            "component_id": "fd950fa0-46bd-4a1f-a992-3b45d1b9be84",
-            "go": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
-            "component_type": "BoxCollider"
-          },
-          "FirstName": "Russell",
-          "FullName": "Russell Peterson",
-          "Gender": "Male",
-          "LastName": "Peterson",
-          "ModelRenderer": {
-            "_type": "component",
-            "component_id": "81c967ca-5170-4541-a0c0-ef2b95801fc1",
-            "go": "b96a7d72-423b-40c5-85b0-93fee1bc8e23",
-            "component_type": "SkinnedModelRenderer"
-          },
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "UserName": ""
-        },
-        {
-          "__type": "Sandbox.BoxCollider",
-          "__guid": "fd950fa0-46bd-4a1f-a992-3b45d1b9be84",
-          "Center": "0,0,36",
-          "Friction": null,
-          "IsTrigger": false,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OnObjectTriggerEnter": null,
-          "OnObjectTriggerExit": null,
-          "OnTriggerEnter": null,
-          "OnTriggerExit": null,
-          "Scale": "32,32,72",
-          "Static": false,
-          "Surface": null,
-          "SurfaceVelocity": "0,0,0"
-        }
-      ],
-      "Children": [
-        {
-          "__guid": "b96a7d72-423b-40c5-85b0-93fee1bc8e23",
-          "Flags": 0,
-          "Name": "Body",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "81c967ca-5170-4541-a0c0-ef2b95801fc1",
-              "AnimationGraph": null,
-              "BodyGroups": 341,
-              "BoneMergeTarget": null,
-              "CreateAttachments": false,
-              "CreateBoneObjects": false,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "models/citizen/citizen.vmdl",
-              "Morphs": {},
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "Parameters": {
-                "bools": {},
-                "ints": {},
-                "floats": {},
-                "vectors": {},
-                "rotations": {}
-              },
-              "RenderOptions": {
-                "GameLayer": true,
-                "OverlayLayer": false,
-                "BloomLayer": false,
-                "AfterUILayer": false
-              },
-              "RenderType": "On",
-              "Sequence": {
-                "Name": null
-              },
-              "Tint": "1,1,1,1",
-              "UseAnimGraph": true
-            }
-          ]
-        }
-      ]
+      "__Prefab": "prefabs/npc.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "49d70b92-ac26-4484-9d6d-7a0087b0d12b",
+      "Flags": 0,
+      "Name": "NPC (1)",
+      "Position": "168,-112,-0.00004601479",
+      "Rotation": "0,0,1,-0.00000004371139",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/npc.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "d9088f6a-c4a7-4867-a7dd-c64f1ec1ec5f",
+      "Flags": 0,
+      "Name": "NPC (2)",
+      "Position": "160,-72,-0.00004602783",
+      "Rotation": "0,0,1,-0.00000004371139",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/npc.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "0ba87890-3c7b-4d34-b4fc-7a3e30f6bdb7",
+      "Flags": 0,
+      "Name": "NPC (3)",
+      "Position": "144,-87.99998,-0.00003386848",
+      "Rotation": "0,0,1,-0.00000004371139",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/npc.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "2825b5f1-13c1-4c24-995b-fd439fa99995",
+      "Flags": 0,
+      "Name": "NPC (4)",
+      "Position": "136,-55.99998,-0.00002154522",
+      "Rotation": "0,0,1,-0.00000004371139",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/npc.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "a5842480-75c7-4f67-853b-f49e3aa3c4f9",
+      "Flags": 0,
+      "Name": "NPC (5)",
+      "Position": "120,-79.99998,0.000001596283",
+      "Rotation": "0,0,1,-0.00000004371139",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/npc.prefab",
+      "__PrefabVariables": {}
     }
   ],
   "SceneProperties": {
@@ -374,7 +334,7 @@
     "UseFixedUpdate": true,
     "Metadata": {},
     "NavMesh": {
-      "Enabled": false,
+      "Enabled": true,
       "IncludeStaticBodies": true,
       "IncludeKeyframedBodies": true,
       "EditorAutoUpdate": true,
@@ -382,7 +342,7 @@
       "AgentRadius": 16,
       "AgentStepSize": 18,
       "AgentMaxSlope": 40,
-      "ExcludedBodies": "",
+      "ExcludedBodies": "person",
       "IncludedBodies": ""
     }
   },

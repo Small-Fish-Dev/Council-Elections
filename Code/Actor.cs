@@ -5,27 +5,27 @@ using System.Xml.Linq;
 public abstract partial class Actor : Component
 {
 	[Property]
-	[Category( "Info" )]
+	[Category( "Info" ), Order( 1 )]
 	public virtual string FirstName { get; set; } = "John";
 
 	[Property]
-	[Category( "Info" )]
+	[Category( "Info" ), Order( 1 )]
 	public virtual string LastName { get; set; } = "Doe";
 
 	[Property]
-	[Category( "Info" )]
+	[Category( "Info" ), Order( 1 )]
 	public virtual string UserName { get; set; }
 
 	[Property]
-	[Category( "Info" )]
+	[Category( "Info" ), Order( 1 )]
 	public string FullName => string.IsNullOrWhiteSpace( UserName ) ? $"{FirstName} {LastName}" : UserName;
 
 	[Property]
-	[Category( "Info" )]
+	[Category( "Info" ), Order( 1 )]
 	public Gender Gender { get; set; } = Gender.Undefined;
 
 	[Button( "Random Name", "casino" )]
-	[Category( "Info" )]
+	[Category( "Info" ), Order( 1 )]
 	public void GenerateRandomName()
 	{
 		var randomName = Actor.RandomName( Gender );
@@ -34,18 +34,27 @@ public abstract partial class Actor : Component
 	}
 
 	[Property]
-	[Category( "Components" )]
+	[Category( "Components" ), Order( 2 )]
 	public SkinnedModelRenderer ModelRenderer { get; set; }
 
 	[Property]
-	[Category( "Components" )]
+	[Category( "Components" ), Order( 2 )]
 	public BoxCollider Collider { get; set; }
+
+	[Property]
+	[Category( "Components" ), Order( 2 )]
+	public NavMeshAgent Agent { get; set; }
 
 	private ModelPhysics _ragdoll;
 
-	protected override void OnUpdate()
+	protected override void OnStart()
 	{
 
+	}
+
+	protected override void OnFixedUpdate()
+	{
+		Agent.MoveTo( Player.All.FirstOrDefault().WorldPosition );
 	}
 
 	protected override void DrawGizmos()
@@ -59,7 +68,7 @@ public abstract partial class Actor : Component
 		draw.WorldText( FullName, nameTransform, "Poppins", 12f );
 	}
 
-	[Category( "Debug" )]
+	[Category( "Debug" ), Order( 3 )]
 	[Button( "Ragdoll", "person_off" )]
 	public void Ragdoll()
 	{
@@ -73,7 +82,7 @@ public abstract partial class Actor : Component
 		Collider.Enabled = false;
 	}
 
-	[Category( "Debug" )]
+	[Category( "Debug" ), Order( 3 )]
 	[Button( "Unragdoll", "person_outline" )]
 	public void Unragdoll()
 	{
