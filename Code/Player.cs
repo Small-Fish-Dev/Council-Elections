@@ -3,6 +3,7 @@ using Sandbox;
 public sealed class Player : Component
 {
 	public static List<Player> All { get; private set; } = new List<Player>();
+	public static Player Local { get; private set; }
 
 	[Property]
 	[Category( "Components" )]
@@ -27,6 +28,9 @@ public sealed class Player : Component
 		ApplyClothing();
 
 		Player.All.Add( this );
+
+		if ( !IsProxy )
+			Player.Local = this;
 	}
 
 	protected override void OnDestroy()
@@ -38,6 +42,8 @@ public sealed class Player : Component
 	{
 		if ( !Camera.IsValid() ) return;
 
+		CurrentInteraction = null;
+
 		var interactTrace = Scene.Trace.Ray( Camera.WorldPosition, Camera.WorldPosition + Camera.WorldRotation.Forward * InteractRange )
 			.IgnoreGameObjectHierarchy( GameObject )
 			.Run();
@@ -45,10 +51,12 @@ public sealed class Player : Component
 		if ( interactTrace.Hit )
 		{
 			if ( interactTrace.GameObject.Components.TryGet<IInteractable>( out var interaction ) )
-			{
 				CurrentInteraction = interaction;
-			}
 		}
+
+		if ( Input.Pressed( "use" ) )
+			if ( CurrentInteraction != null && CurrentInteraction.NextInteraction )
+				CurrentInteraction.Interact();
 	}
 
 	internal void ApplyClothing()

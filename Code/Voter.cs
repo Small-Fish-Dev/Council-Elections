@@ -20,8 +20,8 @@ public partial class Voter : Actor, IInteractable
 	{
 		if ( NextInteraction )
 		{
-			Log.Info( "Fuck off!" );
 			NextInteraction = InteractionCooldown;
+			Ragdoll();
 		}
 	}
 }

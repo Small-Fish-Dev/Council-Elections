@@ -1,0 +1,18 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+    <div class="title" style="color: rgba(255,255,255,@Interactable);">
+        @Interaction
+    </div>
+</root>
+
+@code
+{
+    public string Interaction => Player.Local?.CurrentInteraction?.InteractionName ?? "";
+    public float Interactable => Player.Local?.CurrentInteraction?.NextInteraction ?? false ? 1f : 0.5f;
+
+    protected override int BuildHash() => System.HashCode.Combine(Interaction, Interactable);
+}
