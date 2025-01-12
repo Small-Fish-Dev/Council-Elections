@@ -261,9 +261,36 @@
       "Flags": 0,
       "Name": "NPC",
       "Position": "64,0,0",
-      "Rotation": "0,0,1,0.0000001947072",
+      "Rotation": "0,0,1,-0.00000004371139",
       "Enabled": true,
       "Components": [
+        {
+          "__type": "Candidate",
+          "__guid": "5c7b793d-2e37-44f6-b59e-e01cbe26d02e",
+          "Collider": {
+            "_type": "component",
+            "component_id": "fd950fa0-46bd-4a1f-a992-3b45d1b9be84",
+            "go": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
+            "component_type": "BoxCollider"
+          },
+          "FirstName": "Russell",
+          "FullName": "Russell Peterson",
+          "Gender": "Male",
+          "LastName": "Peterson",
+          "ModelRenderer": {
+            "_type": "component",
+            "component_id": "81c967ca-5170-4541-a0c0-ef2b95801fc1",
+            "go": "b96a7d72-423b-40c5-85b0-93fee1bc8e23",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "UserName": ""
+        },
         {
           "__type": "Sandbox.BoxCollider",
           "__guid": "fd950fa0-46bd-4a1f-a992-3b45d1b9be84",
@@ -284,37 +311,6 @@
           "Static": false,
           "Surface": null,
           "SurfaceVelocity": "0,0,0"
-        },
-        {
-          "__type": "Candidate",
-          "__guid": "5962bca4-2a1f-4202-a80a-d1fc05975568",
-          "__enabled": false,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
-        },
-        {
-          "__type": "Candidate",
-          "__guid": "04abbda2-df69-4153-8840-4204fcd59137",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
-        },
-        {
-          "__type": "Candidate",
-          "__guid": "5c7b793d-2e37-44f6-b59e-e01cbe26d02e",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
         }
       ],
       "Children": [
