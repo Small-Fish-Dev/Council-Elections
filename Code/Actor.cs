@@ -1,4 +1,5 @@
 using Sandbox;
+using Sandbox.Citizen;
 using Sandbox.UI;
 using System.Xml.Linq;
 
@@ -34,27 +35,67 @@ public abstract partial class Actor : Component
 	}
 
 	[Property]
-	[Category( "Components" ), Order( 2 )]
+	[Category( "Stats" ), Order( 2 )]
+	[Range( 0f, 200f, 10f )]
+	public float WalkSpeed { get; set; } = 70f;
+
+	[Property]
+	[Category( "Stats" ), Order( 2 )]
+	[Range( 0f, 400f, 10f )]
+	public float RunSpeed { get; set; } = 160f;
+
+	[Property]
+	[Category( "Components" ), Order( 5 )]
 	public SkinnedModelRenderer ModelRenderer { get; set; }
 
 	[Property]
-	[Category( "Components" ), Order( 2 )]
+	[Category( "Components" ), Order( 5 )]
 	public BoxCollider Collider { get; set; }
 
 	[Property]
-	[Category( "Components" ), Order( 2 )]
+	[Category( "Components" ), Order( 5 )]
 	public NavMeshAgent Agent { get; set; }
+
+	[Property]
+	[Category( "Components" ), Order( 5 )]
+	public CitizenAnimationHelper AnimationHelper { get; set; }
+
+	public bool IsRunning { get; set; } = false;
+	public float WishSpeed => IsRunning ? RunSpeed : WalkSpeed;
 
 	private ModelPhysics _ragdoll;
 
 	protected override void OnStart()
 	{
-
+		_spawnPos = WorldPosition;
+		_spawnRot = WorldRotation;
 	}
+
+	TimeUntil _nextMove;
+	Vector3 _spawnPos;
+	Rotation _spawnRot;
+	int _lineCount = 0;
 
 	protected override void OnFixedUpdate()
 	{
-		Agent.MoveTo( Player.All.FirstOrDefault().WorldPosition );
+
+		if ( ModelRenderer.IsValid() && AnimationHelper.IsValid() )
+		{
+			AnimationHelper.WithVelocity( Agent.Velocity );
+		}
+
+		if ( Agent.IsValid() )
+		{
+			Agent.MaxSpeed = WishSpeed;
+			Agent.UpdateRotation = Agent.Velocity.Length >= 50f;
+
+			if ( _nextMove )
+			{
+				_lineCount++;
+				Agent.MoveTo( _spawnPos + _spawnRot.Forward * 30f * _lineCount );
+				_nextMove = 3f;
+			}
+		}
 	}
 
 	protected override void DrawGizmos()
@@ -68,7 +109,7 @@ public abstract partial class Actor : Component
 		draw.WorldText( FullName, nameTransform, "Poppins", 12f );
 	}
 
-	[Category( "Debug" ), Order( 3 )]
+	[Category( "Debug" ), Order( 6 )]
 	[Button( "Ragdoll", "person_off" )]
 	public void Ragdoll()
 	{
@@ -82,7 +123,7 @@ public abstract partial class Actor : Component
 		Collider.Enabled = false;
 	}
 
-	[Category( "Debug" ), Order( 3 )]
+	[Category( "Debug" ), Order( 6 )]
 	[Button( "Unragdoll", "person_outline" )]
 	public void Unragdoll()
 	{

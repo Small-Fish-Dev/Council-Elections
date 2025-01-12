@@ -15,6 +15,12 @@
           "go": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
           "component_type": "NavMeshAgent"
         },
+        "AnimationHelper": {
+          "_type": "component",
+          "component_id": "2fb1f8a6-6ae3-4c41-91a6-9071727e3f14",
+          "go": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
+          "component_type": "CitizenAnimationHelper"
+        },
         "Collider": {
           "_type": "component",
           "component_id": "fd950fa0-46bd-4a1f-a992-3b45d1b9be84",
@@ -37,14 +43,16 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "UserName": ""
+        "RunSpeed": 150,
+        "UserName": "",
+        "WalkSpeed": 40
       },
       {
         "__type": "Sandbox.NavMeshAgent",
         "__guid": "3e2e77cb-bb55-49e1-b039-50c5d86c9f21",
-        "Acceleration": 500,
+        "Acceleration": 100,
         "Height": 64,
-        "MaxSpeed": 270,
+        "MaxSpeed": 70,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -52,7 +60,7 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null,
         "Radius": 16,
-        "Separation": 0.25,
+        "Separation": 0.2,
         "UpdatePosition": true,
         "UpdateRotation": true
       },
@@ -76,6 +84,33 @@
         "Static": false,
         "Surface": null,
         "SurfaceVelocity": "0,0,0"
+      },
+      {
+        "__type": "Sandbox.Citizen.CitizenAnimationHelper",
+        "__guid": "2fb1f8a6-6ae3-4c41-91a6-9071727e3f14",
+        "BodyWeight": 1,
+        "EyeSource": null,
+        "EyesWeight": 1,
+        "HeadWeight": 1,
+        "Height": null,
+        "IkLeftFoot": null,
+        "IkLeftHand": null,
+        "IkRightFoot": null,
+        "IkRightHand": null,
+        "LookAt": null,
+        "LookAtEnabled": false,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Target": {
+          "_type": "component",
+          "component_id": "81c967ca-5170-4541-a0c0-ef2b95801fc1",
+          "go": "b96a7d72-423b-40c5-85b0-93fee1bc8e23",
+          "component_type": "SkinnedModelRenderer"
+        }
       }
     ],
     "Children": [
