@@ -1,9 +1,15 @@
-using Sandbox;
 
-public sealed class Candidate : Actor
+[Icon( "ballot" )]
+public struct Candidate
 {
-	protected override void OnUpdate()
-	{
+	[Property]
+	public int CandidateId { get; set; }
 
-	}
+	[Property]
+	public string CandidateName { get; set; }
+
+	[Property]
+	public GameObject CandidatePrefab { get; set; }
+
+	public override string ToString() => $"[{CandidateId}] {CandidateName}";
 }

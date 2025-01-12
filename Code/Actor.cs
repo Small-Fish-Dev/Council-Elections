@@ -7,17 +7,21 @@ public abstract partial class Actor : Component
 {
 	[Property]
 	[Category( "Info" ), Order( 1 )]
+	public bool RandomNameOnSpawn { get; set; } = true;
+
+	[Property, HideIf( "RandomNameOnSpawn", true )]
+	[Category( "Info" ), Order( 1 )]
 	public virtual string FirstName { get; set; } = "John";
 
-	[Property]
+	[Property, HideIf( "RandomNameOnSpawn", true )]
 	[Category( "Info" ), Order( 1 )]
 	public virtual string LastName { get; set; } = "Doe";
 
-	[Property]
+	[Property, HideIf( "RandomNameOnSpawn", true )]
 	[Category( "Info" ), Order( 1 )]
 	public virtual string UserName { get; set; }
 
-	[Property]
+	[Property, HideIf( "RandomNameOnSpawn", true )]
 	[Category( "Info" ), Order( 1 )]
 	public string FullName => string.IsNullOrWhiteSpace( UserName ) ? $"{FirstName} {LastName}" : UserName;
 
@@ -25,6 +29,7 @@ public abstract partial class Actor : Component
 	[Category( "Info" ), Order( 1 )]
 	public Gender Gender { get; set; } = Gender.Undefined;
 
+	[Property, HideIf( "RandomNameOnSpawn", true )]
 	[Button( "Random Name", "casino" )]
 	[Category( "Info" ), Order( 1 )]
 	public void GenerateRandomName()
@@ -69,6 +74,9 @@ public abstract partial class Actor : Component
 	{
 		_spawnPos = WorldPosition;
 		_spawnRot = WorldRotation;
+
+		if ( RandomNameOnSpawn )
+			GenerateRandomName();
 	}
 
 	TimeUntil _nextMove;

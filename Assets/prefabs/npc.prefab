@@ -7,8 +7,8 @@
     "Enabled": true,
     "Components": [
       {
-        "__type": "Candidate",
-        "__guid": "5c7b793d-2e37-44f6-b59e-e01cbe26d02e",
+        "__type": "Voter",
+        "__guid": "eee20e11-4315-47f1-a959-6a1ad08102b6",
         "Agent": {
           "_type": "component",
           "component_id": "3e2e77cb-bb55-49e1-b039-50c5d86c9f21",
@@ -27,10 +27,10 @@
           "go": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
           "component_type": "BoxCollider"
         },
-        "FirstName": "Russell",
-        "FullName": "Russell Peterson",
+        "FirstName": "John",
+        "FullName": "John Doe",
         "Gender": "Male",
-        "LastName": "Peterson",
+        "LastName": "Doe",
         "ModelRenderer": {
           "_type": "component",
           "component_id": "81c967ca-5170-4541-a0c0-ef2b95801fc1",
@@ -43,9 +43,10 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "RunSpeed": 150,
-        "UserName": "",
-        "WalkSpeed": 40
+        "RandomNameOnSpawn": true,
+        "RunSpeed": 160,
+        "UserName": null,
+        "WalkSpeed": 70
       },
       {
         "__type": "Sandbox.NavMeshAgent",

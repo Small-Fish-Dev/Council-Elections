@@ -2,6 +2,32 @@
   "__guid": "1087d8bd-b5f4-437f-9bf0-7296b5751d4b",
   "GameObjects": [
     {
+      "__guid": "15c70cb1-8e71-4040-abaa-0fa3a1c8d5d3",
+      "Flags": 0,
+      "Name": "Manager",
+      "Position": "300,0,0",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ElectionsManager",
+          "__guid": "4000e8e8-14be-4d48-9871-e7d377ab6a93",
+          "Candidates": [
+            {
+              "CandidateId": 0,
+              "CandidateName": "ubre",
+              "CandidatePrefab": null
+            }
+          ],
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        }
+      ]
+    },
+    {
       "__guid": "b0803f26-45ff-4f75-93cc-aa21ffeabcbf",
       "Flags": 0,
       "Name": "Ambient",
@@ -266,8 +292,8 @@
       "Enabled": true,
       "Components": [
         {
-          "__type": "Candidate",
-          "__guid": "3a4b6909-bc5b-498c-87bf-6eef04473f8d",
+          "__type": "Voter",
+          "__guid": "18a8fdcd-ec0e-44e2-8b2a-d6b0d5895f80",
           "Agent": {
             "_type": "component",
             "component_id": "53b56ee5-a26b-499a-99cd-b8d820838d6e",
@@ -281,10 +307,10 @@
             "go": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
             "component_type": "BoxCollider"
           },
-          "FirstName": "Russell",
-          "FullName": "Russell Peterson",
+          "FirstName": "John",
+          "FullName": "John Doe",
           "Gender": "Male",
-          "LastName": "Peterson",
+          "LastName": "Doe",
           "ModelRenderer": {
             "_type": "component",
             "component_id": "8a2548d3-cdbd-4d64-a6ff-73350f3639fa",
@@ -297,8 +323,9 @@
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null,
-          "RunSpeed": 160,
-          "UserName": "",
+          "RandomNameOnSpawn": false,
+          "RunSpeed": 0,
+          "UserName": null,
           "WalkSpeed": 0
         },
         {
@@ -393,7 +420,7 @@
       "__guid": "9a554e59-12ef-41cb-8f1a-65aff4cb4ecc",
       "Flags": 0,
       "Name": "NPC (1)",
-      "Position": "-96,7.999991,0",
+      "Position": "-32,7.999971,0",
       "Rotation": "0,0,0.0000001509958,-1",
       "Tags": "person",
       "Enabled": true,
@@ -401,10 +428,10 @@
       "__PrefabVariables": {}
     },
     {
-      "__guid": "4eeabe56-18c2-4a54-b235-5831b4dad7a3",
+      "__guid": "b975876f-b2fd-4603-8c28-952ce9753e00",
       "Flags": 0,
       "Name": "NPC (2)",
-      "Position": "-128,8.000002,0",
+      "Position": "-64,7.99998,0",
       "Rotation": "0,0,0.0000001509958,-1",
       "Tags": "person",
       "Enabled": true,
@@ -412,10 +439,10 @@
       "__PrefabVariables": {}
     },
     {
-      "__guid": "37705c5a-5e44-4914-a375-478e4ddcff82",
+      "__guid": "721ec09d-f8c4-49b1-85f1-1b361883ff11",
       "Flags": 0,
       "Name": "NPC (3)",
-      "Position": "-160,8.000012,0",
+      "Position": "-96,7.999989,0",
       "Rotation": "0,0,0.0000001509958,-1",
       "Tags": "person",
       "Enabled": true,
@@ -423,10 +450,65 @@
       "__PrefabVariables": {}
     },
     {
-      "__guid": "debb370c-327c-4859-85a2-483545202b01",
+      "__guid": "0d34573c-3e94-46b5-8a38-004b74c785dd",
       "Flags": 0,
       "Name": "NPC (4)",
-      "Position": "-192,8.000022,0",
+      "Position": "-128,8,0",
+      "Rotation": "0,0,0.0000001509958,-1",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/npc.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "db0e6853-9938-4866-932b-dae1462b7af4",
+      "Flags": 0,
+      "Name": "NPC (5)",
+      "Position": "-160,8.00001,0",
+      "Rotation": "0,0,0.0000001509958,-1",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/npc.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "b6c30048-ae58-4d1b-8178-6aec91d9a182",
+      "Flags": 0,
+      "Name": "NPC (6)",
+      "Position": "-192,8.000019,0",
+      "Rotation": "0,0,0.0000001509958,-1",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/npc.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "b1e413e4-bbd9-4470-ac49-05bca27763ca",
+      "Flags": 0,
+      "Name": "NPC (7)",
+      "Position": "-224,8.00003,0",
+      "Rotation": "0,0,0.0000001509958,-1",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/npc.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "5a4156f5-6a57-47bf-b7e8-8efabeb6ddde",
+      "Flags": 0,
+      "Name": "NPC (8)",
+      "Position": "-256,8.00004,0",
+      "Rotation": "0,0,0.0000001509958,-1",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/npc.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "2ad3bb76-e7df-4457-87b6-0204b3dce8b8",
+      "Flags": 0,
+      "Name": "NPC (9)",
+      "Position": "-288,8.000051,0",
       "Rotation": "0,0,0.0000001509958,-1",
       "Tags": "person",
       "Enabled": true,

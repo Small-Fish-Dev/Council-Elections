@@ -9,7 +9,7 @@
       {
         "__type": "Sandbox.PlayerController",
         "__guid": "73ab452c-a538-4f88-808a-f80d33f0e848",
-        "AccelerationTime": 0,
+        "AccelerationTime": 0.3,
         "AimStrengthBody": 1,
         "AimStrengthEyes": 1,
         "AimStrengthHead": 1,
@@ -29,9 +29,9 @@
           "_type": "gameobject",
           "go": "cf0d5d19-3327-4e4d-b2a1-4706b2c6ad01"
         },
-        "DeaccelerationTime": 0,
+        "DeaccelerationTime": 0.3,
         "DuckedHeight": 36,
-        "DuckedSpeed": 70,
+        "DuckedSpeed": 50,
         "EnableFootstepSounds": true,
         "EnablePressing": true,
         "EyeDistanceFromTop": 8,
@@ -41,7 +41,7 @@
         },
         "FootstepVolume": 1,
         "HideBodyInFirstPerson": true,
-        "JumpSpeed": 300,
+        "JumpSpeed": 0,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -59,7 +59,7 @@
         "RotationAngleLimit": 45,
         "RotationSpeed": 1,
         "RunByDefault": false,
-        "RunSpeed": 320,
+        "RunSpeed": 200,
         "ShowColliderComponents": false,
         "ShowRigidbodyComponent": false,
         "ThirdPerson": true,
@@ -69,7 +69,7 @@
         "UseCameraControls": true,
         "UseFovFromPreferences": true,
         "UseInputControls": true,
-        "WalkSpeed": 110
+        "WalkSpeed": 80
       },
       {
         "__type": "Sandbox.Rigidbody",
