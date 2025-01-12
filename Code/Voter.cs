@@ -13,7 +13,10 @@ public partial class Voter : Actor, IInteractable
 
 	protected override void OnStart()
 	{
+		base.OnStart();
+
 		InteractionBounds = Collider.Scale;
+		InteractionName = $"Kill {FullName}";
 	}
 
 	public void Interact()
