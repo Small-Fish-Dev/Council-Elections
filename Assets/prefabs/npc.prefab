@@ -44,14 +44,14 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null,
         "RandomNameOnSpawn": true,
-        "RunSpeed": 160,
+        "RunSpeed": 240,
         "UserName": null,
-        "WalkSpeed": 70
+        "WalkSpeed": 120
       },
       {
         "__type": "Sandbox.NavMeshAgent",
         "__guid": "3e2e77cb-bb55-49e1-b039-50c5d86c9f21",
-        "Acceleration": 100,
+        "Acceleration": 200,
         "Height": 64,
         "MaxSpeed": 70,
         "OnComponentDestroy": null,

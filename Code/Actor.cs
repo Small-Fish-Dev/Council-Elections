@@ -79,7 +79,7 @@ public abstract partial class Actor : Component
 			GenerateRandomName();
 	}
 
-	TimeUntil _nextMove;
+	TimeUntil _nextMove = 3f;
 	Vector3 _spawnPos;
 	Rotation _spawnRot;
 	int _lineCount = 0;
@@ -95,12 +95,12 @@ public abstract partial class Actor : Component
 		if ( Agent.IsValid() )
 		{
 			Agent.MaxSpeed = WishSpeed;
-			Agent.UpdateRotation = Agent.Velocity.Length >= 50f;
+			Agent.UpdateRotation = Agent.Velocity.Length >= 60f;
 
 			if ( _nextMove )
 			{
 				_lineCount++;
-				Agent.MoveTo( _spawnPos + _spawnRot.Forward * 30f * _lineCount );
+				WalkTo( _spawnPos + _spawnRot.Forward * 30f * _lineCount );
 				_nextMove = 3f;
 			}
 		}
@@ -140,5 +140,29 @@ public abstract partial class Actor : Component
 
 		_ragdoll.Destroy();
 		Collider.Enabled = true;
+	}
+
+	/// <summary>
+	/// Walk to a destination
+	/// </summary>
+	/// <param name="target"></param>
+	public void WalkTo( Vector3 target )
+	{
+		if ( !Agent.IsValid() ) return;
+
+		IsRunning = false;
+		Agent.MoveTo( target );
+	}
+
+	/// <summary>
+	/// Run to a destination
+	/// </summary>
+	/// <param name="target"></param>
+	public void RunTo( Vector3 target )
+	{
+		if ( !Agent.IsValid() ) return;
+
+		IsRunning = true;
+		Agent.MoveTo( target );
 	}
 }

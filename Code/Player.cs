@@ -3,13 +3,27 @@ using Sandbox;
 public sealed class Player : Component
 {
 	public static List<Player> All { get; private set; } = new List<Player>();
-	public SkinnedModelRenderer SkinnedModelRenderer { get; private set; }
+
+	[Property]
+	[Category( "Components" )]
+	public SkinnedModelRenderer SkinnedModelRenderer { get; set; }
+
+	[Property]
+	[Category( "Components" )]
+	public PlayerController Controller { get; set; }
+
+	[Property]
+	[Category( "Components" )]
+	public CameraComponent Camera { get; set; }
+
+	[Property]
+	[Category( "Stats" )]
+	public float InteractRange { get; set; } = 120f;
+
+	public IInteractable CurrentInteraction;
 
 	protected override void OnStart()
 	{
-		if ( Components.TryGet<SkinnedModelRenderer>( out var renderer, FindMode.EverythingInSelfAndDescendants ) )
-			SkinnedModelRenderer = renderer;
-
 		ApplyClothing();
 
 		Player.All.Add( this );
@@ -20,9 +34,21 @@ public sealed class Player : Component
 		Player.All.Remove( this );
 	}
 
-	protected override void OnUpdate()
+	protected override void OnFixedUpdate()
 	{
+		if ( !Camera.IsValid() ) return;
 
+		var interactTrace = Scene.Trace.Ray( Camera.WorldPosition, Camera.WorldPosition + Camera.WorldRotation.Forward * InteractRange )
+			.IgnoreGameObjectHierarchy( GameObject )
+			.Run();
+
+		if ( interactTrace.Hit )
+		{
+			if ( interactTrace.GameObject.Components.TryGet<IInteractable>( out var interaction ) )
+			{
+				CurrentInteraction = interaction;
+			}
+		}
 	}
 
 	internal void ApplyClothing()
