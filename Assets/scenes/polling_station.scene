@@ -202,6 +202,44 @@
       "Name": "Spawn",
       "Position": "-320,0,0",
       "Enabled": true
+    },
+    {
+      "__guid": "c06f3c5b-e4e4-4a53-a599-a5cfc1eee686",
+      "Flags": 0,
+      "Name": "Player Controller",
+      "Position": "-256,192,4",
+      "Enabled": true,
+      "__Prefab": "prefabs/player.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "b412ebb0-e1cf-4593-bf24-52243e03ee8a",
+      "Flags": 0,
+      "Name": "table",
+      "Position": "-216,192,15.99999",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "d37d61d2-139c-4a4c-a8c9-887b0b5c7b98",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/placeholders/table.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        }
+      ]
     }
   ],
   "SceneProperties": {

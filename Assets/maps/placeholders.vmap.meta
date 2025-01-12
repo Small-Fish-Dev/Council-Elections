@@ -1,0 +1,22 @@
+{
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "Placeholders",
+      "Type": "map",
+      "Org": "local",
+      "Ident": "placeholders",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": [],
+      "EditorReferences": [
+        "facepunch.woodtrim_polish_weather_blend#43519"
+      ],
+      "IsWhitelistDisabled": false,
+      "Metadata": {
+        "SingleAssetSource": "maps/placeholders.vmap"
+      }
+    }
+  }
+}
