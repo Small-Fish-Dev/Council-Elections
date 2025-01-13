@@ -21,7 +21,7 @@
           "go": "965ef498-3fe8-466b-ab3e-2cbac2c7be71",
           "component_type": "PlayerController"
         },
-        "InteractRange": 230,
+        "InteractRange": 100,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -56,7 +56,8 @@
         "CameraOffset": "128,0,12",
         "ColliderObject": {
           "_type": "gameobject",
-          "go": "cf0d5d19-3327-4e4d-b2a1-4706b2c6ad01"
+          "go": "cf0d5d19-3327-4e4d-b2a1-4706b2c6ad01",
+          "prefab": null
         },
         "DeaccelerationTime": 0.3,
         "DuckedHeight": 36,
@@ -91,8 +92,8 @@
         "RunSpeed": 200,
         "ShowColliderComponents": false,
         "ShowRigidbodyComponent": false,
-        "ThirdPerson": true,
-        "ToggleCameraModeButton": "view",
+        "ThirdPerson": false,
+        "ToggleCameraModeButton": "",
         "UseAnimatorControls": true,
         "UseButton": "use",
         "UseCameraControls": true,

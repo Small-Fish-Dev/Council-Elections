@@ -100,9 +100,9 @@ public abstract partial class Actor : Component
 			if ( _nextMove )
 			{
 				_lineCount++;
-				WalkTo( _spawnPos + _spawnRot.Forward * 30f * _lineCount );
+				//WalkTo( _spawnPos + _spawnRot.Forward * 30f * _lineCount );
 				_nextMove = 2f;
-				Log.Info( _spawnPos );
+				//Log.Info( _spawnPos );
 			}
 		}
 	}

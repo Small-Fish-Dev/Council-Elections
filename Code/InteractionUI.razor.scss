@@ -1,5 +1,4 @@
-InteractionUI
-{
+InteractionUI {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -8,10 +7,42 @@ InteractionUI
 	justify-content: center;
 	align-items: center;
 
-	.title
-	{
-		font-size: 25px;
-		font-family: Poppins;
-		color: rgba(255,255,255,1);
+	.interaction {
+		flex-direction: column;
+
+		.title {
+			font-size: 35px;
+			font-family: Poppins;
+			font-weight: semibold;
+			color: white;
+			filter: drop-shadow( 0px, 0px, 5px, #000000 );
+		}
+
+		.action {
+			justify-content: center;
+			align-items: center;
+
+			.container {
+				padding: 7px;
+				background-color: rgba(0,0,0,0.7);
+				border-radius: 15px;
+
+				.icon {
+					height: 45px;
+					margin-right: 3px;
+					aspect-ratio: 1;
+					background-size: contain;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+
+				.description {
+					font-size: 30px;
+					font-family: Poppins;
+					color: white;
+					margin-right: 7px;
+				}
+			}
+		}
 	}
 }

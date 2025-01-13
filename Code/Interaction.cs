@@ -12,13 +12,6 @@ public sealed class Interaction : Component
 	[Range( 0f, 5f, 0.1f )]
 	public float InteractionCooldown { get; set; } = 1f;
 
-	/// <summary>
-	/// How long to hold interact, 0 for instant
-	/// </summary>
-	[Property]
-	[Range( 0f, 3f, 0.1f )]
-	public float InteractionDuration { get; set; } = 0f;
-
 	[Property]
 	public Action<Player> PlayerAction { get; set; }
 

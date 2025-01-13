@@ -4,15 +4,24 @@
 @namespace Sandbox
 
 <root>
-    <div class="title" style="color: rgba(255,255,255,@Interactable);">
-        @Interaction
+    <div class="interaction" style="opacity: @InteractionOpacity">
+        <div class="title">@InteractionName</div>
+        <div class="action">
+            <div class="container">
+                <Image class="icon" Texture=@Input.GetGlyph( "use", InputGlyphSize.Medium, GlyphStyle.Knockout.WithSolidABXY())></Image>
+                <div class="description">@InteractionDescription</div>
+            </div>
+        </div>
     </div>
 </root>
 
 @code
 {
-    public string Interaction => Player.Local?.CurrentInteraction?.InteractionName ?? "";
-    public float Interactable => Player.Local?.CurrentInteraction?.CanInteract ?? false ? 1f : 0.5f;
+    public bool HasInteraction => Player.Local?.CurrentInteraction.IsValid() ?? false;
+    public bool Interactable => Player.Local?.CurrentInteraction?.CanInteract ?? false;
+    public float InteractionOpacity => HasInteraction ? (Interactable ? 1f : 0.4f) : 0f;
+    public string InteractionName => Player.Local?.CurrentInteraction?.InteractionName ?? "";
+    public string InteractionDescription => Player.Local?.CurrentInteraction?.InteractionDescription ?? "";
 
-    protected override int BuildHash() => System.HashCode.Combine(Interaction, Interactable);
+    protected override int BuildHash() => System.HashCode.Combine(InteractionName, Interactable, InteractionDescription);
 }
