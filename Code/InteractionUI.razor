@@ -12,7 +12,7 @@
 @code
 {
     public string Interaction => Player.Local?.CurrentInteraction?.InteractionName ?? "";
-    public float Interactable => Player.Local?.CurrentInteraction?.NextInteraction ?? false ? 1f : 0.5f;
+    public float Interactable => Player.Local?.CurrentInteraction?.CanInteract ?? false ? 1f : 0.5f;
 
     protected override int BuildHash() => System.HashCode.Combine(Interaction, Interactable);
 }

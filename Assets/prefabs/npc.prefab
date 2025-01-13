@@ -49,6 +49,77 @@
         "WalkSpeed": 120
       },
       {
+        "__type": "Interaction",
+        "__guid": "f5e7dc1c-c1db-4470-937a-beb6d4a84851",
+        "InteractionCooldown": 1,
+        "InteractionDescription": null,
+        "InteractionDuration": 0,
+        "InteractionName": "FUCK",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "PlayerAction": {
+          "__version": 9,
+          "__guid": "efa86c85-90e9-4623-85e0-54b4161cb67b",
+          "__changeId": 10,
+          "UserData": {
+            "Title": "Player Action",
+            "ReferencedComponentTypes": []
+          },
+          "Variables": [],
+          "Nodes": [
+            {
+              "Id": 0,
+              "Type": "input"
+            },
+            {
+              "Id": 2,
+              "Type": "scene.ref",
+              "UserData": {
+                "Position": "36,96"
+              }
+            },
+            {
+              "Id": 3,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "Ragdoll",
+                "_type": "Actor"
+              },
+              "UserData": {
+                "Position": "228,84"
+              }
+            }
+          ],
+          "Links": [
+            {
+              "SrcId": 0,
+              "SrcName": "_signal",
+              "DstId": 3,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 2,
+              "SrcName": "_result",
+              "DstId": 3,
+              "DstName": "_target"
+            }
+          ],
+          "Defaults": {
+            "$2.component": {
+              "_type": "component",
+              "component_id": "eee20e11-4315-47f1-a959-6a1ad08102b6",
+              "go": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
+              "component_type": "Voter"
+            }
+          }
+        }
+      },
+      {
         "__type": "Sandbox.NavMeshAgent",
         "__guid": "3e2e77cb-bb55-49e1-b039-50c5d86c9f21",
         "Acceleration": 200,

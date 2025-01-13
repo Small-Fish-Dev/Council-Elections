@@ -21,7 +21,7 @@ public sealed class Player : Component
 	[Category( "Stats" )]
 	public float InteractRange { get; set; } = 120f;
 
-	public IInteractable CurrentInteraction;
+	public Interaction CurrentInteraction;
 
 	protected override void OnStart()
 	{
@@ -50,13 +50,13 @@ public sealed class Player : Component
 
 		if ( interactTrace.Hit )
 		{
-			if ( interactTrace.GameObject.Components.TryGet<IInteractable>( out var interaction ) )
+			if ( interactTrace.GameObject.Components.TryGet<Interaction>( out var interaction ) )
 				CurrentInteraction = interaction;
 		}
 
 		if ( Input.Pressed( "use" ) )
-			if ( CurrentInteraction != null && CurrentInteraction.NextInteraction )
-				CurrentInteraction.Interact();
+			if ( CurrentInteraction.IsValid() && CurrentInteraction.CanInteract )
+				CurrentInteraction.Interact( this );
 	}
 
 	internal void ApplyClothing()
