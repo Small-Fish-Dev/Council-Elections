@@ -9,10 +9,11 @@
 @code
 {
     public Dictionary<SpeechBubble, TimeUntil> SpeechBubbles { get; set; } = new();
+    public static SpeechUI Instance { get; private set; }
 
     protected override void OnStart()
     {
-
+        Instance = this;
     }
 
     TimeUntil _nextBubble = 1f;
@@ -21,8 +22,7 @@
     {
         if ( _nextBubble )
         {
-            var bubble = Panel.AddChild<SpeechBubble>("SpeechBubble");
-            SpeechBubbles.Add(bubble, 5f);
+            AddSpeech("Godfrey", "Helloooooooo");
 
             _nextBubble = 1f;
         }
@@ -35,6 +35,22 @@
                 bubble.Key.Delete();
             }
         }
+    }
+
+    /// <summary>
+    /// Add a speech bubble on the screen
+    /// </summary>
+    /// <param name="speaker"></param>
+    /// <param name="text"></param>
+    /// <param name="speed">Characters per second</param>
+    /// <param name="lifeTime">How many seconds to stay after it's done</param>
+    public static void AddSpeech(string speaker, string text, float speed = 10f, float lifeTime = 2f)
+    {
+        var bubble = Instance.Panel.AddChild<SpeechBubble>("SpeechBubble");
+        var timeToWrite = text.Count() / speed;
+        var totalDuration = timeToWrite + lifeTime;
+
+        Instance.SpeechBubbles.Add(bubble, totalDuration);
     }
 
     protected override int BuildHash() => System.HashCode.Combine( Time.Now );
