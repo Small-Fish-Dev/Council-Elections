@@ -13,6 +13,23 @@
           "__guid": "4000e8e8-14be-4d48-9871-e7d377ab6a93",
           "Candidates": [
             {
+              "CandidateId": 0,
+              "CandidateName": "Golden G. Godfrey",
+              "CandidateGender": "Male",
+              "CandidateSteamId": 0,
+              "CandidatePrefab": null,
+              "CandidatePolicies": [
+                {
+                  "Name": "Carbon neutral Facepunch",
+                  "Info": "Make Facepunch carbon neutral by 2026"
+                },
+                {
+                  "Name": "Paper cups",
+                  "Info": "Get rid of all plastic cups at Facepunch HQ"
+                }
+              ]
+            },
+            {
               "CandidateId": 1,
               "CandidateName": "ubre",
               "CandidateGender": "Male",
@@ -39,23 +56,6 @@
                 {
                   "Name": "Attack people",
                   "Info": "Have permission to attack people at random"
-                }
-              ]
-            },
-            {
-              "CandidateId": 3,
-              "CandidateName": "Golden G. Godfrey",
-              "CandidateGender": "Male",
-              "CandidateSteamId": 0,
-              "CandidatePrefab": null,
-              "CandidatePolicies": [
-                {
-                  "Name": "Carbon neutral Facepunch",
-                  "Info": "Make Facepunch carbon neutral by 2026"
-                },
-                {
-                  "Name": "Paper cups",
-                  "Info": "Get rid of all plastic cups at Facepunch HQ"
                 }
               ]
             },

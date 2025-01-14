@@ -17,9 +17,9 @@ public sealed class ElectionsManager : Component
 	/// <summary>
 	/// Picks a random candidate from the list
 	/// </summary>
-	/// <param name="except">Doesn't pick this one, set 0 to pick any</param>
+	/// <param name="except">Doesn't pick this one, set -1 to pick any</param>
 	/// <returns></returns>
-	public static Candidate RandomCandidate( int except = 0 )
+	public static Candidate RandomCandidate( int except = -1 )
 	{
 		var candidatesToPick = Instance.Candidates.Where( x => x.CandidateId != except ).ToList();
 		return Game.Random.FromList( candidatesToPick );
@@ -33,7 +33,6 @@ public sealed class ElectionsManager : Component
 	/// <returns></returns>
 	public static string CleanMessage( string message, Candidate pick )
 	{
-		if ( pick.CandidateId == 0 ) return message; // Not a valid candidate
 		if ( string.IsNullOrWhiteSpace( message ) ) return message; // Don't bother..
 
 		// GENDER //
