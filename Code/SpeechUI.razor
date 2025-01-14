@@ -34,6 +34,10 @@
                 SpeechBubbles.Remove(bubble.Key);
                 bubble.Key.Delete();
             }
+            else
+            {
+                bubble.Key.Update();
+            }
         }
     }
 
@@ -47,6 +51,11 @@
     public static void AddSpeech(string speaker, string text, float speed = 10f, float lifeTime = 2f)
     {
         var bubble = Instance.Panel.AddChild<SpeechBubble>("SpeechBubble");
+        bubble.Speaker = speaker;
+        bubble.Text = text;
+        bubble.Speed = speed;
+        bubble.LifeTime = 0;
+
         var timeToWrite = text.Count() / speed;
         var totalDuration = timeToWrite + lifeTime;
 
