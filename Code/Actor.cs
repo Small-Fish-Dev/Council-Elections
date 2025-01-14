@@ -50,6 +50,11 @@ public abstract partial class Actor : Component
 	public float RunSpeed { get; set; } = 160f;
 
 	[Property]
+	[Category( "Stats" ), Order( 2 )]
+	[WideMode]
+	public List<string> InteractPhrases { get; set; } = new();
+
+	[Property]
 	[Category( "Components" ), Order( 5 )]
 	public SkinnedModelRenderer ModelRenderer { get; set; }
 
@@ -65,6 +70,9 @@ public abstract partial class Actor : Component
 	[Category( "Components" ), Order( 5 )]
 	public CitizenAnimationHelper AnimationHelper { get; set; }
 
+	[Property]
+	[Category( "Components" ), Order( 5 )]
+	public Interaction Interaction { get; set; }
 	public bool IsRunning { get; set; } = false;
 	public float WishSpeed => IsRunning ? RunSpeed : WalkSpeed;
 
@@ -77,6 +85,9 @@ public abstract partial class Actor : Component
 
 		if ( RandomNameOnSpawn )
 			GenerateRandomName();
+
+		if ( Interaction.IsValid() )
+			Interaction.InteractionName = FullName;
 	}
 
 	TimeUntil _nextMove = 3f;

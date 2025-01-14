@@ -235,12 +235,14 @@
           "OnComponentUpdate": null,
           "PlayerPrefab": {
             "_type": "gameobject",
+            "go": "00000000-0000-0000-0000-000000000000",
             "prefab": "prefabs/player.prefab"
           },
           "SpawnPoints": [
             {
               "_type": "gameobject",
-              "go": "c1bd63be-b4a0-41d3-a684-1d4d385bd205"
+              "go": "c1bd63be-b4a0-41d3-a684-1d4d385bd205",
+              "prefab": null
             }
           ],
           "StartServer": true
@@ -304,141 +306,6 @@
           "Static": true,
           "Surface": null,
           "SurfaceVelocity": "0,0,0"
-        }
-      ]
-    },
-    {
-      "__guid": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
-      "Flags": 0,
-      "Name": "NPC",
-      "Position": "288,0.0000195827,0",
-      "Rotation": "0,0,1,-0.00000004371139",
-      "Tags": "person",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Voter",
-          "__guid": "18a8fdcd-ec0e-44e2-8b2a-d6b0d5895f80",
-          "Agent": {
-            "_type": "component",
-            "component_id": "53b56ee5-a26b-499a-99cd-b8d820838d6e",
-            "go": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
-            "component_type": "NavMeshAgent"
-          },
-          "AnimationHelper": null,
-          "Collider": {
-            "_type": "component",
-            "component_id": "0479626d-371c-4986-9741-f8ed1eba0824",
-            "go": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
-            "component_type": "BoxCollider"
-          },
-          "FirstName": "John",
-          "FullName": "John Doe",
-          "Gender": "Male",
-          "LastName": "Doe",
-          "ModelRenderer": {
-            "_type": "component",
-            "component_id": "8a2548d3-cdbd-4d64-a6ff-73350f3639fa",
-            "go": "111ff109-3773-46d2-b1b1-cb64b072923a",
-            "component_type": "SkinnedModelRenderer"
-          },
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "RandomNameOnSpawn": false,
-          "RunSpeed": 0,
-          "UserName": null,
-          "WalkSpeed": 0
-        },
-        {
-          "__type": "Sandbox.NavMeshAgent",
-          "__guid": "53b56ee5-a26b-499a-99cd-b8d820838d6e",
-          "Acceleration": 500,
-          "Height": 64,
-          "MaxSpeed": 270,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Radius": 16,
-          "Separation": 0.25,
-          "UpdatePosition": true,
-          "UpdateRotation": true
-        },
-        {
-          "__type": "Sandbox.BoxCollider",
-          "__guid": "0479626d-371c-4986-9741-f8ed1eba0824",
-          "Center": "0,0,36",
-          "Friction": null,
-          "IsTrigger": false,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OnObjectTriggerEnter": null,
-          "OnObjectTriggerExit": null,
-          "OnTriggerEnter": null,
-          "OnTriggerExit": null,
-          "Scale": "32,32,72",
-          "Static": false,
-          "Surface": null,
-          "SurfaceVelocity": "0,0,0"
-        }
-      ],
-      "Children": [
-        {
-          "__guid": "111ff109-3773-46d2-b1b1-cb64b072923a",
-          "Flags": 0,
-          "Name": "Body",
-          "Position": "-192,0.00003624866,-0.0000004768372",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "8a2548d3-cdbd-4d64-a6ff-73350f3639fa",
-              "AnimationGraph": null,
-              "BodyGroups": 341,
-              "BoneMergeTarget": null,
-              "CreateAttachments": false,
-              "CreateBoneObjects": false,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "models/citizen/citizen.vmdl",
-              "Morphs": {},
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "Parameters": {
-                "bools": {},
-                "ints": {},
-                "floats": {},
-                "vectors": {},
-                "rotations": {}
-              },
-              "RenderOptions": {
-                "GameLayer": true,
-                "OverlayLayer": false,
-                "BloomLayer": false,
-                "AfterUILayer": false
-              },
-              "RenderType": "On",
-              "Sequence": {
-                "Name": null
-              },
-              "Tint": "1,1,1,1",
-              "UseAnimGraph": true
-            }
-          ]
         }
       ]
     },

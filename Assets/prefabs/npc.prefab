@@ -30,6 +30,20 @@
         "FirstName": "John",
         "FullName": "John Doe",
         "Gender": "Male",
+        "Interaction": {
+          "_type": "component",
+          "component_id": "f5e7dc1c-c1db-4470-937a-beb6d4a84851",
+          "go": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
+          "component_type": "Interaction"
+        },
+        "InteractPhrases": [
+          "Great weather today, huh?",
+          "I\u0027m voting for \u003Cpick\u003E because of \u003Ctheir\u003E policy on \u003Cpick.policy.name\u003E.",
+          "Have you heard about \u003Ccandidate\u003E\u0027s policy? Yuck!",
+          "\u003Cpick.policy.info\u003E; That\u0027s what \u003Cpick\u003E said about \u003Cpick.policy.name\u003E, and I fully support it!",
+          "\u003Ccandidate\u003E is full of it, no way \u003Cthey\u003E are going to win this.",
+          "We\u0027re making history today, you and me."
+        ],
         "LastName": "Doe",
         "ModelRenderer": {
           "_type": "component",
@@ -52,7 +66,7 @@
         "__type": "Interaction",
         "__guid": "f5e7dc1c-c1db-4470-937a-beb6d4a84851",
         "InteractionCooldown": 1,
-        "InteractionDescription": "Ragdoll",
+        "InteractionDescription": "Talk",
         "InteractionName": "John Doe",
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
