@@ -13,8 +13,23 @@
           "__guid": "4000e8e8-14be-4d48-9871-e7d377ab6a93",
           "Candidates": [
             {
-              "CandidateId": 0,
+              "CandidateId": 1,
               "CandidateName": "ubre",
+              "CandidatePrefab": null
+            },
+            {
+              "CandidateId": 2,
+              "CandidateName": "Trundler",
+              "CandidatePrefab": null
+            },
+            {
+              "CandidateId": 3,
+              "CandidateName": "Golden G. Godfrey",
+              "CandidatePrefab": null
+            },
+            {
+              "CandidateId": 4,
+              "CandidateName": "CyberAgent",
               "CandidatePrefab": null
             }
           ],
@@ -235,14 +250,12 @@
           "OnComponentUpdate": null,
           "PlayerPrefab": {
             "_type": "gameobject",
-            "go": "00000000-0000-0000-0000-000000000000",
             "prefab": "prefabs/player.prefab"
           },
           "SpawnPoints": [
             {
               "_type": "gameobject",
-              "go": "c1bd63be-b4a0-41d3-a684-1d4d385bd205",
-              "prefab": null
+              "go": "c1bd63be-b4a0-41d3-a684-1d4d385bd205"
             }
           ],
           "StartServer": true
