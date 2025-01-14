@@ -15,7 +15,7 @@
             {
               "CandidateId": 1,
               "CandidateName": "ubre",
-              "CandidateGender": "Undefined",
+              "CandidateGender": "Male",
               "CandidateSteamId": 0,
               "CandidatePrefab": null,
               "CandidatePolicies": [

@@ -19,6 +19,7 @@ public partial class Voter : Actor
 
 	public void Talk()
 	{
-		Log.Info( Game.Random.FromList( InteractPhrases ) );
+		Log.Info( ElectionsManager.CleanMessage( Game.Random.FromList( InteractPhrases ), Pick ) );
+
 	}
 }
