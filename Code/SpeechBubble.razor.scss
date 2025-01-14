@@ -1,10 +1,25 @@
 SpeechBubble {
-    height: 100px;
-    width: 100px;
-    background-color: blue;
     transition: opacity 0.1s ease, transform 0.1s bounce;
     transform: scale( 1 );
     opacity: 1;
+
+    .message {
+        padding: 2px 14px 2px 14px;
+        margin: 2px;
+        background-color: rgba(0,0,0,0.7);
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .text {
+            font-size: 30px;
+            font-family: Poppins;
+            font-weight: normal;
+            color: white;
+            filter: drop-shadow( 0px, 0px, 5px, #000000 );
+        }
+    }
 
     &:intro {
         transform: scale( 0.5 );

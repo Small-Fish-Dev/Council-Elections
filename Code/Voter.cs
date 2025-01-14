@@ -19,7 +19,7 @@ public partial class Voter : Actor
 
 	public void Talk()
 	{
-		Log.Info( ElectionsManager.CleanMessage( Game.Random.FromList( InteractPhrases ), Pick ) );
-
+		var randomMessage = ElectionsManager.CleanMessage( Game.Random.FromList( InteractPhrases ), Pick );
+		SpeechUI.AddSpeech( FullName, randomMessage );
 	}
 }

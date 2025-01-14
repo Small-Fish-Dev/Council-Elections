@@ -20,13 +20,6 @@
 
     protected override void OnFixedUpdate()
     {
-        if ( _nextBubble )
-        {
-            AddSpeech("Godfrey", "Helloooooooo");
-
-            _nextBubble = 1f;
-        }
-
         foreach ( var bubble in SpeechBubbles )
         {
             if ( bubble.Value )
@@ -48,7 +41,7 @@
     /// <param name="text"></param>
     /// <param name="speed">Characters per second</param>
     /// <param name="lifeTime">How many seconds to stay after it's done</param>
-    public static void AddSpeech(string speaker, string text, float speed = 10f, float lifeTime = 2f)
+    public static void AddSpeech(string speaker, string text, float speed = 30f, float lifeTime = 2f)
     {
         var bubble = Instance.Panel.AddChild<SpeechBubble>("SpeechBubble");
         bubble.Speaker = speaker;
