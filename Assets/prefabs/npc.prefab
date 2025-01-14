@@ -77,7 +77,7 @@
         "PlayerAction": {
           "__version": 9,
           "__guid": "efa86c85-90e9-4623-85e0-54b4161cb67b",
-          "__changeId": 10,
+          "__changeId": 15,
           "UserData": {
             "Title": "Player Action",
             "ReferencedComponentTypes": []
@@ -96,15 +96,15 @@
               }
             },
             {
-              "Id": 3,
+              "Id": 4,
               "Type": "call",
               "Properties": {
                 "_isStatic": false,
-                "_name": "Ragdoll",
-                "_type": "Actor"
+                "_name": "Talk",
+                "_type": "Voter"
               },
               "UserData": {
-                "Position": "228,84"
+                "Position": "240,84"
               }
             }
           ],
@@ -112,13 +112,13 @@
             {
               "SrcId": 0,
               "SrcName": "_signal",
-              "DstId": 3,
+              "DstId": 4,
               "DstName": "_signal"
             },
             {
               "SrcId": 2,
               "SrcName": "_result",
-              "DstId": 3,
+              "DstId": 4,
               "DstName": "_target"
             }
           ],

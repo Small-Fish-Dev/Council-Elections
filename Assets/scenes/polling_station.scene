@@ -15,22 +15,62 @@
             {
               "CandidateId": 1,
               "CandidateName": "ubre",
-              "CandidatePrefab": null
+              "CandidateGender": "Undefined",
+              "CandidateSteamId": 0,
+              "CandidatePrefab": null,
+              "CandidatePolicies": [
+                {
+                  "Name": "No linux",
+                  "Info": "Ban all linux users"
+                },
+                {
+                  "Name": "Beginner Friendly",
+                  "Info": "Make s\u0026box as beginner friendly as possible"
+                }
+              ]
             },
             {
               "CandidateId": 2,
               "CandidateName": "Trundler",
-              "CandidatePrefab": null
+              "CandidateGender": "Male",
+              "CandidateSteamId": 0,
+              "CandidatePrefab": null,
+              "CandidatePolicies": [
+                {
+                  "Name": "Attack people",
+                  "Info": "Have permission to attack people at random"
+                }
+              ]
             },
             {
               "CandidateId": 3,
               "CandidateName": "Golden G. Godfrey",
-              "CandidatePrefab": null
+              "CandidateGender": "Male",
+              "CandidateSteamId": 0,
+              "CandidatePrefab": null,
+              "CandidatePolicies": [
+                {
+                  "Name": "Carbon neutral Facepunch",
+                  "Info": "Make Facepunch carbon neutral by 2026"
+                },
+                {
+                  "Name": "Paper cups",
+                  "Info": "Get rid of all plastic cups at Facepunch HQ"
+                }
+              ]
             },
             {
               "CandidateId": 4,
               "CandidateName": "CyberAgent",
-              "CandidatePrefab": null
+              "CandidateGender": "Male",
+              "CandidateSteamId": 0,
+              "CandidatePrefab": null,
+              "CandidatePolicies": [
+                {
+                  "Name": "Artist freedom",
+                  "Info": "Let artist voices be heard"
+                }
+              ]
             }
           ],
           "OnComponentDestroy": null,
