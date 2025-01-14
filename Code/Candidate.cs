@@ -56,5 +56,7 @@ public struct Candidate
 	[WideMode]
 	public List<Policy> CandidatePolicies { get; set; }
 
+	public Policy RandomPolicy() => Game.Random.FromList( CandidatePolicies );
+
 	public override string ToString() => $"[{CandidateId}] {CandidateName}";
 }
