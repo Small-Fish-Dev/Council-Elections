@@ -56,10 +56,17 @@ public sealed class ElectionsManager : Component
 				_ => neutralPronoun
 			};
 
-			message = message.Replace( keyword, pronoun );
+			ReplaceWord( ref message, keyword, pronoun );
+		}
+	}
 
+	internal static void ReplaceWord( ref string message, string keyword, string replacement )
+	{
+		if ( message.Contains( keyword, StringComparison.OrdinalIgnoreCase ) )
+		{
+			message = message.Replace( keyword, replacement );
 			var capitalKeyword = char.ToUpper( keyword[0] ) + keyword.Substring( 1 );
-			var capitalPronoun = char.ToUpper( pronoun[0] ) + pronoun.Substring( 1 );
+			var capitalPronoun = char.ToUpper( replacement[0] ) + replacement.Substring( 1 );
 			message = message.Replace( capitalKeyword, capitalPronoun );
 		}
 	}
