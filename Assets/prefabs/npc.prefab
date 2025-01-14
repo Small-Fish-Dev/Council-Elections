@@ -38,10 +38,10 @@
         },
         "InteractPhrases": [
           "Great weather today, huh?",
-          "I\u0027m voting for \u003Cpick\u003E because of their policy on \u003Cpick.policy.name\u003E.",
-          "Have you heard about \u003Ccandidate\u003E\u0027s policy? Yuck!",
-          "\u003Cpick.policy.info\u003E; That\u0027s what \u003Cpick\u003E said about \u003Cpick.policy.name\u003E, and I fully support it!",
-          "\u003Ccandidate\u003E is full of it, no way they are going to win this.",
+          "I\u0027m voting for pick because of their policy on pick.policy.name.",
+          "Have you heard about opponent\u0027s policy? Yuck!",
+          "pick.policy.info; That\u0027s what pick said about pick.policy.name and I fully support it!",
+          "Opponent is full of it, no way they are going to win this.",
           "We\u0027re making history today, you and me."
         ],
         "LastName": "Doe",

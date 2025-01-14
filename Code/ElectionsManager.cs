@@ -33,14 +33,35 @@ public sealed class ElectionsManager : Component
 	/// <returns></returns>
 	public static string CleanMessage( string message, Candidate pick )
 	{
-		var gender = pick.CandidateGender;
+		if ( pick.CandidateId == 0 ) return message; // Not a valid candidate
+		if ( string.IsNullOrWhiteSpace( message ) ) return message; // Don't bother..
 
+
+		// GENDER //
+		var gender = pick.CandidateGender;
 		ReplacePronoun( ref message, "they", gender, "he", "she", "they" );
 		ReplacePronoun( ref message, "they're", gender, "he's", "she's", "they're" );
 		ReplacePronoun( ref message, "they are", gender, "he is", "she is", "they are" );
 		ReplacePronoun( ref message, "their", gender, "his", "hers", "theirs" );
 		ReplacePronoun( ref message, "them", gender, "him", "her", "them" );
 		ReplacePronoun( ref message, "themself", gender, "himself", "herself", "themself" );
+
+		// PICK POLICY //
+		var randomPolicy = pick.RandomPolicy();
+		ReplaceWord( ref message, "pick.policy.name", randomPolicy.Name );
+		ReplaceWord( ref message, "pick.policy.info", randomPolicy.Info );
+
+		// PICK //
+		ReplaceWord( ref message, "pick", pick.CandidateName ); // We do this after pick.policy or else it would replace the "pick" in there too
+
+		// OPPONENT POLICY //
+		var randomOpponent = ElectionsManager.RandomCandidate( pick.CandidateId );
+		var opponentPolicy = randomOpponent.RandomPolicy();
+		ReplaceWord( ref message, "opponent.policy.name", opponentPolicy.Name );
+		ReplaceWord( ref message, "opponent.policy.info", opponentPolicy.Info );
+
+		// OPPONENT //
+		ReplaceWord( ref message, "opponent", randomOpponent.CandidateName );
 
 		return message;
 	}
