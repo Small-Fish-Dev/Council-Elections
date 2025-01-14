@@ -1,0 +1,18 @@
+SpeechBubble {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    transition: opacity 0.1s ease, transform 0.1s bounce;
+    transform: scale( 1 );
+    opacity: 1;
+
+    &:intro {
+        transform: scale( 0.5 );
+        opacity: 0;
+    }
+
+    &:outro {
+        transform: scale( 0.5 );
+        opacity: 0;
+    }
+}

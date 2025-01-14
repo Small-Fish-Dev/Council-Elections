@@ -1,0 +1,41 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+</root>
+
+@code
+{
+    public Dictionary<SpeechBubble, TimeUntil> SpeechBubbles { get; set; } = new();
+
+    protected override void OnStart()
+    {
+
+    }
+
+    TimeUntil _nextBubble = 1f;
+
+    protected override void OnFixedUpdate()
+    {
+        if ( _nextBubble )
+        {
+            var bubble = Panel.AddChild<SpeechBubble>("SpeechBubble");
+            SpeechBubbles.Add(bubble, 5f);
+
+            _nextBubble = 1f;
+        }
+
+        foreach ( var bubble in SpeechBubbles )
+        {
+            if ( bubble.Value )
+            {
+                SpeechBubbles.Remove(bubble.Key);
+                bubble.Key.Delete();
+            }
+        }
+    }
+
+    protected override int BuildHash() => System.HashCode.Combine( Time.Now );
+}
