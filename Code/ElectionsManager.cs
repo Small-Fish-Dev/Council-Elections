@@ -37,15 +37,15 @@ public sealed class ElectionsManager : Component
 
 		Candidate target = pick;
 
-		if ( message.Contains( "<pick>" ) )
+		if ( message.Contains( "<pick>", StringComparison.OrdinalIgnoreCase ) )
 		{
-			message = message.Replace( "<pick>", "" );
+			message = message.Replace( "<pick>", "", StringComparison.OrdinalIgnoreCase );
 			target = pick;
 		}
 
-		if ( message.Contains( "<opponent>" ) )
+		if ( message.Contains( "<opponent>", StringComparison.OrdinalIgnoreCase ) )
 		{
-			message = message.Replace( "<opponent>", "" );
+			message = message.Replace( "<opponent>", "", StringComparison.OrdinalIgnoreCase );
 			target = ElectionsManager.RandomCandidate( pick.CandidateId );
 		}
 
@@ -53,6 +53,7 @@ public sealed class ElectionsManager : Component
 		var gender = target.CandidateGender;
 		ReplacePronoun( ref message, "they're", gender, "he's", "she's", "they're" );
 		ReplacePronoun( ref message, "they are", gender, "he is", "she is", "they are" );
+		ReplacePronoun( ref message, "are they", gender, "is he", "is she", "are they" );
 		ReplacePronoun( ref message, "they", gender, "he", "she", "they" ); // Do this after "they are" and "they're" or else it ruins those
 		ReplacePronoun( ref message, "theirs", gender, "his", "hers", "theirs" );
 		ReplacePronoun( ref message, "their", gender, "his", "her", "their" );
