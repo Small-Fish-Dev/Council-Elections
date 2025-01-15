@@ -95,7 +95,20 @@
               "CandidateParty": "Programmer",
               "CandidateSteamId": 0,
               "CandidatePrefab": null,
-              "CandidatePolicies": []
+              "CandidatePolicies": [
+                {
+                  "Name": "Stack the Council",
+                  "Info": "The community council roster will be restructured such that 50% or more of the council are queer furries"
+                },
+                {
+                  "Name": "Avatar Focus",
+                  "Info": "o facilitate the porting and development of fursona models, priority will be given to any feature requests relevant to animation retargeting, skinned mesh authoring, VR tracking, and shaders"
+                },
+                {
+                  "Name": "Be Nice",
+                  "Info": "In the interest of inclusivity and safety, the community council will collaboratively draft and publish a code of conduct, and strongly recommend that it be applied to any public-facing s\u0026box community"
+                }
+              ]
             },
             {
               "CandidateId": 5,
