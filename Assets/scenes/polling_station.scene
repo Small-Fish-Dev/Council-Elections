@@ -117,7 +117,12 @@
               "CandidateParty": "Programmer",
               "CandidateSteamId": 0,
               "CandidatePrefab": null,
-              "CandidatePolicies": []
+              "CandidatePolicies": [
+                {
+                  "Name": "Linux",
+                  "Info": "Make Linux Great Again"
+                }
+              ]
             },
             {
               "CandidateId": 6,
