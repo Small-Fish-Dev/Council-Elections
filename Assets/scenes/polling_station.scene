@@ -57,8 +57,20 @@
               "CandidatePrefab": null,
               "CandidatePolicies": [
                 {
-                  "Name": "Attack people",
-                  "Info": "Have permission to attack people at random"
+                  "Name": "Wiki Revival",
+                  "Info": "Bring the wiki up to speed with the current state of s\u0026box"
+                },
+                {
+                  "Name": "Create Tutorials",
+                  "Info": "Build and lead a team to work on tutorials fit for complete beginners"
+                },
+                {
+                  "Name": "Better Community Representation",
+                  "Info": "Add people who make cool things and have good ideas for s\u0026box"
+                },
+                {
+                  "Name": "Improve Facepunch Communication",
+                  "Info": "Ensure common community woes are documented. Prevent important news and information from Facepunch from getting lost in a random Discord channel"
                 }
               ]
             },
