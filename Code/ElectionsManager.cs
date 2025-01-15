@@ -35,8 +35,22 @@ public sealed class ElectionsManager : Component
 	{
 		if ( string.IsNullOrWhiteSpace( message ) ) return message; // Don't bother..
 
+		Candidate target = pick;
+
+		if ( message.Contains( "<pick>" ) )
+		{
+			message = message.Replace( "<pick>", "" );
+			target = pick;
+		}
+
+		if ( message.Contains( "<opponent>" ) )
+		{
+			message = message.Replace( "<opponent>", "" );
+			target = ElectionsManager.RandomCandidate( pick.CandidateId );
+		}
+
 		// GENDER //
-		var gender = pick.CandidateGender;
+		var gender = target.CandidateGender;
 		ReplacePronoun( ref message, "they're", gender, "he's", "she's", "they're" );
 		ReplacePronoun( ref message, "they are", gender, "he is", "she is", "they are" );
 		ReplacePronoun( ref message, "they", gender, "he", "she", "they" ); // Do this after "they are" and "they're" or else it ruins those
@@ -46,21 +60,13 @@ public sealed class ElectionsManager : Component
 		ReplacePronoun( ref message, "them", gender, "him", "her", "them" );
 
 		// PICK POLICY //
-		var randomPolicy = pick.RandomPolicy();
-		ReplaceWord( ref message, "pick.policy.name", randomPolicy.Name );
-		ReplaceWord( ref message, "pick.policy.info", randomPolicy.Info );
+		var randomPolicy = target.RandomPolicy();
+		ReplaceWord( ref message, "<policy.name>", randomPolicy.Name );
+		ReplaceWord( ref message, "<policy.info>", randomPolicy.Info );
 
 		// PICK //
-		ReplaceWord( ref message, "pick", pick.CandidateName ); // We do this after pick.policy or else it would replace the "pick" in there too
+		ReplaceWord( ref message, "<name>", target.CandidateName ); // We do this after pick.policy or else it would replace the "pick" in there too
 
-		// OPPONENT POLICY //
-		var randomOpponent = ElectionsManager.RandomCandidate( pick.CandidateId );
-		var opponentPolicy = randomOpponent.RandomPolicy();
-		ReplaceWord( ref message, "opponent.policy.name", opponentPolicy.Name );
-		ReplaceWord( ref message, "opponent.policy.info", opponentPolicy.Info );
-
-		// OPPONENT //
-		ReplaceWord( ref message, "opponent", randomOpponent.CandidateName );
 
 		return message;
 	}
