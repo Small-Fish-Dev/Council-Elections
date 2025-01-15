@@ -16,6 +16,7 @@
               "CandidateId": 0,
               "CandidateName": "Golden G. Godfrey",
               "CandidateGender": "Male",
+              "CandidateParty": "Gleeks",
               "CandidateSteamId": 0,
               "CandidatePrefab": null,
               "CandidatePolicies": [
@@ -33,6 +34,7 @@
               "CandidateId": 1,
               "CandidateName": "ubre",
               "CandidateGender": "Male",
+              "CandidateParty": "Programmer",
               "CandidateSteamId": 0,
               "CandidatePrefab": null,
               "CandidatePolicies": [
@@ -50,6 +52,7 @@
               "CandidateId": 2,
               "CandidateName": "Trundler",
               "CandidateGender": "Male",
+              "CandidateParty": "Winning",
               "CandidateSteamId": 0,
               "CandidatePrefab": null,
               "CandidatePolicies": [
@@ -60,9 +63,10 @@
               ]
             },
             {
-              "CandidateId": 4,
+              "CandidateId": 3,
               "CandidateName": "CyberAgent",
               "CandidateGender": "Male",
+              "CandidateParty": "Artist",
               "CandidateSteamId": 0,
               "CandidatePrefab": null,
               "CandidatePolicies": [
@@ -71,6 +75,33 @@
                   "Info": "Let artist voices be heard"
                 }
               ]
+            },
+            {
+              "CandidateId": 4,
+              "CandidateName": "ducc",
+              "CandidateGender": "Male",
+              "CandidateParty": "Programmer",
+              "CandidateSteamId": 0,
+              "CandidatePrefab": null,
+              "CandidatePolicies": []
+            },
+            {
+              "CandidateId": 5,
+              "CandidateName": "Kaydax",
+              "CandidateGender": "Undefined",
+              "CandidateParty": "Programmer",
+              "CandidateSteamId": 0,
+              "CandidatePrefab": null,
+              "CandidatePolicies": []
+            },
+            {
+              "CandidateId": 6,
+              "CandidateName": "Grodbert",
+              "CandidateGender": "Male",
+              "CandidateParty": "Artist",
+              "CandidateSteamId": 0,
+              "CandidatePrefab": null,
+              "CandidatePolicies": []
             }
           ],
           "OnComponentDestroy": null,

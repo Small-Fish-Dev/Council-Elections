@@ -21,6 +21,12 @@ public struct Candidate
 	public Gender CandidateGender { get; set; }
 
 	/// <summary>
+	/// Which party they belong to
+	/// </summary>
+	[Property]
+	public string CandidateParty { get; set; }
+
+	/// <summary>
 	/// Steam id of the candidate, for in game interactions
 	/// </summary>
 	[Property]
