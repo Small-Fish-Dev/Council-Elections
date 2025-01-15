@@ -60,14 +60,12 @@ public sealed class ElectionsManager : Component
 		ReplacePronoun( ref message, "themself", gender, "himself", "herself", "themself" );
 		ReplacePronoun( ref message, "them", gender, "him", "her", "them" );
 
-		// PICK POLICY //
+		// CANDIDATE //
+
+		ReplaceWord( ref message, "<name>", target.CandidateName );
 		var randomPolicy = target.RandomPolicy();
 		ReplaceWord( ref message, "<policy.name>", randomPolicy.Name );
 		ReplaceWord( ref message, "<policy.info>", randomPolicy.Info );
-
-		// PICK //
-		ReplaceWord( ref message, "<name>", target.CandidateName ); // We do this after pick.policy or else it would replace the "pick" in there too
-
 
 		return message;
 	}
