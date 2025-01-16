@@ -131,7 +131,12 @@
               "CandidateParty": "Artist",
               "CandidateSteamId": 0,
               "CandidatePrefab": null,
-              "CandidatePolicies": []
+              "CandidatePolicies": [
+                {
+                  "Name": "Test",
+                  "Info": "test"
+                }
+              ]
             }
           ],
           "OnComponentDestroy": null,
