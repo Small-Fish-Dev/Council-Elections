@@ -15,10 +15,12 @@
     public string Speaker { get; set; } = "Unknown";
     public string Text { get; set; } = "...";
     public float Speed { get; set; } = 1f;
+    public GameObject Talker { get; set; }
     public TimeSince LifeTime { get; set; }
 
     private string _displayedText;
     public string DisplayedText => $"{Speaker}: {_displayedText}";
+    private int _lastSpoken;
 
     public void Update()
     {
@@ -28,9 +30,22 @@
         if ( LifeTime.Relative < totalTime )
         {
             var progress = LifeTime.Relative / totalTime;
-            var charactersToDisplay = Math.Floor(progress * count);
+            var charactersToDisplay = (int)Math.Floor(progress * count);
 
             _displayedText = Text.Substring(0, (int)Math.Clamp(charactersToDisplay, 0, count));
+
+            if ( Talker.IsValid() )
+            {
+                if (_lastSpoken != charactersToDisplay)
+                {
+                    var toSpeak = _displayedText.Last();
+                    
+                    if ( toSpeak >= 'A' && toSpeak <= 'Z' || toSpeak >= 'a' && toSpeak <= 'z' ) // Only pronounce normal letters
+                        Sound.Play(toSpeak.ToString().ToLower(), Talker.WorldPosition + Vector3.Up * 64f);
+                }
+            }
+
+            _lastSpoken = charactersToDisplay;
         }
     }
 

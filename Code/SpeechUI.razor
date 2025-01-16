@@ -41,13 +41,15 @@
     /// <param name="text"></param>
     /// <param name="speed">Characters per second</param>
     /// <param name="lifeTime">How many seconds to stay after it's done</param>
-    public static void AddSpeech(string speaker, string text, float speed = 30f, float lifeTime = 2f)
+    /// <param name="talker"></param>
+    public static void AddSpeech(string speaker, string text, float speed = 30f, float lifeTime = 2f, GameObject talker = null)
     {
         var bubble = Instance.Panel.AddChild<SpeechBubble>("SpeechBubble");
         bubble.Speaker = speaker;
         bubble.Text = text;
         bubble.Speed = speed;
         bubble.LifeTime = 0;
+        bubble.Talker = talker;
 
         var timeToWrite = text.Count() / speed;
         var totalDuration = timeToWrite + lifeTime;
