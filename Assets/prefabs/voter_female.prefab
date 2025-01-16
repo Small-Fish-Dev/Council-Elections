@@ -159,7 +159,6 @@
           "Choiches": [
             "models/citizen_clothes/shirt/flannel_shirt/flannel_shirt.clothing",
             "models/citizen_clothes/shirt/tshirt/tshirt.clothing",
-            "models/citizen_clothes/shirt/loose_shirt/loose_shirt.clothing",
             "models/citizen_clothes/shirt/flannel_shirt/variations/blue_shirt/blue_shirt.clothing"
           ],
           "EmptyWeight": 0

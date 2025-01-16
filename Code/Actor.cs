@@ -140,7 +140,7 @@ public abstract partial class Actor : Component
 	{
 		if ( !ModelRenderer.IsValid() ) return;
 
-		foreach ( var child in ModelRenderer.GameObject.Children.ToList() )
+		foreach ( var child in ModelRenderer.GameObject.Children.ToList() ) // Remove old clothing
 			child.Destroy();
 
 		var clothing = new ClothingContainer();
@@ -163,6 +163,13 @@ public abstract partial class Actor : Component
 		AddRandom( clothing, ShoesClothing );
 
 		clothing.Apply( ModelRenderer );
+
+		var hairColor = new ColorHsv( Game.Random.Float( 0f, 1f ), Game.Random.Float( 0f, 0.6f ), Game.Random.Float( 0.2f, 0.6f ) );
+
+		foreach ( var child in ModelRenderer.GameObject.Children ) // Hair?
+			if ( child.Components.TryGet<SkinnedModelRenderer>( out var renderer ) )
+				if ( renderer.Tint != Color.White )
+					renderer.Tint = hairColor;
 	}
 
 	TimeUntil _nextMove = 3f;
