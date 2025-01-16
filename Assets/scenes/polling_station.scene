@@ -36,7 +36,10 @@
               "CandidateGender": "Male",
               "CandidateParty": "Programmer",
               "CandidateSteamId": 0,
-              "CandidatePrefab": null,
+              "CandidatePrefab": {
+                "_type": "gameobject",
+                "prefab": "prefabs/candidates/ubre.prefab"
+              },
               "CandidatePolicies": [
                 {
                   "Name": "No linux",
@@ -606,6 +609,187 @@
       "Tags": "person",
       "Enabled": true,
       "__Prefab": "prefabs/voter_male.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "2d0746be-ef34-43da-ad5b-60afd420cb83",
+      "Flags": 0,
+      "Name": "voter_female",
+      "Position": "-95.99998,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "ada6de9a-b076-4d6b-9fdd-ad9a4f89912b",
+      "Flags": 0,
+      "Name": "voter_female (1)",
+      "Position": "-128,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "ddd33fea-05d9-4c12-8ff0-9dfb3ec28a6c",
+      "Flags": 0,
+      "Name": "voter_female (2)",
+      "Position": "-160,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "32e4367f-5786-48df-9404-f57e3da65e49",
+      "Flags": 0,
+      "Name": "voter_female (3)",
+      "Position": "-192,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "4b2575eb-fdf7-48c7-9880-f25cb6632d95",
+      "Flags": 0,
+      "Name": "voter_female (4)",
+      "Position": "-224,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "f3990fa5-c8c8-41a7-8b00-2cff79d861f5",
+      "Flags": 0,
+      "Name": "voter_female (5)",
+      "Position": "-256,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "c08056ff-7fd5-4dd7-bbc5-fe46c19ca83e",
+      "Flags": 0,
+      "Name": "voter_female (6)",
+      "Position": "-288,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "0e0bd7e4-98b4-4a3d-9efa-d7963a592b4b",
+      "Flags": 0,
+      "Name": "voter_female (7)",
+      "Position": "-320,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "85d8a29c-0026-43c3-9875-3191b83d98ac",
+      "Flags": 0,
+      "Name": "voter_female (8)",
+      "Position": "-352,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "19e94e49-01f7-4661-b502-59756a2d68f9",
+      "Flags": 0,
+      "Name": "voter_female (9)",
+      "Position": "-384,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "9176e5d3-1471-4f78-bf5d-45cabe0faa23",
+      "Flags": 0,
+      "Name": "voter_female (10)",
+      "Position": "-416,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "c8ff6d99-19ca-40c2-b041-bce9bcad7fe0",
+      "Flags": 0,
+      "Name": "voter_female (11)",
+      "Position": "-448,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "147807ca-848b-4d4a-82f0-087cca044552",
+      "Flags": 0,
+      "Name": "voter_female (12)",
+      "Position": "-480,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "e8fb8983-0bc5-4313-9078-7e9c7f3cfe80",
+      "Flags": 0,
+      "Name": "voter_female (13)",
+      "Position": "-512,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "3a83e28d-ef3e-4e47-a5cb-edba13438a29",
+      "Flags": 0,
+      "Name": "voter_female (14)",
+      "Position": "-544,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "8f7046d1-6e63-4355-a189-29ec7181a946",
+      "Flags": 0,
+      "Name": "voter_female (15)",
+      "Position": "-576,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "58c3f83f-db85-4bdb-b50a-f664baeb24e4",
+      "Flags": 0,
+      "Name": "voter_female (16)",
+      "Position": "-608,63.99999,4",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/voter_female.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "7734fc7b-4c79-49b6-b2ee-70e8f55e88f1",
+      "Flags": 0,
+      "Name": "ubre",
+      "Position": "192,63.99999,4",
+      "Rotation": "0,0,1,0.0000001947072",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/candidates/ubre.prefab",
       "__PrefabVariables": {}
     }
   ],

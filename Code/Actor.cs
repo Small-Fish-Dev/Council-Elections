@@ -136,7 +136,7 @@ public abstract partial class Actor : Component
 		Clothe();
 	}
 
-	public void Clothe()
+	public virtual void Clothe()
 	{
 		if ( !ModelRenderer.IsValid() ) return;
 
