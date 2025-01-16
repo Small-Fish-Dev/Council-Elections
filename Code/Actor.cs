@@ -246,4 +246,25 @@ public abstract partial class Actor : Component
 		ModelRenderer.Morphs.Set( "openJawR", 0f );
 		ModelRenderer.Morphs.Set( "lippuckerer", 0f );
 	}
+
+	public void AngryFace()
+	{
+		if ( !ModelRenderer.IsValid() ) return;
+
+		ModelRenderer.Set( "face_override", 5 );
+	}
+
+	public void HappyFace()
+	{
+		if ( !ModelRenderer.IsValid() ) return;
+
+		ModelRenderer.Set( "face_override", 1 );
+	}
+
+	public void NeutralFace()
+	{
+		if ( !ModelRenderer.IsValid() ) return;
+
+		ModelRenderer.Set( "face_override", 0 );
+	}
 }

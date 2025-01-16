@@ -46,7 +46,7 @@
           "\u003Cpick\u003EI\u2019m casting my ballot for \u003Cname\u003E, their take on \u0027\u003Cpolicy.name\u003E\u0027 really speaks to me.",
           "\u003Copponent\u003EUgh, I can\u2019t stand \u003Cname\u003E. Their \u0027\u003Cpolicy.name\u003E\u0027 ideas are too extreme!",
           "\u003Cpick\u003EDid you read \u003Cpolicy.info\u003E? \u003Cname\u003E clearly put a lot of thought into \u0027\u003Cpolicy.name\u003E\u0027.",
-          "opponent\u003EI heard \u003Cname\u003E talking about \u0027\u003Cpolicy.name\u003E\u0027. Sounds like trouble if you ask me.",
+          "\u003Copponent\u003EI heard \u003Cname\u003E talking about \u0027\u003Cpolicy.name\u003E\u0027. Sounds like trouble if you ask me.",
           "\u003Cpick\u003EHonestly, I feel better about the future knowing \u003Cname\u003E supports \u0027\u003Cpolicy.name\u003E\u0027.",
           "\u003Copponent\u003EThere\u2019s no way \u003Cname\u003E can deliver on \u0027\u003Cpolicy.name\u003E\u0027. It\u2019s all just empty promises.",
           "\u003Cpick\u003EEvery vote counts\u2014especially for someone like \u003Cname\u003E who\u2019s serious about \u0027\u003Cpolicy.name\u003E\u0027.",
@@ -252,7 +252,13 @@
             "MaterialGroup": null,
             "MaterialOverride": null,
             "Model": "models/citizen/citizen.vmdl",
-            "Morphs": {},
+            "Morphs": {
+              "openjawR": 0,
+              "lipcornerpullerL": 0,
+              "openjawL": 0,
+              "lippuckerer": 0,
+              "lipcornerpullerR": 0
+            },
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
             "OnComponentEnabled": null,
@@ -260,7 +266,9 @@
             "OnComponentStart": null,
             "OnComponentUpdate": null,
             "Parameters": {
-              "bools": {},
+              "bools": {
+                "hit": true
+              },
               "ints": {},
               "floats": {},
               "vectors": {},

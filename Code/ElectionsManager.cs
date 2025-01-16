@@ -30,9 +30,11 @@ public sealed class ElectionsManager : Component
 	/// </summary>
 	/// <param name="message"></param>
 	/// <param name="pick"></param>
+	/// <param name="isAboutOpponent"></param>
 	/// <returns></returns>
-	public static string CleanMessage( string message, Candidate pick )
+	public static string CleanMessage( string message, Candidate pick, out bool isAboutOpponent )
 	{
+		isAboutOpponent = false;
 		if ( string.IsNullOrWhiteSpace( message ) ) return message; // Don't bother..
 
 		Candidate target = pick;
@@ -41,12 +43,14 @@ public sealed class ElectionsManager : Component
 		{
 			message = message.Replace( "<pick>", "", StringComparison.OrdinalIgnoreCase );
 			target = pick;
+			isAboutOpponent = false;
 		}
 
 		if ( message.Contains( "<opponent>", StringComparison.OrdinalIgnoreCase ) )
 		{
 			message = message.Replace( "<opponent>", "", StringComparison.OrdinalIgnoreCase );
 			target = ElectionsManager.RandomCandidate( pick.CandidateId );
+			isAboutOpponent = true;
 		}
 
 		// GENDER //
