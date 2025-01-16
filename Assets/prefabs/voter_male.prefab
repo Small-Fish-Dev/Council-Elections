@@ -28,12 +28,14 @@
           "component_type": "BoxCollider"
         },
         "FaceClothing": {
-          "Choiches": null,
-          "EmptyWeight": 0
+          "Choiches": [
+            "models/citizen_clothes/glasses/nerdy_glasses/nerdy_glasses.clothing",
+            "models/citizen_clothes/glasses/party_glasses/party_glasses.clothing"
+          ],
+          "EmptyWeight": 10
         },
         "FacialClothing": {
           "Choiches": [
-            "models/citizen_clothes/glasses/nerdy_glasses/nerdy_glasses.clothing",
             "models/citizen_clothes/hair/moustache/moustache.clothing",
             "models/citizen_clothes/hair/patchy_beard/patchy_beard.clothing",
             "models/citizen_clothes/hair/mutton_chops/mutton_chops.clothing",
@@ -50,7 +52,6 @@
         "Gender": "Male",
         "HairbrowsClothing": {
           "Choiches": [
-            "models/citizen_clothes/hair/eyebrows_drawn/eyebrows_drawn.clothing",
             "models/citizen_clothes/hair/eyebrows_monobrow/monobrow.clothing",
             "models/citizen_clothes/hair/eyebrows_bushy/eyebrows_bushy.clothing",
             "models/citizen_clothes/hair/eyebrows/eyebrows.clothing"
@@ -193,7 +194,6 @@
             "models/citizen_clothes/shoes/sneakers/blue_sneakers.clothing",
             "models/citizen_clothes/shoes/slippers/slippers.clothing",
             "models/citizen_clothes/shoes/football_shoes/football_shoes.clothing",
-            "models/citizen_clothes/shoes/flatshoes/textures/flat_shoes.clothing",
             "models/citizen_clothes/shoes/crocs_and_socks/clogs_and_socks.clothing",
             "models/citizen_clothes/shoes/boxing_boots/boxing_boots_blue.clothing",
             "models/citizen_clothes/shoes/boxing_boots/boxing_boots.clothing",

@@ -5,7 +5,7 @@
 @namespace Sandbox
 
 <root>
-    <div class="message" style="opacity: @Opacity">
+    <div class="message" style="opacity: @Fading">
         <div class="text">@DisplayedText</div>
     </div>
 </root>
@@ -17,7 +17,7 @@
     public float Speed { get; set; } = 1f;
     public GameObject Talker { get; set; }
     public TimeSince LifeTime { get; set; }
-    public float Opacity { get; set; } = 1f;
+    public float Fading { get; set; } = 1f;
     public float Pitch { get; set; } = 1f;
 
     private string _displayedText;
@@ -55,9 +55,9 @@
         if (!Talker.IsValid()) return;
         var distance = Scene.Camera.WorldPosition.Distance(TalkerPosition); // Is the person nearby?
         var looking = Vector3.Dot(Scene.Camera.WorldRotation.Forward, Vector3.Direction(Scene.Camera.WorldPosition, TalkerPosition)); // Is the person looking at it?
-        Opacity = Math.Clamp( ( 1f - ((distance - 100f) / 200f) ) * ( looking + 0.5f ), 0f, 1f );
+        Fading = Math.Clamp((1f - ((distance - 100f) / 200f)) * (looking + 0.5f), 0f, 1f);
 
     }
 
-    protected override int BuildHash() => System.HashCode.Combine(Opacity, DisplayedText);
+    protected override int BuildHash() => System.HashCode.Combine(Fading, DisplayedText);
 }

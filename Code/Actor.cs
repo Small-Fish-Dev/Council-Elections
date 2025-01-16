@@ -77,35 +77,35 @@ public abstract partial class Actor : Component
 
 	[Property]
 	[Category( "Clothing" ), Order( 6 )]
-	public ClothesPlanner HairClothing { get; set; }
+	public ClothesPlanner HairClothing { get; set; } = new();
 
 	[Property]
 	[Category( "Clothing" ), Order( 6 )]
-	public ClothesPlanner FaceClothing { get; set; }
+	public ClothesPlanner FaceClothing { get; set; } = new();
 
 	[Property]
 	[Category( "Clothing" ), Order( 6 )]
-	public ClothesPlanner FacialClothing { get; set; }
+	public ClothesPlanner FacialClothing { get; set; } = new();
 
 	[Property]
 	[Category( "Clothing" ), Order( 6 )]
-	public ClothesPlanner HairbrowsClothing { get; set; }
+	public ClothesPlanner HairbrowsClothing { get; set; } = new(); // LOL I meant eyebrows, too late to go back
 
 	[Property]
 	[Category( "Clothing" ), Order( 6 )]
-	public ClothesPlanner ShirtClothing { get; set; }
+	public ClothesPlanner ShirtClothing { get; set; } = new();
 
 	[Property]
 	[Category( "Clothing" ), Order( 6 )]
-	public ClothesPlanner HoodieClothing { get; set; }
+	public ClothesPlanner HoodieClothing { get; set; } = new();
 
 	[Property]
 	[Category( "Clothing" ), Order( 6 )]
-	public ClothesPlanner PantsClothing { get; set; }
+	public ClothesPlanner PantsClothing { get; set; } = new();
 
 	[Property]
 	[Category( "Clothing" ), Order( 6 )]
-	public ClothesPlanner ShoesClothing { get; set; }
+	public ClothesPlanner ShoesClothing { get; set; } = new();
 
 
 	public bool IsRunning { get; set; } = false;
@@ -128,6 +128,36 @@ public abstract partial class Actor : Component
 
 		if ( Interaction.IsValid() )
 			Interaction.InteractionName = FullName;
+
+		Clothe();
+	}
+
+	public void Clothe()
+	{
+		if ( !ModelRenderer.IsValid() ) return;
+
+		foreach ( var child in ModelRenderer.GameObject.Children.ToList() )
+			child.Destroy();
+
+		var clothing = new ClothingContainer();
+
+		void AddRandom( ClothingContainer container, ClothesPlanner planner )
+		{
+			var randomPiece = planner.Random();
+			if ( randomPiece.IsValid() )
+				container.Add( randomPiece );
+		}
+
+		AddRandom( clothing, HairClothing );
+		AddRandom( clothing, FaceClothing );
+		AddRandom( clothing, FacialClothing );
+		AddRandom( clothing, HairbrowsClothing );
+		AddRandom( clothing, ShirtClothing );
+		AddRandom( clothing, HoodieClothing );
+		AddRandom( clothing, PantsClothing );
+		AddRandom( clothing, ShoesClothing );
+
+		clothing.Apply( ModelRenderer );
 	}
 
 	TimeUntil _nextMove = 3f;
