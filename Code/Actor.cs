@@ -79,7 +79,7 @@ public abstract partial class Actor : Component
 
 	private ModelPhysics _ragdoll;
 	private float _randomSeed;
-	internal Player TalkingTo;
+	internal Player LookingTo;
 	internal TimeUntil StopTalking;
 	internal TimeUntil StopLooking;
 
@@ -122,15 +122,17 @@ public abstract partial class Actor : Component
 			}
 		}
 
-		if ( TalkingTo.IsValid() )
+		if ( LookingTo.IsValid() )
 		{
 			if ( StopTalking )
 				StopTalk();
 			else
-			{
-				LookAt( TalkingTo );
 				RandomPheneme();
-			}
+
+			if ( StopLooking )
+				StopLook();
+			else
+				LookAt( LookingTo );
 		}
 	}
 
@@ -196,11 +198,10 @@ public abstract partial class Actor : Component
 
 	public virtual void Talk( Player target )
 	{
-		LookAt( target );
-
-		TalkingTo = target;
+		LookingTo = target;
 		var duration = 2f;
 		StopTalking = duration;
+		LookAt( target );
 		StopLooking = duration + 1f;
 		Interaction.InteractionCooldown = duration;
 	}
@@ -216,10 +217,14 @@ public abstract partial class Actor : Component
 
 	public virtual void StopTalk()
 	{
-		AnimationHelper.LookAtEnabled = false;
-		TalkingTo = null;
-		AnimationHelper.WithLook( Vector3.Zero );
 		ResetPheneme();
+	}
+
+	public virtual void StopLook()
+	{
+		AnimationHelper.LookAtEnabled = false;
+		LookingTo = null;
+		AnimationHelper.WithLook( Vector3.Zero );
 	}
 
 	internal void RandomPheneme()
