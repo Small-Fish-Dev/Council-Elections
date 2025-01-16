@@ -22,6 +22,13 @@ public partial class Voter : Actor
 		base.Talk( target );
 
 		var randomMessage = ElectionsManager.CleanMessage( Game.Random.FromList( InteractPhrases ), Pick );
-		SpeechUI.AddSpeech( FullName, randomMessage );
+		var speechSpeed = 30f;
+		var speechDuration = 2f;
+		SpeechUI.AddSpeech( FullName, randomMessage, speechSpeed, speechDuration );
+
+		TalkingTo = target;
+		var duration = randomMessage.Count() / speechSpeed + speechDuration;
+		StopTalking = duration;
+		Interaction.InteractionCooldown = duration;
 	}
 }

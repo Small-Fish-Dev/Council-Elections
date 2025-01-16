@@ -22,12 +22,13 @@ public sealed class Interaction : Component
 	/// Invoke the interaction, if cooldown is up
 	/// </summary>
 	/// <param name="player"></param>
+	[Rpc.Broadcast]
 	public void Interact( Player player )
 	{
 		if ( CanInteract )
 		{
-			_nextInteraction = InteractionCooldown;
 			PlayerAction?.Invoke( player );
+			_nextInteraction = InteractionCooldown;
 		}
 	}
 }

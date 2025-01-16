@@ -77,6 +77,8 @@ public abstract partial class Actor : Component
 	public float WishSpeed => IsRunning ? RunSpeed : WalkSpeed;
 
 	private ModelPhysics _ragdoll;
+	internal Player TalkingTo;
+	internal TimeUntil StopTalking;
 
 	protected override void OnStart()
 	{
@@ -97,7 +99,6 @@ public abstract partial class Actor : Component
 
 	protected override void OnFixedUpdate()
 	{
-
 		if ( ModelRenderer.IsValid() && AnimationHelper.IsValid() )
 		{
 			AnimationHelper.WithVelocity( Agent.Velocity );
@@ -115,6 +116,14 @@ public abstract partial class Actor : Component
 				_nextMove = 2f;
 				//Log.Info( _spawnPos );
 			}
+		}
+
+		if ( TalkingTo.IsValid() )
+		{
+			if ( StopTalking )
+				StopTalk();
+			else
+				LookAt( TalkingTo );
 		}
 	}
 
@@ -180,10 +189,27 @@ public abstract partial class Actor : Component
 
 	public virtual void Talk( Player target )
 	{
+		LookAt( target );
+
+		TalkingTo = target;
+		var duration = 2f;
+		StopTalking = duration;
+		Interaction.InteractionCooldown = duration;
+	}
+
+	public virtual void LookAt( Player target )
+	{
 		AnimationHelper.LookAtEnabled = true;
 		var lookStart = WorldPosition + Vector3.Up * 64f * WorldScale.z;
 		var lookEnd = target.WorldPosition + Vector3.Up * 64f * target.WorldScale.z;
 		var lookDirection = Vector3.Direction( lookStart, lookEnd );
 		AnimationHelper.WithLook( lookDirection );
+	}
+
+	public virtual void StopTalk()
+	{
+		AnimationHelper.LookAtEnabled = false;
+		TalkingTo = null;
+		AnimationHelper.WithLook( Vector3.Zero );
 	}
 }
