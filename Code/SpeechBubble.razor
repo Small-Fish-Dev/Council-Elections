@@ -18,6 +18,7 @@
     public GameObject Talker { get; set; }
     public TimeSince LifeTime { get; set; }
     public float Opacity { get; set; } = 1f;
+    public float Pitch { get; set; } = 1f;
 
     private string _displayedText;
     public string DisplayedText => $"{Speaker}: {_displayedText}";
@@ -43,7 +44,7 @@
                     var toSpeak = _displayedText.Last();
 
                     if ( toSpeak >= 'A' && toSpeak <= 'Z' || toSpeak >= 'a' && toSpeak <= 'z' ) // Only pronounce normal letters
-                        Sound.Play(toSpeak.ToString().ToLower(), TalkerPosition);
+                        Sound.Play(toSpeak.ToString().ToLower(), TalkerPosition).Pitch *= Pitch;
                 }
             }
 

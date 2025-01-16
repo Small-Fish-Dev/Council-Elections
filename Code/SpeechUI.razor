@@ -42,7 +42,8 @@
     /// <param name="speed">Characters per second</param>
     /// <param name="lifeTime">How many seconds to stay after it's done</param>
     /// <param name="talker"></param>
-    public static void AddSpeech(string speaker, string text, float speed = 30f, float lifeTime = 2f, GameObject talker = null)
+    /// <param name="gender"></param>
+    public static void AddSpeech(string speaker, string text, float speed = 30f, float lifeTime = 2f, GameObject talker = null, Gender gender = Gender.Undefined)
     {
         var bubble = Instance.Panel.AddChild<SpeechBubble>("SpeechBubble");
         bubble.Speaker = speaker;
@@ -50,6 +51,12 @@
         bubble.Speed = speed;
         bubble.LifeTime = 0;
         bubble.Talker = talker;
+        bubble.Pitch = gender switch
+        {
+            Gender.Male => Game.Random.Float(0.6f, 0.8f),
+            Gender.Female => Game.Random.Float(1.2f, 1.4f),
+            _ => Game.Random.Float(0.9f, 1.1f)
+        };
 
         var timeToWrite = text.Count() / speed;
         var totalDuration = timeToWrite + lifeTime;
