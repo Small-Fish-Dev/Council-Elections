@@ -177,4 +177,13 @@ public abstract partial class Actor : Component
 		IsRunning = true;
 		Agent.MoveTo( target );
 	}
+
+	public virtual void Talk( Player target )
+	{
+		AnimationHelper.LookAtEnabled = true;
+		var lookStart = WorldPosition + Vector3.Up * 64f * WorldScale.z;
+		var lookEnd = target.WorldPosition + Vector3.Up * 64f * target.WorldScale.z;
+		var lookDirection = Vector3.Direction( lookStart, lookEnd );
+		AnimationHelper.WithLook( lookDirection );
+	}
 }

@@ -17,8 +17,10 @@ public partial class Voter : Actor
 		Pick = ElectionsManager.RandomCandidate();
 	}
 
-	public void Talk()
+	public override void Talk( Player target )
 	{
+		base.Talk( target );
+
 		var randomMessage = ElectionsManager.CleanMessage( Game.Random.FromList( InteractPhrases ), Pick );
 		SpeechUI.AddSpeech( FullName, randomMessage );
 	}

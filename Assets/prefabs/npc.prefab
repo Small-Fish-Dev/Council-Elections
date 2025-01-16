@@ -107,7 +107,7 @@
         "PlayerAction": {
           "__version": 9,
           "__guid": "efa86c85-90e9-4623-85e0-54b4161cb67b",
-          "__changeId": 15,
+          "__changeId": 17,
           "UserData": {
             "Title": "Player Action",
             "ReferencedComponentTypes": []
@@ -150,6 +150,12 @@
               "SrcName": "_result",
               "DstId": 4,
               "DstName": "_target"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "obj",
+              "DstId": 4,
+              "DstName": "target"
             }
           ],
           "Defaults": {
