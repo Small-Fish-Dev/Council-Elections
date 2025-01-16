@@ -5,7 +5,7 @@
 @namespace Sandbox
 
 <root>
-    <div class="message">
+    <div class="message" style="opacity: @Opacity">
         <div class="text">@DisplayedText</div>
     </div>
 </root>
@@ -17,9 +17,11 @@
     public float Speed { get; set; } = 1f;
     public GameObject Talker { get; set; }
     public TimeSince LifeTime { get; set; }
+    public float Opacity { get; set; } = 1f;
 
     private string _displayedText;
     public string DisplayedText => $"{Speaker}: {_displayedText}";
+    public Vector3 TalkerPosition => (Talker?.WorldPosition ?? Vector3.Zero) + Vector3.Up * 64f;
     private int _lastSpoken;
 
     public void Update()
@@ -39,15 +41,22 @@
                 if (_lastSpoken != charactersToDisplay)
                 {
                     var toSpeak = _displayedText.Last();
-                    
+
                     if ( toSpeak >= 'A' && toSpeak <= 'Z' || toSpeak >= 'a' && toSpeak <= 'z' ) // Only pronounce normal letters
-                        Sound.Play(toSpeak.ToString().ToLower(), Talker.WorldPosition + Vector3.Up * 64f);
+                        Sound.Play(toSpeak.ToString().ToLower(), TalkerPosition);
                 }
             }
 
             _lastSpoken = charactersToDisplay;
         }
+
+        if (!Scene.Camera.IsValid()) return;
+        if (!Talker.IsValid()) return;
+        var distance = Scene.Camera.WorldPosition.Distance(TalkerPosition); // Is the person nearby?
+        var looking = Vector3.Dot(Scene.Camera.WorldRotation.Forward, Vector3.Direction(Scene.Camera.WorldPosition, TalkerPosition)); // Is the person looking at it?
+        Opacity = Math.Clamp( ( 1f - ((distance - 100f) / 200f) ) * ( looking + 0.5f ), 0f, 1f );
+
     }
 
-    protected override int BuildHash() => System.HashCode.Combine( DisplayedText );
+    protected override int BuildHash() => System.HashCode.Combine(Opacity, DisplayedText);
 }
