@@ -49,7 +49,7 @@
         },
         "FirstName": "John",
         "FullName": "John Doe",
-        "Gender": "Female",
+        "Gender": "Male",
         "HairbrowsClothing": {
           "Choiches": [
             "models/citizen_clothes/hair/eyebrows_monobrow/monobrow.clothing",
@@ -202,6 +202,19 @@
             "models/citizen_clothes/shoes/boots/army_boots.clothing"
           ],
           "EmptyWeight": 0.2
+        },
+        "SkinClothing": {
+          "Choiches": [
+            "models/citizen_clothes/skin01.clothing",
+            "models/citizen_clothes/skin02.clothing",
+            "models/citizen_clothes/skin03.clothing",
+            "models/citizen_clothes/skin04.clothing",
+            "models/citizen_clothes/skin05.clothing",
+            "models/citizen_clothes/skin06.clothing",
+            "models/citizen_clothes/skin07.clothing",
+            "models/citizen_clothes/skin08.clothing"
+          ],
+          "EmptyWeight": 1
         },
         "UserName": null,
         "WalkSpeed": 120

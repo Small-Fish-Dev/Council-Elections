@@ -77,6 +77,10 @@ public abstract partial class Actor : Component
 
 	[Property]
 	[Category( "Clothing" ), Order( 6 )]
+	public ClothesPlanner SkinClothing { get; set; } = new();
+
+	[Property]
+	[Category( "Clothing" ), Order( 6 )]
 	public ClothesPlanner HairClothing { get; set; } = new();
 
 	[Property]
@@ -148,6 +152,7 @@ public abstract partial class Actor : Component
 				container.Add( randomPiece );
 		}
 
+		AddRandom( clothing, SkinClothing );
 		AddRandom( clothing, HairClothing );
 		AddRandom( clothing, FaceClothing );
 		AddRandom( clothing, FacialClothing );
