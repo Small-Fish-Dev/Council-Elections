@@ -74,6 +74,40 @@ public abstract partial class Actor : Component
 	[Property]
 	[Category( "Components" ), Order( 5 )]
 	public Interaction Interaction { get; set; }
+
+	[Property]
+	[Category( "Clothing" ), Order( 6 )]
+	public ClothesPlanner HairClothing { get; set; }
+
+	[Property]
+	[Category( "Clothing" ), Order( 6 )]
+	public ClothesPlanner FaceClothing { get; set; }
+
+	[Property]
+	[Category( "Clothing" ), Order( 6 )]
+	public ClothesPlanner FacialClothing { get; set; }
+
+	[Property]
+	[Category( "Clothing" ), Order( 6 )]
+	public ClothesPlanner HairbrowsClothing { get; set; }
+
+	[Property]
+	[Category( "Clothing" ), Order( 6 )]
+	public ClothesPlanner ShirtClothing { get; set; }
+
+	[Property]
+	[Category( "Clothing" ), Order( 6 )]
+	public ClothesPlanner HoodieClothing { get; set; }
+
+	[Property]
+	[Category( "Clothing" ), Order( 6 )]
+	public ClothesPlanner PantsClothing { get; set; }
+
+	[Property]
+	[Category( "Clothing" ), Order( 6 )]
+	public ClothesPlanner ShoesClothing { get; set; }
+
+
 	public bool IsRunning { get; set; } = false;
 	public float WishSpeed => IsRunning ? RunSpeed : WalkSpeed;
 
