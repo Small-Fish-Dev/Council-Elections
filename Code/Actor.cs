@@ -1,6 +1,7 @@
 using Sandbox;
 using Sandbox.Citizen;
 using Sandbox.UI;
+using Sandbox.Utility;
 using System.Xml.Linq;
 
 public abstract partial class Actor : Component
@@ -77,13 +78,16 @@ public abstract partial class Actor : Component
 	public float WishSpeed => IsRunning ? RunSpeed : WalkSpeed;
 
 	private ModelPhysics _ragdoll;
+	private float _randomSeed;
 	internal Player TalkingTo;
 	internal TimeUntil StopTalking;
+	internal TimeUntil StopLooking;
 
 	protected override void OnStart()
 	{
 		_spawnPos = WorldPosition;
 		_spawnRot = WorldRotation;
+		_randomSeed = Game.Random.Float( -10000f, 10000f );
 
 		if ( RandomNameOnSpawn )
 			GenerateRandomName();
@@ -123,7 +127,10 @@ public abstract partial class Actor : Component
 			if ( StopTalking )
 				StopTalk();
 			else
+			{
 				LookAt( TalkingTo );
+				RandomPheneme();
+			}
 		}
 	}
 
@@ -194,6 +201,7 @@ public abstract partial class Actor : Component
 		TalkingTo = target;
 		var duration = 2f;
 		StopTalking = duration;
+		StopLooking = duration + 1f;
 		Interaction.InteractionCooldown = duration;
 	}
 
@@ -211,5 +219,26 @@ public abstract partial class Actor : Component
 		AnimationHelper.LookAtEnabled = false;
 		TalkingTo = null;
 		AnimationHelper.WithLook( Vector3.Zero );
+		ResetPheneme();
+	}
+
+	internal void RandomPheneme()
+	{
+		if ( !ModelRenderer.IsValid() ) return;
+
+		var randomMouthNoise = MathX.Clamp( Noise.Perlin( Time.Now * 200 + _randomSeed ) * 0.7f - 0.2f, 0f, 1f );
+		ModelRenderer.Morphs.Set( "openJawL", randomMouthNoise );
+		ModelRenderer.Morphs.Set( "openJawR", randomMouthNoise );
+		var randomMouthPucker = MathX.Clamp( (Noise.Perlin( Time.Now * 100 + _randomSeed ) - 0.4f) * 1.4f, 0f, 1f );
+		ModelRenderer.Morphs.Set( "lippuckerer", randomMouthPucker );
+	}
+
+	internal void ResetPheneme()
+	{
+		if ( !ModelRenderer.IsValid() ) return;
+
+		ModelRenderer.Morphs.Set( "openJawL", 0f );
+		ModelRenderer.Morphs.Set( "openJawR", 0f );
+		ModelRenderer.Morphs.Set( "lippuckerer", 0f );
 	}
 }
