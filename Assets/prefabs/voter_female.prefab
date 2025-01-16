@@ -2,7 +2,7 @@
   "RootObject": {
     "__guid": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
     "Flags": 0,
-    "Name": "voter_male",
+    "Name": "voter_female",
     "Tags": "person",
     "Enabled": true,
     "Components": [
@@ -30,67 +30,60 @@
         "FaceClothing": {
           "Choiches": [
             "models/citizen_clothes/glasses/nerdy_glasses/nerdy_glasses.clothing",
-            "models/citizen_clothes/glasses/party_glasses/party_glasses.clothing"
+            "models/citizen_clothes/glasses/party_glasses/party_glasses.clothing",
+            "models/citizen_clothes/makeup/face_tattoos/face_tattoos.clothing",
+            "models/citizen_clothes/makeup/traditional_face_tattoos/traditional_face_tattoos.clothing",
+            "models/citizen_clothes/makeup/edgy_tattoo/edgy_tattoo.clothing",
+            "models/citizen_clothes/makeup/freckles/freckles.clothing"
           ],
           "EmptyWeight": 10
         },
         "FacialClothing": {
           "Choiches": [
-            "models/citizen_clothes/hair/moustache/moustache.clothing",
-            "models/citizen_clothes/hair/patchy_beard/patchy_beard.clothing",
-            "models/citizen_clothes/hair/mutton_chops/mutton_chops.clothing",
-            "models/citizen_clothes/hair/medium_beard/medium_beard.clothing",
-            "models/citizen_clothes/hair/handlebar_moustache/handlebar_moustache.clothing",
-            "models/citizen_clothes/hair/goatee/goatee.clothing",
-            "models/citizen_clothes/hair/decorated_beard/decorated_beard.clothing",
-            "models/citizen_clothes/hair/braided_long_beard/braided_long_beard.clothing"
+            "models/citizen_clothes/makeup/eye_makeup/eye_makeup.clothing",
+            "models/citizen_clothes/makeup/winged_eyeliner/winged_eyeliner.clothing",
+            "models/citizen_clothes/makeup/plump_lips/plump_lips_04.clothing",
+            "models/citizen_clothes/makeup/plump_lips/plump_lips_03.clothing",
+            "models/citizen_clothes/makeup/plump_lips/plump_lips_02.clothing",
+            "models/citizen_clothes/makeup/plump_lips/plump_lips_01.clothing",
+            "models/citizen_clothes/makeup/lipstick/lipstick_black.clothing",
+            "models/citizen_clothes/makeup/lipstick/lipstick.clothing",
+            "models/citizen_clothes/makeup/freckles/freckles.clothing"
           ],
           "EmptyWeight": 5
         },
         "FirstName": "John",
         "FullName": "John Doe",
-        "Gender": "Female",
+        "Gender": "Male",
         "HairbrowsClothing": {
           "Choiches": [
-            "models/citizen_clothes/hair/eyebrows_monobrow/monobrow.clothing",
-            "models/citizen_clothes/hair/eyebrows_bushy/eyebrows_bushy.clothing",
-            "models/citizen_clothes/hair/eyebrows/eyebrows.clothing"
+            "models/citizen_clothes/hair/eyebrows/eyebrows.clothing",
+            "models/citizen_clothes/hair/eyelashes/eyelashes.clothing",
+            "models/citizen_clothes/hair/eyebrows_drawn/eyebrows_drawn.clothing"
           ],
-          "EmptyWeight": 0.5
+          "EmptyWeight": 0
         },
         "HairClothing": {
           "Choiches": [
-            "models/citizen_clothes/hair/hair_balding/hair_baldingbrown.clothing",
-            "models/citizen_clothes/hair/hair_shortscruffy/hair_shortscruffy_brown.clothing",
-            "models/citizen_clothes/hair/hair_thinning_short/thinning_short.clothing",
-            "models/citizen_clothes/hair/hair_slicked_back_balding/hair_slicked_back_balding.clothing",
-            "models/citizen_clothes/hair/hair_slickedback/hair_slickedback.clothing",
-            "models/citizen_clothes/hair/hair_bobcut/hair_bobcut.clothing",
-            "models/citizen_clothes/hair/hair_short_dreadlocks/short_dreadlocks.clothing",
-            "models/citizen_clothes/hair/hair_short_braids/hair_short_braids.clothing",
-            "models/citizen_clothes/hat/fedora/fedora.clothing",
-            "models/citizen_clothes/hat/flatcap/flatcap.clothing",
-            "models/citizen_clothes/hat/beanie/beanie.clothing",
-            "models/citizen_clothes/hat/baseball_cap/baseball_cap_black.clothing"
+            "models/citizen_clothes/hair/hair_tied_braids/hair_tied_braids.clothing",
+            "models/citizen_clothes/hair/hair_pigtails/hair_pigtails.clothing",
+            "models/citizen_clothes/hair/hair_long_bangs/hair_long_bangs.clothing",
+            "models/citizen_clothes/hair/hair_longcurly/hair_longcurly_brown.clothing",
+            "models/citizen_clothes/hair/hair_longbob/hair_longbob.clothing"
           ],
-          "EmptyWeight": 5
+          "EmptyWeight": 0
         },
         "HoodieClothing": {
           "Choiches": [
-            "models/citizen_clothes/jumper/loose_jumper/loose_jumper_wooly.clothing",
-            "models/citizen_clothes/jumper/loose_jumper/loose_jumper_goalie.clothing",
-            "models/citizen_clothes/jumper/loose_jumper/loose_jumper.clothing",
-            "models/citizen_clothes/jacket/puffer_jacket/puffer_jacket_blue.clothing",
-            "models/citizen_clothes/jacket/winter_coat/winter_coat.clothing",
-            "models/citizen_clothes/jacket/puffer_jacket/puffer_jacket.clothing",
-            "models/citizen_clothes/jacket/hoodie/hoodie_black.clothing",
-            "models/citizen_clothes/jacket/hoodie/hoodie.clothing",
-            "models/citizen_clothes/jacket/brown_leather_jacket/brown_leather_jacket.clothing",
-            "models/citizen_clothes/jacket/brown_leather_jacket/black_leather_jacket.clothing",
-            "models/citizen_clothes/jacket/bomber_jacket/bomber_jacket.clothing",
-            "models/citizen_clothes/jacket/biker_jacket/biker_jacket.clothing"
+            "models/citizen_clothes/jacket/raincoat/raincoat.clothing",
+            "models/citizen_clothes/jacket/puffer_jacket/puffer_jacket_orange.clothing",
+            "models/citizen_clothes/dress/posh_dress/models/posh_dress.clothing",
+            "models/citizen_clothes/dress/simple_dress/simple_dress_blue.clothing",
+            "models/citizen_clothes/dress/simple_dress/simple_dress_black.clothing",
+            "models/citizen_clothes/dress/simple_dress/simple_dress.clothing",
+            "models/citizen_clothes/dress/dotted_dress/dotted_dress.clothing"
           ],
-          "EmptyWeight": 30
+          "EmptyWeight": 10
         },
         "Interaction": {
           "_type": "component",
@@ -134,8 +127,7 @@
           "Some days, you just need to take a deep breath and relax.",
           "I can\u2019t stop humming that catchy tune from the radio.",
           "Nothing beats a good book and a comfy chair.",
-          "Have you tried that new restaurant on Main Street yet?",
-          "Yaas slay girl"
+          "Have you tried that new restaurant on Main Street yet?"
         ],
         "LastName": "Doe",
         "ModelRenderer": {
@@ -152,19 +144,12 @@
         "OnComponentUpdate": null,
         "PantsClothing": {
           "Choiches": [
-            "models/citizen_clothes/trousers/trackiebottoms/trackie_bottoms.clothing",
-            "models/citizen_clothes/trousers/trackiebottoms/trackie_bottoms_black.clothing",
-            "models/citizen_clothes/trousers/smarttrousers/trousers.smart.clothing",
-            "models/citizen_clothes/trousers/loosetrousers/loose_trousers.clothing",
-            "models/citizen_clothes/trousers/loosejeans/loose_jeans.clothing",
-            "models/citizen_clothes/trousers/jeans/jeans_black.clothing",
+            "models/citizen_clothes/dress/standard_skirt/standard_skirt.clothing",
             "models/citizen_clothes/trousers/jeans/jeans.clothing",
-            "models/citizen_clothes/trousers/cargopants/cargo_pants_army.clothing",
-            "models/citizen_clothes/trousers/cargopants/brown_cargo_pants.clothing",
-            "models/citizen_clothes/trousers/cargopants/binman_trousers.clothing",
-            "models/citizen_clothes/shorts/summer_shorts/summer shorts.clothing",
-            "models/citizen_clothes/shorts/shorts/shorts.clothing",
-            "models/citizen_clothes/shorts/football_shorts/football_shorts.clothing"
+            "models/citizen_clothes/trousers/jeans/jeans_black.clothing",
+            "models/citizen_clothes/trousers/loosejeans/loose_jeans.clothing",
+            "models/citizen_clothes/trousers/trackiebottoms/trackie_bottoms.clothing",
+            "models/citizen_clothes/trousers/trackiebottoms/trackie_bottoms_black.clothing"
           ],
           "EmptyWeight": 0
         },
@@ -172,20 +157,12 @@
         "RunSpeed": 240,
         "ShirtClothing": {
           "Choiches": [
-            "models/citizen_clothes/shirt/tshirt/tshirt.clothing",
-            "models/citizen_clothes/shirt/waistcoat_and_shirt/waistcoat_and_shirt.clothing",
-            "models/citizen_clothes/shirt/tshirt/football_tshirt.clothing",
-            "models/citizen_clothes/shirt/tanktop/tanktop.clothing",
-            "models/citizen_clothes/shirt/polo_shirt/polo_shirt_white.clothing",
-            "models/citizen_clothes/shirt/polo_shirt/polo_shirt.clothing",
-            "models/citizen_clothes/shirt/polo_shirt/binman_shirt.clothing",
-            "models/citizen_clothes/shirt/loose_shirt/loose_shirt.clothing",
-            "models/citizen_clothes/shirt/hawaiian_shirt/hawaiian shirt.clothing",
-            "models/citizen_clothes/shirt/flannel_shirt/variations/blue_shirt/blue_shirt.clothing",
             "models/citizen_clothes/shirt/flannel_shirt/flannel_shirt.clothing",
-            "models/citizen_clothes/shirt/army_shirt/army_shirt.clothing"
+            "models/citizen_clothes/shirt/tshirt/tshirt.clothing",
+            "models/citizen_clothes/shirt/loose_shirt/loose_shirt.clothing",
+            "models/citizen_clothes/shirt/flannel_shirt/variations/blue_shirt/blue_shirt.clothing"
           ],
-          "EmptyWeight": 0.2
+          "EmptyWeight": 0
         },
         "ShoesClothing": {
           "Choiches": [
@@ -194,14 +171,9 @@
             "models/citizen_clothes/shoes/sneakers/sneakers.clothing",
             "models/citizen_clothes/shoes/sneakers/blue_sneakers.clothing",
             "models/citizen_clothes/shoes/slippers/slippers.clothing",
-            "models/citizen_clothes/shoes/football_shoes/football_shoes.clothing",
-            "models/citizen_clothes/shoes/crocs_and_socks/clogs_and_socks.clothing",
-            "models/citizen_clothes/shoes/boxing_boots/boxing_boots_blue.clothing",
-            "models/citizen_clothes/shoes/boxing_boots/boxing_boots.clothing",
-            "models/citizen_clothes/shoes/boots/black_boots.clothing",
-            "models/citizen_clothes/shoes/boots/army_boots.clothing"
+            "models/citizen_clothes/shoes/football_shoes/football_shoes.clothing"
           ],
-          "EmptyWeight": 0.2
+          "EmptyWeight": 0
         },
         "UserName": null,
         "WalkSpeed": 120

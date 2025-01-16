@@ -153,8 +153,8 @@ public abstract partial class Actor : Component
 		AddRandom( clothing, FacialClothing );
 		AddRandom( clothing, HairbrowsClothing );
 		AddRandom( clothing, ShirtClothing );
-		AddRandom( clothing, HoodieClothing );
 		AddRandom( clothing, PantsClothing );
+		AddRandom( clothing, HoodieClothing );
 		AddRandom( clothing, ShoesClothing );
 
 		clothing.Apply( ModelRenderer );
