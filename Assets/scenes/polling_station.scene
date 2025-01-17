@@ -111,7 +111,10 @@
               "CandidateGender": "Undefined",
               "CandidateParty": "Programmer",
               "CandidateSteamId": 0,
-              "CandidatePrefab": null,
+              "CandidatePrefab": {
+                "_type": "gameobject",
+                "prefab": "prefabs/candidates/kaydax.prefab"
+              },
               "CandidatePolicies": [
                 {
                   "Name": "Linux",
@@ -813,6 +816,17 @@
       "Tags": "person",
       "Enabled": true,
       "__Prefab": "prefabs/candidates/ducc.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "16354f35-4cfe-47cc-8323-824e3a37f88b",
+      "Flags": 0,
+      "Name": "kaydax",
+      "Position": "199.8029,-119.7948,4.000009",
+      "Rotation": "0,0,0.9914449,0.1305264",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/candidates/kaydax.prefab",
       "__PrefabVariables": {}
     }
   ],
