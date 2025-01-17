@@ -8,6 +8,10 @@ public partial class President : Actor
 	[Property]
 	public Candidate Self { get; private set; }
 
+	[Property]
+
+	public Material SkinMaterial { get; set; }
+
 	protected override void OnStart()
 	{
 		base.OnStart();
@@ -15,7 +19,7 @@ public partial class President : Actor
 
 	public override void Clothe()
 	{
-		// I do this manually
+		ModelRenderer.SetMaterialOverride( SkinMaterial, "skin" );
 	}
 
 	public override void Talk( Player target )
