@@ -18,7 +18,10 @@
               "CandidateGender": "Male",
               "CandidateParty": "Gleeks",
               "CandidateSteamId": 0,
-              "CandidatePrefab": null,
+              "CandidatePrefab": {
+                "_type": "gameobject",
+                "prefab": "prefabs/candidates/godfrey.prefab"
+              },
               "CandidatePolicies": [
                 {
                   "Name": "Carbon neutral Facepunch",
@@ -141,7 +144,7 @@
             },
             {
               "CandidateId": 6,
-              "CandidateName": "zonical",
+              "CandidateName": "ZoNiCaL",
               "CandidateGender": "Undefined",
               "CandidateParty": "Independent",
               "CandidateSteamId": 0,
@@ -855,6 +858,17 @@
       "Tags": "person",
       "Enabled": true,
       "__Prefab": "prefabs/candidates/zonical.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "d4f29d7d-3284-43c4-aff5-3547813eb181",
+      "Flags": 0,
+      "Name": "godfrey",
+      "Position": "160,128,5.000008",
+      "Rotation": "0,0,-0.9238795,0.3826834",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/candidates/godfrey.prefab",
       "__PrefabVariables": {}
     }
   ],
