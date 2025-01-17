@@ -19,6 +19,10 @@ public partial class President : Actor
 
 	public override void Clothe()
 	{
+		foreach ( var clothing in ModelRenderer.GameObject.Children )
+			if ( clothing.Components.TryGet<SkinnedModelRenderer>( out var renderer ) )
+				renderer.SetMaterialOverride( SkinMaterial, "skin" );
+
 		ModelRenderer.SetMaterialOverride( SkinMaterial, "skin" );
 	}
 
