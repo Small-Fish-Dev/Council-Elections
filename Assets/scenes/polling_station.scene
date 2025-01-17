@@ -79,20 +79,6 @@
             },
             {
               "CandidateId": 3,
-              "CandidateName": "CyberAgent",
-              "CandidateGender": "Male",
-              "CandidateParty": "Artist",
-              "CandidateSteamId": 0,
-              "CandidatePrefab": null,
-              "CandidatePolicies": [
-                {
-                  "Name": "Artist freedom",
-                  "Info": "Let artist voices be heard"
-                }
-              ]
-            },
-            {
-              "CandidateId": 4,
               "CandidateName": "ducc",
               "CandidateGender": "Male",
               "CandidateParty": "Programmer",
@@ -114,7 +100,7 @@
               ]
             },
             {
-              "CandidateId": 5,
+              "CandidateId": 4,
               "CandidateName": "Kaydax",
               "CandidateGender": "Undefined",
               "CandidateParty": "Programmer",
@@ -128,7 +114,7 @@
               ]
             },
             {
-              "CandidateId": 6,
+              "CandidateId": 5,
               "CandidateName": "Grodbert",
               "CandidateGender": "Male",
               "CandidateParty": "Artist",
@@ -140,6 +126,15 @@
                   "Info": "test"
                 }
               ]
+            },
+            {
+              "CandidateId": 6,
+              "CandidateName": "zonical",
+              "CandidateGender": "Undefined",
+              "CandidateParty": "Independent",
+              "CandidateSteamId": 0,
+              "CandidatePrefab": null,
+              "CandidatePolicies": []
             }
           ],
           "OnComponentDestroy": null,
@@ -790,6 +785,17 @@
       "Tags": "person",
       "Enabled": true,
       "__Prefab": "prefabs/candidates/ubre.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "2dcbb066-d9b1-4eb1-884d-9c94060158dd",
+      "Flags": 0,
+      "Name": "trundler",
+      "Position": "192,0,5",
+      "Rotation": "0,0,1,0.0000001947072",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/candidates/trundler.prefab",
       "__PrefabVariables": {}
     }
   ],
