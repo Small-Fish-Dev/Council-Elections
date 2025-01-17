@@ -128,7 +128,10 @@
               "CandidateGender": "Male",
               "CandidateParty": "Artist",
               "CandidateSteamId": 0,
-              "CandidatePrefab": null,
+              "CandidatePrefab": {
+                "_type": "gameobject",
+                "prefab": "prefabs/candidates/grodbert.prefab"
+              },
               "CandidatePolicies": [
                 {
                   "Name": "Test",
@@ -827,6 +830,17 @@
       "Tags": "person",
       "Enabled": true,
       "__Prefab": "prefabs/candidates/kaydax.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "f3e2877e-c7ad-46b4-b995-7a868ba130ad",
+      "Flags": 0,
+      "Name": "grodbert",
+      "Position": "192,-160,4.999992",
+      "Rotation": "0,0,1,0.0000001947072",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/candidates/grodbert.prefab",
       "__PrefabVariables": {}
     }
   ],
