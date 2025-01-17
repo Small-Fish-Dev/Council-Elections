@@ -145,7 +145,10 @@
               "CandidateGender": "Undefined",
               "CandidateParty": "Independent",
               "CandidateSteamId": 0,
-              "CandidatePrefab": null,
+              "CandidatePrefab": {
+                "_type": "gameobject",
+                "prefab": "prefabs/candidates/zonical.prefab"
+              },
               "CandidatePolicies": []
             }
           ],
@@ -841,6 +844,17 @@
       "Tags": "person",
       "Enabled": true,
       "__Prefab": "prefabs/candidates/grodbert.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "a0ce93e2-5148-4bed-a533-9294fac3ee2e",
+      "Flags": 0,
+      "Name": "zonical",
+      "Position": "160,-32,5",
+      "Rotation": "0,0,0.9659258,0.2588192",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/candidates/zonical.prefab",
       "__PrefabVariables": {}
     }
   ],
