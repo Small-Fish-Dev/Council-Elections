@@ -51,13 +51,13 @@
         },
         "BodyCollisionTags": null,
         "BodyHeight": 72,
-        "BodyMass": 500,
+        "BodyMass": 20,
         "BodyRadius": 16,
+        "BrakePower": 1,
         "CameraOffset": "128,0,12",
         "ColliderObject": {
           "_type": "gameobject",
-          "go": "cf0d5d19-3327-4e4d-b2a1-4706b2c6ad01",
-          "prefab": null
+          "go": "cf0d5d19-3327-4e4d-b2a1-4706b2c6ad01"
         },
         "DeaccelerationTime": 0.3,
         "DuckedHeight": 36,
@@ -72,12 +72,14 @@
         "FootstepVolume": 1,
         "HideBodyInFirstPerson": true,
         "JumpSpeed": 0,
+        "LookSensitivity": 1,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
+        "PitchClamp": 90,
         "ReachLength": 130,
         "Renderer": {
           "_type": "component",
@@ -99,6 +101,7 @@
         "UseCameraControls": true,
         "UseFovFromPreferences": true,
         "UseInputControls": true,
+        "UseLookControls": true,
         "WalkSpeed": 80
       },
       {
@@ -116,7 +119,7 @@
           "Roll": true
         },
         "MassCenterOverride": "0,0,36",
-        "MassOverride": 500,
+        "MassOverride": 20,
         "MotionEnabled": true,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
