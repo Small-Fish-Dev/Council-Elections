@@ -24,7 +24,7 @@ public partial class Voter : Actor
 		var randomMessage = ElectionsManager.CleanMessage( Game.Random.FromList( InteractPhrases ), Pick, out var isAboutOpponent );
 		var speechSpeed = 30f;
 		var waitDuration = 2f;
-		SpeechUI.AddSpeech( FullName, randomMessage, speechSpeed, waitDuration, GameObject, Gender );
+		SpeechUI.AddSpeech( FullName, randomMessage, speechSpeed, waitDuration, GameObject, Gender, Pitch );
 
 		LookingTo = target;
 		var talkDuration = randomMessage.Count() / speechSpeed;

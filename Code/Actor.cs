@@ -52,6 +52,14 @@ public abstract partial class Actor : Component
 
 	[Property]
 	[Category( "Stats" ), Order( 2 )]
+	public RangedFloat HeightRange { get; set; } = new RangedFloat( 0.5f, 1.5f );
+
+	[Property]
+	[Category( "Stats" ), Order( 2 )]
+	public RangedFloat VoicePitch { get; set; } = new RangedFloat( 0.9f, 1.1f ); // TODO: IMPLEMENT, LAST LETTER OF TALK DOESN'T PRINT!
+
+	[Property]
+	[Category( "Stats" ), Order( 2 )]
 	[WideMode]
 	public List<string> InteractPhrases { get; set; } = new();
 
@@ -117,6 +125,7 @@ public abstract partial class Actor : Component
 
 	private ModelPhysics _ragdoll;
 	private float _randomSeed;
+	internal float Pitch = 1f;
 	internal Player LookingTo;
 	internal TimeUntil StopTalking;
 	internal TimeUntil StopLooking;
@@ -132,6 +141,11 @@ public abstract partial class Actor : Component
 
 		if ( Interaction.IsValid() )
 			Interaction.InteractionName = FullName;
+
+		if ( AnimationHelper.IsValid() )
+			AnimationHelper.Height = Game.Random.Float( HeightRange.Min, HeightRange.Max );
+
+		Pitch = Game.Random.Float( VoicePitch.Min, VoicePitch.Max );
 
 		Clothe();
 	}
