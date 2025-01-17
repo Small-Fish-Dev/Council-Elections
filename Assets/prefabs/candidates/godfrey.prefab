@@ -27,6 +27,7 @@
           "go": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
           "component_type": "BoxCollider"
         },
+        "DefaultExpression": "Surprise",
         "FaceClothing": {
           "Choiches": [],
           "EmptyWeight": 0

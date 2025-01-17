@@ -51,6 +51,6 @@ public partial class President : Actor
 	public override void StopLook()
 	{
 		base.StopLook();
-		HappyFace();
+		NeutralFace();
 	}
 }

@@ -12,9 +12,10 @@ public partial class Voter : Actor
 
 	protected override void OnStart()
 	{
-		base.OnStart();
-
 		Pick = ElectionsManager.RandomCandidate();
+		DefaultExpression = (Expression)Game.Random.Int( 0, 6 );
+
+		base.OnStart();
 	}
 
 	public override void Talk( Player target )

@@ -56,7 +56,21 @@ public abstract partial class Actor : Component
 
 	[Property]
 	[Category( "Stats" ), Order( 2 )]
-	public RangedFloat VoicePitch { get; set; } = new RangedFloat( 0.9f, 1.1f ); // TODO: IMPLEMENT, LAST LETTER OF TALK DOESN'T PRINT!
+	public RangedFloat VoicePitch { get; set; } = new RangedFloat( 0.9f, 1.1f );
+
+	public enum Expression
+	{
+		None,
+		Smile,
+		Frown,
+		Surprise,
+		Sad,
+		Angry
+	}
+
+	[Property]
+	[Category( "Stats" ), Order( 2 )]
+	public Expression DefaultExpression { get; set; }
 
 	[Property]
 	[Category( "Stats" ), Order( 2 )]
@@ -148,6 +162,7 @@ public abstract partial class Actor : Component
 		Pitch = Game.Random.Float( VoicePitch.Min, VoicePitch.Max );
 
 		Clothe();
+		NeutralFace();
 	}
 
 	public virtual void Clothe()
@@ -355,6 +370,6 @@ public abstract partial class Actor : Component
 	{
 		if ( !ModelRenderer.IsValid() ) return;
 
-		ModelRenderer.Set( "face_override", 0 );
+		ModelRenderer.Set( "face_override", (int)DefaultExpression );
 	}
 }
