@@ -57,7 +57,10 @@
               "CandidateGender": "Male",
               "CandidateParty": "Winning",
               "CandidateSteamId": 0,
-              "CandidatePrefab": null,
+              "CandidatePrefab": {
+                "_type": "gameobject",
+                "prefab": "prefabs/candidates/trundler.prefab"
+              },
               "CandidatePolicies": [
                 {
                   "Name": "Wiki Revival",
@@ -83,7 +86,10 @@
               "CandidateGender": "Male",
               "CandidateParty": "Programmer",
               "CandidateSteamId": 0,
-              "CandidatePrefab": null,
+              "CandidatePrefab": {
+                "_type": "gameobject",
+                "prefab": "prefabs/candidates/ducc.prefab"
+              },
               "CandidatePolicies": [
                 {
                   "Name": "Stack the Council",
@@ -796,6 +802,17 @@
       "Tags": "person",
       "Enabled": true,
       "__Prefab": "prefabs/candidates/trundler.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "d29ec414-18d7-4df3-a282-0d4e7fd004ed",
+      "Flags": 0,
+      "Name": "ducc",
+      "Position": "192,-63.99999,5.000015",
+      "Rotation": "0,0,1,0.0000001947072",
+      "Tags": "person",
+      "Enabled": true,
+      "__Prefab": "prefabs/candidates/ducc.prefab",
       "__PrefabVariables": {}
     }
   ],
