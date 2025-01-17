@@ -33,7 +33,7 @@
         if ( LifeTime.Relative < totalTime )
         {
             var progress = LifeTime.Relative / totalTime;
-            var charactersToDisplay = (int)Math.Floor(progress * count);
+            var charactersToDisplay = (int)Math.Ceiling(progress * count);
 
             _displayedText = Text.Substring(0, (int)Math.Clamp(charactersToDisplay, 0, count));
 
