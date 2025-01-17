@@ -75,6 +75,7 @@
           ],
           "EmptyWeight": 5
         },
+        "HeightRange": "0.8 1.2",
         "HoodieClothing": {
           "Choiches": [
             "models/citizen_clothes/jumper/loose_jumper/loose_jumper_wooly.clothing",
@@ -135,7 +136,11 @@
           "I can\u2019t stop humming that catchy tune from the radio.",
           "Nothing beats a good book and a comfy chair.",
           "Have you tried that new restaurant on Main Street yet?",
-          "Yaas slay girl"
+          "\u003Cpick\u003EI\u0027m not old enough to vote, but I still am!",
+          "\u003Cpick\u003EI heard garry is willing to pay anyone who votes for \u003Cname\u003E.",
+          "\u003Cpick\u003EI\u0027m committing voter fraud to vote for \u003Cname\u003E 3 times.",
+          "\u003Copponent\u003EIf \u003Cname\u003E wins the election, then I\u0027ll have to take things into my own hands.",
+          "\u003Copponent\u003E\u003CName\u003E and their stupid stance on \u003Cpolicy.name\u003E, I\u0027ll kill them!"
         ],
         "LastName": "Doe",
         "ModelRenderer": {
@@ -217,6 +222,7 @@
           "EmptyWeight": 1
         },
         "UserName": null,
+        "VoicePitch": "0.6 0.8",
         "WalkSpeed": 120
       },
       {
