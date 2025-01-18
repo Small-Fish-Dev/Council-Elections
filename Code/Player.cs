@@ -36,7 +36,21 @@ public sealed class Player : Component
 				.FirstOrDefault( x => x.Name == "vote" );
 			HasVoted = !vote.Equals( default( Sandbox.Services.Stats.PlayerStat ) );
 
-			Log.Info( "Player has already voted" );
+			if ( HasVoted )
+			{
+				Log.Info( "Player has already voted, disabling ballots." );
+
+				foreach ( var voteInteraction in Scene.GetAllComponents<Interaction>() )
+					if ( !voteInteraction.SharedInteraction )
+						voteInteraction.NextInteraction = 999f;
+			}
+			else
+			{
+				// If the owner has already voted and someone new joins, they get the snapshot from the owner so we reenable them
+				foreach ( var voteInteraction in Scene.GetAllComponents<Interaction>() )
+					if ( !voteInteraction.SharedInteraction )
+						voteInteraction.NextInteraction = 0f;
+			}
 		}
 
 		ApplyClothing();
@@ -99,5 +113,10 @@ public sealed class Player : Component
 
 		Sandbox.Services.Stats.SetValue( "vote", candidate.CandidateId );
 		Log.Info( $"Voted for {candidate.CandidateName}" );
+		Log.Info( "Disabling ballots." );
+
+		foreach ( var voteInteraction in Scene.GetAllComponents<Interaction>() )
+			if ( !voteInteraction.SharedInteraction )
+				voteInteraction.NextInteraction = 999f;
 	}
 }

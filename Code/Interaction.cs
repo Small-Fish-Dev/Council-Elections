@@ -23,8 +23,8 @@ public sealed class Interaction : Component
 
 	public HighlightOutline HighlightOutline { get; private set; }
 
-	public bool CanInteract => _nextInteraction;
-	private TimeUntil _nextInteraction;
+	public bool CanInteract => NextInteraction;
+	public TimeUntil NextInteraction;
 
 	protected override void OnStart()
 	{
@@ -46,7 +46,7 @@ public sealed class Interaction : Component
 		{
 			PlayerAction?.Invoke( player );
 			player.HasVoted = true;
-			_nextInteraction = InteractionCooldown;
+			NextInteraction = InteractionCooldown;
 		}
 	}
 }
