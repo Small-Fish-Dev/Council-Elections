@@ -15,8 +15,16 @@ public sealed class Interaction : Component
 	[Property]
 	public Action<Player> PlayerAction { get; set; }
 
+	public HighlightOutline HighlightOutline { get; private set; }
+
 	public bool CanInteract => _nextInteraction;
 	private TimeUntil _nextInteraction;
+
+	protected override void OnStart()
+	{
+		HighlightOutline = GameObject.AddComponent<HighlightOutline>();
+		HighlightOutline.Enabled = false;
+	}
 
 	/// <summary>
 	/// Invoke the interaction, if cooldown is up

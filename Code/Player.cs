@@ -45,7 +45,11 @@ public sealed class Player : Component
 	{
 		if ( !Camera.IsValid() ) return;
 
-		CurrentInteraction = null;
+		if ( CurrentInteraction.IsValid() )
+		{
+			CurrentInteraction.HighlightOutline.Enabled = false;
+			CurrentInteraction = null;
+		}
 
 		var interactTrace = Scene.Trace.Ray( Camera.WorldPosition, Camera.WorldPosition + Camera.WorldRotation.Forward * InteractRange )
 			.IgnoreGameObjectHierarchy( GameObject )
@@ -54,7 +58,10 @@ public sealed class Player : Component
 		if ( interactTrace.Hit )
 		{
 			if ( interactTrace.GameObject.Components.TryGet<Interaction>( out var interaction ) )
+			{
 				CurrentInteraction = interaction;
+				CurrentInteraction.HighlightOutline.Enabled = true;
+			}
 		}
 
 		if ( Input.Pressed( "use" ) )
