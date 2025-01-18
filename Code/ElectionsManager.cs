@@ -95,6 +95,8 @@ public sealed class ElectionsManager : Component
 
 	internal static void ReplaceWord( ref string message, string keyword, string replacement )
 	{
+		if ( string.IsNullOrWhiteSpace( keyword ) || string.IsNullOrWhiteSpace( replacement ) ) return;
+
 		if ( message.Contains( keyword, StringComparison.OrdinalIgnoreCase ) )
 		{
 			message = message.Replace( keyword, replacement );

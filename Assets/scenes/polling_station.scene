@@ -152,7 +152,12 @@
                 "_type": "gameobject",
                 "prefab": "prefabs/candidates/zonical.prefab"
               },
-              "CandidatePolicies": []
+              "CandidatePolicies": [
+                {
+                  "Name": "te",
+                  "Info": "fff"
+                }
+              ]
             }
           ],
           "OnComponentDestroy": null,
