@@ -45,6 +45,7 @@ public sealed class Interaction : Component
 		if ( CanInteract )
 		{
 			PlayerAction?.Invoke( player );
+			player.HasVoted = true;
 			_nextInteraction = InteractionCooldown;
 		}
 	}

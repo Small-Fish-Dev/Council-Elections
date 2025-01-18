@@ -21,16 +21,25 @@ public sealed class Player : Component
 	[Category( "Stats" )]
 	public float InteractRange { get; set; } = 120f;
 
+	[Sync]
+	public bool HasVoted { get; set; } = false;
 	public Interaction CurrentInteraction;
 
 	protected override void OnStart()
 	{
-		ApplyClothing();
-
 		Player.All.Add( this );
 
 		if ( !IsProxy )
+		{
 			Player.Local = this;
+			var vote = Sandbox.Services.Stats.GetPlayerStats( Game.Ident, Connection.Local.SteamId )
+				.FirstOrDefault( x => x.Name == "vote" );
+			HasVoted = !vote.Equals( default( Sandbox.Services.Stats.PlayerStat ) );
+
+			Log.Info( "Player has already voted" );
+		}
+
+		ApplyClothing();
 
 		if ( IsProxy && Camera.IsValid() )
 			Camera.DestroyGameObject();
