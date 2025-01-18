@@ -431,6 +431,197 @@
           "StartAsleep": false,
           "Tint": "1,1,1,1"
         }
+      ],
+      "Children": [
+        {
+          "__guid": "f91df926-a62a-49a0-a9fc-c3f041fe7048",
+          "Flags": 0,
+          "Name": "ubre",
+          "Position": "0,20.12501,108",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "caf26bf0-873f-4cba-9c16-862712c5d71d",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.1,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "ubre",
+                "TextColor": "0.91163,0.85863,0.80562,1",
+                "FontName": "Poppins",
+                "FontSize": 128,
+                "FontWeight": 581,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": true,
+                  "Size": 6,
+                  "Color": "0,0,0,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 0.1,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": true,
+                  "Size": 6,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "5abafae6-ff37-448e-89c3-10cd374e5e2b",
+          "Flags": 0,
+          "Name": "Programmer Party",
+          "Position": "0,20.12501,97.99997",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "f6adfac5-886b-4ad1-8273-4056ed9f0a19",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.07,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "Programmer Party",
+                "TextColor": "0.91163,0.85863,0.80562,1",
+                "FontName": "Poppins",
+                "FontSize": 80,
+                "FontWeight": 581,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": true,
+                  "Size": 8,
+                  "Color": "0,0,0,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 0.1,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": true,
+                  "Size": 12,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,12"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "6724cd55-3723-4358-a72f-c2bba5fadb8c",
+          "Flags": 0,
+          "Name": "Programmer Party",
+          "Position": "0,21.62503,25.99997",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "d0543a24-227e-4c0b-9435-ecadb2b3f4fd",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.07,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "Programmer Party",
+                "TextColor": "0.91163,0.85863,0.80562,1",
+                "FontName": "Poppins",
+                "FontSize": 80,
+                "FontWeight": 581,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": true,
+                  "Size": 8,
+                  "Color": "0,0,0,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 0.1,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": true,
+                  "Size": 12,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,12"
+                }
+              }
+            }
+          ]
+        }
       ]
     },
     {
@@ -474,7 +665,7 @@
           "BodyGroups": 18446744073709551615,
           "Health": 5,
           "IsStatic": true,
-          "MaterialGroup": "default",
+          "MaterialGroup": null,
           "Model": "models/props/trim_sheets/storage/storage_box_01.vmdl",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
