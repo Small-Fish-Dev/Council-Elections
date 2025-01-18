@@ -12,6 +12,12 @@ public sealed class Interaction : Component
 	[Range( 0f, 5f, 0.1f )]
 	public float InteractionCooldown { get; set; } = 1f;
 
+	/// <summary>
+	/// Does the cooldown reset on other clients too
+	/// </summary>
+	[Property]
+	public bool SharedInteraction { get; set; } = true;
+
 	[Property]
 	public Action<Player> PlayerAction { get; set; }
 
@@ -22,6 +28,7 @@ public sealed class Interaction : Component
 
 	protected override void OnStart()
 	{
+		HighlightOutline?.Destroy();
 		HighlightOutline = GameObject.AddComponent<HighlightOutline>();
 		HighlightOutline.Enabled = false;
 	}
@@ -33,6 +40,8 @@ public sealed class Interaction : Component
 	[Rpc.Broadcast]
 	public void Interact( Player player )
 	{
+		if ( !SharedInteraction && player.IsProxy ) return;
+
 		if ( CanInteract )
 		{
 			PlayerAction?.Invoke( player );

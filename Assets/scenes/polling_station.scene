@@ -45,12 +45,20 @@
               },
               "CandidatePolicies": [
                 {
-                  "Name": "No linux",
-                  "Info": "Ban all linux users"
-                },
-                {
                   "Name": "Beginner Friendly",
                   "Info": "Make s\u0026box as beginner friendly as possible"
+                },
+                {
+                  "Name": "Exporting Priority",
+                  "Info": "Prioritize work on exporting support"
+                },
+                {
+                  "Name": "Dedicated Servers",
+                  "Info": "Continue efforts on dedicated servers and code protection"
+                },
+                {
+                  "Name": "Positive Environment",
+                  "Info": "Foster a positive and helpful environment for every user"
                 }
               ]
             },
@@ -487,7 +495,7 @@
                   "Color": "0,1,0,1"
                 },
                 "ShadowUnder": {
-                  "Enabled": true,
+                  "Enabled": false,
                   "Size": 6,
                   "Color": "0,0,0,1",
                   "Offset": "0,8"
@@ -521,13 +529,13 @@
                 "BloomLayer": false,
                 "AfterUILayer": false
               },
-              "Scale": 0.07,
+              "Scale": 0.08,
               "TextAlignment": "Center",
               "TextScope": {
                 "Text": "Programmer Party",
                 "TextColor": "0.91163,0.85863,0.80562,1",
                 "FontName": "Poppins",
-                "FontSize": 80,
+                "FontSize": 68.38,
                 "FontWeight": 581,
                 "FontItalic": false,
                 "LineHeight": 1,
@@ -535,7 +543,7 @@
                 "WordSpacing": 0,
                 "Outline": {
                   "Enabled": true,
-                  "Size": 8,
+                  "Size": 6,
                   "Color": "0,0,0,1"
                 },
                 "Shadow": {
@@ -550,7 +558,7 @@
                   "Color": "0,1,0,1"
                 },
                 "ShadowUnder": {
-                  "Enabled": true,
+                  "Enabled": false,
                   "Size": 12,
                   "Color": "0,0,0,1",
                   "Offset": "0,12"
@@ -562,8 +570,8 @@
         {
           "__guid": "6724cd55-3723-4358-a72f-c2bba5fadb8c",
           "Flags": 0,
-          "Name": "Programmer Party",
-          "Position": "0,21.62503,25.99997",
+          "Name": "1. Beginner Friendly",
+          "Position": "0,21.62503,28.99997",
           "Rotation": "0,0,-0.7071067,0.7071068",
           "Enabled": true,
           "Components": [
@@ -584,13 +592,13 @@
                 "BloomLayer": false,
                 "AfterUILayer": false
               },
-              "Scale": 0.07,
+              "Scale": 0.12,
               "TextAlignment": "Center",
               "TextScope": {
-                "Text": "Programmer Party",
+                "Text": "1. Beginner Friendly",
                 "TextColor": "0.91163,0.85863,0.80562,1",
                 "FontName": "Poppins",
-                "FontSize": 80,
+                "FontSize": 45,
                 "FontWeight": 581,
                 "FontItalic": false,
                 "LineHeight": 1,
@@ -598,8 +606,8 @@
                 "WordSpacing": 0,
                 "Outline": {
                   "Enabled": true,
-                  "Size": 8,
-                  "Color": "0,0,0,1"
+                  "Size": 4,
+                  "Color": "0.10233,0.04788,0.00333,1"
                 },
                 "Shadow": {
                   "Enabled": false,
@@ -613,7 +621,133 @@
                   "Color": "0,1,0,1"
                 },
                 "ShadowUnder": {
+                  "Enabled": false,
+                  "Size": 12,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,12"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "47734acc-b5f3-48cc-ab87-69a7371c71fc",
+          "Flags": 0,
+          "Name": "2. Exporting Priority",
+          "Position": "-0.125,21.62506,19.87497",
+          "Rotation": "0,-0,-0.7071068,0.7071068",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "0b577ba8-3772-44c6-b291-742a93c6c0ea",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.12,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "2. Exporting Priority",
+                "TextColor": "0.91163,0.85863,0.80562,1",
+                "FontName": "Poppins",
+                "FontSize": 45,
+                "FontWeight": 581,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
                   "Enabled": true,
+                  "Size": 4,
+                  "Color": "0.10233,0.04788,0.00333,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 0.1,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": false,
+                  "Size": 12,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,12"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "fd317c85-4b6f-4285-8f6b-84272dcb2d09",
+          "Flags": 0,
+          "Name": "3. Positive Environment",
+          "Position": "-0.3750153,22.75003,11.12497",
+          "Rotation": "0.0000000006585444,0.0000000006585446,-0.7071067,0.7071068",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "38c2d51e-bbf5-41d8-942e-2663478966b1",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.12,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "3. Positive Environment",
+                "TextColor": "0.91163,0.85863,0.80562,1",
+                "FontName": "Poppins",
+                "FontSize": 45,
+                "FontWeight": 581,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": true,
+                  "Size": 4,
+                  "Color": "0.10233,0.04788,0.00333,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 0.1,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": false,
                   "Size": 12,
                   "Color": "0,0,0,1",
                   "Offset": "0,12"
@@ -648,7 +782,7 @@
         {
           "__type": "Interaction",
           "__guid": "5d189f01-9ee8-4cf5-8634-15bbf597a6e5",
-          "InteractionCooldown": 1,
+          "InteractionCooldown": 999,
           "InteractionDescription": "Vote for ubre!",
           "InteractionName": "ubre\u0027s Ballot Box",
           "OnComponentDestroy": null,
@@ -657,7 +791,61 @@
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null,
-          "PlayerAction": null
+          "PlayerAction": {
+            "__version": 9,
+            "__guid": "46a3f38b-6573-45b0-abb2-71adf5f569b9",
+            "__changeId": 6,
+            "UserData": {
+              "Title": "Player Action",
+              "ReferencedComponentTypes": []
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input"
+              },
+              {
+                "Id": 1,
+                "Type": "call",
+                "Properties": {
+                  "_isStatic": false,
+                  "_name": "Vote",
+                  "_type": "Player"
+                },
+                "UserData": {
+                  "Position": "240,0"
+                }
+              }
+            ],
+            "Links": [
+              {
+                "SrcId": 0,
+                "SrcName": "_signal",
+                "DstId": 1,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "obj",
+                "DstId": 1,
+                "DstName": "_target"
+              },
+              {
+                "Id": 8,
+                "Value": {
+                  "CandidateId": 1,
+                  "CandidateName": "ubre",
+                  "CandidateGender": "Undefined",
+                  "CandidateSteamId": 0,
+                  "CandidatePolicies": []
+                },
+                "DstId": 1,
+                "DstName": "candidate"
+              }
+            ]
+          },
+          "SharedInteraction": false
         },
         {
           "__type": "Sandbox.Prop",
@@ -747,7 +935,7 @@
           "__guid": "0dbf204a-8175-48f5-8c2c-b3c60686f67d",
           "Flags": 0,
           "Name": "VOTE",
-          "Position": "5.999963,-0.00009989738,3.461506",
+          "Position": "5.999963,-0.00009989738,3.586506",
           "Rotation": "0,0,1,-0.00000004371139",
           "Enabled": true,
           "Components": [
@@ -797,7 +985,7 @@
                   "Color": "0,1,0,1"
                 },
                 "ShadowUnder": {
-                  "Enabled": true,
+                  "Enabled": false,
                   "Size": 6,
                   "Color": "0,0,0,1",
                   "Offset": "0,8"
