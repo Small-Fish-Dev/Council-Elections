@@ -1,7 +1,7 @@
 {
   "Title": "Council Elections",
   "Type": "game",
-  "Org": "local",
+  "Org": "fish",
   "Ident": "council_elections",
   "Schema": 1,
   "IncludeSourceFiles": false,

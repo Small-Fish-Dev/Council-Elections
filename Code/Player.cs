@@ -69,4 +69,16 @@ public sealed class Player : Component
 		var container = ClothingContainer.CreateFromLocalUser();
 		container.Apply( SkinnedModelRenderer );
 	}
+
+	/// <summary>
+	/// Submit your vote through s&box stats service
+	/// </summary>
+	/// <param name="candidate"></param>
+	public void Vote( Candidate candidate )
+	{
+		if ( IsProxy ) return;
+
+		Sandbox.Services.Stats.SetValue( "vote", candidate.CandidateId );
+		Log.Info( $"Voted for {candidate.CandidateName}" );
+	}
 }

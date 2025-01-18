@@ -14,6 +14,10 @@ public sealed class ElectionsManager : Component
 		Instance = this;
 	}
 
+	protected override void OnStart()
+	{
+	}
+
 	/// <summary>
 	/// Picks a random candidate from the list
 	/// </summary>
