@@ -5,6 +5,8 @@
     "Name": "ducc",
     "Tags": "person",
     "Enabled": true,
+    "NetworkMode": 1,
+    "NetworkOrphaned": 1,
     "Components": [
       {
         "__type": "President",

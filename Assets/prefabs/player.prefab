@@ -5,6 +5,7 @@
     "Name": "player",
     "Tags": "person",
     "Enabled": true,
+    "NetworkMode": 1,
     "Components": [
       {
         "__type": "Player",

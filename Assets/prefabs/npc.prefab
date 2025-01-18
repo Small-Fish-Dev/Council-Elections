@@ -5,6 +5,8 @@
     "Name": "npc",
     "Tags": "person",
     "Enabled": true,
+    "NetworkMode": 1,
+    "NetworkOrphaned": 1,
     "Components": [
       {
         "__type": "Voter",
@@ -27,9 +29,31 @@
           "go": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
           "component_type": "BoxCollider"
         },
+        "DefaultExpression": "None",
+        "FaceClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
+        "FacialClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
         "FirstName": "John",
         "FullName": "John Doe",
         "Gender": "Undefined",
+        "HairbrowsClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
+        "HairClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
+        "HeightRange": "0.5 1.5",
+        "HoodieClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
         "Interaction": {
           "_type": "component",
           "component_id": "f5e7dc1c-c1db-4470-937a-beb6d4a84851",
@@ -87,9 +111,26 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
+        "PantsClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
         "RandomNameOnSpawn": true,
         "RunSpeed": 240,
+        "ShirtClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
+        "ShoesClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
+        "SkinClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
         "UserName": null,
+        "VoicePitch": "0.9 1.1",
         "WalkSpeed": 120
       },
       {

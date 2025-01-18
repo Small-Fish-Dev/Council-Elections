@@ -5,6 +5,8 @@
     "Name": "zonical",
     "Tags": "person",
     "Enabled": true,
+    "NetworkMode": 1,
+    "NetworkOrphaned": 1,
     "Components": [
       {
         "__type": "President",
@@ -27,6 +29,7 @@
           "go": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
           "component_type": "BoxCollider"
         },
+        "DefaultExpression": "None",
         "FaceClothing": {
           "Choiches": [],
           "EmptyWeight": 0

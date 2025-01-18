@@ -33,7 +33,9 @@ public partial class President : Actor
 		var randomMessage = ElectionsManager.CleanMessage( Game.Random.FromList( InteractPhrases ), Self, out var isAboutOpponent );
 		var speechSpeed = 30f;
 		var waitDuration = 2f;
-		SpeechUI.AddSpeech( FullName, randomMessage, speechSpeed, waitDuration, GameObject, Gender, Pitch );
+
+		if ( !IsProxy )
+			SpeechUI.AddSpeech( FullName, randomMessage, speechSpeed, waitDuration, GameObject, Gender, Pitch );
 
 		LookingTo = target;
 		var talkDuration = randomMessage.Count() / speechSpeed;

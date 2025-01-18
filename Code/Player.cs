@@ -31,6 +31,9 @@ public sealed class Player : Component
 
 		if ( !IsProxy )
 			Player.Local = this;
+
+		if ( IsProxy && Camera.IsValid() )
+			Camera.DestroyGameObject();
 	}
 
 	protected override void OnDestroy()

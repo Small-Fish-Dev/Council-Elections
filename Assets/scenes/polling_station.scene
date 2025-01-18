@@ -466,6 +466,8 @@
       "Position": "-95.99998,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -476,6 +478,8 @@
       "Position": "-128,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -486,6 +490,8 @@
       "Position": "-160,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -496,6 +502,8 @@
       "Position": "-192,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -506,6 +514,8 @@
       "Position": "-224,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -516,6 +526,8 @@
       "Position": "-256,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -526,6 +538,8 @@
       "Position": "-288,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -536,6 +550,8 @@
       "Position": "-320,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -546,6 +562,8 @@
       "Position": "-352,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -556,6 +574,8 @@
       "Position": "-384,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -566,6 +586,8 @@
       "Position": "-416,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -576,6 +598,8 @@
       "Position": "-448,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -586,6 +610,8 @@
       "Position": "-480,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -596,6 +622,8 @@
       "Position": "-512,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -606,6 +634,8 @@
       "Position": "-544,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -616,6 +646,8 @@
       "Position": "-576,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -626,6 +658,8 @@
       "Position": "-608,0,3.99997",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_male.prefab",
       "__PrefabVariables": {}
     },
@@ -636,6 +670,8 @@
       "Position": "-95.99998,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -646,6 +682,8 @@
       "Position": "-128,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -656,6 +694,8 @@
       "Position": "-160,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -666,6 +706,8 @@
       "Position": "-192,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -676,6 +718,8 @@
       "Position": "-224,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -686,6 +730,8 @@
       "Position": "-256,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -696,6 +742,8 @@
       "Position": "-288,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -706,6 +754,8 @@
       "Position": "-320,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -716,6 +766,8 @@
       "Position": "-352,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -726,6 +778,8 @@
       "Position": "-384,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -736,6 +790,8 @@
       "Position": "-416,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -746,6 +802,8 @@
       "Position": "-448,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -756,6 +814,8 @@
       "Position": "-480,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -766,6 +826,8 @@
       "Position": "-512,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -776,6 +838,8 @@
       "Position": "-544,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -786,6 +850,8 @@
       "Position": "-576,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -796,6 +862,8 @@
       "Position": "-608,63.99999,4",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/voter_female.prefab",
       "__PrefabVariables": {}
     },
@@ -807,6 +875,8 @@
       "Rotation": "0,0,1,0.0000001947072",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/candidates/ubre.prefab",
       "__PrefabVariables": {}
     },
@@ -818,6 +888,8 @@
       "Rotation": "0,0,1,0.0000001947072",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/candidates/trundler.prefab",
       "__PrefabVariables": {}
     },
@@ -829,6 +901,8 @@
       "Rotation": "0,0,1,0.0000001947072",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/candidates/ducc.prefab",
       "__PrefabVariables": {}
     },
@@ -840,6 +914,8 @@
       "Rotation": "0,0,0.9914449,0.1305264",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/candidates/kaydax.prefab",
       "__PrefabVariables": {}
     },
@@ -851,6 +927,8 @@
       "Rotation": "0,0,1,0.0000001947072",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/candidates/grodbert.prefab",
       "__PrefabVariables": {}
     },
@@ -862,6 +940,8 @@
       "Rotation": "0,0,0.9659258,0.2588192",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/candidates/zonical.prefab",
       "__PrefabVariables": {}
     },
@@ -873,6 +953,8 @@
       "Rotation": "0,0,-0.9238795,0.3826834",
       "Tags": "person",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "__Prefab": "prefabs/candidates/godfrey.prefab",
       "__PrefabVariables": {}
     }

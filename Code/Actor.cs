@@ -10,13 +10,15 @@ public abstract partial class Actor : Component
 	[Category( "Info" ), Order( 1 )]
 	public bool RandomNameOnSpawn { get; set; } = true;
 
+	[Sync( SyncFlags.FromHost )]
 	[Property, HideIf( "RandomNameOnSpawn", true )]
 	[Category( "Info" ), Order( 1 )]
-	public virtual string FirstName { get; set; } = "John";
+	public string FirstName { get; set; } = "John";
 
+	[Sync( SyncFlags.FromHost )]
 	[Property, HideIf( "RandomNameOnSpawn", true )]
 	[Category( "Info" ), Order( 1 )]
-	public virtual string LastName { get; set; } = "Doe";
+	public string LastName { get; set; } = "Doe";
 
 	[Property, HideIf( "RandomNameOnSpawn", true )]
 	[Category( "Info" ), Order( 1 )]
@@ -140,12 +142,15 @@ public abstract partial class Actor : Component
 	private ModelPhysics _ragdoll;
 	private float _randomSeed;
 	internal float Pitch = 1f;
-	internal Player LookingTo;
-	internal TimeUntil StopTalking;
-	internal TimeUntil StopLooking;
+
+	public Player LookingTo { get; set; }
+	public TimeUntil StopTalking { get; set; }
+	public TimeUntil StopLooking { get; set; }
 
 	protected override void OnStart()
 	{
+		if ( IsProxy ) return;
+
 		_spawnPos = WorldPosition;
 		_spawnRot = WorldRotation;
 		_randomSeed = Game.Random.Float( -10000f, 10000f );
@@ -311,6 +316,7 @@ public abstract partial class Actor : Component
 		Interaction.InteractionCooldown = duration;
 	}
 
+	[Rpc.Broadcast]
 	public virtual void LookAt( Player target )
 	{
 		AnimationHelper.LookAtEnabled = true;
@@ -320,11 +326,13 @@ public abstract partial class Actor : Component
 		AnimationHelper.WithLook( lookDirection );
 	}
 
+	[Rpc.Broadcast]
 	public virtual void StopTalk()
 	{
 		ResetPheneme();
 	}
 
+	[Rpc.Broadcast]
 	public virtual void StopLook()
 	{
 		AnimationHelper.LookAtEnabled = false;

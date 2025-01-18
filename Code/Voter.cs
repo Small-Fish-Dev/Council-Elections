@@ -12,6 +12,8 @@ public partial class Voter : Actor
 
 	protected override void OnStart()
 	{
+		if ( IsProxy ) return;
+
 		Pick = ElectionsManager.RandomCandidate();
 		DefaultExpression = (Expression)Game.Random.Int( 0, 6 );
 
@@ -25,7 +27,9 @@ public partial class Voter : Actor
 		var randomMessage = ElectionsManager.CleanMessage( Game.Random.FromList( InteractPhrases ), Pick, out var isAboutOpponent );
 		var speechSpeed = 30f;
 		var waitDuration = 2f;
-		SpeechUI.AddSpeech( FullName, randomMessage, speechSpeed, waitDuration, GameObject, Gender, Pitch );
+
+		if ( Connection.Local == target.Network.Owner )
+			SpeechUI.AddSpeech( FullName, randomMessage, speechSpeed, waitDuration, GameObject, Gender, Pitch );
 
 		LookingTo = target;
 		var talkDuration = randomMessage.Count() / speechSpeed;
