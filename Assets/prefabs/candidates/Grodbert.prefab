@@ -83,7 +83,7 @@
         "RandomNameOnSpawn": false,
         "RunSpeed": 240,
         "Self": {
-          "CandidateId": 5,
+          "CandidateId": 4,
           "CandidateName": "Grodbert",
           "CandidateGender": "Undefined",
           "CandidateParty": null,

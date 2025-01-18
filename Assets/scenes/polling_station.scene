@@ -56,35 +56,6 @@
             },
             {
               "CandidateId": 2,
-              "CandidateName": "Trundler",
-              "CandidateGender": "Male",
-              "CandidateParty": "Winning",
-              "CandidateSteamId": 0,
-              "CandidatePrefab": {
-                "_type": "gameobject",
-                "prefab": "prefabs/candidates/trundler.prefab"
-              },
-              "CandidatePolicies": [
-                {
-                  "Name": "Wiki Revival",
-                  "Info": "Bring the wiki up to speed with the current state of s\u0026box"
-                },
-                {
-                  "Name": "Create Tutorials",
-                  "Info": "Build and lead a team to work on tutorials fit for complete beginners"
-                },
-                {
-                  "Name": "Better Community Representation",
-                  "Info": "Add people who make cool things and have good ideas for s\u0026box"
-                },
-                {
-                  "Name": "Improve Facepunch Communication",
-                  "Info": "Ensure common community woes are documented. Prevent important news and information from Facepunch from getting lost in a random Discord channel"
-                }
-              ]
-            },
-            {
-              "CandidateId": 3,
               "CandidateName": "ducc",
               "CandidateGender": "Male",
               "CandidateParty": "Programmer",
@@ -109,7 +80,7 @@
               ]
             },
             {
-              "CandidateId": 4,
+              "CandidateId": 3,
               "CandidateName": "Kaydax",
               "CandidateGender": "Undefined",
               "CandidateParty": "Programmer",
@@ -126,7 +97,7 @@
               ]
             },
             {
-              "CandidateId": 5,
+              "CandidateId": 4,
               "CandidateName": "Grodbert",
               "CandidateGender": "Male",
               "CandidateParty": "Artist",
@@ -143,7 +114,7 @@
               ]
             },
             {
-              "CandidateId": 6,
+              "CandidateId": 5,
               "CandidateName": "ZoNiCaL",
               "CandidateGender": "Undefined",
               "CandidateParty": "Independent",
@@ -503,7 +474,7 @@
           "BodyGroups": 18446744073709551615,
           "Health": 5,
           "IsStatic": true,
-          "MaterialGroup": "bare",
+          "MaterialGroup": "default",
           "Model": "models/props/trim_sheets/storage/storage_box_01.vmdl",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -515,6 +486,134 @@
           "OnPropTakeDamage": null,
           "StartAsleep": false,
           "Tint": "1,1,1,1"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "e8fef11b-4812-4965-86ad-4c09c7853a00",
+          "Flags": 0,
+          "Name": "Slot",
+          "Position": "-0.2500799,0.2498705,8.586487",
+          "Rotation": "-0.7071068,-0.00000008940697,0.7071068,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "015d089a-e4ee-433e-8f06-62f1ef8cf870",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.05,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "\u23E4",
+                "TextColor": "0,0,0,1",
+                "FontName": "Poppins",
+                "FontSize": 128,
+                "FontWeight": 581,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": false,
+                  "Size": 6,
+                  "Color": "0.13953,0.06204,0.01038,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 0.1,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": true,
+                  "Size": 2.6000004,
+                  "Color": "0,0,0,1",
+                  "Offset": "1.76,0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "0dbf204a-8175-48f5-8c2c-b3c60686f67d",
+          "Flags": 0,
+          "Name": "VOTE",
+          "Position": "5.999963,-0.00009989738,3.461506",
+          "Rotation": "0,0,1,-0.00000004371139",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "0e5470b4-f1f0-4c8d-92db-c2ddfcd8d832",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.06,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "VOTE",
+                "TextColor": "0.91163,0.85863,0.80562,1",
+                "FontName": "Poppins",
+                "FontSize": 75.96,
+                "FontWeight": 581,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": true,
+                  "Size": 6,
+                  "Color": "0,0,0,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 0.1,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": true,
+                  "Size": 6,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                }
+              }
+            }
+          ]
         }
       ]
     }

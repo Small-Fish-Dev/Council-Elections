@@ -83,7 +83,7 @@
         "RandomNameOnSpawn": false,
         "RunSpeed": 240,
         "Self": {
-          "CandidateId": 3,
+          "CandidateId": 2,
           "CandidateName": "ducc",
           "CandidateGender": "Undefined",
           "CandidateParty": null,

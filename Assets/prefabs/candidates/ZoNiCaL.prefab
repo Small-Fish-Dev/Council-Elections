@@ -83,7 +83,7 @@
         "RandomNameOnSpawn": false,
         "RunSpeed": 240,
         "Self": {
-          "CandidateId": 6,
+          "CandidateId": 5,
           "CandidateName": "ZoNiCaL",
           "CandidateGender": "Undefined",
           "CandidateParty": null,

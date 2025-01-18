@@ -83,7 +83,7 @@
         "RandomNameOnSpawn": false,
         "RunSpeed": 240,
         "Self": {
-          "CandidateId": 4,
+          "CandidateId": 3,
           "CandidateName": "Kaydax",
           "CandidateGender": "Undefined",
           "CandidateParty": null,
