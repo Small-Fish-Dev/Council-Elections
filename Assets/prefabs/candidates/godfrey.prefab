@@ -61,7 +61,12 @@
           "component_type": "Interaction"
         },
         "InteractPhrases": [
-          "\u003Cpick\u003EHello! I\u0027m voting for \u003Cname\u003E"
+          "\u003Cpick\u003EListen Jack, you gotta vote \u003Cname\u003E 2025.",
+          "\u003Copponent\u003EI can\u0027t find my ballot box...",
+          "\u003Copponent\u003EWill you shut up, man.",
+          "\u003Copponent\u003EListen fat.",
+          "\u003Copponent\u003EIf you have a problem figuring out whether you\u0027re for me or \u003Cname\u003E, then you ain\u0027t a bozer.",
+          "\u003Cpick\u003ERegarding \u003Cpolicy.name\u003E, I think \u003Cpolicy.info\u003E!"
         ],
         "LastName": "Godfrey",
         "ModelRenderer": {
@@ -182,7 +187,8 @@
               "component_type": "President"
             }
           }
-        }
+        },
+        "SharedInteraction": true
       },
       {
         "__type": "Sandbox.NavMeshAgent",

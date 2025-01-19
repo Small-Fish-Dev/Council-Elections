@@ -778,7 +778,7 @@
           "__guid": "f04bdb6d-7a81-4c85-be82-b5f89f03e41d",
           "Flags": 0,
           "Name": "ubre",
-          "Position": "-32.22238,120.0001,27.82711",
+          "Position": "-32.22238,120,22.82713",
           "Rotation": "0,0,0.7071067,0.7071068",
           "Tags": "person",
           "Enabled": true,
@@ -848,7 +848,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 15,
+                    "Id": 17,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -1371,7 +1371,7 @@
           "__guid": "6822aac4-f05e-48a7-ac0b-f9a4fb2077c7",
           "Flags": 0,
           "Name": "godfrey",
-          "Position": "-32.22238,120.0001,27.82711",
+          "Position": "-32.22238,120,22.82713",
           "Rotation": "0,0,0.7071067,0.7071068",
           "Tags": "person",
           "Enabled": true,
@@ -1384,8 +1384,8 @@
           "__guid": "caab1d24-b24d-40cf-b4e4-659794c7250f",
           "Flags": 0,
           "Name": "storage_box",
-          "Position": "-11.30458,166.9346,63.1156",
-          "Rotation": "0,0,0.8660253,0.5000001",
+          "Position": "-16.0001,133.613,28.39565",
+          "Rotation": "-0.3826833,0.0000001043081,0.0000001490116,-0.9238795",
           "Enabled": true,
           "Components": [
             {
@@ -1441,7 +1441,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 8,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -1462,7 +1462,7 @@
               "BodyGroups": 18446744073709551615,
               "Health": 5,
               "IsStatic": true,
-              "MaterialGroup": null,
+              "MaterialGroup": "bare",
               "Model": "models/props/trim_sheets/storage/storage_box_01.vmdl",
               "OnComponentDestroy": null,
               "OnComponentDisabled": null,
