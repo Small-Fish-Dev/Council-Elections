@@ -34,8 +34,7 @@ public partial class President : Actor
 		var speechSpeed = 30f;
 		var waitDuration = 2f;
 
-		if ( !IsProxy )
-			SpeechUI.AddSpeech( FullName, randomMessage, speechSpeed, waitDuration, GameObject, Gender, Pitch );
+		SpeechUI.AddSpeech( FullName, randomMessage, speechSpeed, waitDuration, GameObject, Gender, Pitch );
 
 		LookingTo = target;
 		var talkDuration = randomMessage.Count() / speechSpeed;

@@ -24,6 +24,7 @@ public sealed class Player : Component
 	[Sync]
 	public bool HasVoted { get; set; } = false;
 	public Interaction CurrentInteraction;
+	ulong _steamId;
 
 	protected override void OnStart()
 	{
@@ -34,6 +35,8 @@ public sealed class Player : Component
 		if ( presidentCopy.CandidateId != 0 )
 			if ( presidentCopy.SceneCandidate.IsValid() )
 				presidentCopy.SceneCandidate.GameObject.Enabled = false;
+
+		_steamId = Network.Owner.SteamId;
 
 		if ( !IsProxy )
 		{
@@ -73,7 +76,7 @@ public sealed class Player : Component
 	{
 		Player.All.Remove( this );
 
-		var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == Network.Owner.SteamId );
+		var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == _steamId );
 
 		if ( presidentCopy.CandidateId != 0 )
 			if ( presidentCopy.SceneCandidate.IsValid() )

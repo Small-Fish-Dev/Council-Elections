@@ -28,8 +28,7 @@ public partial class Voter : Actor
 		var speechSpeed = 30f;
 		var waitDuration = 2f;
 
-		if ( Connection.Local == target.Network.Owner )
-			SpeechUI.AddSpeech( FullName, randomMessage, speechSpeed, waitDuration, GameObject, Gender, Pitch );
+		SpeechUI.AddSpeech( FullName, randomMessage, speechSpeed, waitDuration, GameObject, Gender, Pitch );
 
 		LookingTo = target;
 		var talkDuration = randomMessage.Count() / speechSpeed;
