@@ -1,5 +1,9 @@
-using Sandbox;
+using System;
+using System.IO;
+using System.Net.Http;
+using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Threading.Tasks;
 
 public struct ChartDataSets
 {
@@ -8,6 +12,12 @@ public struct ChartDataSets
 
 	[JsonPropertyName( "data" )]
 	public int[] Data { get; set; }
+
+	public ChartDataSets( string[] backgroundColor, int[] data )
+	{
+		BackgroundColor = backgroundColor;
+		Data = data;
+	}
 }
 
 public struct ChartData
@@ -18,6 +28,11 @@ public struct ChartData
 	[JsonPropertyName( "datasets" )]
 	public ChartDataSets[] DataSets { get; set; }
 
+	public ChartData( string[] labels, ChartDataSets[] dataSets )
+	{
+		Labels = labels;
+		DataSets = dataSets;
+	}
 }
 
 public struct ChartFont
@@ -30,6 +45,13 @@ public struct ChartFont
 
 	[JsonPropertyName( "maxSize" )]
 	public int MaxSize { get; set; }
+
+	public ChartFont( bool resizable, int minSize, int maxSize )
+	{
+		Resizable = resizable;
+		MinSize = minSize;
+		MaxSize = maxSize;
+	}
 }
 
 public struct ChartOutlabels
@@ -45,6 +67,14 @@ public struct ChartOutlabels
 
 	[JsonPropertyName( "font" )]
 	public ChartFont Font { get; set; }
+
+	public ChartOutlabels( string text, string color, int stretch, ChartFont font )
+	{
+		Text = text;
+		Color = color;
+		Stretch = stretch;
+		Font = font;
+	}
 }
 
 public struct ChartPlugins
@@ -54,12 +84,23 @@ public struct ChartPlugins
 
 	[JsonPropertyName( "outlabels" )]
 	public ChartOutlabels Outlabels { get; set; }
+
+	public ChartPlugins( bool legend, ChartOutlabels outlabels )
+	{
+		Legend = legend;
+		Outlabels = outlabels;
+	}
 }
 
 public struct ChartOptions
 {
 	[JsonPropertyName( "plugins" )]
 	public ChartPlugins Plugins { get; set; }
+
+	public ChartOptions( ChartPlugins plugins )
+	{
+		Plugins = plugins;
+	}
 }
 
 public struct Chart
@@ -68,8 +109,88 @@ public struct Chart
 	public string ChartType { get; set; }
 
 	[JsonPropertyName( "data" )]
-	public ChartData Date { get; set; }
+	public ChartData Data { get; set; }
 
 	[JsonPropertyName( "options" )]
 	public ChartOptions Options { get; set; }
+
+	public Chart( ChartEntry[] entries )
+	{
+		ChartType = "outlabeledPie";
+
+		var labels = entries.Select( e => e.Label ).ToArray();
+		var backgroundColors = entries.Select( e => e.Background.Hex ).ToArray();
+		var data = entries.Select( e => e.Amount ).ToArray();
+
+		Data = new ChartData(
+			labels,
+			new[] { new ChartDataSets( backgroundColors, data ) }
+		);
+
+		Options = new ChartOptions(
+			new ChartPlugins(
+				legend: false,
+				outlabels: new ChartOutlabels(
+					text: "%l %p",
+					color: "white",
+					stretch: 35,
+					font: new ChartFont(
+						resizable: true,
+						minSize: 12,
+						maxSize: 18
+					)
+				)
+			)
+		);
+	}
+
+	public static string CreateExampleJson()
+	{
+		var entries = new[]
+		{
+			new ChartEntry("ONE", new Color(255, 55, 132), 1),
+			new ChartEntry("TWO", new Color(54, 162, 235), 2),
+			new ChartEntry("THREE", new Color(75, 192, 192), 3),
+			new ChartEntry("FOUR", new Color(247, 120, 37), 4),
+			new ChartEntry("FIVE", new Color(153, 102, 255), 5)
+		};
+
+		var chart = new Chart( entries );
+		Log.Info( chart );
+		return JsonSerializer.Serialize( chart );
+	}
+}
+
+public struct ChartEntry
+{
+	public string Label { get; set; }
+	public Color Background { get; set; }
+	public int Amount { get; set; }
+
+	public ChartEntry( string label, Color background, int amount )
+	{
+		Label = label;
+		Background = background;
+		Amount = amount;
+	}
+}
+
+public class QuickChartApi
+{
+	public static Texture GetChartImage( string chartJson )
+	{
+		try
+		{
+			var baseUrl = "https://quickchart.io/chart";
+			var url = $"{baseUrl}?c={Uri.EscapeDataString( chartJson )}";
+			var texture = Texture.Load( url );
+
+			return texture;
+		}
+		catch ( Exception ex )
+		{
+			Log.Info( $"Error fetching chart image: {ex.Message}" );
+			return null;
+		}
+	}
 }
