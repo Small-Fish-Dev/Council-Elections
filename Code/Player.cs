@@ -104,7 +104,7 @@ public sealed class Player : Component
 	}
 
 	/// <summary>
-	/// Submit your vote through s&box stats service
+	/// Submit your vote through sbox stats service
 	/// </summary>
 	/// <param name="candidate"></param>
 	public void Vote( Candidate candidate )
