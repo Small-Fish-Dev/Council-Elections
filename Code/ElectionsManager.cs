@@ -118,6 +118,7 @@ public sealed class ElectionsManager : Component
 	{
 		var results = Sandbox.Services.Leaderboards.Get( "vote" );
 		await results.Refresh();
+		var oldResults = CurrentResults.Clone();
 		CurrentResults.Clear();
 
 		foreach ( var entry in results.Entries )
@@ -140,8 +141,13 @@ public sealed class ElectionsManager : Component
 				Log.Info( $"{candidate.CandidateName}: 0 votes." );
 		}
 
-		GenerateChart( CurrentResults );
-		Log.Info( CurrentResultsImage );
+		if ( oldResults.Count() <= CurrentResults.Count() || CurrentResults.Any( x => oldResults[x.Key] != x.Value ) )
+		{
+			GenerateChart( CurrentResults );
+			Log.Info( "Generating updated chart..." );
+		}
+		else
+			Log.Info( "No new chart to generate" );
 	}
 
 	public Color[] Colors { get; set; } = new Color[5]
@@ -153,7 +159,6 @@ public sealed class ElectionsManager : Component
 		new Color(30 / 255f, 144 / 255f, 255 / 255f)
 	};
 
-	[Sync( SyncFlags.FromHost )]
 	public Texture CurrentResultsImage { get; set; }
 
 	public void GenerateChart( Dictionary<int, int> results )
