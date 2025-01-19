@@ -61,7 +61,12 @@
           "component_type": "Interaction"
         },
         "InteractPhrases": [
-          "\u003Cpick\u003EHello! I\u0027m voting for \u003Cname\u003E"
+          "My \u0022Better Tools\u0022 policy will make sure Facepunch focuses on remaking the outdated tools sooner rather than later!",
+          "I want Facepunch to \u0022Stop Killing Features!\u0022, in the past, they\u0027ve removed many features under the guise that they can just add them later!",
+          "\u003Copponent\u003EWe have to \u0022Modernise Artflow\u0022 of S\u0026box if the platform wants to compete against all the other engines!",
+          "\u003Copponent\u003EIf you\u0027re an artists and you don\u0027t vote for me, frankly you\u0027re stupid!",
+          "A game can suceed on bad code, but a game cannot succeed on bad art! What does that tell you about our priorities?",
+          "A vote for Grodbert is a vote for Soft body physics."
         ],
         "LastName": "Grodbert",
         "ModelRenderer": {
@@ -184,7 +189,8 @@
               "component_type": "President"
             }
           }
-        }
+        },
+        "SharedInteraction": true
       },
       {
         "__type": "Sandbox.NavMeshAgent",

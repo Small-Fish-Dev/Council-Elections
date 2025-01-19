@@ -126,16 +126,16 @@
               },
               "CandidatePolicies": [
                 {
-                  "Name": "Artist Issues",
-                  "Info": "Prioritize artist tools and workflow issues"
+                  "Name": "Better Tools",
+                  "Info": "More focus on remaking the engine tools"
                 },
                 {
-                  "Name": "More Documentation",
-                  "Info": "Document as much of Source 2 as possible, especially tools"
+                  "Name": "Stop Killing Features",
+                  "Info": "Don\u0027t remove features before they have a better replacement"
                 },
                 {
-                  "Name": "Release Roadmap",
-                  "Info": "Make Facepunch\u0027s s\u0026box Roadmap public for everyone to see"
+                  "Name": "Modernise Artflow",
+                  "Info": "Support for industry standard formats and features."
                 }
               ]
             }
@@ -842,7 +842,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 7,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -1173,7 +1173,7 @@
             {
               "__guid": "4abd08e8-b8b9-4ef1-a4b6-9a925c20593c",
               "Flags": 0,
-              "Name": "1. Artist Issues",
+              "Name": "1. Better Tools",
               "Position": "0,21.62503,28.99997",
               "Rotation": "0,0,-0.7071067,0.7071068",
               "Enabled": true,
@@ -1198,7 +1198,7 @@
                   "Scale": 0.12,
                   "TextAlignment": "Center",
                   "TextScope": {
-                    "Text": "1. Artist Issues",
+                    "Text": "1. Better Tools",
                     "TextColor": "0.91163,0.85863,0.80562,1",
                     "FontName": "Poppins",
                     "FontSize": 45,
@@ -1236,7 +1236,7 @@
             {
               "__guid": "9bcb45a9-d139-41d3-ab00-7ddc692dd367",
               "Flags": 0,
-              "Name": "2. More Documentation",
+              "Name": "2. Stop Killing Features",
               "Position": "-0.125,21.62506,19.87497",
               "Rotation": "0,-0,-0.7071068,0.7071068",
               "Enabled": true,
@@ -1261,7 +1261,7 @@
                   "Scale": 0.12,
                   "TextAlignment": "Center",
                   "TextScope": {
-                    "Text": "2. More Documentation",
+                    "Text": "2. Stop Killing Features",
                     "TextColor": "0.91163,0.85863,0.80562,1",
                     "FontName": "Poppins",
                     "FontSize": 45,
@@ -1299,7 +1299,7 @@
             {
               "__guid": "e5488eab-0058-425a-a50f-cabde5b5fdea",
               "Flags": 0,
-              "Name": "3. Release Roadmap",
+              "Name": "3. Modernise Artflow",
               "Position": "-0.3750153,22.75003,11.12497",
               "Rotation": "0.0000000006585444,0.0000000006585446,-0.7071067,0.7071068",
               "Enabled": true,
@@ -1324,7 +1324,7 @@
                   "Scale": 0.12,
                   "TextAlignment": "Center",
                   "TextScope": {
-                    "Text": "3. Release Roadmap",
+                    "Text": "3. Modernise Artflow",
                     "TextColor": "0.91163,0.85863,0.80562,1",
                     "FontName": "Poppins",
                     "FontSize": 45,
@@ -1435,7 +1435,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 7,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -2028,7 +2028,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 7,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -2621,7 +2621,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 7,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -3214,7 +3214,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 7,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
