@@ -6,6 +6,8 @@ public sealed class ElectionsManager : Component
 {
 	[Property]
 	public List<Candidate> Candidates { get; set; } = new();
+	public Dictionary<int, int> CurrentResults { get; set; } = new();
+	private TimeUntil _nextRefresh;
 
 	public static ElectionsManager Instance { get; private set; }
 
@@ -14,8 +16,13 @@ public sealed class ElectionsManager : Component
 		Instance = this;
 	}
 
-	protected override void OnStart()
+	protected override void OnFixedUpdate()
 	{
+		if ( _nextRefresh )
+		{
+			QueryResults();
+			_nextRefresh = 60f; // 1 minute
+		}
 	}
 
 	/// <summary>
@@ -103,6 +110,33 @@ public sealed class ElectionsManager : Component
 			var capitalKeyword = char.ToUpper( keyword[0] ) + keyword.Substring( 1 );
 			var capitalPronoun = char.ToUpper( replacement[0] ) + replacement.Substring( 1 );
 			message = message.Replace( capitalKeyword, capitalPronoun );
+		}
+	}
+
+	public async void QueryResults()
+	{
+		var results = Sandbox.Services.Leaderboards.Get( "vote" );
+		await results.Refresh();
+		CurrentResults.Clear();
+
+		foreach ( var entry in results.Entries )
+		{
+			var candidate = (int)entry.Value;
+
+			if ( CurrentResults.ContainsKey( candidate ) )
+				CurrentResults[candidate]++;
+			else
+				CurrentResults[candidate] = 1;
+		}
+
+		Log.Info( "Results updated." );
+
+		foreach ( var candidate in Candidates )
+		{
+			if ( CurrentResults.TryGetValue( candidate.CandidateId, out var votes ) )
+				Log.Info( $"{candidate.CandidateName}: {votes} votes." );
+			else
+				Log.Info( $"{candidate.CandidateName}: 0 votes." );
 		}
 	}
 
