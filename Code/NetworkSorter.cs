@@ -51,7 +51,7 @@ public sealed class NetworkSorter : Component
 				}
 			}
 
-			await Task.DelaySeconds( 1f );
+			await Task.DelaySeconds( 2f );
 
 			Log.Info( "Could not join, trying newest lobby again..." );
 
@@ -62,7 +62,7 @@ public sealed class NetworkSorter : Component
 
 			Networking.Connect( newNewestLobby.LobbyId );
 
-			await Task.DelaySeconds( 1f );
+			await Task.DelaySeconds( 2f );
 
 			Log.Info( "No valid lobbies found still, creating lobby..." );
 			CreateAndLoad();
@@ -88,6 +88,9 @@ public sealed class NetworkSorter : Component
 			Hidden = false
 		} );
 
-		Scene.Load( SceneFile );
+		if ( Scene.IsValid() && SceneFile.IsValid() )
+			Scene.Load( SceneFile );
+		else
+			Game.Close(); // Give up lil bro
 	}
 }
