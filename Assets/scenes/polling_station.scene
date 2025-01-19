@@ -50,7 +50,7 @@
               "CandidateName": "ubre",
               "CandidateGender": "Male",
               "CandidateParty": "Programmer",
-              "CandidateSteamId": 0,
+              "CandidateSteamId": 76561198049395102,
               "SceneCandidate": {
                 "_type": "component",
                 "component_id": "e6122fae-c78d-4c82-a4b6-9d4a6a469089",
@@ -108,7 +108,7 @@
               "CandidateName": "Kaydax",
               "CandidateGender": "Undefined",
               "CandidateParty": "Programmer",
-              "CandidateSteamId": 0,
+              "CandidateSteamId": 76561198031345517,
               "SceneCandidate": {
                 "_type": "component",
                 "component_id": "f9046be3-9643-435e-a549-b39a1780a251",
@@ -127,7 +127,7 @@
               "CandidateName": "Grodbert",
               "CandidateGender": "Male",
               "CandidateParty": "Artist",
-              "CandidateSteamId": 0,
+              "CandidateSteamId": 76561198049083824,
               "SceneCandidate": {
                 "_type": "component",
                 "component_id": "95c6a657-8511-47ff-9e36-caff076665e8",
@@ -861,7 +861,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 13,
+                    "Id": 15,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -1454,7 +1454,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 13,
+                    "Id": 15,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -2047,7 +2047,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 13,
+                    "Id": 15,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -2640,7 +2640,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 13,
+                    "Id": 15,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -3233,7 +3233,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 13,
+                    "Id": 15,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
