@@ -81,7 +81,7 @@
               "CandidateName": "ducc",
               "CandidateGender": "Male",
               "CandidateParty": "Programmer",
-              "CandidateSteamId": 0,
+              "CandidateSteamId": 76561198000586141,
               "SceneCandidate": {
                 "_type": "component",
                 "component_id": "f625cdd1-bab7-452d-9a3a-5c1bafaa79a5",
@@ -861,7 +861,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 15,
+                    "Id": 17,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -1454,7 +1454,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 15,
+                    "Id": 17,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -2047,7 +2047,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 15,
+                    "Id": 17,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -2640,7 +2640,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 15,
+                    "Id": 17,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -3233,7 +3233,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 15,
+                    "Id": 17,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",

@@ -29,6 +29,12 @@ public sealed class Player : Component
 	{
 		Player.All.Add( this );
 
+		var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == Network.Owner.SteamId );
+
+		if ( presidentCopy.CandidateId != 0 )
+			if ( presidentCopy.SceneCandidate.IsValid() )
+				presidentCopy.SceneCandidate.GameObject.Enabled = false;
+
 		if ( !IsProxy )
 		{
 			Player.Local = this;
@@ -66,6 +72,12 @@ public sealed class Player : Component
 	protected override void OnDestroy()
 	{
 		Player.All.Remove( this );
+
+		var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == Network.Owner.SteamId );
+
+		if ( presidentCopy.CandidateId != 0 )
+			if ( presidentCopy.SceneCandidate.IsValid() )
+				presidentCopy.SceneCandidate.GameObject.Enabled = true;
 	}
 
 	protected override void OnFixedUpdate()
