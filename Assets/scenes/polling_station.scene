@@ -209,16 +209,6 @@
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null
-        },
-        {
-          "__type": "Sandbox.ChartUI",
-          "__guid": "7c780260-87af-498c-9b13-384dc3be6192",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
         }
       ]
     },
@@ -850,7 +840,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 4,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -1443,7 +1433,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 4,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -2036,7 +2026,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 4,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -2629,7 +2619,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 4,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -3222,7 +3212,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 4,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -3385,6 +3375,49 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "__guid": "cd9bb4a3-aa74-4c97-98cf-97cf54ef63c8",
+      "Flags": 0,
+      "Name": "Results",
+      "Position": "396,12.00004,192",
+      "Rotation": "0,0,1,-0.00000004371139",
+      "Scale": "10,10,10",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.WorldPanel",
+          "__guid": "0e9cfb74-f035-44cc-8cf0-b89c792b7fbe",
+          "HorizontalAlign": "Center",
+          "InteractionRange": 1000,
+          "LookAtCamera": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "PanelSize": "512,512",
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderScale": 1,
+          "VerticalAlign": "Center"
+        },
+        {
+          "__type": "Sandbox.ChartUI",
+          "__guid": "e49371a8-49bd-47e1-824f-3d0f29d5d5c2",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
         }
       ]
     }
