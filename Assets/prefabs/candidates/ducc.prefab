@@ -61,7 +61,14 @@
           "component_type": "Interaction"
         },
         "InteractPhrases": [
-          "\u003Cpick\u003EHello! I\u0027m voting for \u003Cname\u003E"
+          "\u003Cpick\u003ELove is love!",
+          "\u003Cpick\u003ETrans rights!",
+          "\u003Copponent\u003EBillionaires should be taxed out of existence.",
+          "\u003Copponent\u003EHealthcare and housing are human rights.",
+          "\u003Copponent\u003ECapitalism has stolen from you.",
+          "\u003Cpick\u003E\u003Cpolicy.info\u003E.",
+          "\u003Cpick\u003EYou are more valuable than your boss\u0027s boss.",
+          "\u003Cpick\u003EWorking class solidarity is necessary for survival."
         ],
         "LastName": "ducc",
         "ModelRenderer": {
@@ -182,7 +189,8 @@
               "component_type": "President"
             }
           }
-        }
+        },
+        "SharedInteraction": true
       },
       {
         "__type": "Sandbox.NavMeshAgent",

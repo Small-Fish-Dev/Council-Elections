@@ -87,7 +87,7 @@
                 },
                 {
                   "Name": "Avatar Focus",
-                  "Info": "o facilitate the porting and development of fursona models, priority will be given to any feature requests relevant to animation retargeting, skinned mesh authoring, VR tracking, and shaders"
+                  "Info": "To facilitate the porting and development of fursona models, priority will be given to any feature requests relevant to animation retargeting, skinned mesh authoring, VR tracking, and shaders"
                 },
                 {
                   "Name": "Be Nice",
@@ -848,7 +848,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 17,
+                    "Id": 27,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -958,6 +958,599 @@
                 {
                   "__type": "Sandbox.TextRenderer",
                   "__guid": "0e5470b4-f1f0-4c8d-92db-c2ddfcd8d832",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.06,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "VOTE",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 75.96,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 6,
+                      "Color": "0,0,0,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 6,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "47f013e0-3555-4327-b850-541afb6bc6ef",
+      "Flags": 0,
+      "Name": "ducc\u0027s stall",
+      "Position": "543.9999,-168.0001,-22.82713",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "7f917ada-4e1e-4269-8098-7fb1b2634cf6",
+          "Flags": 0,
+          "Name": "stallfinal",
+          "Position": "-32.22238,159.1449,22.82714",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "e443b849-6e20-4aa4-acfd-a6b3d4e398dd",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/backupstall/stallfinal.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "ea2329c3-dcfe-405b-81f8-4d6feb5b1023",
+              "Flags": 0,
+              "Name": "ducc",
+              "Position": "0,20.12501,108",
+              "Rotation": "0,0,-0.7071067,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "3ae0721b-1bfa-4910-b8d4-8bdd8f30031b",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.1,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "ducc",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 128,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 6,
+                      "Color": "0,0,0,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 6,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "c62e09d5-b24c-43c4-a71b-ee67d84ff300",
+              "Flags": 0,
+              "Name": "Programmer Party",
+              "Position": "0,20.12501,97.99997",
+              "Rotation": "0,0,-0.7071067,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "ff84df88-6c20-4175-8365-334671dcde6a",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.08,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "Programmer Party",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 68.38,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 6,
+                      "Color": "0,0,0,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 12,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,12"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "c7b35726-18d8-46f3-9428-114afceef9b0",
+              "Flags": 0,
+              "Name": "1. Stack the Council",
+              "Position": "0,21.62503,28.99997",
+              "Rotation": "0,0,-0.7071067,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "ab41da36-ee87-4d70-a25d-254eb30e796b",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.12,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "1. Stack the Council",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 45,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 4,
+                      "Color": "0.10233,0.04788,0.00333,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 12,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,12"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "203c795e-ca00-4dea-a20b-bf50b7b01e79",
+              "Flags": 0,
+              "Name": "2. Avatar Focus",
+              "Position": "-0.125,21.62506,19.87497",
+              "Rotation": "0,-0,-0.7071068,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "0edcabcf-68dc-4707-a8fd-ff682ae1da9d",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.12,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "2. Avatar Focus",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 45,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 4,
+                      "Color": "0.10233,0.04788,0.00333,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 12,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,12"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "adadedb7-3fcb-4c7c-a216-c4ef9095afad",
+              "Flags": 0,
+              "Name": "3. Be Nice",
+              "Position": "-0.3750153,22.75003,11.12497",
+              "Rotation": "0.0000000006585444,0.0000000006585446,-0.7071067,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "d4446d4c-4a3e-43e3-b550-e8d10423a1e3",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.12,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "3. Be Nice",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 45,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 4,
+                      "Color": "0.10233,0.04788,0.00333,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 12,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,12"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "df20f969-0a1b-4bbb-bfc8-98b3e40e6de0",
+          "Flags": 0,
+          "Name": "ducc",
+          "Position": "-32.22238,120,22.82713",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Tags": "person",
+          "Enabled": true,
+          "NetworkMode": 1,
+          "NetworkOrphaned": 1,
+          "__Prefab": "prefabs/candidates/ducc.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "9e20eb5f-bb24-4378-bacc-8a20a87aea6b",
+          "Flags": 0,
+          "Name": "storage_box",
+          "Position": "-11.30458,166.9346,63.1156",
+          "Rotation": "0,0,0.8660253,0.5000001",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Interaction",
+              "__guid": "75a51cca-25ea-4917-99c2-682c90760e11",
+              "InteractionCooldown": 999,
+              "InteractionDescription": "Vote for ducc!",
+              "InteractionName": "ducc\u0027s Ballot Box",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "PlayerAction": {
+                "__version": 9,
+                "__guid": "f003bf6f-f1f7-48cf-9d1a-75925656612f",
+                "__changeId": 8,
+                "UserData": {
+                  "Title": "Player Action",
+                  "ReferencedComponentTypes": []
+                },
+                "Variables": [],
+                "Nodes": [
+                  {
+                    "Id": 0,
+                    "Type": "input"
+                  },
+                  {
+                    "Id": 1,
+                    "Type": "call",
+                    "Properties": {
+                      "_isStatic": false,
+                      "_name": "Vote",
+                      "_type": "Player"
+                    },
+                    "UserData": {
+                      "Position": "240,0"
+                    }
+                  }
+                ],
+                "Links": [
+                  {
+                    "SrcId": 0,
+                    "SrcName": "_signal",
+                    "DstId": 1,
+                    "DstName": "_signal"
+                  },
+                  {
+                    "SrcId": 0,
+                    "SrcName": "obj",
+                    "DstId": 1,
+                    "DstName": "_target"
+                  },
+                  {
+                    "Id": 10,
+                    "Value": {
+                      "CandidateId": 2,
+                      "CandidateName": "ducc",
+                      "CandidateGender": "Undefined",
+                      "CandidateSteamId": 0,
+                      "CandidatePolicies": []
+                    },
+                    "DstId": 1,
+                    "DstName": "candidate"
+                  }
+                ]
+              },
+              "SharedInteraction": false
+            },
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "949dcc19-8afb-4dec-9d15-6fd1b596d161",
+              "BodyGroups": 18446744073709551615,
+              "Health": 5,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/props/trim_sheets/storage/storage_box_01.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "2ccc752f-28d1-4928-ac26-66fd16256f33",
+              "Flags": 0,
+              "Name": "Slot",
+              "Position": "-0.2500799,0.2498705,8.586487",
+              "Rotation": "-0.7071068,-0.00000008940697,0.7071068,0",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "1350fc18-5f33-4b77-aa45-36c21d64976d",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.05,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "\u23E4",
+                    "TextColor": "0,0,0,1",
+                    "FontName": "Poppins",
+                    "FontSize": 128,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": false,
+                      "Size": 6,
+                      "Color": "0.13953,0.06204,0.01038,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": true,
+                      "Size": 2.6000004,
+                      "Color": "0,0,0,1",
+                      "Offset": "1.76,0"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "84386e28-29bb-441f-90ea-8c6c603b939c",
+              "Flags": 0,
+              "Name": "VOTE",
+              "Position": "5.999963,-0.00009989738,3.586506",
+              "Rotation": "0,0,1,-0.00000004371139",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "ef833201-79e3-4950-a492-50546b02060f",
                   "__version": 1,
                   "BlendMode": "Normal",
                   "OnComponentDestroy": null,
@@ -1441,7 +2034,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 8,
+                    "Id": 18,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
