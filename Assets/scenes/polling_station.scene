@@ -7,6 +7,8 @@
       "Name": "Manager",
       "Position": "300,0,0",
       "Enabled": true,
+      "NetworkMode": 1,
+      "NetworkOrphaned": 1,
       "Components": [
         {
           "__type": "Sandbox.ElectionsManager",
@@ -840,7 +842,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 5,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -1433,7 +1435,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 5,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -2026,7 +2028,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 5,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -2619,7 +2621,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 5,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -3212,7 +3214,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 5,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -3382,8 +3384,8 @@
       "__guid": "cd9bb4a3-aa74-4c97-98cf-97cf54ef63c8",
       "Flags": 0,
       "Name": "Results",
-      "Position": "396,12.00004,192",
-      "Rotation": "0,0,1,-0.00000004371139",
+      "Position": "-111,215.25,127.5",
+      "Rotation": "0,0,0.7071068,-0.7071068",
       "Scale": "10,10,10",
       "Enabled": true,
       "Components": [
@@ -3406,7 +3408,7 @@
             "BloomLayer": false,
             "AfterUILayer": false
           },
-          "RenderScale": 1,
+          "RenderScale": 0.5,
           "VerticalAlign": "Center"
         },
         {
@@ -3418,6 +3420,36 @@
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null
+        }
+      ]
+    },
+    {
+      "__guid": "0cc224b8-a06d-4833-b715-774ac3df3ffd",
+      "Flags": 0,
+      "Name": "sign_billboard",
+      "Position": "-112,220,0.0000001173318",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Scale": "2,3,1.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "3157ae98-eef7-4936-9609-6e38089b7edd",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/sign_billboard/sign_billboard.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
         }
       ]
     }
@@ -3451,6 +3483,7 @@
   "__references": [
     "ekansh.woodstall#66606",
     "facepunch.storage_box_01#43562",
+    "fdd.sign_billboard#35335",
     "fpopium.foldabletable_a#55032"
   ],
   "__version": 2
