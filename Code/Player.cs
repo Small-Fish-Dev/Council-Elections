@@ -51,9 +51,13 @@ public sealed class Player : Component
 					if ( !voteInteraction.SharedInteraction )
 						voteInteraction.NextInteraction = 0f;
 			}
-		}
 
-		ApplyClothing();
+			var json = ClothingContainer
+				.CreateFromLocalUser()
+				.Serialize();
+
+			BroadcastClothing( json );
+		}
 
 		if ( IsProxy && Camera.IsValid() )
 			Camera.DestroyGameObject();
@@ -92,14 +96,13 @@ public sealed class Player : Component
 				CurrentInteraction.Interact( this );
 	}
 
-	internal void ApplyClothing()
+	[Rpc.Broadcast]
+	public void BroadcastClothing( string clothing )
 	{
-		if ( Network.Owner == null )
-			return;
 		if ( !SkinnedModelRenderer.IsValid() )
 			return;
 
-		var container = ClothingContainer.CreateFromLocalUser();
+		var container = ClothingContainer.CreateFromJson( clothing );
 		container.Apply( SkinnedModelRenderer );
 	}
 
