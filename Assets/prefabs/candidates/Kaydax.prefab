@@ -61,7 +61,7 @@
           "component_type": "Interaction"
         },
         "InteractPhrases": [
-          "\u003Cpick\u003EHello! I\u0027m voting for \u003Cname\u003E"
+          "Linux!"
         ],
         "LastName": "Kaydax",
         "ModelRenderer": {
@@ -182,7 +182,8 @@
               "component_type": "President"
             }
           }
-        }
+        },
+        "SharedInteraction": true
       },
       {
         "__type": "Sandbox.NavMeshAgent",

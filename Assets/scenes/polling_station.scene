@@ -848,7 +848,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 27,
+                    "Id": 35,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -1441,7 +1441,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 10,
+                    "Id": 18,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -1551,6 +1551,599 @@
                 {
                   "__type": "Sandbox.TextRenderer",
                   "__guid": "ef833201-79e3-4950-a492-50546b02060f",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.06,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "VOTE",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 75.96,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 6,
+                      "Color": "0,0,0,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 6,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "0f70d7d0-eb80-4f53-864c-74f026373542",
+      "Flags": 0,
+      "Name": "Kaydax\u0027s stall",
+      "Position": "543.9999,-296.0001,-22.82713",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "4cafbec6-ea9c-4137-a79a-51a30fa6d5d8",
+          "Flags": 0,
+          "Name": "stallfinal",
+          "Position": "-32.22238,159.1449,22.82714",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "62212bd9-4d82-469a-8a62-b4e3fa04a496",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/backupstall/stallfinal.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "4ec49216-1605-4107-9f62-edc499a4e1ba",
+              "Flags": 0,
+              "Name": "Kaydax",
+              "Position": "0,20.12501,108",
+              "Rotation": "0,0,-0.7071067,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "e6c42334-f3f8-4e5e-8de7-a56cc2877eba",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.1,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "Kaydax",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 128,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 6,
+                      "Color": "0,0,0,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 6,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "79b16f68-301e-4977-9d00-1e946c82b0c8",
+              "Flags": 0,
+              "Name": "Programmer Party",
+              "Position": "0,20.12501,97.99997",
+              "Rotation": "0,0,-0.7071067,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "9cdc338c-3e24-4ae4-8a46-c43304a45be4",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.08,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "Programmer Party",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 68.38,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 6,
+                      "Color": "0,0,0,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 12,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,12"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "b90a2c28-d589-4665-a0b1-c8c3ff93bb99",
+              "Flags": 0,
+              "Name": "1. Linux",
+              "Position": "0,21.62503,28.99997",
+              "Rotation": "0,0,-0.7071067,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "46cd40a6-db39-4d7e-9af8-d28b4984a9d5",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.12,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "1. Linux",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 45,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 4,
+                      "Color": "0.10233,0.04788,0.00333,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 12,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,12"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "cc28250f-f83a-46c5-a830-9644e8e34900",
+              "Flags": 0,
+              "Name": "2. Linux",
+              "Position": "-0.125,21.62506,19.87497",
+              "Rotation": "0,-0,-0.7071068,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "1f77d218-4714-4f5b-a96e-fc904812a84d",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.12,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "2. Linux",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 45,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 4,
+                      "Color": "0.10233,0.04788,0.00333,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 12,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,12"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "668e618d-b451-447d-b549-719eaf885c35",
+              "Flags": 0,
+              "Name": "3. Linux",
+              "Position": "-0.3750153,22.75003,11.12497",
+              "Rotation": "0.0000000006585444,0.0000000006585446,-0.7071067,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "a620fbce-2063-41c4-9196-997b9347b017",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.12,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "3. Linux",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 45,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 4,
+                      "Color": "0.10233,0.04788,0.00333,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 12,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,12"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "64bad74c-979c-419d-82ab-a408705d61f5",
+          "Flags": 0,
+          "Name": "Kaydax",
+          "Position": "-32.22238,120,22.82713",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Tags": "person",
+          "Enabled": true,
+          "NetworkMode": 1,
+          "NetworkOrphaned": 1,
+          "__Prefab": "prefabs/candidates/kaydax.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "82f93692-c031-4df7-9f22-dc356e5f4e47",
+          "Flags": 0,
+          "Name": "storage_box",
+          "Position": "-11.30458,166.9346,63.1156",
+          "Rotation": "0,0,0.8660253,0.5000001",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Interaction",
+              "__guid": "8b2fbe57-4df4-4831-b415-c9eebd924f1a",
+              "InteractionCooldown": 999,
+              "InteractionDescription": "Vote for Kaydax!",
+              "InteractionName": "Kaydax\u0027s Ballot Box",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "PlayerAction": {
+                "__version": 9,
+                "__guid": "62b7d0fd-48e9-4df8-9cd2-83e6aec7fe34",
+                "__changeId": 9,
+                "UserData": {
+                  "Title": "Player Action",
+                  "ReferencedComponentTypes": []
+                },
+                "Variables": [],
+                "Nodes": [
+                  {
+                    "Id": 0,
+                    "Type": "input"
+                  },
+                  {
+                    "Id": 1,
+                    "Type": "call",
+                    "Properties": {
+                      "_isStatic": false,
+                      "_name": "Vote",
+                      "_type": "Player"
+                    },
+                    "UserData": {
+                      "Position": "240,0"
+                    }
+                  }
+                ],
+                "Links": [
+                  {
+                    "SrcId": 0,
+                    "SrcName": "_signal",
+                    "DstId": 1,
+                    "DstName": "_signal"
+                  },
+                  {
+                    "SrcId": 0,
+                    "SrcName": "obj",
+                    "DstId": 1,
+                    "DstName": "_target"
+                  },
+                  {
+                    "Id": 8,
+                    "Value": {
+                      "CandidateId": 3,
+                      "CandidateName": "Kaydax",
+                      "CandidateGender": "Undefined",
+                      "CandidateSteamId": 0,
+                      "CandidatePolicies": []
+                    },
+                    "DstId": 1,
+                    "DstName": "candidate"
+                  }
+                ]
+              },
+              "SharedInteraction": false
+            },
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "d0453c4e-1b49-4179-9d72-9347bb2a015a",
+              "BodyGroups": 18446744073709551615,
+              "Health": 5,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/props/trim_sheets/storage/storage_box_01.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "8b5a4d4f-b5d8-42ef-9bea-694451f71755",
+              "Flags": 0,
+              "Name": "Slot",
+              "Position": "-0.2500799,0.2498705,8.586487",
+              "Rotation": "-0.7071068,-0.00000008940697,0.7071068,0",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "505baced-76fb-46cc-a6e6-9866c6483575",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.05,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "\u23E4",
+                    "TextColor": "0,0,0,1",
+                    "FontName": "Poppins",
+                    "FontSize": 128,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": false,
+                      "Size": 6,
+                      "Color": "0.13953,0.06204,0.01038,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": true,
+                      "Size": 2.6000004,
+                      "Color": "0,0,0,1",
+                      "Offset": "1.76,0"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "3adc65c0-8968-471d-ae8d-b05654ba5e71",
+              "Flags": 0,
+              "Name": "VOTE",
+              "Position": "5.999963,-0.00009989738,3.586506",
+              "Rotation": "0,0,1,-0.00000004371139",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "6193a177-ce37-4ea7-8a0d-7c5fb7e30dbe",
                   "__version": 1,
                   "BlendMode": "Normal",
                   "OnComponentDestroy": null,
@@ -2034,7 +2627,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 18,
+                    "Id": 26,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
