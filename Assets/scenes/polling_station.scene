@@ -138,6 +138,15 @@
                   "Info": "Support for industry standard formats and features."
                 }
               ]
+            },
+            {
+              "CandidateId": 5,
+              "CandidateName": "Josh Wilson",
+              "CandidateGender": "Male",
+              "CandidateParty": "Independent",
+              "CandidateSteamId": 0,
+              "CandidatePrefab": null,
+              "CandidatePolicies": []
             }
           ],
           "OnComponentDestroy": null,
@@ -842,7 +851,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 7,
+                    "Id": 11,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -1435,7 +1444,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 7,
+                    "Id": 11,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -2028,7 +2037,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 7,
+                    "Id": 11,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -2621,7 +2630,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 7,
+                    "Id": 11,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -3214,7 +3223,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 7,
+                    "Id": 11,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -3416,7 +3425,7 @@
           "Name": "Results",
           "Position": "2.374962,-0.00001549721,91.25",
           "Rotation": "0,0,0.00000008940697,-1",
-          "Scale": "5,3,6",
+          "Scale": "4.166667,2.5,5",
           "Enabled": true,
           "Components": [
             {
@@ -3514,10 +3523,10 @@
                   "Color": "0,1,0,1"
                 },
                 "ShadowUnder": {
-                  "Enabled": false,
-                  "Size": 6,
+                  "Enabled": true,
+                  "Size": 4,
                   "Color": "0,0,0,1",
-                  "Offset": "0,8"
+                  "Offset": "0,4"
                 }
               }
             }
