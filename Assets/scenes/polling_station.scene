@@ -163,8 +163,38 @@
           "OnComponentUpdate": null
         },
         {
+          "__type": "Sandbox.NetworkHelper",
+          "__guid": "f8d64ceb-f7a9-4bc6-86e3-d89c2f8697ae",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "PlayerPrefab": {
+            "_type": "gameobject",
+            "prefab": "prefabs/player.prefab"
+          },
+          "SpawnPoints": [
+            {
+              "_type": "gameobject",
+              "go": "c1bd63be-b4a0-41d3-a684-1d4d385bd205"
+            }
+          ],
+          "StartServer": true
+        }
+      ]
+    },
+    {
+      "__guid": "4b13637b-667d-469d-9b5c-bc975f53483d",
+      "Flags": 0,
+      "Name": "UI",
+      "Position": "-239.3343,-23.30157,0.001422882",
+      "Enabled": true,
+      "Components": [
+        {
           "__type": "Sandbox.ScreenPanel",
-          "__guid": "6a40dd3b-a4a0-4968-b53d-e240109ef8a8",
+          "__guid": "dfca3a35-a6a8-4d64-8101-20cd32d850be",
           "AutoScreenScale": true,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -179,7 +209,7 @@
         },
         {
           "__type": "Sandbox.InteractionUI",
-          "__guid": "6e38e839-24d7-4e60-97ce-bee804cfca8f",
+          "__guid": "997622dc-70fa-4ce8-a5c0-325c87575857",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -189,7 +219,7 @@
         },
         {
           "__type": "Sandbox.SpeechUI",
-          "__guid": "f87447f8-2d96-4a38-8ffb-6f1b5a0b734a",
+          "__guid": "326f380f-85f6-48c0-a542-92e23809af26",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -362,35 +392,6 @@
           "Static": true,
           "Surface": null,
           "SurfaceVelocity": "0,0,0"
-        }
-      ]
-    },
-    {
-      "__guid": "24bbf5c0-3477-4431-80bf-9f0b9356ecde",
-      "Flags": 0,
-      "Name": "Manager",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.NetworkHelper",
-          "__guid": "2f8c0c32-1ab6-4ebe-9e35-010ad1c01d27",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "PlayerPrefab": {
-            "_type": "gameobject",
-            "prefab": "prefabs/player.prefab"
-          },
-          "SpawnPoints": [
-            {
-              "_type": "gameobject",
-              "go": "c1bd63be-b4a0-41d3-a684-1d4d385bd205"
-            }
-          ],
-          "StartServer": true
         }
       ]
     },
@@ -856,7 +857,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 47,
+                    "Id": 49,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -1449,7 +1450,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 12,
+                    "Id": 14,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -2042,7 +2043,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 30,
+                    "Id": 32,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -2635,7 +2636,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 20,
+                    "Id": 22,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -3228,7 +3229,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 38,
+                    "Id": 40,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
