@@ -105,4 +105,15 @@ public sealed class ElectionsManager : Component
 			message = message.Replace( capitalKeyword, capitalPronoun );
 		}
 	}
+
+	[ConCmd( "reset_cooldowns" )]
+	public static void ResetCooldowns()
+	{
+		if ( Connection.Local != Connection.Host ) return;
+
+		foreach ( var interaction in Game.ActiveScene.GetAllComponents<Interaction>() )
+			interaction.NextInteraction = 0f;
+
+		Log.Info( "All cooldowns have been reset" );
+	}
 }
