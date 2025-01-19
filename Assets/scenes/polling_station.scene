@@ -857,7 +857,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 49,
+                    "Id": 5,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -1401,8 +1401,8 @@
               "__type": "Interaction",
               "__guid": "fd92d030-adda-468e-afbe-8832ae3b927f",
               "InteractionCooldown": 999,
-              "InteractionDescription": "Vote for ubre!",
-              "InteractionName": "ubre\u0027s Ballot Box",
+              "InteractionDescription": "Vote for Grodbert!",
+              "InteractionName": "Grodbert\u0027s Ballot Box",
               "OnComponentDestroy": null,
               "OnComponentDisabled": null,
               "OnComponentEnabled": null,
@@ -1450,7 +1450,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 14,
+                    "Id": 5,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -2043,7 +2043,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 32,
+                    "Id": 5,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -2636,7 +2636,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 22,
+                    "Id": 5,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -3229,7 +3229,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 40,
+                    "Id": 5,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
