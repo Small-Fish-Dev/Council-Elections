@@ -41,12 +41,12 @@ public sealed class ElectionsManager : Component
 		isAboutOpponent = false;
 		if ( string.IsNullOrWhiteSpace( message ) ) return message; // Don't bother..
 
-		Candidate target = pick;
+		Candidate target = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateId == pick.CandidateId );
 
 		if ( message.Contains( "<pick>", StringComparison.OrdinalIgnoreCase ) )
 		{
 			message = message.Replace( "<pick>", "", StringComparison.OrdinalIgnoreCase );
-			target = pick;
+			target = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateId == pick.CandidateId );
 			isAboutOpponent = false;
 		}
 
