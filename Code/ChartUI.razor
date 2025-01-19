@@ -9,7 +9,15 @@
 
 @code
 {
+    [Property]
+    public TextRenderer Text { get; set; }
     public Texture ChartImage => ElectionsManager.Instance?.CurrentResultsImage;
+
+    protected override void OnFixedUpdate()
+    {
+        if (Text.IsValid())
+            Text.Text = $"Updates in: {(int)ElectionsManager.Instance.NextResults.Relative}s";
+    }
 
     protected override int BuildHash() => System.HashCode.Combine(ChartImage);
 }

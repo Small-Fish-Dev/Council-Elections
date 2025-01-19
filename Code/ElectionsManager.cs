@@ -8,7 +8,9 @@ public sealed class ElectionsManager : Component
 	[Property]
 	public List<Candidate> Candidates { get; set; } = new();
 	public Dictionary<int, int> CurrentResults { get; set; } = new();
-	private TimeUntil _nextRefresh;
+
+	[Sync( SyncFlags.FromHost )]
+	public TimeUntil NextResults { get; set; } = 60f;
 
 	public static ElectionsManager Instance { get; private set; }
 
@@ -17,12 +19,17 @@ public sealed class ElectionsManager : Component
 		Instance = this;
 	}
 
+	protected override void OnStart()
+	{
+		QueryResults();
+	}
+
 	protected override void OnFixedUpdate()
 	{
-		if ( _nextRefresh )
+		if ( NextResults )
 		{
 			QueryResults();
-			_nextRefresh = 60f; // 1 minute
+			NextResults = 60f; // 1 minute
 		}
 	}
 
@@ -143,7 +150,6 @@ public sealed class ElectionsManager : Component
 				Log.Info( $"{candidate.CandidateName}: 0 votes." );
 		}
 
-		// TODO: ADD UPDATING IN X TEXT
 		if ( oldResults.Count() < CurrentResults.Count() || CurrentResults.Any( x => oldResults[x.Key] != x.Value ) )
 		{
 			GenerateChart( CurrentResults );

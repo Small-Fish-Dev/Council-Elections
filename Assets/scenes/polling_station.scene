@@ -842,7 +842,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -1435,7 +1435,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -2028,7 +2028,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -2621,7 +2621,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -3214,7 +3214,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -3381,52 +3381,9 @@
       ]
     },
     {
-      "__guid": "cd9bb4a3-aa74-4c97-98cf-97cf54ef63c8",
-      "Flags": 0,
-      "Name": "Results",
-      "Position": "-111,215.25,127.5",
-      "Rotation": "0,0,0.7071068,-0.7071068",
-      "Scale": "10,10,10",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.WorldPanel",
-          "__guid": "0e9cfb74-f035-44cc-8cf0-b89c792b7fbe",
-          "HorizontalAlign": "Center",
-          "InteractionRange": 1000,
-          "LookAtCamera": false,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "PanelSize": "512,512",
-          "RenderOptions": {
-            "GameLayer": true,
-            "OverlayLayer": false,
-            "BloomLayer": false,
-            "AfterUILayer": false
-          },
-          "RenderScale": 0.5,
-          "VerticalAlign": "Center"
-        },
-        {
-          "__type": "Sandbox.ChartUI",
-          "__guid": "e49371a8-49bd-47e1-824f-3d0f29d5d5c2",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
-        }
-      ]
-    },
-    {
       "__guid": "0cc224b8-a06d-4833-b715-774ac3df3ffd",
       "Flags": 0,
-      "Name": "sign_billboard",
+      "Name": "Results Billboard",
       "Position": "-112,220,0.0000001173318",
       "Rotation": "0,0,-0.7071067,0.7071068",
       "Scale": "2,3,1.5",
@@ -3450,6 +3407,121 @@
           "OnPropTakeDamage": null,
           "StartAsleep": false,
           "Tint": "1,1,1,1"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "cd9bb4a3-aa74-4c97-98cf-97cf54ef63c8",
+          "Flags": 0,
+          "Name": "Results",
+          "Position": "2.374962,-0.00001549721,91.25",
+          "Rotation": "0,0,0.00000008940697,-1",
+          "Scale": "5,3,6",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.WorldPanel",
+              "__guid": "0e9cfb74-f035-44cc-8cf0-b89c792b7fbe",
+              "HorizontalAlign": "Center",
+              "InteractionRange": 1000,
+              "LookAtCamera": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "PanelSize": "512,512",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderScale": 0.5,
+              "VerticalAlign": "Center"
+            },
+            {
+              "__type": "Sandbox.ChartUI",
+              "__guid": "e49371a8-49bd-47e1-824f-3d0f29d5d5c2",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Text": {
+                "_type": "component",
+                "component_id": "c2769c76-473b-4418-a263-8a939e78d276",
+                "go": "099dd98f-d3a8-4489-b789-9c27a7cb8084",
+                "component_type": "TextRenderer"
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "099dd98f-d3a8-4489-b789-9c27a7cb8084",
+          "Flags": 0,
+          "Name": "Updates",
+          "Position": "2.375015,-0.000005324682,47.66666",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Scale": "1,0.5,1",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "c2769c76-473b-4418-a263-8a939e78d276",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.1,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "Updates in: 59s",
+                "TextColor": "0.91163,0.85863,0.80562,1",
+                "FontName": "Poppins",
+                "FontSize": 64.93,
+                "FontWeight": 581,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": true,
+                  "Size": 6,
+                  "Color": "0,0,0,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 0.1,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": false,
+                  "Size": 6,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                }
+              }
+            }
+          ]
         }
       ]
     }
