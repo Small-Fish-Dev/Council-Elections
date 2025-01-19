@@ -141,7 +141,7 @@ public sealed class ElectionsManager : Component
 				Log.Info( $"{candidate.CandidateName}: 0 votes." );
 		}
 
-		if ( oldResults.Count() <= CurrentResults.Count() || CurrentResults.Any( x => oldResults[x.Key] != x.Value ) )
+		if ( oldResults.Count() < CurrentResults.Count() || CurrentResults.Any( x => oldResults[x.Key] != x.Value ) )
 		{
 			GenerateChart( CurrentResults );
 			Log.Info( "Generating updated chart..." );
