@@ -1,4 +1,5 @@
 using System;
+using System.Text.Json;
 
 namespace Sandbox;
 
@@ -138,6 +139,35 @@ public sealed class ElectionsManager : Component
 			else
 				Log.Info( $"{candidate.CandidateName}: 0 votes." );
 		}
+
+		GenerateChart( CurrentResults );
+		Log.Info( CurrentResultsImage );
+	}
+
+	public Color[] Colors { get; set; } = new Color[5]
+	{
+		new Color(127 / 255f, 255 / 255f, 0 / 255f),
+		new Color(205 / 255f, 92 / 255f, 92 / 255f),
+		new Color(255 / 255f, 215 / 255f, 0 / 255f),
+		new Color(255 / 255f, 140 / 255f, 0 / 255f),
+		new Color(30 / 255f, 144 / 255f, 255 / 255f)
+	};
+
+	[Sync( SyncFlags.FromHost )]
+	public Texture CurrentResultsImage { get; set; }
+
+	public void GenerateChart( Dictionary<int, int> results )
+	{
+		var entries = new ChartEntry[Candidates.Count];
+
+		foreach ( var candidate in Candidates )
+		{
+			var votes = results.FirstOrDefault( x => x.Key == candidate.CandidateId );
+			entries[candidate.CandidateId] = new ChartEntry( candidate.CandidateName, Colors[candidate.CandidateId], votes.Value );
+		}
+
+		var chart = JsonSerializer.Serialize( new Chart( entries ) );
+		CurrentResultsImage = QuickChartApi.GetChartImage( chart );
 	}
 
 	[ConCmd( "reset_cooldowns" )]

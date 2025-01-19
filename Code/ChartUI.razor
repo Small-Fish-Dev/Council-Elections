@@ -9,16 +9,7 @@
 
 @code
 {
-    public Texture ChartImage { get; set; }
-
-    protected override void OnStart()
-    {
-        base.OnStart();
-
-        var chart = Chart.CreateExampleJson();
-        ChartImage = QuickChartApi.GetChartImage(chart);
-        Log.Info(ChartImage);
-    }
+    public Texture ChartImage => ElectionsManager.Instance?.CurrentResultsImage;
 
     protected override int BuildHash() => System.HashCode.Combine(ChartImage);
 }

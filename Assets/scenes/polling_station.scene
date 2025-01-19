@@ -136,23 +136,6 @@
                   "Info": "Make Facepunch\u0027s s\u0026box Roadmap public for everyone to see"
                 }
               ]
-            },
-            {
-              "CandidateId": 5,
-              "CandidateName": "ZoNiCaL",
-              "CandidateGender": "Undefined",
-              "CandidateParty": "Independent",
-              "CandidateSteamId": 0,
-              "CandidatePrefab": {
-                "_type": "gameobject",
-                "prefab": "prefabs/candidates/zonical.prefab"
-              },
-              "CandidatePolicies": [
-                {
-                  "Name": "te",
-                  "Info": "fff"
-                }
-              ]
             }
           ],
           "OnComponentDestroy": null,
@@ -867,7 +850,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 4,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -1460,7 +1443,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 4,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -2053,7 +2036,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 4,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -2646,7 +2629,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 4,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -3239,7 +3222,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 4,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",

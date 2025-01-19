@@ -132,32 +132,16 @@ public struct Chart
 				legend: false,
 				outlabels: new ChartOutlabels(
 					text: "%l %p",
-					color: "white",
+					color: "black",
 					stretch: 35,
 					font: new ChartFont(
 						resizable: true,
-						minSize: 12,
-						maxSize: 18
+						minSize: 14,
+						maxSize: 22
 					)
 				)
 			)
 		);
-	}
-
-	public static string CreateExampleJson()
-	{
-		var entries = new[]
-		{
-			new ChartEntry("ubre", new Color( 214, 0, 25), 1),
-			new ChartEntry("ducc", new Color(114, 0, 214), 1),
-			new ChartEntry("Kaydax",new Color( 0, 178, 214), 1),
-			new ChartEntry("Grodbert", new Color( 214, 157, 0), 1),
-			new ChartEntry("Golden G. Godfrey",new Color( 71, 214, 0),  9)
-		};
-
-		var chart = new Chart( entries );
-		Log.Info( chart );
-		return JsonSerializer.Serialize( chart );
 	}
 }
 
