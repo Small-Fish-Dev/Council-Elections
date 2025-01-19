@@ -61,7 +61,11 @@
           "component_type": "Interaction"
         },
         "InteractPhrases": [
-          "\u003Cpick\u003EHello! I\u0027m voting for \u003Cname\u003E"
+          "Hello, I\u0027m ubre from Small Fish.",
+          "Pizza, Pepperoni.",
+          "\u003Copponent\u003E\u003Cname\u003E? They\u0027re just here for money.",
+          "\u003Cpick\u003EMy \u003Cpolicy.name\u003E policy will do wonders for the community!",
+          "\u003Cpick\u003E\u003Cpolicy.info\u003E!!!"
         ],
         "LastName": "ubre",
         "ModelRenderer": {
@@ -182,7 +186,8 @@
               "component_type": "President"
             }
           }
-        }
+        },
+        "SharedInteraction": true
       },
       {
         "__type": "Sandbox.NavMeshAgent",
