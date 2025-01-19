@@ -119,16 +119,18 @@ public sealed class ElectionsManager : Component
 		var results = Sandbox.Services.Leaderboards.Get( "vote" );
 		await results.Refresh();
 		var oldResults = CurrentResults.Clone();
+
 		CurrentResults.Clear();
+
+		foreach ( var candidate in Candidates )
+			CurrentResults.Add( candidate.CandidateId, 0 );
 
 		foreach ( var entry in results.Entries )
 		{
 			var candidate = (int)entry.Value;
 
-			if ( CurrentResults.ContainsKey( candidate ) )
+			if ( CurrentResults.ContainsKey( candidate ) ) // No write down candidates!
 				CurrentResults[candidate]++;
-			else
-				CurrentResults[candidate] = 1;
 		}
 
 		Log.Info( "Results updated." );
@@ -141,6 +143,7 @@ public sealed class ElectionsManager : Component
 				Log.Info( $"{candidate.CandidateName}: 0 votes." );
 		}
 
+		// TODO: ADD UPDATING IN X TEXT
 		if ( oldResults.Count() < CurrentResults.Count() || CurrentResults.Any( x => oldResults[x.Key] != x.Value ) )
 		{
 			GenerateChart( CurrentResults );
