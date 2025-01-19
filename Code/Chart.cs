@@ -148,11 +148,11 @@ public struct Chart
 	{
 		var entries = new[]
 		{
-			new ChartEntry("ONE", new Color(255, 55, 132), 1),
-			new ChartEntry("TWO", new Color(54, 162, 235), 2),
-			new ChartEntry("THREE", new Color(75, 192, 192), 3),
-			new ChartEntry("FOUR", new Color(247, 120, 37), 4),
-			new ChartEntry("FIVE", new Color(153, 102, 255), 5)
+			new ChartEntry("ubre", new Color( 214, 0, 25), 1),
+			new ChartEntry("ducc", new Color(114, 0, 214), 1),
+			new ChartEntry("Kaydax",new Color( 0, 178, 214), 1),
+			new ChartEntry("Grodbert", new Color( 214, 157, 0), 1),
+			new ChartEntry("Golden G. Godfrey",new Color( 71, 214, 0),  9)
 		};
 
 		var chart = new Chart( entries );

@@ -1,0 +1,24 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+    <Image class="chart" Texture=@ChartImage></Image>
+</root>
+
+@code
+{
+    public Texture ChartImage { get; set; }
+
+    protected override void OnStart()
+    {
+        base.OnStart();
+
+        var chart = Chart.CreateExampleJson();
+        ChartImage = QuickChartApi.GetChartImage(chart);
+        Log.Info(ChartImage);
+    }
+
+    protected override int BuildHash() => System.HashCode.Combine(ChartImage);
+}

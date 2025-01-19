@@ -226,6 +226,16 @@
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null
+        },
+        {
+          "__type": "Sandbox.ChartUI",
+          "__guid": "7c780260-87af-498c-9b13-384dc3be6192",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
         }
       ]
     },
@@ -857,7 +867,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -1450,7 +1460,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -2043,7 +2053,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -2636,7 +2646,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -3229,7 +3239,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
