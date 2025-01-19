@@ -20,9 +20,11 @@
               "CandidateGender": "Male",
               "CandidateParty": "Gleeks",
               "CandidateSteamId": 0,
-              "CandidatePrefab": {
-                "_type": "gameobject",
-                "prefab": "prefabs/candidates/godfrey.prefab"
+              "SceneCandidate": {
+                "_type": "component",
+                "component_id": "51badd5d-3ec5-42d4-a399-dc0dd85a571f",
+                "go": "6822aac4-f05e-48a7-ac0b-f9a4fb2077c7",
+                "component_type": "President"
               },
               "CandidatePolicies": [
                 {
@@ -49,9 +51,11 @@
               "CandidateGender": "Male",
               "CandidateParty": "Programmer",
               "CandidateSteamId": 0,
-              "CandidatePrefab": {
-                "_type": "gameobject",
-                "prefab": "prefabs/candidates/ubre.prefab"
+              "SceneCandidate": {
+                "_type": "component",
+                "component_id": "e6122fae-c78d-4c82-a4b6-9d4a6a469089",
+                "go": "f04bdb6d-7a81-4c85-be82-b5f89f03e41d",
+                "component_type": "President"
               },
               "CandidatePolicies": [
                 {
@@ -78,9 +82,11 @@
               "CandidateGender": "Male",
               "CandidateParty": "Programmer",
               "CandidateSteamId": 0,
-              "CandidatePrefab": {
-                "_type": "gameobject",
-                "prefab": "prefabs/candidates/ducc.prefab"
+              "SceneCandidate": {
+                "_type": "component",
+                "component_id": "f625cdd1-bab7-452d-9a3a-5c1bafaa79a5",
+                "go": "df20f969-0a1b-4bbb-bfc8-98b3e40e6de0",
+                "component_type": "President"
               },
               "CandidatePolicies": [
                 {
@@ -103,9 +109,11 @@
               "CandidateGender": "Undefined",
               "CandidateParty": "Programmer",
               "CandidateSteamId": 0,
-              "CandidatePrefab": {
-                "_type": "gameobject",
-                "prefab": "prefabs/candidates/kaydax.prefab"
+              "SceneCandidate": {
+                "_type": "component",
+                "component_id": "f9046be3-9643-435e-a549-b39a1780a251",
+                "go": "64bad74c-979c-419d-82ab-a408705d61f5",
+                "component_type": "President"
               },
               "CandidatePolicies": [
                 {
@@ -120,9 +128,11 @@
               "CandidateGender": "Male",
               "CandidateParty": "Artist",
               "CandidateSteamId": 0,
-              "CandidatePrefab": {
-                "_type": "gameobject",
-                "prefab": "prefabs/candidates/grodbert.prefab"
+              "SceneCandidate": {
+                "_type": "component",
+                "component_id": "95c6a657-8511-47ff-9e36-caff076665e8",
+                "go": "30b34e68-c065-42b5-baa9-ade5a8c85465",
+                "component_type": "President"
               },
               "CandidatePolicies": [
                 {
@@ -145,7 +155,7 @@
               "CandidateGender": "Male",
               "CandidateParty": "Independent",
               "CandidateSteamId": 0,
-              "CandidatePrefab": null,
+              "SceneCandidate": null,
               "CandidatePolicies": []
             }
           ],
@@ -851,7 +861,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 11,
+                    "Id": 13,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -1444,7 +1454,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 11,
+                    "Id": 13,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -2037,7 +2047,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 11,
+                    "Id": 13,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -2630,7 +2640,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 11,
+                    "Id": 13,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -3223,7 +3233,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 11,
+                    "Id": 13,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",

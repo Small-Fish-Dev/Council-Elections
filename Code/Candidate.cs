@@ -36,7 +36,7 @@ public struct Candidate
 	/// The candidate NPC
 	/// </summary>
 	[Property]
-	public GameObject CandidatePrefab { get; set; }
+	public President SceneCandidate { get; set; }
 
 	public struct Policy
 	{
