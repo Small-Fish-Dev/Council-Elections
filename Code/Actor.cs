@@ -3,6 +3,7 @@ using Sandbox.Citizen;
 using Sandbox.UI;
 using Sandbox.Utility;
 using System.Xml.Linq;
+using static Sandbox.PhysicsContact;
 
 public abstract partial class Actor : Component
 {
@@ -143,7 +144,8 @@ public abstract partial class Actor : Component
 	private float _randomSeed;
 	internal float Pitch = 1f;
 
-	public Player LookingTo { get; set; }
+	public GameObject LookingTo { get; set; }
+	public bool Talking { get; set; } = false;
 	public TimeUntil StopTalking { get; set; }
 	public TimeUntil StopLooking { get; set; }
 
@@ -232,17 +234,17 @@ public abstract partial class Actor : Component
 			}
 		}
 
-		if ( LookingTo.IsValid() )
+		if ( Talking )
 		{
+			if ( LookingTo.IsValid() )
+				LookAt( LookingTo );
+			else
+				StopLook();
+
 			if ( StopTalking )
 				StopTalk();
 			else
 				RandomPheneme();
-
-			if ( StopLooking )
-				StopLook();
-			else
-				LookAt( LookingTo );
 		}
 	}
 
@@ -306,18 +308,33 @@ public abstract partial class Actor : Component
 		Agent.MoveTo( target );
 	}
 
-	public virtual void Talk( Player target )
+	public virtual void Talk( GameObject target )
 	{
-		LookingTo = target;
-		var duration = 2f;
-		StopTalking = duration;
-		LookAt( target );
-		StopLooking = duration + 1f;
-		Interaction.InteractionCooldown = duration;
+		var randomMessage = Game.Random.FromList( InteractPhrases );
+		StartTalk( randomMessage, target );
+		HappyFace();
 	}
 
 	[Rpc.Broadcast]
-	public virtual void LookAt( Player target )
+	public void StartTalk( string phrase, GameObject target = null )
+	{
+		if ( string.IsNullOrWhiteSpace( phrase ) ) return;
+
+		var speechSpeed = 30f;
+		var waitDuration = 2f;
+		var talkDuration = phrase.Count() / speechSpeed;
+		var totalDuration = talkDuration + waitDuration;
+
+		Talking = true;
+		LookingTo = target;
+		StopTalking = talkDuration;
+		StopLooking = totalDuration;
+		Interaction.InteractionCooldown = totalDuration;
+
+		SpeechUI.AddSpeech( FullName, phrase, speechSpeed, waitDuration, GameObject, Gender, Pitch );
+	}
+
+	public void LookAt( GameObject target )
 	{
 		AnimationHelper.LookAtEnabled = true;
 		var lookStart = WorldPosition + Vector3.Up * 64f * WorldScale.z;
@@ -326,18 +343,18 @@ public abstract partial class Actor : Component
 		AnimationHelper.WithLook( lookDirection );
 	}
 
-	[Rpc.Broadcast]
-	public virtual void StopTalk()
+	public void StopTalk()
 	{
 		ResetPheneme();
+		Talking = false;
 	}
 
-	[Rpc.Broadcast]
 	public virtual void StopLook()
 	{
 		AnimationHelper.LookAtEnabled = false;
 		LookingTo = null;
 		AnimationHelper.WithLook( Vector3.Zero );
+		NeutralFace();
 	}
 
 	internal void RandomPheneme()

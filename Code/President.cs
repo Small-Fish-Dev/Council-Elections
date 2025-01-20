@@ -26,32 +26,14 @@ public partial class President : Actor
 		ModelRenderer.SetMaterialOverride( SkinMaterial, "skin" );
 	}
 
-	public override void Talk( Player target )
+	public override void Talk( GameObject target )
 	{
-		base.Talk( target );
-
 		var randomMessage = ElectionsManager.CleanMessage( Game.Random.FromList( InteractPhrases ), Self, out var isAboutOpponent );
-		var speechSpeed = 30f;
-		var waitDuration = 2f;
-
-		SpeechUI.AddSpeech( FullName, randomMessage, speechSpeed, waitDuration, GameObject, Gender, Pitch );
-
-		LookingTo = target;
-		var talkDuration = randomMessage.Count() / speechSpeed;
-		var duration = talkDuration + waitDuration;
-		StopTalking = talkDuration;
-		StopLooking = duration;
-		Interaction.InteractionCooldown = duration;
+		StartTalk( randomMessage, target );
 
 		if ( isAboutOpponent )
 			AngryFace();
 		else
 			HappyFace();
-	}
-
-	public override void StopLook()
-	{
-		base.StopLook();
-		NeutralFace();
 	}
 }

@@ -1,13 +1,9 @@
 using Sandbox;
 
-public sealed class Player : Component
+public sealed class Player : Actor
 {
 	public static List<Player> All { get; private set; } = new List<Player>();
 	public static Player Local { get; private set; }
-
-	[Property]
-	[Category( "Components" )]
-	public SkinnedModelRenderer SkinnedModelRenderer { get; set; }
 
 	[Property]
 	[Category( "Components" )]
@@ -70,6 +66,8 @@ public sealed class Player : Component
 
 		if ( IsProxy && Camera.IsValid() )
 			Camera.DestroyGameObject();
+
+		UserName = Network.Owner.DisplayName;
 	}
 
 	protected override void OnDestroy()
@@ -86,6 +84,7 @@ public sealed class Player : Component
 	protected override void OnFixedUpdate()
 	{
 		if ( !Camera.IsValid() ) return;
+		if ( IsProxy ) return;
 
 		if ( CurrentInteraction.IsValid() )
 		{
@@ -114,11 +113,11 @@ public sealed class Player : Component
 	[Rpc.Broadcast]
 	public void BroadcastClothing( string clothing )
 	{
-		if ( !SkinnedModelRenderer.IsValid() )
+		if ( !ModelRenderer.IsValid() )
 			return;
 
 		var container = ClothingContainer.CreateFromJson( clothing );
-		container.Apply( SkinnedModelRenderer );
+		container.Apply( ModelRenderer );
 	}
 
 	/// <summary>

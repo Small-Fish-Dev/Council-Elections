@@ -10,11 +10,19 @@
       {
         "__type": "Player",
         "__guid": "0065b80b-81ee-42cd-b072-d210b8270910",
+        "Agent": null,
+        "AnimationHelper": null,
         "Camera": {
           "_type": "component",
           "component_id": "f73f8740-0cb1-4b34-a8da-31cf9fa168d0",
           "go": "792cf21c-b7b0-4fc4-a5cc-3fab1c28e4fd",
           "component_type": "CameraComponent"
+        },
+        "Collider": {
+          "_type": "component",
+          "component_id": "f0821cbd-deda-4b15-854b-a01ac7f45435",
+          "go": "cf0d5d19-3327-4e4d-b2a1-4706b2c6ad01",
+          "component_type": "BoxCollider"
         },
         "Controller": {
           "_type": "component",
@@ -22,19 +30,68 @@
           "go": "965ef498-3fe8-466b-ab3e-2cbac2c7be71",
           "component_type": "PlayerController"
         },
+        "DefaultExpression": "None",
+        "FaceClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
+        "FacialClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
+        "FirstName": "John",
+        "FullName": "John Doe",
+        "Gender": "Undefined",
+        "HairbrowsClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
+        "HairClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
+        "HeightRange": "0.5 1.5",
+        "HoodieClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
+        "Interaction": null,
+        "InteractPhrases": [],
         "InteractRange": 100,
+        "LastName": "Doe",
+        "ModelRenderer": {
+          "_type": "component",
+          "component_id": "b4eabb1c-8c1b-4b96-9149-2f92c463e0a3",
+          "go": "24080bed-422b-4d8d-bdf2-3a52560dabfa",
+          "component_type": "SkinnedModelRenderer"
+        },
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "SkinnedModelRenderer": {
-          "_type": "component",
-          "component_id": "b4eabb1c-8c1b-4b96-9149-2f92c463e0a3",
-          "go": "24080bed-422b-4d8d-bdf2-3a52560dabfa",
-          "component_type": "SkinnedModelRenderer"
-        }
+        "PantsClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
+        "RandomNameOnSpawn": false,
+        "RunSpeed": 160,
+        "ShirtClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
+        "ShoesClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
+        "SkinClothing": {
+          "Choiches": [],
+          "EmptyWeight": 0
+        },
+        "UserName": null,
+        "VoicePitch": "0.9 1.1",
+        "WalkSpeed": 70
       },
       {
         "__type": "Sandbox.PlayerController",
