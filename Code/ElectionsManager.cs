@@ -159,14 +159,15 @@ public sealed class ElectionsManager : Component
 			Log.Info( "No new chart to generate" );
 	}
 
-	public Color[] Colors { get; set; } = new Color[6]
+	public Color[] Colors { get; set; } = new Color[7]
 	{
 		new Color(127 / 255f, 255 / 255f, 0 / 255f),
 		new Color(205 / 255f, 92 / 255f, 92 / 255f),
 		new Color(255 / 255f, 215 / 255f, 0 / 255f),
 		new Color(255 / 255f, 140 / 255f, 0 / 255f),
 		new Color(30 / 255f, 144 / 255f, 255 / 255f),
-		new Color(0 / 255f, 255 / 255f, 200 / 255f)
+		new Color(0 / 255f, 255 / 255f, 200 / 255f),
+		new Color(255 / 255f, 50 / 255f, 255 / 255f)
 	};
 
 	public Texture CurrentResultsImage { get; set; }
