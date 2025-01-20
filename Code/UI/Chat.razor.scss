@@ -1,0 +1,32 @@
+Chat {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	justify-content: center;
+	align-items: center;
+
+	textentry {
+		margin-top: 220px;
+		transition: all 0.1s ease;
+		flex-shrink: 0;
+		opacity: 0;
+		font-family: Poppins;
+		font-size: 30px;
+		font-weight: 500;
+		color: white;
+		padding: 7px;
+		background-color: rgba(0,0,0,0.7);
+		border-radius: 15px;
+	}
+
+	&.open {
+		pointer-events: all;
+		opacity: 1;
+
+		textentry {
+			opacity: 1;
+		}
+	}
+}

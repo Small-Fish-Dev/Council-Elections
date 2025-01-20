@@ -1,0 +1,65 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+    <TextEntry 	@ref=Input 
+    onsubmit=@Submit 
+    onblur=@Close 
+    Placeholder=@($"Press {Sandbox.Input.GetButtonOrigin("Chat")} to chat!") 
+    MaxLength=@(200) />
+</root>
+
+@code {
+    public static Chat Instance { get; private set; }
+    private TextEntry Input { get; set; }
+
+    protected override void OnStart()
+    {
+        Instance = this;
+    }
+
+    protected override void OnFixedUpdate()
+    {
+        Input.AcceptsFocus = true;
+        Input.AllowEmojiReplace = true;
+
+        if (Sandbox.Input.Pressed("Chat"))
+            Open();
+    }
+
+    private void Submit()
+    {
+        var message = Input.Text.Trim();
+        Input.Text = string.Empty;
+
+        Close();
+
+        if (string.IsNullOrWhiteSpace(message))
+            return;
+
+        var speechSpeed = 30f;
+        var waitDuration = 2f;
+        SpeechUI.AddSpeech( Connection.Local.DisplayName, message, speechSpeed, waitDuration, Player.Local.GameObject);
+    }
+
+    private void Open()
+    {
+        AddClass("open");
+        Input.Focus();
+    }
+
+	private void Close()
+    {
+        RemoveClass("open");
+        Input.Blur();
+        Input.Text = string.Empty;
+        Input.Label.SetCaretPosition(0);
+    }
+
+	protected override int BuildHash()
+	{
+        return System.HashCode.Combine(Time.Now);
+	}
+}
