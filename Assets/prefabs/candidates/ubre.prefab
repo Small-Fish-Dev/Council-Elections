@@ -92,7 +92,7 @@
           "CandidateGender": "Undefined",
           "CandidateParty": null,
           "CandidateSteamId": 0,
-          "CandidatePrefab": null,
+          "SceneCandidate": null,
           "CandidatePolicies": []
         },
         "ShirtClothing": {
@@ -127,7 +127,7 @@
         "PlayerAction": {
           "__version": 9,
           "__guid": "efa86c85-90e9-4623-85e0-54b4161cb67b",
-          "__changeId": 26,
+          "__changeId": 30,
           "UserData": {
             "Title": "Player Action",
             "ReferencedComponentTypes": []
@@ -156,6 +156,15 @@
               "UserData": {
                 "Position": "276,72"
               }
+            },
+            {
+              "Id": 8,
+              "Type": "property",
+              "ParentId": 0,
+              "Properties": {
+                "_name": "GameObject",
+                "_type": "Sandbox.Component"
+              }
             }
           ],
           "Links": [
@@ -172,10 +181,16 @@
               "DstName": "_target"
             },
             {
-              "SrcId": 0,
-              "SrcName": "obj",
+              "SrcId": 8,
+              "SrcName": "_result",
               "DstId": 7,
               "DstName": "target"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "obj",
+              "DstId": 8,
+              "DstName": "_target"
             }
           ],
           "Defaults": {
