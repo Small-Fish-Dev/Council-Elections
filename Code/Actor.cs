@@ -142,7 +142,8 @@ public abstract partial class Actor : Component
 
 	private ModelPhysics _ragdoll;
 	private float _randomSeed;
-	internal float Pitch = 1f;
+	[Sync]
+	public float Pitch { get; set; } = 1f;
 
 	public GameObject LookingTo { get; set; }
 	public bool Talking { get; set; } = false;

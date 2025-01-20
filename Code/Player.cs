@@ -69,6 +69,7 @@ public sealed class Player : Actor
 			Camera.DestroyGameObject();
 
 		UserName = Network.Owner.DisplayName;
+		Pitch = (Network.Owner.SteamId % 100) / 100f + 0.5f;
 	}
 
 	protected override void OnDestroy()
