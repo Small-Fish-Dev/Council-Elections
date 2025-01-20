@@ -236,16 +236,16 @@ public abstract partial class Actor : Component
 
 		if ( Talking )
 		{
-			if ( LookingTo.IsValid() )
-				LookAt( LookingTo );
-			else
-				StopLook();
-
 			if ( StopTalking )
 				StopTalk();
 			else
 				RandomPheneme();
 		}
+
+		if ( LookingTo.IsValid() && !StopLooking )
+			LookAt( LookingTo );
+		else
+			StopLook();
 	}
 
 	protected override void DrawGizmos()
