@@ -216,7 +216,7 @@
         "PlayerAction": {
           "__version": 9,
           "__guid": "efa86c85-90e9-4623-85e0-54b4161cb67b",
-          "__changeId": 17,
+          "__changeId": 21,
           "UserData": {
             "Title": "Player Action",
             "ReferencedComponentTypes": []
@@ -245,6 +245,15 @@
               "UserData": {
                 "Position": "240,84"
               }
+            },
+            {
+              "Id": 5,
+              "Type": "property",
+              "ParentId": 0,
+              "Properties": {
+                "_name": "GameObject",
+                "_type": "Sandbox.Component"
+              }
             }
           ],
           "Links": [
@@ -261,10 +270,16 @@
               "DstName": "_target"
             },
             {
-              "SrcId": 0,
-              "SrcName": "obj",
+              "SrcId": 5,
+              "SrcName": "_result",
               "DstId": 4,
               "DstName": "target"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "obj",
+              "DstId": 5,
+              "DstName": "_target"
             }
           ],
           "Defaults": {
@@ -275,7 +290,8 @@
               "component_type": "Voter"
             }
           }
-        }
+        },
+        "SharedInteraction": true
       },
       {
         "__type": "Sandbox.NavMeshAgent",
