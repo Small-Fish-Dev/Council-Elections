@@ -22,7 +22,7 @@
               "CandidateSteamId": 0,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "745ebfce-16ac-4455-8002-bc29cfd772d9",
+                "component_id": "eed3fcd6-52c8-4a6a-86dc-ec77ddc0c3cc",
                 "go": "6822aac4-f05e-48a7-ac0b-f9a4fb2077c7",
                 "component_type": "President"
               },
@@ -53,7 +53,7 @@
               "CandidateSteamId": 76561198049395102,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "c926e0be-7135-4c6a-b9f5-d55575e59242",
+                "component_id": "f94cdcc3-6548-46b6-a991-d5b61d6603e5",
                 "go": "f04bdb6d-7a81-4c85-be82-b5f89f03e41d",
                 "component_type": "President"
               },
@@ -84,7 +84,7 @@
               "CandidateSteamId": 76561198000586141,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "1607a521-2309-4031-bf03-c721114ef6dd",
+                "component_id": "b474b15a-dc27-4871-b3d0-48f618a54c8e",
                 "go": "df20f969-0a1b-4bbb-bfc8-98b3e40e6de0",
                 "component_type": "President"
               },
@@ -111,7 +111,7 @@
               "CandidateSteamId": 76561198031345517,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "6875d3ae-c0d9-46cf-a5c5-1b53ea5c110d",
+                "component_id": "99123f60-41b9-42b4-bc3b-c9b2b1abde1e",
                 "go": "64bad74c-979c-419d-82ab-a408705d61f5",
                 "component_type": "President"
               },
@@ -130,7 +130,7 @@
               "CandidateSteamId": 76561198049083824,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "a86443f2-1e56-40f0-b9ef-72bfca24ddd9",
+                "component_id": "04d430a3-3e8a-4b4d-8b65-fcc71113eec8",
                 "go": "30b34e68-c065-42b5-baa9-ade5a8c85465",
                 "component_type": "President"
               },
@@ -155,8 +155,18 @@
               "CandidateGender": "Male",
               "CandidateParty": "Independent",
               "CandidateSteamId": 0,
-              "SceneCandidate": null,
-              "CandidatePolicies": []
+              "SceneCandidate": {
+                "_type": "component",
+                "component_id": "868f4473-c919-4ca5-937a-b1c1bf682ec2",
+                "go": "84ec5c16-f58f-4865-928c-bc39cb874018",
+                "component_type": "President"
+              },
+              "CandidatePolicies": [
+                {
+                  "Name": "Test",
+                  "Info": "Test"
+                }
+              ]
             }
           ],
           "OnComponentDestroy": null,
@@ -1574,6 +1584,599 @@
                 {
                   "__type": "Sandbox.TextRenderer",
                   "__guid": "cb4d3f02-fd21-4be1-b169-089c85dda382",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.06,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "VOTE",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 75.96,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 6,
+                      "Color": "0,0,0,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 6,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "9f8bd0de-ea84-425d-9bda-3f136f9ced0b",
+      "Flags": 0,
+      "Name": "Josh Wilson\u0027s stall",
+      "Position": "543.9998,-334.0001,-22.82713",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "f451d7ae-eb47-4096-b6ad-d77833506726",
+          "Flags": 0,
+          "Name": "stallfinal",
+          "Position": "-32.22238,159.1449,22.82714",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "744becc8-aa25-4d7e-b646-f9b43375ceb5",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/backupstall/stallfinal.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "8ba0bb08-9644-45ac-9230-4a085b2642c6",
+              "Flags": 0,
+              "Name": "Josh Wilson",
+              "Position": "0,20.12501,108",
+              "Rotation": "0,0,-0.7071067,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "729953ae-e4a8-4954-9148-dbc73489c20b",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.1,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "Josh Wilson",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 110,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 6,
+                      "Color": "0,0,0,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 6,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "63697087-5785-40dd-b675-39667465389d",
+              "Flags": 0,
+              "Name": "Independent Party",
+              "Position": "0,20.12501,97.99997",
+              "Rotation": "0,0,-0.7071067,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "df7c9c62-327f-4531-a413-708e43104567",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.08,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "Independent Party",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 68.38,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 6,
+                      "Color": "0,0,0,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 12,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,12"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "2650408f-9b4a-462d-9b2c-ad94ae24b802",
+              "Flags": 0,
+              "Name": "1. Test",
+              "Position": "0,21.62503,28.99997",
+              "Rotation": "0,0,-0.7071067,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "e0d2c124-c882-479f-89a5-b41772e5ee5f",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.12,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "1. Test",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 45,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 4,
+                      "Color": "0.10233,0.04788,0.00333,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 12,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,12"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "b62299c0-a8ab-4e75-b51f-621044913b0d",
+              "Flags": 0,
+              "Name": "2. Test",
+              "Position": "-0.125,21.62506,19.87497",
+              "Rotation": "0,-0,-0.7071068,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "dc069638-5e2e-446d-8245-e314dd7e9ca5",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.12,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "2. Test",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 45,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 4,
+                      "Color": "0.10233,0.04788,0.00333,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 12,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,12"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "ab4f9028-d875-4926-87a0-c4774b8d2bd2",
+              "Flags": 0,
+              "Name": "3. Test",
+              "Position": "-0.3750153,22.75003,11.12497",
+              "Rotation": "0.0000000006585444,0.0000000006585446,-0.7071067,0.7071068",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "4117b5f3-0b4c-4971-a077-66a96b4821e2",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.12,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "3. Test",
+                    "TextColor": "0.91163,0.85863,0.80562,1",
+                    "FontName": "Poppins",
+                    "FontSize": 45,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": true,
+                      "Size": 4,
+                      "Color": "0.10233,0.04788,0.00333,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 12,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,12"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "84ec5c16-f58f-4865-928c-bc39cb874018",
+          "Flags": 0,
+          "Name": "Josh Wilson",
+          "Position": "-32.22238,120,22.82713",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Tags": "person",
+          "Enabled": true,
+          "NetworkMode": 1,
+          "NetworkOrphaned": 1,
+          "__Prefab": "prefabs/candidates/joshwilson.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "30f50c9a-4fee-44a0-aef6-184009c1e0a0",
+          "Flags": 0,
+          "Name": "storage_box",
+          "Position": "-11.30458,166.9346,63.1156",
+          "Rotation": "0,0,0.8660253,0.5000001",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Interaction",
+              "__guid": "e1cba997-b3f0-4c76-8976-9e0bbb57018d",
+              "InteractionCooldown": 999,
+              "InteractionDescription": "Vote for Josh Wilson!",
+              "InteractionName": "Josh Wilson\u0027s Ballot Box",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "PlayerAction": {
+                "__version": 9,
+                "__guid": "1c1d488c-9dde-47e9-be6e-d650f6d49787",
+                "__changeId": 9,
+                "UserData": {
+                  "Title": "Player Action",
+                  "ReferencedComponentTypes": []
+                },
+                "Variables": [],
+                "Nodes": [
+                  {
+                    "Id": 0,
+                    "Type": "input"
+                  },
+                  {
+                    "Id": 1,
+                    "Type": "call",
+                    "Properties": {
+                      "_isStatic": false,
+                      "_name": "Vote",
+                      "_type": "Player"
+                    },
+                    "UserData": {
+                      "Position": "240,0"
+                    }
+                  }
+                ],
+                "Links": [
+                  {
+                    "SrcId": 0,
+                    "SrcName": "_signal",
+                    "DstId": 1,
+                    "DstName": "_signal"
+                  },
+                  {
+                    "SrcId": 0,
+                    "SrcName": "obj",
+                    "DstId": 1,
+                    "DstName": "_target"
+                  },
+                  {
+                    "Id": 2,
+                    "Value": {
+                      "CandidateId": 5,
+                      "CandidateName": "Josh Wilson",
+                      "CandidateGender": "Undefined",
+                      "CandidateSteamId": 0,
+                      "CandidatePolicies": []
+                    },
+                    "DstId": 1,
+                    "DstName": "candidate"
+                  }
+                ]
+              },
+              "SharedInteraction": false
+            },
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "69d62780-a8a6-4631-b5e7-5380a2f0a9fe",
+              "BodyGroups": 18446744073709551615,
+              "Health": 5,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/props/trim_sheets/storage/storage_box_01.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "82a17a91-b610-4e22-959f-4e1ac7edfdeb",
+              "Flags": 0,
+              "Name": "Slot",
+              "Position": "-0.2500799,0.2498705,8.586487",
+              "Rotation": "-0.7071068,-0.00000008940697,0.7071068,0",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "e55962bb-ab88-4bc9-afc9-f6c1d2394b4e",
+                  "__version": 1,
+                  "BlendMode": "Normal",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "Scale": 0.05,
+                  "TextAlignment": "Center",
+                  "TextScope": {
+                    "Text": "\u23E4",
+                    "TextColor": "0,0,0,1",
+                    "FontName": "Poppins",
+                    "FontSize": 128,
+                    "FontWeight": 581,
+                    "FontItalic": false,
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "Outline": {
+                      "Enabled": false,
+                      "Size": 6,
+                      "Color": "0.13953,0.06204,0.01038,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 0.1,
+                      "Color": "0,0,0,1",
+                      "Offset": "0,8"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": true,
+                      "Size": 2.6000004,
+                      "Color": "0,0,0,1",
+                      "Offset": "1.76,0"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "__guid": "21fcdc2d-f4f0-4b38-ba11-20f5a84683ce",
+              "Flags": 0,
+              "Name": "VOTE",
+              "Position": "5.999963,-0.00009989738,3.586506",
+              "Rotation": "0,0,1,-0.00000004371139",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.TextRenderer",
+                  "__guid": "ee3ded7b-af69-43f6-a0fe-74c68dc09267",
                   "__version": 1,
                   "BlendMode": "Normal",
                   "OnComponentDestroy": null,
