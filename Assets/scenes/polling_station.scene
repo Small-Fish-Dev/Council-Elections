@@ -354,8 +354,8 @@
           "__guid": "68860f19-b02a-4a57-8ffb-736017bafa00",
           "Flags": 0,
           "Name": "building9out (1)",
-          "Position": "-700.6614,3197.05,-523.8135",
-          "Rotation": "0,-0.7071067,0,0.7071068",
+          "Position": "-586.5208,3129.743,-523.8135",
+          "Rotation": "-0.09229595,-0.7010573,-0.09229594,0.7010574",
           "Enabled": true,
           "Components": [
             {
@@ -394,6 +394,39 @@
             {
               "__type": "Sandbox.ModelRenderer",
               "__guid": "abd291ec-56e4-462a-ad68-516709bd0d60",
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/building9out.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "c376da28-1546-4962-ade0-919949f53cb3",
+          "Flags": 0,
+          "Name": "building9out",
+          "Position": "-719.9899,-4960.094,-523.8134",
+          "Rotation": "-0.6123725,0.3535532,-0.6123723,-0.3535533",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "e3ff035c-b859-4190-a010-aef6f6d9d783",
               "BodyGroups": 18446744073709551615,
               "CreateAttachments": false,
               "MaterialGroup": null,
@@ -611,6 +644,39 @@
           ]
         },
         {
+          "__guid": "5ba2303e-99dc-4dc3-ac9b-266a56f93f00",
+          "Flags": 0,
+          "Name": "building7out (1)",
+          "Position": "507.3382,3621.051,-525.8136",
+          "Rotation": "-0.7071069,-0.0000000372529,-0.7071068,0.00000005215406",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "a8846935-c0e0-4579-9f9d-50c7e0339cf4",
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/building7out.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
           "__guid": "5e4222a7-fe42-4b51-b36c-9ffcc9e7a412",
           "Flags": 0,
           "Name": "building4out",
@@ -677,54 +743,21 @@
           ]
         },
         {
-          "__guid": "1d7d192e-e257-4872-90e4-d37de023872b",
+          "__guid": "1caedf57-3ce9-4d49-82b3-e94b40e7d3d8",
           "Flags": 0,
-          "Name": "building5out",
-          "Position": "431.3354,2645.051,-521.8137",
-          "Rotation": "0.5000003,-0.4999996,0.5000002,0.4999997",
+          "Name": "building4out (1)",
+          "Position": "571.3387,-5394.948,-521.8132",
+          "Rotation": "-0.00000001490116,-0.7071066,0.00000004470348,0.7071067",
           "Enabled": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
-              "__guid": "cb56c0de-9315-4970-b265-4e2474bb4304",
+              "__guid": "63393a33-7937-418f-98f8-84f0c72e46ae",
               "BodyGroups": 18446744073709551615,
               "CreateAttachments": false,
               "MaterialGroup": null,
               "MaterialOverride": null,
-              "Model": "models/building5out.vmdl",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "RenderOptions": {
-                "GameLayer": true,
-                "OverlayLayer": false,
-                "BloomLayer": false,
-                "AfterUILayer": false
-              },
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "__guid": "576d8cbe-159f-434c-a6c4-d2d739aef278",
-          "Flags": 0,
-          "Name": "building5out (1)",
-          "Position": "431.3429,-4070.948,-521.8137",
-          "Rotation": "0.5000003,-0.4999996,0.5000002,0.4999997",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "11fb090c-0dd8-4c71-93d4-fb46f614108d",
-              "BodyGroups": 18446744073709551615,
-              "CreateAttachments": false,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "models/building5out.vmdl",
+              "Model": "models/building4out.vmdl",
               "OnComponentDestroy": null,
               "OnComponentDisabled": null,
               "OnComponentEnabled": null,
@@ -9416,7 +9449,6 @@
     "gbonn.concretefloor01#49285",
     "microrost.building3out#16606",
     "microrost.building4out#16608",
-    "microrost.building5out#16609",
     "microrost.building7out#16611",
     "microrost.building8out#16612",
     "microrost.building9out#16613",
