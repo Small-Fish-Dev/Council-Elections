@@ -15,6 +15,9 @@ public partial class President : Actor
 	protected override void OnStart()
 	{
 		base.OnStart();
+
+		if ( IsProxy ) // Material isn't set on clients
+			Clothe();
 	}
 
 	public override void Clothe()
