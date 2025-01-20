@@ -54,8 +54,8 @@
         if (!Scene.Camera.IsValid()) return;
         if (!Talker.IsValid()) return;
         var distance = Scene.Camera.WorldPosition.Distance(TalkerPosition); // Is the person nearby?
-        var looking = distance <= 50f ? 0.5f : Vector3.Dot(Scene.Camera.WorldRotation.Forward, Vector3.Direction(Scene.Camera.WorldPosition, TalkerPosition)); // Is the person looking at it?
-        Fading = Math.Clamp((1f - ((distance - 100f) / 200f)) * (looking + 0.5f), 0f, 1f);
+        var looking = distance <= 80f ? 0.5f : Vector3.Dot(Scene.Camera.WorldRotation.Forward, Vector3.Direction(Scene.Camera.WorldPosition, TalkerPosition)); // Is the person looking at it?
+        Fading = Math.Clamp((1f - ((distance - 150f) / 300f)) * (looking + 0.5f), 0f, 1f);
     }
 
     protected override int BuildHash() => System.HashCode.Combine(Fading, DisplayedText);

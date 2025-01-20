@@ -44,7 +44,6 @@
     /// <param name="talker"></param>
     /// <param name="gender"></param>
     /// <param name="pitch"></param>
-    [Rpc.Broadcast]
     public static void AddSpeech(string speaker, string text, float speed = 30f, float lifeTime = 2f, GameObject talker = null, Gender gender = Gender.Undefined, float pitch = 1f)
     {
         var bubble = Instance.Panel.AddChild<SpeechBubble>("SpeechBubble");

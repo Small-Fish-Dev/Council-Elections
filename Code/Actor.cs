@@ -329,7 +329,9 @@ public abstract partial class Actor : Component
 		LookingTo = target;
 		StopTalking = talkDuration;
 		StopLooking = totalDuration;
-		Interaction.InteractionCooldown = totalDuration;
+
+		if ( Interaction.IsValid() )
+			Interaction.InteractionCooldown = totalDuration;
 
 		SpeechUI.AddSpeech( FullName, phrase, speechSpeed, waitDuration, GameObject, Gender, Pitch );
 	}
@@ -351,9 +353,12 @@ public abstract partial class Actor : Component
 
 	public virtual void StopLook()
 	{
-		AnimationHelper.LookAtEnabled = false;
+		if ( AnimationHelper.IsValid() )
+		{
+			AnimationHelper.LookAtEnabled = false;
+			AnimationHelper.WithLook( Vector3.Zero );
+		}
 		LookingTo = null;
-		AnimationHelper.WithLook( Vector3.Zero );
 		NeutralFace();
 	}
 

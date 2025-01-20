@@ -39,9 +39,8 @@
         if (string.IsNullOrWhiteSpace(message))
             return;
 
-        var speechSpeed = 30f;
-        var waitDuration = 2f;
-        SpeechUI.AddSpeech( Connection.Local.DisplayName, message, speechSpeed, waitDuration, Player.Local.GameObject);
+        Player.Local.LastMessage = message;
+        Player.Local.Talk( null );
     }
 
     private void Open()

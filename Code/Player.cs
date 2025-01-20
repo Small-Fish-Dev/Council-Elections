@@ -20,6 +20,7 @@ public sealed class Player : Actor
 	[Sync]
 	public bool HasVoted { get; set; } = false;
 	public Interaction CurrentInteraction;
+	public string LastMessage { get; set; }
 	ulong _steamId;
 
 	protected override void OnStart()
@@ -83,6 +84,8 @@ public sealed class Player : Actor
 
 	protected override void OnFixedUpdate()
 	{
+		base.OnFixedUpdate();
+
 		if ( !Camera.IsValid() ) return;
 		if ( IsProxy ) return;
 
@@ -108,6 +111,11 @@ public sealed class Player : Actor
 		if ( Input.Pressed( "use" ) )
 			if ( CurrentInteraction.IsValid() && CurrentInteraction.CanInteract )
 				CurrentInteraction.Interact( this );
+	}
+	public override void Talk( GameObject target )
+	{
+		StartTalk( LastMessage, null );
+		HappyFace();
 	}
 
 	[Rpc.Broadcast]
