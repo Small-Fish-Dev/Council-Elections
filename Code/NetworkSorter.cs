@@ -50,22 +50,6 @@ public sealed class NetworkSorter : Component
 					}
 				}
 			}
-
-			await Task.DelaySeconds( 2f );
-
-			Log.Info( "Could not join, trying newest lobby again..." );
-
-			lobbies = await Networking.QueryLobbies();
-			var newFreeLobbies = lobbies.Where( x => !x.IsFull );
-			var newNewestLobby = newFreeLobbies.OrderByDescending( x => long.Parse( x.Name ) )
-				.FirstOrDefault(); // Join the latest lobby opened, in case there's toxic ones
-
-			Networking.Connect( newNewestLobby.LobbyId );
-
-			await Task.DelaySeconds( 2f );
-
-			Log.Info( "No valid lobbies found still, creating lobby..." );
-			CreateAndLoad();
 		}
 		catch ( Exception exception )
 		{

@@ -386,7 +386,7 @@
           {
             "__guid": "4ed31009-170a-4427-943d-08679836c6cf",
             "Flags": 0,
-            "Name": "Clothing - beard",
+            "Name": "Clothing - makeup",
             "Tags": "clothing",
             "Enabled": true,
             "Components": [
@@ -482,7 +482,7 @@
                 "Sequence": {
                   "Name": null
                 },
-                "Tint": "0.27907,0.22503,0.12331,1",
+                "Tint": "0.50698,0.45053,0.34427,1",
                 "UseAnimGraph": true
               }
             ]

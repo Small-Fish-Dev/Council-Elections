@@ -27,11 +27,12 @@ public sealed class Player : Actor
 	{
 		Player.All.Add( this );
 
-		var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == Network.Owner.SteamId );
+		// TODO REENABLE
+		/*var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == Network.Owner.SteamId );
 
 		if ( presidentCopy.CandidateId != 0 )
 			if ( presidentCopy.SceneCandidate.IsValid() )
-				presidentCopy.SceneCandidate.GameObject.Enabled = false;
+				presidentCopy.SceneCandidate.GameObject.Enabled = false;*/
 
 		_steamId = Network.Owner.SteamId;
 
