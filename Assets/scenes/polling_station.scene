@@ -15354,7 +15354,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 37,
+                    "Id": 39,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -15947,7 +15947,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 37,
+                    "Id": 39,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -16540,7 +16540,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 37,
+                    "Id": 39,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -17133,7 +17133,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 37,
+                    "Id": 39,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -17726,7 +17726,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 37,
+                    "Id": 39,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -18319,7 +18319,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 37,
+                    "Id": 39,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -18912,7 +18912,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 37,
+                    "Id": 39,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -19082,9 +19082,9 @@
       "__guid": "0cc224b8-a06d-4833-b715-774ac3df3ffd",
       "Flags": 0,
       "Name": "Results Billboard",
-      "Position": "447.9998,-632.0002,256",
+      "Position": "447.9998,-632.0002,228",
       "Rotation": "0,0,1,0.0000001947072",
-      "Scale": "2,3,1.5",
+      "Scale": "2.666667,4,2",
       "Enabled": true,
       "Components": [
         {
