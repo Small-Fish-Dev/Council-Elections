@@ -24,6 +24,8 @@ public sealed class Npcmanager : Component
 
 	protected override void OnStart()
 	{
+		if ( IsProxy ) return;
+
 		foreach ( var linePoint in LinePoints )
 		{
 			var spawned = SpawnVoter( linePoint.WorldPosition );
@@ -37,6 +39,8 @@ public sealed class Npcmanager : Component
 
 	protected override void OnFixedUpdate()
 	{
+		if ( IsProxy ) return;
+
 		if ( _nextSpawn )
 		{
 			var spawned = SpawnVoter( NpcSpawn.WorldPosition );
@@ -96,7 +100,8 @@ public sealed class Npcmanager : Component
 						actor.WalkTo( NpcDespawn.WorldPosition );
 						actor.Exiting = true;
 						actor.CanMove = Game.Random.Float( 1f );
-						// TODO: Voting particles here
+
+						ElectionsManager.Instance.Voted( actor.WorldPosition );
 					}
 				}
 
