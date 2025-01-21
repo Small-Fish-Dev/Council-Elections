@@ -341,6 +341,23 @@
             "OnComponentFixedUpdate": null,
             "OnComponentStart": null,
             "OnComponentUpdate": null
+          },
+          {
+            "__type": "Sandbox.AmbientOcclusion",
+            "__guid": "735da5a8-2c53-483b-bb8f-6464eea3c446",
+            "__version": 1,
+            "DenoiseMode": "Temporal",
+            "FalloffRange": 0.65,
+            "Intensity": 0.29,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Quality": "High",
+            "Radius": 45,
+            "ThinCompensation": 0
           }
         ]
       }
