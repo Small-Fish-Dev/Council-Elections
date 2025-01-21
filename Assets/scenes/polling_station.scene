@@ -81,7 +81,12 @@
               "CandidateGender": "Male",
               "CandidateParty": "Programmer",
               "CandidateSteamId": 76561198000586141,
-              "SceneCandidate": null,
+              "SceneCandidate": {
+                "_type": "component",
+                "component_id": "26a252ea-ebd4-415c-961b-cdb62310c898",
+                "go": "df20f969-0a1b-4bbb-bfc8-98b3e40e6de0",
+                "component_type": "President"
+              },
               "CandidatePolicies": [
                 {
                   "Name": "Stack the Council",
@@ -546,7 +551,7 @@
               "__guid": "1c3efc90-43e9-4994-b9d8-17d3787d89aa",
               "Flags": 0,
               "Name": "9",
-              "Position": "-54,540,0",
+              "Position": "-54,660,0",
               "Enabled": true
             },
             {
@@ -16103,6 +16108,68 @@
           ]
         },
         {
+          "__guid": "62fdbcf6-2fbb-49e0-bf97-3f843120ff9d",
+          "Flags": 0,
+          "Name": "HERE",
+          "Position": "322.8386,52.5504,-391.8136",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "7aa055d8-d1ff-4029-8442-dfa6474a0781",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.13,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "HERE",
+                "TextColor": "0.91163,0.85863,0.80562,1",
+                "FontName": "Poppins",
+                "FontSize": 128,
+                "FontWeight": 581,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": true,
+                  "Size": 10.079997,
+                  "Color": "0,0,0,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 0.1,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": false,
+                  "Size": 6,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                }
+              }
+            }
+          ]
+        },
+        {
           "__guid": "f8b23890-42bc-40cc-9e9b-f6062e677ce5",
           "Flags": 0,
           "Name": "\uD83E\uDC47\uD83E\uDC47\uD83E\uDC47",
@@ -16112,6 +16179,68 @@
             {
               "__type": "Sandbox.TextRenderer",
               "__guid": "382c6141-cbe9-4acd-a166-4db8712fd0b0",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.1,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "\uD83E\uDC47\uD83E\uDC47\uD83E\uDC47",
+                "TextColor": "0.91163,0.85863,0.80562,1",
+                "FontName": "Poppins",
+                "FontSize": 128,
+                "FontWeight": 581,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": true,
+                  "Size": 13.599997,
+                  "Color": "0,0,0,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 0.1,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": false,
+                  "Size": 6,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "2c427986-177e-44fb-a07c-465d92188a85",
+          "Flags": 0,
+          "Name": "\uD83E\uDC47\uD83E\uDC47\uD83E\uDC47",
+          "Position": "322.8386,53.5504,-406.8136",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "a555b5d1-73ea-47b5-b5c4-34a0e0c1c008",
               "__version": 1,
               "BlendMode": "Normal",
               "OnComponentDestroy": null,
@@ -16192,6 +16321,68 @@
               "TextAlignment": "Center",
               "TextScope": {
                 "Text": "VOTING",
+                "TextColor": "0.91163,0.85863,0.80562,1",
+                "FontName": "Poppins",
+                "FontSize": 128,
+                "FontWeight": 581,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": true,
+                  "Size": 10.079997,
+                  "Color": "0,0,0,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 0.1,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": false,
+                  "Size": 6,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "4ff354c6-5e57-44b1-9a0c-dd042f97de39",
+          "Flags": 0,
+          "Name": "LINE STARTS",
+          "Position": "322.8386,52.5504,-374.8136",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "93920551-ed15-46bf-9eb6-874846e66011",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.1,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "LINE STARTS",
                 "TextColor": "0.91163,0.85863,0.80562,1",
                 "FontName": "Poppins",
                 "FontSize": 128,
@@ -18837,6 +19028,102 @@
               "Tint": "0.47442,0.28594,0.19859,1"
             }
           ]
+        },
+        {
+          "__guid": "b44d87e5-7939-4860-a662-9b557f735458",
+          "Flags": 0,
+          "Name": "roadsign_stop",
+          "Position": "367.3385,-722.9496,-419.8136",
+          "Rotation": "-0,0,-1,-0.00000004371139",
+          "Scale": "0.5,0.5,0.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "8d65682f-3740-4fb5-a6a4-81eec45ee5f3",
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/roadsign_stop.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "a1771bc5-863e-4fd4-a558-f2a7dc000ab6",
+          "Flags": 0,
+          "Name": "doorframe_metal_a",
+          "Position": "347.3386,-722.9496,-521.7736",
+          "Scale": "5,1,1",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "1d2f2b13-c1f4-49e2-8c68-bdaceab873e4",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/props/frames/doorframe_metal_a.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "d3575992-5399-46bb-870b-413f895a3288",
+          "Flags": 0,
+          "Name": "1993mario",
+          "Position": "422.115,-426.6919,-521.7415",
+          "Rotation": "0,0,0.1121354,0.9936929",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "45fd7b48-82f6-48b5-b640-b06e8506d682",
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "1993mario.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
         }
       ]
     },
@@ -19267,7 +19554,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 20,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -19860,7 +20147,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 20,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -20453,7 +20740,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 20,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -21046,7 +21333,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 20,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -21639,7 +21926,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 20,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -22232,7 +22519,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 20,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -22825,7 +23112,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 20,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -23436,7 +23723,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 129,
+                "Id": 157,
                 "Value": "Thank you for voting.",
                 "DstId": 18,
                 "DstName": "phrase"
@@ -23460,7 +23747,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 130,
+                "Id": 158,
                 "Value": "If you want to go through, you must vote first.",
                 "DstId": 46,
                 "DstName": "phrase"
@@ -23627,102 +23914,6 @@
               "UseAnimGraph": true
             }
           ]
-        }
-      ]
-    },
-    {
-      "__guid": "d3575992-5399-46bb-870b-413f895a3288",
-      "Flags": 0,
-      "Name": "1993mario",
-      "Position": "530.7764,-239.7423,8.072127",
-      "Rotation": "0,0,0.1121354,0.9936929",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "45fd7b48-82f6-48b5-b640-b06e8506d682",
-          "BodyGroups": 18446744073709551615,
-          "CreateAttachments": false,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "1993mario.vmdl",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "RenderOptions": {
-            "GameLayer": true,
-            "OverlayLayer": false,
-            "BloomLayer": false,
-            "AfterUILayer": false
-          },
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        }
-      ]
-    },
-    {
-      "__guid": "a1771bc5-863e-4fd4-a558-f2a7dc000ab6",
-      "Flags": 0,
-      "Name": "doorframe_metal_a",
-      "Position": "456,-536,8.03999",
-      "Scale": "5,1,1",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Prop",
-          "__guid": "1d2f2b13-c1f4-49e2-8c68-bdaceab873e4",
-          "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
-          "MaterialGroup": null,
-          "Model": "models/props/frames/doorframe_metal_a.vmdl",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OnPropBreak": null,
-          "OnPropTakeDamage": null,
-          "StartAsleep": false,
-          "Tint": "1,1,1,1"
-        }
-      ]
-    },
-    {
-      "__guid": "b44d87e5-7939-4860-a662-9b557f735458",
-      "Flags": 0,
-      "Name": "roadsign_stop",
-      "Position": "475.9999,-536,110",
-      "Rotation": "-0,0,-1,-0.00000004371139",
-      "Scale": "0.5,0.5,0.5",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "8d65682f-3740-4fb5-a6a4-81eec45ee5f3",
-          "BodyGroups": 18446744073709551615,
-          "CreateAttachments": false,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/roadsign_stop.vmdl",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "RenderOptions": {
-            "GameLayer": true,
-            "OverlayLayer": false,
-            "BloomLayer": false,
-            "AfterUILayer": false
-          },
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
         }
       ]
     }

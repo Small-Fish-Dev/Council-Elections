@@ -44,13 +44,15 @@ public sealed class Npcmanager : Component
 			if ( spawned.Components.TryGet<Actor>( out var actor ) )
 				actor.WalkTo( NpcInterior.WorldPosition );
 
-			_nextSpawn = 6f;
+			_nextSpawn = 7f;
 		}
 
 		if ( _nextCheck )
 		{
 			foreach ( var actor in Actors )
 			{
+				if ( !actor.IsValid() ) continue;
+
 				if ( actor.InLine )
 				{
 					var distanceFromLine = actor.WorldPosition.Distance( LinePoints.FirstOrDefault().WorldPosition );
@@ -58,13 +60,68 @@ public sealed class Npcmanager : Component
 					if ( distanceFromLine <= 20f )
 					{
 						actor.InLine = false;
+						actor.Inside = true;
 						actor.CanMove = Game.Random.Float( 3f, 8f );
 					}
+				}
+
+				if ( actor.Inside )
+				{
+					var distanceFromInside = actor.WorldPosition.Distance( NpcInterior.WorldPosition );
+
+					if ( distanceFromInside <= 20f )
+					{
+						actor.Inside = false;
+
+						if ( actor is Voter voter )
+						{
+							actor.WalkTo( GetVotingPosition( voter.Pick ) );
+							actor.Voting = true;
+						}
+						else
+						{
+							actor.WalkTo( NpcDespawn.WorldPosition );
+							actor.Exiting = true;
+						}
+					}
+				}
+
+				if ( actor.Voting )
+				{
+					var distanceFromVote = actor.WorldPosition.Distance( GetVotingPosition( ((Voter)actor).Pick ) );
+
+					if ( distanceFromVote <= 20f )
+					{
+						actor.Voting = false;
+						actor.WalkTo( NpcDespawn.WorldPosition );
+						actor.Exiting = true;
+						actor.CanMove = Game.Random.Float( 1f );
+						// TODO: Voting particles here
+					}
+				}
+
+				if ( actor.Exiting )
+				{
+					var distanceFromDespawn = actor.WorldPosition.Distance( NpcDespawn.WorldPosition );
+
+					if ( distanceFromDespawn <= 50f )
+						actor.DestroyGameObject();
 				}
 			}
 
 			_nextCheck = 0.1f;
 		}
+	}
+
+	public Vector3 GetVotingPosition( Candidate candidate )
+	{
+		var foundCandidate = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateId == candidate.CandidateId );
+		var candidateObject = foundCandidate.SceneCandidate?.GameObject ?? null;
+
+		if ( !candidateObject.IsValid() )
+			return WorldPosition;
+
+		return candidateObject.WorldPosition + candidateObject.WorldRotation.Forward * 100f;
 	}
 
 	public GameObject SpawnVoter( Vector3 position )
@@ -103,6 +160,13 @@ public sealed class Npcmanager : Component
 
 			draw.Color = Color.Red.WithAlpha( 0.5f );
 			draw.SolidSphere( NpcDespawn.WorldPosition, 20f, 32, 32 );
+
+			draw.Color = Color.Magenta.WithAlpha( 0.5f );
+
+			foreach ( var candidate in ElectionsManager.Instance.Candidates )
+			{
+				draw.SolidSphere( GetVotingPosition( candidate ), 20f, 32, 32 );
+			}
 		}
 	}
 }

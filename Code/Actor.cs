@@ -137,8 +137,10 @@ public abstract partial class Actor : Component
 	[Category( "Clothing" ), Order( 6 )]
 	public ClothesPlanner ShoesClothing { get; set; } = new();
 
-	[Sync]
-	public bool InLine { get; set; } = true;
+	public bool InLine = true;
+	public bool Inside = false;
+	public bool Voting = false;
+	public bool Exiting = false;
 
 
 	public bool IsRunning { get; set; } = false;
@@ -217,7 +219,7 @@ public abstract partial class Actor : Component
 
 	protected override void OnFixedUpdate()
 	{
-		if ( ModelRenderer.IsValid() && AnimationHelper.IsValid() )
+		if ( ModelRenderer.IsValid() && AnimationHelper.IsValid() && Agent.IsValid() )
 		{
 			AnimationHelper.WithVelocity( Agent.Velocity );
 		}
