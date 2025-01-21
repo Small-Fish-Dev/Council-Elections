@@ -5,7 +5,6 @@
       "__guid": "15c70cb1-8e71-4040-abaa-0fa3a1c8d5d3",
       "Flags": 0,
       "Name": "Manager",
-      "Position": "300,0,0",
       "Enabled": true,
       "NetworkMode": 1,
       "NetworkOrphaned": 1,
@@ -19394,7 +19393,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 4,
+                    "Id": 8,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -19987,7 +19986,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 4,
+                    "Id": 8,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -20580,7 +20579,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 4,
+                    "Id": 8,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -21173,7 +21172,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 4,
+                    "Id": 8,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -21766,7 +21765,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 4,
+                    "Id": 8,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -22359,7 +22358,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 4,
+                    "Id": 8,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -22952,7 +22951,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 4,
+                    "Id": 8,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -23563,7 +23562,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 125,
+                "Id": 133,
                 "Value": "Thank you for voting.",
                 "DstId": 18,
                 "DstName": "phrase"
@@ -23587,7 +23586,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 126,
+                "Id": 134,
                 "Value": "If you want to go through, you must vote first.",
                 "DstId": 46,
                 "DstName": "phrase"
