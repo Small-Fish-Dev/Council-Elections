@@ -174,9 +174,12 @@ public sealed class Npcmanager : Component
 
 			draw.Color = Color.Magenta.WithAlpha( 0.5f );
 
-			foreach ( var candidate in ElectionsManager.Instance.Candidates )
+			if ( ElectionsManager.Instance.IsValid() )
 			{
-				draw.SolidSphere( GetVotingPosition( candidate ), 20f, 32, 32 );
+				foreach ( var candidate in ElectionsManager.Instance.Candidates )
+				{
+					draw.SolidSphere( GetVotingPosition( candidate ), 20f, 32, 32 );
+				}
 			}
 		}
 	}
