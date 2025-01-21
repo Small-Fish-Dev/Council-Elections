@@ -18,12 +18,15 @@ public sealed class Npcmanager : Component
 	public GameObject NpcDespawn { get; set; }
 
 	public List<Actor> Actors { get; set; } = new();
+	public static Npcmanager Instance { get; private set; }
 
 
 	private TimeUntil _nextSpawn;
 
 	protected override void OnStart()
 	{
+		Instance = this;
+
 		if ( IsProxy ) return;
 
 		foreach ( var linePoint in LinePoints )
@@ -176,5 +179,17 @@ public sealed class Npcmanager : Component
 				draw.SolidSphere( GetVotingPosition( candidate ), 20f, 32, 32 );
 			}
 		}
+	}
+
+
+	[ConCmd( "kill_voters" )]
+	public static void KillVoters()
+	{
+		if ( Connection.Local != Connection.Host ) return;
+
+		foreach ( var voter in Instance.Actors )
+			voter.DestroyGameObject();
+
+		Log.Info( "All voters have been slain" );
 	}
 }
