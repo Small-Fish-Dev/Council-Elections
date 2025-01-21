@@ -156,14 +156,22 @@
               "CandidateSteamId": 76561198023685521,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "716591ed-7eea-4ee4-8631-c979845213ce",
+                "component_id": "ff322978-066e-4b89-a3d6-7c9bca56381c",
                 "go": "84ec5c16-f58f-4865-928c-bc39cb874018",
                 "component_type": "President"
               },
               "CandidatePolicies": [
                 {
-                  "Name": "Test",
-                  "Info": "Test"
+                  "Name": "Unity Over Division",
+                  "Info": "I believe for too long this community has been divided along party lines. \n\n\nThe s\u0026box elite desire an environment where we are divided rather than united. \n\nI want to heal the division in this community by fostering an environment of absolute positivity, free of the toxicity of years bygone. \n\nOn my first day in office I will immediately enact policies that ensure a professional work environment where everyone feels heard and represented. \n\nI want to make the council a place of intelligent discussion for the betterment of this engine. \n\nI love this community, and I love the people who have helped build it, even \u201Copponent\u201D. I believe with my leadership we can help build a more positive environment that benefits both developers and players alike."
+                },
+                {
+                  "Name": "Fair Representation",
+                  "Info": "The council has become a packed court, being massively over-represented by a single development team in this space. My goal is to address this not by tearing it down, but bringing in new council members who represent a wider array of fields of game development. I want more level designers, artists, and anyone I can find from the different walks of game dev life. "
+                },
+                {
+                  "Name": "Encouraging Collaboration",
+                  "Info": "It\u2019s no secret that there exists animosity between various development teams in this platform. The s\u0026box elite prefer to keep us divided against one another fighting pointless social wars when really, we have more in common with our fellow developer than we do the elites!\n\nI plan on encouraging teams to work together, to share their technology with the seem high minded ideals that run academia. \n\nWe are all here working together to build a better engine which will last for generations, our policies and treatment of each other should reflect that adventurous spirit! \n\nDevelopers on the council will be \u201Cencouraged\u201D to help beginners, open source their contributions, and contribute as much as they can to the community at large. With this we can hopefully foster an environment of genuine collaboration between our developers."
                 }
               ]
             },
@@ -18380,33 +18388,6 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelPhysics",
-              "__guid": "6516c605-761a-433b-8fde-f8fbaa1fac10",
-              "Locking": {
-                "X": false,
-                "Y": false,
-                "Z": false,
-                "Pitch": false,
-                "Yaw": false,
-                "Roll": false
-              },
-              "Model": "models/sbox_props/wheely_bin/wheely_bin.vmdl",
-              "MotionEnabled": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "Renderer": {
-                "_type": "component",
-                "component_id": "df056d00-b150-477e-a796-3b5c0e309f07",
-                "go": "d6ad18f6-27a7-44ca-810b-8eff88e74999",
-                "component_type": "SkinnedModelRenderer"
-              },
-              "RigidbodyFlags": 0
             }
           ]
         },
@@ -19558,7 +19539,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 26,
+                    "Id": 36,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -20151,7 +20132,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 26,
+                    "Id": 36,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -20482,7 +20463,7 @@
             {
               "__guid": "2650408f-9b4a-462d-9b2c-ad94ae24b802",
               "Flags": 0,
-              "Name": "1. Test",
+              "Name": "1. Unity Over Division",
               "Position": "0,21.62503,28.99997",
               "Rotation": "0,0,-0.7071067,0.7071068",
               "Enabled": true,
@@ -20507,7 +20488,7 @@
                   "Scale": 0.12,
                   "TextAlignment": "Center",
                   "TextScope": {
-                    "Text": "1. Test",
+                    "Text": "1. Unity Over Division",
                     "TextColor": "0.91163,0.85863,0.80562,1",
                     "FontName": "Poppins",
                     "FontSize": 45,
@@ -20545,7 +20526,7 @@
             {
               "__guid": "b62299c0-a8ab-4e75-b51f-621044913b0d",
               "Flags": 0,
-              "Name": "2. Test",
+              "Name": "2. Fair Representation",
               "Position": "-0.125,21.62506,19.87497",
               "Rotation": "0,-0,-0.7071068,0.7071068",
               "Enabled": true,
@@ -20570,7 +20551,7 @@
                   "Scale": 0.12,
                   "TextAlignment": "Center",
                   "TextScope": {
-                    "Text": "2. Test",
+                    "Text": "2. Fair Representation",
                     "TextColor": "0.91163,0.85863,0.80562,1",
                     "FontName": "Poppins",
                     "FontSize": 45,
@@ -20608,7 +20589,7 @@
             {
               "__guid": "ab4f9028-d875-4926-87a0-c4774b8d2bd2",
               "Flags": 0,
-              "Name": "3. Test",
+              "Name": "3. Encouraging Collaboration",
               "Position": "-0.3750153,22.75003,11.12497",
               "Rotation": "0.0000000006585444,0.0000000006585446,-0.7071067,0.7071068",
               "Enabled": true,
@@ -20630,10 +20611,10 @@
                     "BloomLayer": false,
                     "AfterUILayer": false
                   },
-                  "Scale": 0.12,
+                  "Scale": 0.1,
                   "TextAlignment": "Center",
                   "TextScope": {
-                    "Text": "3. Test",
+                    "Text": "3. Encouraging Collaboration",
                     "TextColor": "0.91163,0.85863,0.80562,1",
                     "FontName": "Poppins",
                     "FontSize": 45,
@@ -20744,7 +20725,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 26,
+                    "Id": 36,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -21337,7 +21318,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 26,
+                    "Id": 36,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -21930,7 +21911,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 26,
+                    "Id": 36,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -22523,7 +22504,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 26,
+                    "Id": 36,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -23116,7 +23097,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 26,
+                    "Id": 36,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -23722,7 +23703,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 169,
+                "Id": 189,
                 "Value": "Thank you for voting.",
                 "DstId": 18,
                 "DstName": "phrase"
@@ -23746,7 +23727,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 170,
+                "Id": 190,
                 "Value": "If you want to go through, you must vote first.",
                 "DstId": 46,
                 "DstName": "phrase"

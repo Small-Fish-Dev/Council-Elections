@@ -3,6 +3,7 @@
     "__guid": "24c12254-f863-4442-84b5-889228fe8408",
     "Flags": 0,
     "Name": "voted",
+    "Scale": "0.5,0.5,0.5",
     "Tags": "particles",
     "Enabled": true,
     "Components": [
@@ -560,78 +561,6 @@
             "RateOverDistance": 0,
             "VelocityMultiplier": 1,
             "VelocityRandom": 0
-          },
-          {
-            "__type": "Sandbox.ParticleTrailRenderer",
-            "__guid": "1aefd472-f75c-498e-9b2c-0b9c2abfd957",
-            "BlendMode": "Normal",
-            "CastShadows": false,
-            "Color": {
-              "blend": "Linear",
-              "color": [
-                {
-                  "t": 0,
-                  "c": "1,1,1,1"
-                },
-                {
-                  "t": 1,
-                  "c": "1,1,1,1"
-                }
-              ],
-              "alpha": [
-                {
-                  "t": 0,
-                  "a": 0
-                },
-                {
-                  "t": 1,
-                  "a": 1
-                }
-              ]
-            },
-            "LifeTime": 0.3,
-            "MaxPoints": 64,
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "Opaque": false,
-            "PointDistance": 8,
-            "RenderOptions": {
-              "GameLayer": true,
-              "OverlayLayer": false,
-              "BloomLayer": false,
-              "AfterUILayer": false
-            },
-            "ScaleFromParticle": true,
-            "Texturing": {
-              "Texture": null,
-              "WorldSpace": true,
-              "UnitsPerTexture": 10,
-              "Scale": 1,
-              "Offset": 0,
-              "Scroll": 0
-            },
-            "TintFromParticle": true,
-            "Width": [
-              {
-                "x": 0,
-                "y": 1,
-                "in": 0,
-                "out": 0,
-                "mode": "Mirrored"
-              },
-              {
-                "x": 1,
-                "y": 0,
-                "in": 0,
-                "out": 0,
-                "mode": "Mirrored"
-              }
-            ],
-            "Wireframe": false
           }
         ]
       }

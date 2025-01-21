@@ -43,10 +43,13 @@ public sealed class Npcmanager : Component
 
 		if ( _nextSpawn )
 		{
-			var spawned = SpawnVoter( NpcSpawn.WorldPosition );
+			if ( Voters.Count < 40 )
+			{
+				var spawned = SpawnVoter( NpcSpawn.WorldPosition );
 
-			if ( spawned.Components.TryGet<Actor>( out var actor ) )
-				actor.WalkTo( NpcInterior.WorldPosition );
+				if ( spawned.Components.TryGet<Actor>( out var actor ) )
+					actor.WalkTo( NpcInterior.WorldPosition );
+			}
 
 			_nextSpawn = 9f;
 		}
