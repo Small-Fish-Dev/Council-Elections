@@ -21,7 +21,7 @@
               "CandidateSteamId": 0,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "cd1189e4-9e27-449b-a434-b908fda6d28f",
+                "component_id": "e9ac885e-a681-4439-94bf-4b1ef2de52ed",
                 "go": "6822aac4-f05e-48a7-ac0b-f9a4fb2077c7",
                 "component_type": "President"
               },
@@ -52,7 +52,7 @@
               "CandidateSteamId": 76561198049395102,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "cd89d0b4-94d9-4b30-95e4-2d20f22aeee4",
+                "component_id": "8a2a838b-8111-4588-b4fc-e14faa8a9532",
                 "go": "f04bdb6d-7a81-4c85-be82-b5f89f03e41d",
                 "component_type": "President"
               },
@@ -83,7 +83,7 @@
               "CandidateSteamId": 76561198000586141,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "26a252ea-ebd4-415c-961b-cdb62310c898",
+                "component_id": "5c0741c2-3c76-4a48-9296-e30183423d21",
                 "go": "df20f969-0a1b-4bbb-bfc8-98b3e40e6de0",
                 "component_type": "President"
               },
@@ -110,7 +110,7 @@
               "CandidateSteamId": 76561198031345517,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "b04294b8-0498-4dcb-ad78-c6282a0c9f46",
+                "component_id": "5b4edc6b-1d25-45b7-b97e-3f0bb8ef8bf8",
                 "go": "64bad74c-979c-419d-82ab-a408705d61f5",
                 "component_type": "President"
               },
@@ -129,7 +129,7 @@
               "CandidateSteamId": 76561198049083824,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "8b1ed74a-63cc-4103-ae49-b64406f62648",
+                "component_id": "520b9593-d8f2-477f-9dcf-f77c388a2478",
                 "go": "30b34e68-c065-42b5-baa9-ade5a8c85465",
                 "component_type": "President"
               },
@@ -156,7 +156,7 @@
               "CandidateSteamId": 76561198023685521,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "ff322978-066e-4b89-a3d6-7c9bca56381c",
+                "component_id": "701ae979-ba3d-4f70-8294-f85e8a5617ac",
                 "go": "84ec5c16-f58f-4865-928c-bc39cb874018",
                 "component_type": "President"
               },
@@ -183,7 +183,7 @@
               "CandidateSteamId": 76561198037527559,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "e33a5fa8-ed7c-4e20-a94d-a68582d1b261",
+                "component_id": "cfa6e791-c899-4b8c-aa26-3929518c8593",
                 "go": "4499e9e0-1972-4e71-9248-4ff43ccc2008",
                 "component_type": "President"
               },
@@ -16133,7 +16133,7 @@
           "__guid": "62fdbcf6-2fbb-49e0-bf97-3f843120ff9d",
           "Flags": 0,
           "Name": "HERE",
-          "Position": "322.8386,52.5504,-391.8136",
+          "Position": "322.8386,52.5504,-358.8136",
           "Enabled": true,
           "Components": [
             {
@@ -16257,7 +16257,7 @@
           "__guid": "2c427986-177e-44fb-a07c-465d92188a85",
           "Flags": 0,
           "Name": "\uD83E\uDC47\uD83E\uDC47\uD83E\uDC47",
-          "Position": "322.8386,53.5504,-406.8136",
+          "Position": "322.8386,53.5504,-373.8136",
           "Enabled": true,
           "Components": [
             {
@@ -16381,7 +16381,7 @@
           "__guid": "4ff354c6-5e57-44b1-9a0c-dd042f97de39",
           "Flags": 0,
           "Name": "LINE STARTS",
-          "Position": "322.8386,52.5504,-374.8136",
+          "Position": "322.8386,52.5504,-341.8136",
           "Enabled": true,
           "Components": [
             {
@@ -19549,7 +19549,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 38,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -20142,7 +20142,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 38,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -20735,7 +20735,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 38,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -21328,7 +21328,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 38,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -21921,7 +21921,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 38,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -22514,7 +22514,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 38,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -23107,7 +23107,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 38,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -23277,9 +23277,9 @@
       "__guid": "0cc224b8-a06d-4833-b715-774ac3df3ffd",
       "Flags": 0,
       "Name": "Results Billboard",
-      "Position": "447.9998,-632.0002,228",
+      "Position": "447.9998,-632.0002,192",
       "Rotation": "0,0,1,0.0000001947072",
-      "Scale": "2.666667,4,2",
+      "Scale": "4.0005,6,3",
       "Enabled": true,
       "Components": [
         {
@@ -23713,7 +23713,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 193,
+                "Id": 121,
                 "Value": "Thank you for voting.",
                 "DstId": 18,
                 "DstName": "phrase"
@@ -23737,7 +23737,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 194,
+                "Id": 122,
                 "Value": "If you want to go through, you must vote first.",
                 "DstId": 46,
                 "DstName": "phrase"
@@ -23887,6 +23887,699 @@
               "UseAnimGraph": true
             }
           ]
+        }
+      ]
+    },
+    {
+      "__guid": "af26d04f-12fd-46ab-9f99-6cfb8069f6a2",
+      "Flags": 0,
+      "Name": "Stella Poster",
+      "Position": "-290.5,128,128",
+      "Scale": "0,4,4",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "ede5f946-d2f1-462b-b42a-97ce88cb8ea0",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/stellawisps.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "6937e219-f3c2-46d7-8892-9166d7d57135",
+      "Flags": 0,
+      "Name": "Grodbert Poster",
+      "Position": "-290.5,-64,128",
+      "Scale": "0,4,4",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "b0d5431c-45e1-4e94-b3f7-a5fc7bfa768a",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/grodbert.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "b932030f-2cda-43e4-9ab1-0f259ca4afc2",
+      "Flags": 0,
+      "Name": "Ducc Poster",
+      "Position": "-290.5,-256,128",
+      "Scale": "0,4,4",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "b95e51a8-acdf-43a8-8936-3b632eb47aad",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/ducc.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "f5a7a514-d662-4e47-ba74-95a1c2830f5a",
+      "Flags": 0,
+      "Name": "Ubre Poster",
+      "Position": "-290.5,-448,128",
+      "Scale": "0,4,4",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "85874572-e6ef-4b8b-b0c0-d7d879bd513a",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/ubre.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "4e005476-95a9-420d-b79d-a1ebf19cc878",
+      "Flags": 0,
+      "Name": "Josh Poster",
+      "Position": "-290.5,-640,128",
+      "Scale": "0,4,4",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "2311f891-9580-4d8c-b350-b828fc959a8f",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/joshwilson.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "c67cd717-e93b-4b60-b8cb-a065e247d765",
+      "Flags": 0,
+      "Name": "Kaydax Poster",
+      "Position": "-290.5,-832,128",
+      "Scale": "0,4,4",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "c5eec4b1-82a6-46e6-a0b8-25bd7b989d09",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/kaydax.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "9485ea56-a0d1-4e72-8035-751368aaef2c",
+      "Flags": 0,
+      "Name": "Godfrey Poster",
+      "Position": "-290.5,-1024,128",
+      "Scale": "0,4,4",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "1c0503c3-1702-453a-8928-10388411f1cd",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/godfrey.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "0647ba3a-1d1d-414f-9d3b-fe50735c3c9b",
+      "Flags": 0,
+      "Name": "Godfrey Poster",
+      "Position": "1277.5,-640,192",
+      "Scale": "0,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "334bfd83-b56d-42a2-8275-67f7a9f98616",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/godfrey.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "f92a685c-951a-40b5-806e-d96b4ad0c2fe",
+      "Flags": 0,
+      "Name": "Godfrey Poster (1)",
+      "Position": "431.5,480,88",
+      "Scale": "0,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "85f26b79-9a07-4322-88a5-dd410a1b55c6",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/godfrey.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "fb5f8cd0-e146-45be-a49b-a08b0013481a",
+      "Flags": 0,
+      "Name": "Grodbert Poster",
+      "Position": "1277.5,-768,192",
+      "Scale": "0,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "bf77e42d-e120-40ae-8997-9ac8f1388002",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/grodbert.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "e1e86b9a-9323-4657-ac82-eec9447c6ad6",
+      "Flags": 0,
+      "Name": "Grodbert Poster (1)",
+      "Position": "431.5,160,88",
+      "Scale": "0,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "f4853410-4924-4edc-b4ee-39bf38e8df84",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/grodbert.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "be556989-7a2e-45f1-a238-19e804f6bbde",
+      "Flags": 0,
+      "Name": "Josh Poster",
+      "Position": "1277.5,-896,192",
+      "Scale": "0,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "0c0c552a-ba7b-4d69-9a70-460440842968",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/joshwilson.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "35f8b79a-b784-46c4-b70a-69500422021d",
+      "Flags": 0,
+      "Name": "Josh Poster (1)",
+      "Position": "431.5,240,88",
+      "Scale": "0,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "fc67d9d3-34db-4e16-aa77-5b0d26a892b3",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/joshwilson.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "4b492d44-207c-43e2-a2bf-5509471dd696",
+      "Flags": 0,
+      "Name": "Stella Poster",
+      "Position": "1277.5,-1024,192",
+      "Scale": "0,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "007cff42-53ff-4efa-9cb5-4b750b9c7652",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/stellawisps.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "74e7f9a7-4994-4f1b-9455-ff594caad5c3",
+      "Flags": 0,
+      "Name": "Stella Poster (1)",
+      "Position": "431.5,400,88",
+      "Scale": "0,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "78adce9f-e02c-41bd-8e6f-48e241264791",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/stellawisps.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "96b26d23-1f23-479f-a1f1-5c19b878aebe",
+      "Flags": 0,
+      "Name": "Ubre Poster",
+      "Position": "1277.5,-512,192",
+      "Scale": "0,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "5c9f6214-2177-4b06-af17-2b2e8b5c2169",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/ubre.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "043d1e90-1e56-4c38-ac7f-6b70669c7931",
+      "Flags": 0,
+      "Name": "Ubre Poster (1)",
+      "Position": "431.5,80,88",
+      "Scale": "0,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "c874f38d-8b76-49ac-82f5-c1d4e78cda81",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/ubre.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "8fc3a291-3084-42f5-b3fd-6ac588f91a95",
+      "Flags": 0,
+      "Name": "Ducc Poster",
+      "Position": "1277.5,-384,192",
+      "Scale": "0,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "ecd06866-3af5-487d-8ac2-e9acdfff56c5",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/ducc.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "693a3dfd-9a0a-4ba6-9da1-c58598ac3448",
+      "Flags": 0,
+      "Name": "Ducc Poster (1)",
+      "Position": "431.5,320,88",
+      "Scale": "0,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "75f7c955-f50e-4cc7-a590-6850081aadfa",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/ducc.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "d1d1f77a-6b56-46bd-baf7-1ca8d6f26000",
+      "Flags": 0,
+      "Name": "Kaydax Poster",
+      "Position": "1277.5,-256,192",
+      "Scale": "0,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "2edf6c3e-dd61-473a-aeba-33f86b318a0d",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/kaydax.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "93f6a344-c7e0-4338-be14-bd1ed2d8ad90",
+      "Flags": 0,
+      "Name": "Kaydax Poster (1)",
+      "Position": "431.5,0,88",
+      "Scale": "0,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "a8976941-55e5-412f-8374-1e0dc8afd93c",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/kaydax.vmat",
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
         }
       ]
     }
