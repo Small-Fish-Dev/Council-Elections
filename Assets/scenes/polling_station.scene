@@ -414,6 +414,35 @@
       ]
     },
     {
+      "__guid": "530270c7-f990-4443-bfe5-5376b650d7f8",
+      "Flags": 0,
+      "Name": "NPC Nodes",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "156e346f-9ab3-4f3e-a712-51b15e00ad99",
+          "Flags": 0,
+          "Name": "NPC Spawn",
+          "Position": "716,1704,12",
+          "Enabled": true
+        },
+        {
+          "__guid": "2af24179-99b9-48ce-adc3-1098dcaf34c1",
+          "Flags": 0,
+          "Name": "NPC Despawn",
+          "Position": "688,-3824,12",
+          "Enabled": true
+        },
+        {
+          "__guid": "6b72c4b3-31cb-4fd1-9866-b4c7fea6599f",
+          "Flags": 0,
+          "Name": "NPC Interior",
+          "Position": "848,-596,11.99999",
+          "Enabled": true
+        }
+      ]
+    },
+    {
       "__guid": "d6d41e1f-e61a-40cf-8b51-98395e1f1aa1",
       "Flags": 0,
       "Name": "ENTRANCE",
