@@ -20,27 +20,40 @@ public sealed class Npcmanager : Component
 
 	private TimeUntil _nextSpawn;
 
+	protected override void OnStart()
+	{
+		foreach ( var linePoint in LinePoints )
+		{
+			var spawned = SpawnVoter( linePoint.WorldPosition );
+			spawned.WorldRotation *= Rotation.FromYaw( -90f );
+			if ( spawned.Components.TryGet<Actor>( out var actor ) )
+				actor.WalkTo( NpcInterior.WorldPosition );
+		}
+	}
+
 	protected override void OnFixedUpdate()
 	{
 		if ( _nextSpawn )
 		{
-			var toSpawn = Game.Random.FromList( Voters );
-			var spawned = toSpawn.Clone( NpcSpawn.WorldPosition );
+			var spawned = SpawnVoter( NpcSpawn.WorldPosition );
 
 			if ( spawned.Components.TryGet<Actor>( out var actor ) )
 				actor.WalkTo( NpcInterior.WorldPosition );
 
-			_nextSpawn = 0.3f;
+			_nextSpawn = 2f;
 		}
 	}
 
-	public void SpawnVoter( Vector3 position )
+	public GameObject SpawnVoter( Vector3 position )
 	{
 		var toSpawn = Game.Random.FromList( Voters );
 		var spawned = toSpawn.Clone( position );
+		spawned.NetworkSpawn();
 
 		if ( spawned.Components.TryGet<Actor>( out var actor ) )
 			actor.WalkTo( position );
+
+		return spawned;
 	}
 
 	protected override void DrawGizmos()

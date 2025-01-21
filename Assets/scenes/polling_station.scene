@@ -21,7 +21,7 @@
               "CandidateSteamId": 0,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "4b691aa9-d403-4d86-9841-58c2cfe07e53",
+                "component_id": "46d58194-32cb-474f-9217-5c233f71a3d1",
                 "go": "6822aac4-f05e-48a7-ac0b-f9a4fb2077c7",
                 "component_type": "President"
               },
@@ -52,7 +52,7 @@
               "CandidateSteamId": 76561198049395102,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "9ddafa30-4534-43d1-91aa-47de3a47818d",
+                "component_id": "257c3c3e-32a7-4c61-bda6-b7aa3afe94cd",
                 "go": "f04bdb6d-7a81-4c85-be82-b5f89f03e41d",
                 "component_type": "President"
               },
@@ -105,7 +105,7 @@
               "CandidateSteamId": 76561198031345517,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "f66d07ca-35d5-4d18-9f31-939eb897cebd",
+                "component_id": "541de6e2-0907-497c-a9c2-c006bcfb46eb",
                 "go": "64bad74c-979c-419d-82ab-a408705d61f5",
                 "component_type": "President"
               },
@@ -124,7 +124,7 @@
               "CandidateSteamId": 76561198049083824,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "630b48b8-8f7c-4f2d-91b5-fba685d15980",
+                "component_id": "abccc066-44f7-49aa-9cc7-ecf37885f874",
                 "go": "30b34e68-c065-42b5-baa9-ade5a8c85465",
                 "component_type": "President"
               },
@@ -151,7 +151,7 @@
               "CandidateSteamId": 76561198023685521,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "85ff84a7-8b9b-4442-bef9-7233369af7d1",
+                "component_id": "92304084-e65e-4cb2-ae17-080511677682",
                 "go": "84ec5c16-f58f-4865-928c-bc39cb874018",
                 "component_type": "President"
               },
@@ -170,7 +170,7 @@
               "CandidateSteamId": 76561198037527559,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "f412a2c8-9a57-4016-8353-389768ac1a14",
+                "component_id": "004a732f-9c10-4e31-8874-d8832ac76180",
                 "go": "4499e9e0-1972-4e71-9248-4ff43ccc2008",
                 "component_type": "President"
               },
@@ -16842,33 +16842,6 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "1bb7f880-db2f-456a-a4c9-90aa3a4a79b3",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {
-                "X": false,
-                "Y": false,
-                "Z": false,
-                "Pitch": false,
-                "Yaw": false,
-                "Roll": false
-              },
-              "MassCenterOverride": "0,0,0",
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OverrideMassCenter": false,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
             }
           ]
         },
@@ -16898,33 +16871,6 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "57a27c6d-eacd-4fb0-bfe8-a01f0f50ac4d",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {
-                "X": false,
-                "Y": false,
-                "Z": false,
-                "Pitch": false,
-                "Yaw": false,
-                "Roll": false
-              },
-              "MassCenterOverride": "0,0,0",
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OverrideMassCenter": false,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
             }
           ]
         },
@@ -16954,33 +16900,6 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "180f0991-016f-44cb-8460-61bf7f7731d8",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {
-                "X": false,
-                "Y": false,
-                "Z": false,
-                "Pitch": false,
-                "Yaw": false,
-                "Roll": false
-              },
-              "MassCenterOverride": "0,0,0",
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OverrideMassCenter": false,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
             }
           ]
         },
@@ -17010,33 +16929,6 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "f90b5756-f1f9-40b3-95f2-b05bb47bc070",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {
-                "X": false,
-                "Y": false,
-                "Z": false,
-                "Pitch": false,
-                "Yaw": false,
-                "Roll": false
-              },
-              "MassCenterOverride": "0,0,0",
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OverrideMassCenter": false,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
             }
           ]
         },
@@ -17856,33 +17748,6 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "644b748d-7fe0-4abc-9235-8843a380d030",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {
-                "X": false,
-                "Y": false,
-                "Z": false,
-                "Pitch": false,
-                "Yaw": false,
-                "Roll": false
-              },
-              "MassCenterOverride": "0,0,0",
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OverrideMassCenter": false,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
             }
           ]
         },
@@ -17913,33 +17778,6 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "7af70c69-6431-4e66-81dc-52d8477cf943",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {
-                "X": false,
-                "Y": false,
-                "Z": false,
-                "Pitch": false,
-                "Yaw": false,
-                "Roll": false
-              },
-              "MassCenterOverride": "0,0,0",
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OverrideMassCenter": false,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
             }
           ]
         },
@@ -17969,33 +17807,6 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "a7238e93-ea79-4a56-a30a-4a0840139f01",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {
-                "X": false,
-                "Y": false,
-                "Z": false,
-                "Pitch": false,
-                "Yaw": false,
-                "Roll": false
-              },
-              "MassCenterOverride": "0,0,0",
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OverrideMassCenter": false,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
             }
           ]
         },
@@ -18340,33 +18151,6 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.ModelPhysics",
-              "__guid": "6e0ec8d5-a9af-4ada-b165-df99e7d1c097",
-              "Locking": {
-                "X": false,
-                "Y": false,
-                "Z": false,
-                "Pitch": false,
-                "Yaw": false,
-                "Roll": false
-              },
-              "Model": "models/sbox_props/wheely_bin/wheely_bin.vmdl",
-              "MotionEnabled": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "Renderer": {
-                "_type": "component",
-                "component_id": "68340246-a99b-4fa7-9358-deae74c9a0d9",
-                "go": "379ae06a-727a-46bd-8bd4-254956c3a6fe",
-                "component_type": "SkinnedModelRenderer"
-              },
-              "RigidbodyFlags": 0
             }
           ]
         },
@@ -23755,6 +23539,98 @@
           ]
         }
       ]
+    },
+    {
+      "__guid": "d3575992-5399-46bb-870b-413f895a3288",
+      "Flags": 0,
+      "Name": "1993mario",
+      "Position": "530.7764,-239.7423,8.072127",
+      "Rotation": "0,0,0.1121354,0.9936929",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "45fd7b48-82f6-48b5-b640-b06e8506d682",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "1993mario.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "a1771bc5-863e-4fd4-a558-f2a7dc000ab6",
+      "Flags": 0,
+      "Name": "doorframe_metal_a",
+      "Position": "456,-536,8.03999",
+      "Scale": "5,1,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "1d2f2b13-c1f4-49e2-8c68-bdaceab873e4",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/props/frames/doorframe_metal_a.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "b44d87e5-7939-4860-a662-9b557f735458",
+      "Flags": 0,
+      "Name": "roadsign_stop",
+      "Position": "475.9999,-536,110",
+      "Rotation": "-0,0,-1,-0.00000004371139",
+      "Scale": "0.5,0.5,0.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "5622f28a-1b05-49ee-b2a3-cc839ae6a585",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/roadsign_stop.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -23784,6 +23660,7 @@
   "Title": null,
   "Description": null,
   "__references": [
+    "baik.roadsign_stop#19440",
     "creation.vendingmachine01#20306",
     "creation.vendingmachine02#24921",
     "ekansh.woodstall#66606",
@@ -23791,6 +23668,7 @@
     "facepunch.carpet_b#18623",
     "facepunch.ceiling_plaster_01#33577",
     "facepunch.conc_pol_pnt_01#18753",
+    "facepunch.doorframe_metal_a#33591",
     "facepunch.doorframe_single_dev#57524",
     "facepunch.floor_tile_b#47187",
     "facepunch.industrial_strip_light#27425",
@@ -23805,6 +23683,7 @@
     "gkaf.bathroom_sign#8687",
     "gkaf.door_1#26044",
     "gkaf.door_frame#27898",
+    "goodolepink.1993mario#13744",
     "microrost.building3out#16606",
     "microrost.building4out#16608",
     "microrost.building7out#16611",

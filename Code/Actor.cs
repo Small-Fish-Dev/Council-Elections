@@ -2,6 +2,7 @@ using Sandbox;
 using Sandbox.Citizen;
 using Sandbox.UI;
 using Sandbox.Utility;
+using System.Diagnostics;
 using System.Xml.Linq;
 using static Sandbox.PhysicsContact;
 
@@ -136,6 +137,9 @@ public abstract partial class Actor : Component
 	[Category( "Clothing" ), Order( 6 )]
 	public ClothesPlanner ShoesClothing { get; set; } = new();
 
+	[Sync]
+	public bool InLine { get; set; } = true;
+
 
 	public bool IsRunning { get; set; } = false;
 	public float WishSpeed => IsRunning ? RunSpeed : WalkSpeed;
@@ -154,8 +158,6 @@ public abstract partial class Actor : Component
 	{
 		if ( IsProxy ) return;
 
-		_spawnPos = WorldPosition;
-		_spawnRot = WorldRotation;
 		_randomSeed = Game.Random.Float( -10000f, 10000f );
 
 		if ( RandomNameOnSpawn )
@@ -209,10 +211,8 @@ public abstract partial class Actor : Component
 					renderer.Tint = hairColor;
 	}
 
-	TimeUntil _nextMove = 3f;
-	Vector3 _spawnPos;
-	Rotation _spawnRot;
-	int _lineCount = 0;
+	private TimeUntil _nextForwardCheck;
+	private bool _shouldStop = false;
 
 	protected override void OnFixedUpdate()
 	{
@@ -223,16 +223,23 @@ public abstract partial class Actor : Component
 
 		if ( Agent.IsValid() )
 		{
-			Agent.MaxSpeed = WishSpeed;
-			Agent.UpdateRotation = Agent.Velocity.Length >= 60f;
-
-			if ( _nextMove )
+			if ( InLine && _nextForwardCheck )
 			{
-				_lineCount++;
-				//WalkTo( _spawnPos + _spawnRot.Forward * 30f * _lineCount );
-				_nextMove = 2f;
-				//Log.Info( _spawnPos );
+				var forwardTrace = Scene.Trace.Ray( WorldPosition + Vector3.Up * 32f, WorldPosition + Vector3.Up * 32f + WorldRotation.Forward * 40f )
+					.Size( 12f )
+					.IgnoreGameObjectHierarchy( GameObject )
+					.WithTag( "voter" )
+					.Run();
+
+				_shouldStop = forwardTrace.Hit;
+				_nextForwardCheck = 0.2f;
 			}
+
+			if ( !InLine )
+				_shouldStop = false;
+
+			Agent.MaxSpeed = _shouldStop ? 0f : WishSpeed;
+			Agent.UpdateRotation = Agent.Velocity.Length >= 60f;
 		}
 
 		if ( Talking )

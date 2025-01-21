@@ -3,7 +3,7 @@
     "__guid": "f778fd7b-7cfd-4b2d-adc4-af656b4e5a6e",
     "Flags": 0,
     "Name": "voter_female",
-    "Tags": "person",
+    "Tags": "person,voter",
     "Enabled": true,
     "NetworkMode": 1,
     "NetworkOrphaned": 1,
@@ -164,7 +164,7 @@
           "EmptyWeight": 0
         },
         "RandomNameOnSpawn": true,
-        "RunSpeed": 240,
+        "RunSpeed": 180,
         "ShirtClothing": {
           "Choiches": [
             "models/citizen_clothes/shirt/flannel_shirt/flannel_shirt.clothing",
@@ -199,7 +199,7 @@
         },
         "UserName": null,
         "VoicePitch": "1.2 1.4",
-        "WalkSpeed": 120
+        "WalkSpeed": 90
       },
       {
         "__type": "Interaction",
@@ -306,7 +306,7 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null,
         "Radius": 16,
-        "Separation": 0.2,
+        "Separation": 0,
         "UpdatePosition": true,
         "UpdateRotation": true
       },
