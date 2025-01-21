@@ -17,6 +17,8 @@ public sealed class Npcmanager : Component
 	[Property]
 	public GameObject NpcDespawn { get; set; }
 
+	public List<Actor> Actors { get; set; } = new();
+
 
 	private TimeUntil _nextSpawn;
 
@@ -31,6 +33,8 @@ public sealed class Npcmanager : Component
 		}
 	}
 
+	internal TimeUntil _nextCheck;
+
 	protected override void OnFixedUpdate()
 	{
 		if ( _nextSpawn )
@@ -40,7 +44,26 @@ public sealed class Npcmanager : Component
 			if ( spawned.Components.TryGet<Actor>( out var actor ) )
 				actor.WalkTo( NpcInterior.WorldPosition );
 
-			_nextSpawn = 2f;
+			_nextSpawn = 6f;
+		}
+
+		if ( _nextCheck )
+		{
+			foreach ( var actor in Actors )
+			{
+				if ( actor.InLine )
+				{
+					var distanceFromLine = actor.WorldPosition.Distance( LinePoints.FirstOrDefault().WorldPosition );
+
+					if ( distanceFromLine <= 20f )
+					{
+						actor.InLine = false;
+						actor.CanMove = Game.Random.Float( 3f, 8f );
+					}
+				}
+			}
+
+			_nextCheck = 0.1f;
 		}
 	}
 
@@ -51,7 +74,7 @@ public sealed class Npcmanager : Component
 		spawned.NetworkSpawn();
 
 		if ( spawned.Components.TryGet<Actor>( out var actor ) )
-			actor.WalkTo( position );
+			Actors.Add( actor );
 
 		return spawned;
 	}

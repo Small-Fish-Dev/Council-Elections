@@ -213,6 +213,7 @@ public abstract partial class Actor : Component
 
 	private TimeUntil _nextForwardCheck;
 	private bool _shouldStop = false;
+	public TimeUntil CanMove { get; set; }
 
 	protected override void OnFixedUpdate()
 	{
@@ -223,20 +224,25 @@ public abstract partial class Actor : Component
 
 		if ( Agent.IsValid() )
 		{
-			if ( InLine && _nextForwardCheck )
+			if ( CanMove )
 			{
-				var forwardTrace = Scene.Trace.Ray( WorldPosition + Vector3.Up * 32f, WorldPosition + Vector3.Up * 32f + WorldRotation.Forward * 40f )
-					.Size( 12f )
-					.IgnoreGameObjectHierarchy( GameObject )
-					.WithTag( "voter" )
-					.Run();
+				if ( InLine && _nextForwardCheck )
+				{
+					var forwardTrace = Scene.Trace.Ray( WorldPosition + Vector3.Up * 32f, WorldPosition + Vector3.Up * 32f + WorldRotation.Forward * 70f )
+						.Size( 12f )
+						.IgnoreGameObjectHierarchy( GameObject )
+						.WithTag( "voter" )
+						.Run();
 
-				_shouldStop = forwardTrace.Hit;
-				_nextForwardCheck = 0.2f;
+					_shouldStop = forwardTrace.Hit;
+					_nextForwardCheck = 0.2f;
+				}
+
+				if ( !InLine )
+					_shouldStop = false;
 			}
-
-			if ( !InLine )
-				_shouldStop = false;
+			else
+				_shouldStop = true;
 
 			Agent.MaxSpeed = _shouldStop ? 0f : WishSpeed;
 			Agent.UpdateRotation = Agent.Velocity.Length >= 60f;

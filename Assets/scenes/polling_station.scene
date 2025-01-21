@@ -21,7 +21,7 @@
               "CandidateSteamId": 0,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "46d58194-32cb-474f-9217-5c233f71a3d1",
+                "component_id": "cd1189e4-9e27-449b-a434-b908fda6d28f",
                 "go": "6822aac4-f05e-48a7-ac0b-f9a4fb2077c7",
                 "component_type": "President"
               },
@@ -52,7 +52,7 @@
               "CandidateSteamId": 76561198049395102,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "257c3c3e-32a7-4c61-bda6-b7aa3afe94cd",
+                "component_id": "cd89d0b4-94d9-4b30-95e4-2d20f22aeee4",
                 "go": "f04bdb6d-7a81-4c85-be82-b5f89f03e41d",
                 "component_type": "President"
               },
@@ -105,7 +105,7 @@
               "CandidateSteamId": 76561198031345517,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "541de6e2-0907-497c-a9c2-c006bcfb46eb",
+                "component_id": "b04294b8-0498-4dcb-ad78-c6282a0c9f46",
                 "go": "64bad74c-979c-419d-82ab-a408705d61f5",
                 "component_type": "President"
               },
@@ -124,7 +124,7 @@
               "CandidateSteamId": 76561198049083824,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "abccc066-44f7-49aa-9cc7-ecf37885f874",
+                "component_id": "8b1ed74a-63cc-4103-ae49-b64406f62648",
                 "go": "30b34e68-c065-42b5-baa9-ade5a8c85465",
                 "component_type": "President"
               },
@@ -151,7 +151,7 @@
               "CandidateSteamId": 76561198023685521,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "92304084-e65e-4cb2-ae17-080511677682",
+                "component_id": "716591ed-7eea-4ee4-8631-c979845213ce",
                 "go": "84ec5c16-f58f-4865-928c-bc39cb874018",
                 "component_type": "President"
               },
@@ -170,7 +170,7 @@
               "CandidateSteamId": 76561198037527559,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "004a732f-9c10-4e31-8874-d8832ac76180",
+                "component_id": "e33a5fa8-ed7c-4e20-a94d-a68582d1b261",
                 "go": "4499e9e0-1972-4e71-9248-4ff43ccc2008",
                 "component_type": "President"
               },
@@ -288,31 +288,19 @@
             },
             {
               "_type": "gameobject",
-              "go": "cd950ac8-6795-4e8f-9520-478c5e3c6c0f"
+              "go": "fc12701e-36a4-49b4-8b1f-1f6cecf7120b"
             },
             {
               "_type": "gameobject",
-              "go": "b4aea912-13f4-43c1-b085-af70328e346e"
+              "go": "4b24a6d5-85fc-4086-baaa-b4cb8cc8eae0"
             },
             {
               "_type": "gameobject",
-              "go": "662d4179-39e5-4de2-bf4a-abe25e552f39"
+              "go": "f7978871-33cf-42e3-938c-2a8096f3c1d4"
             },
             {
               "_type": "gameobject",
-              "go": "c44503d4-cb20-4542-a845-5b8ab3fc3a83"
-            },
-            {
-              "_type": "gameobject",
-              "go": "70e07409-c444-4ae7-9106-7a500b755c68"
-            },
-            {
-              "_type": "gameobject",
-              "go": "49cb6fb2-202d-40d5-b80a-9d70a1dc5b76"
-            },
-            {
-              "_type": "gameobject",
-              "go": "2f7753dd-df51-4e4f-ab54-b5fb8897a1aa"
+              "go": "00d56e70-f87b-4b05-979c-8471649d37c6"
             }
           ],
           "NpcDespawn": {
@@ -495,118 +483,98 @@
               "__guid": "f990ffc5-e141-4894-bcc8-4c77d1cad51a",
               "Flags": 0,
               "Name": "0",
+              "Position": "0,4,0",
               "Enabled": true
             },
             {
               "__guid": "b42eee0e-8a4f-4f9b-a311-e6c89ddc8e66",
               "Flags": 0,
               "Name": "1",
-              "Position": "-48,0,0",
+              "Position": "-50,16,0.00001335144",
               "Enabled": true
             },
             {
               "__guid": "95f24158-4746-44a9-9d72-58230371f2c2",
               "Flags": 0,
               "Name": "2",
-              "Position": "-48,48,0",
+              "Position": "-52,80,0",
               "Enabled": true
             },
             {
               "__guid": "82c10354-66f9-4f1e-9ad5-141a1e5ed75e",
               "Flags": 0,
               "Name": "3",
-              "Position": "-48,96,0",
+              "Position": "-54,148,0",
               "Enabled": true
             },
             {
               "__guid": "1a821a8e-33f8-49ac-91b2-f8a3e7c26741",
               "Flags": 0,
               "Name": "4",
-              "Position": "-48,144,0",
+              "Position": "-54,212,0",
               "Enabled": true
             },
             {
               "__guid": "bc792e4a-0db0-48ea-807e-458a56e4e3df",
               "Flags": 0,
               "Name": "5",
-              "Position": "-48,192,0",
+              "Position": "-54,274,0",
               "Enabled": true
             },
             {
               "__guid": "ff884542-327b-4bcf-95b3-e51cb242a48a",
               "Flags": 0,
               "Name": "6",
-              "Position": "-48,240,0",
+              "Position": "-54,342,0",
               "Enabled": true
             },
             {
               "__guid": "6ab0bc5d-f247-4bc3-8ec4-241e06de9d9e",
               "Flags": 0,
               "Name": "7",
-              "Position": "-48,288,0",
+              "Position": "-54,408,0",
               "Enabled": true
             },
             {
               "__guid": "6924bb72-30f7-40f6-9feb-60f80f84595b",
               "Flags": 0,
               "Name": "8",
-              "Position": "-48,336,0",
+              "Position": "-54,480,0",
               "Enabled": true
             },
             {
               "__guid": "1c3efc90-43e9-4994-b9d8-17d3787d89aa",
               "Flags": 0,
               "Name": "9",
-              "Position": "-48,384,0",
+              "Position": "-54,540,0",
               "Enabled": true
             },
             {
-              "__guid": "cd950ac8-6795-4e8f-9520-478c5e3c6c0f",
+              "__guid": "fc12701e-36a4-49b4-8b1f-1f6cecf7120b",
               "Flags": 0,
               "Name": "10",
-              "Position": "-48,432,0",
+              "Position": "-70,912,0",
               "Enabled": true
             },
             {
-              "__guid": "b4aea912-13f4-43c1-b085-af70328e346e",
+              "__guid": "4b24a6d5-85fc-4086-baaa-b4cb8cc8eae0",
               "Flags": 0,
               "Name": "11",
-              "Position": "-48,480,0",
+              "Position": "-60,1354,0",
               "Enabled": true
             },
             {
-              "__guid": "662d4179-39e5-4de2-bf4a-abe25e552f39",
+              "__guid": "f7978871-33cf-42e3-938c-2a8096f3c1d4",
               "Flags": 0,
               "Name": "12",
-              "Position": "-48,528,0",
+              "Position": "-70,1582,0",
               "Enabled": true
             },
             {
-              "__guid": "c44503d4-cb20-4542-a845-5b8ab3fc3a83",
+              "__guid": "00d56e70-f87b-4b05-979c-8471649d37c6",
               "Flags": 0,
               "Name": "13",
-              "Position": "-48,576,0",
-              "Enabled": true
-            },
-            {
-              "__guid": "70e07409-c444-4ae7-9106-7a500b755c68",
-              "Flags": 0,
-              "Name": "14",
-              "Position": "-48,624,0",
-              "Enabled": true
-            },
-            {
-              "__guid": "49cb6fb2-202d-40d5-b80a-9d70a1dc5b76",
-              "Flags": 0,
-              "Name": "15",
-              "Position": "-48,672,0",
-              "Enabled": true
-            },
-            {
-              "__guid": "2f7753dd-df51-4e4f-ab54-b5fb8897a1aa",
-              "Flags": 0,
-              "Name": "16",
-              "Position": "-48,720,0",
+              "Position": "-68,1986,0",
               "Enabled": true
             }
           ]
@@ -7634,76 +7602,166 @@
               "HideInGame": true,
               "IsTrigger": false,
               "Mesh": {
-                "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f\u002BlaMRGsohUVbFn1\u002Bt04ANs\u002BZ0VsM69AwfgBFyAKZ9MPXdgk3qLnsI\u002BUm/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt\u002BivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+                "Topology": "H4sIAAAAAAAACl2SiU4CQRBE3wIih3IpICriCd739f8/pnmxNpk4yWRnu6urq48R8A2M\u002BDsNoAW0gQ7QA3aAAXAAHALHwAlwDdwC98AjUOXKUZ7LcGlvhp8Cux\u002B7dyu5Sy3zIma74G0GOwnW2G40V4kx715RUz/1VMGLnYVL7t3UWgUv9iI4OYbhrIIfpHd1zePYG/nqW0dXK1qGRS8m0VHrm0ZjMznszWnBOf/Xq1nB7XcBvKeOTmZ2VszyCPiM7m7meZW3eZfAWzT2MutN3nKsgOf0pZ89OI\u002B\u002BTnKt8l9FexVfO72cxt9P7DL83WhZBF/vzriY6yY1dMOxTq29fG\u002Byk/Wc3dGXYq532dd\u002BbGI/4hsCD9ll/drEfsUn31M49WsT\u002Bxqf11xifFuDvXIG5jLG3toz/cYba07fYtRiDb6t0Vk6I7V41WINvq3ZWToj4\u002B2vdnfKvXBXfnLss7Oxv/aw1q1ec8r7C/\u002BLD3cMBAAA",
                 "Positions": [
-                  "0,-268,-20.00001",
-                  "20,-268,-20.00001",
+                  "0,-206,-20.00001",
+                  "20,-220,-20",
                   "20.00006,516,-20.00001",
                   "0.00006103516,516,-20.00001",
                   "0.00006103516,516,-92.00001",
                   "20.00006,516,-92.00001",
-                  "20,-268,-92.00001",
-                  "0,-268,-92.00001"
+                  "20,-220,-92",
+                  "0,-206,-92.00001",
+                  "38,-236,-20",
+                  "0.00009155273,-263.9999,-20.00001",
+                  "0.00009155273,-263.9999,-92.00001",
+                  "38,-236,-92",
+                  "92,-244,-20",
+                  "68,-260,-20",
+                  "68,-260,-92",
+                  "92,-244,-92"
                 ],
                 "TextureCoord": [
-                  "4.1875,5.125",
-                  "4,0.2380952",
+                  "4.1875,4.744403",
+                  "5.46875,8.15625",
                   "4.187501,-1.091418",
-                  "-4.125,0.2380952",
+                  "-3.744404,0.238095",
                   "4.000001,-1.091418",
                   "-3.187501,0.2380953",
-                  "4,5.125",
+                  "4,4.633396",
                   "-1.091418,0.2380955",
                   "4.187501,-1.091418",
                   "-3.000001,1.095238",
-                  "4.1875,5.125",
+                  "4.1875,4.744403",
                   "2.091418,1.095238",
-                  "4,5.125",
-                  "4.1875,1.095238",
+                  "4,4.633396",
+                  "5.78125,8.375",
                   "4.000001,-1.091418",
-                  "5.125,1.095238",
-                  "5.125,0.2380955",
-                  "4,1.095238",
+                  "4.633396,1.095238",
+                  "4.633396,0.2380955",
+                  "8.15625,0.2500001",
                   "-1.091418,1.095238",
                   "-3.000001,0.2380953",
-                  "-4.125,1.095238",
-                  "4.1875,0.2380952",
+                  "-3.744404,1.095238",
+                  "-8.375,-0.875",
                   "2.091418,0.2380952",
-                  "-3.187501,1.095238"
+                  "-3.187501,1.095238",
+                  "5.468751,9.062499",
+                  "6.0625,8.625",
+                  "5.468751,0.2500001",
+                  "9.062499,-0.8749999",
+                  "6.0625,8.625",
+                  "5.468751,9.062499",
+                  "-6.0625,-0.875",
+                  "-8.625,0.25",
+                  "-8.625,-0.875",
+                  "5.78125,8.375",
+                  "-8.375,0.25",
+                  "6.0625,8.625",
+                  "5.468751,9.062499",
+                  "8.15625,-0.8749999",
+                  "9.062499,0.2500001",
+                  "5.46875,8.15625",
+                  "4.6375,0.238095",
+                  "6.90625,8.75",
+                  "4.6375,1.095238",
+                  "6.53125,-0.875",
+                  "4.8625,1.095238",
+                  "6.53125,9",
+                  "4.8625,0.238095",
+                  "-6.90625,0.25",
+                  "-6.90625,-0.875",
+                  "6.0625,8.625",
+                  "-6.0625,0.25",
+                  "6.90625,8.75",
+                  "6.53125,9",
+                  "5.468751,-0.8749999",
+                  "6.53125,0.25",
+                  "5.468751,9.062499"
                 ],
                 "TextureUAxis": [
-                  "1,0.00000005190064,0",
-                  "1,0.00000005190064,0",
-                  "-0.00000007785097,-1,0",
-                  "0.00000007785096,1,0",
+                  "1,0.00000005528547,-0.0000000000000005730905",
+                  "1,0.00000005528547,-0.0000000000000005730905",
+                  "-0.00000008453623,-1,0",
+                  "0.00000008292821,1,0",
                   "-1,0,0",
-                  "1,-0,0"
+                  "1,-0,0",
+                  "1,-0,0",
+                  "-0.7474093,0.6643638,0",
+                  "1,0.0000005261667,0.0000002007738",
+                  "0.000001578499,-1,0",
+                  "1,0.0000005261667,0.0000002007738",
+                  "0.8320503,0.5547002,0",
+                  "-0.9892035,0.1465487,0",
+                  "1,0.0000008066352,0.00000003360999",
+                  "0.9982744,0.05872032,0",
+                  "1,0.0000008066352,0.00000003360999"
                 ],
                 "TextureVAxis": [
-                  "0,-1,0",
-                  "0,-1,0",
+                  "-0,-1,0.00000001036602",
+                  "0,-1,0.00000001036602",
+                  "0,0,-1",
+                  "0.0000000000000009738064,0.00000001174276,-1",
                   "0,0,-1",
                   "-0,0,-1",
+                  "-0,0,-1",
+                  "0,-0,-1",
+                  "-0.0000008307891,-1,-0.0000000000004837218",
                   "0,0,-1",
-                  "-0,0,-1"
+                  "-0.0000008307891,-1,-0.0000000000004837218",
+                  "-0,0,-1",
+                  "0,-0,-1",
+                  "-0.0000002688779,-1,-0.0000002268662",
+                  "0,0,-1",
+                  "-0.0000002688779,-1,-0.0000002268662"
                 ],
                 "TextureScale": [
-                  "0.4166667,0.4926471",
-                  "0.4166667,0.4926471",
-                  "0.4926471,0.3281251",
+                  "0.4166667,0.492647",
+                  "0.4166667,0.492647",
+                  "0.492647,0.3281252",
                   "0.492647,0.328125",
                   "0.4166666,0.3281251",
-                  "0.4166667,0.328125"
+                  "0.4166667,0.328125",
+                  "0.4166667,0.328125",
+                  "0.3762998,0.25",
+                  "0.2499999,0.2499998",
+                  "0.2499998,0.25",
+                  "0.2499999,0.2499998",
+                  "0.5007702,0.3281249",
+                  "0.2527286,0.25",
+                  "0.25,0.2499996",
+                  "0.250432,0.25",
+                  "0.25,0.2499996"
                 ],
                 "TextureOffset": [
-                  "184.0002,126.5671",
-                  "184.0002,126.5671",
+                  "184.0001,126.5672",
+                  "184.0001,126.5672",
                   "126.5672,231.619",
-                  "129.4328,231.619",
+                  "129.4327,231.619",
                   "72,231.619",
-                  "184.0001,231.619"
+                  "184.0001,231.619",
+                  "184.0001,231.619",
+                  "49.21375,0",
+                  "0.0004882812,255.9993",
+                  "255.9958,0",
+                  "0.0004882812,255.9993",
+                  "106.7075,231.619",
+                  "30.75452,0",
+                  "0.001586914,255.9966",
+                  "140.8226,0",
+                  "0.001586914,255.9966"
                 ],
                 "MaterialIndex": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
                   1,
                   1,
                   1,
@@ -7712,6 +7770,38 @@
                   1
                 ],
                 "EdgeFlags": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
                   0,
                   0,
                   0,
@@ -19177,7 +19267,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 8,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -19770,7 +19860,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 8,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -20363,7 +20453,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 8,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -20956,7 +21046,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 8,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -21549,7 +21639,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 8,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -22142,7 +22232,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 8,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -22735,7 +22825,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 8,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -23346,7 +23436,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 133,
+                "Id": 129,
                 "Value": "Thank you for voting.",
                 "DstId": 18,
                 "DstName": "phrase"
@@ -23370,7 +23460,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 134,
+                "Id": 130,
                 "Value": "If you want to go through, you must vote first.",
                 "DstId": 46,
                 "DstName": "phrase"
@@ -23612,12 +23702,12 @@
       "Enabled": true,
       "Components": [
         {
-          "__type": "Sandbox.Prop",
-          "__guid": "5622f28a-1b05-49ee-b2a3-cc839ae6a585",
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "8d65682f-3740-4fb5-a6a4-81eec45ee5f3",
           "BodyGroups": 18446744073709551615,
-          "Health": 0,
-          "IsStatic": true,
+          "CreateAttachments": false,
           "MaterialGroup": null,
+          "MaterialOverride": null,
           "Model": "models/roadsign_stop.vmdl",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -23625,9 +23715,13 @@
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null,
-          "OnPropBreak": null,
-          "OnPropTakeDamage": null,
-          "StartAsleep": false,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
           "Tint": "1,1,1,1"
         }
       ]
