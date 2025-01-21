@@ -200,7 +200,11 @@
           "OnComponentEnabled": null,
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
-          "OnComponentUpdate": null
+          "OnComponentUpdate": null,
+          "VotedParticle": {
+            "_type": "gameobject",
+            "prefab": "prefabs/particle/voted.prefab"
+          }
         },
         {
           "__type": "Sandbox.NetworkHelper",
@@ -19554,7 +19558,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 20,
+                    "Id": 26,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -20147,7 +20151,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 20,
+                    "Id": 26,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -20740,7 +20744,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 20,
+                    "Id": 26,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -21333,7 +21337,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 20,
+                    "Id": 26,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -21926,7 +21930,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 20,
+                    "Id": 26,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -22519,7 +22523,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 20,
+                    "Id": 26,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -23112,7 +23116,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 20,
+                    "Id": 26,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -23438,12 +23442,7 @@
         {
           "__type": "Voter",
           "__guid": "b6776bc5-afc0-4ecb-95ae-a3b709311a9a",
-          "Agent": {
-            "_type": "component",
-            "component_id": "1f068b36-6452-4738-b9cc-1da8c4871134",
-            "go": "2aada73f-ee3d-4748-9658-17f396b6349d",
-            "component_type": "NavMeshAgent"
-          },
+          "Agent": null,
           "AnimationHelper": {
             "_type": "component",
             "component_id": "8f92e6b4-5384-4fa2-a4c9-92c0ea070019",
@@ -23723,7 +23722,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 157,
+                "Id": 169,
                 "Value": "Thank you for voting.",
                 "DstId": 18,
                 "DstName": "phrase"
@@ -23747,7 +23746,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 158,
+                "Id": 170,
                 "Value": "If you want to go through, you must vote first.",
                 "DstId": 46,
                 "DstName": "phrase"
@@ -23793,23 +23792,6 @@
             }
           },
           "SharedInteraction": true
-        },
-        {
-          "__type": "Sandbox.NavMeshAgent",
-          "__guid": "1f068b36-6452-4738-b9cc-1da8c4871134",
-          "Acceleration": 200,
-          "Height": 64,
-          "MaxSpeed": 70,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Radius": 16,
-          "Separation": 0.2,
-          "UpdatePosition": true,
-          "UpdateRotation": true
         },
         {
           "__type": "Sandbox.BoxCollider",

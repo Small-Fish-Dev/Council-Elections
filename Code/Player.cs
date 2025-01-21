@@ -1,4 +1,5 @@
 using Sandbox;
+using System;
 using System.Numerics;
 
 public sealed class Player : Actor
@@ -150,5 +151,7 @@ public sealed class Player : Actor
 		foreach ( var voteInteraction in Scene.GetAllComponents<Interaction>() )
 			if ( !voteInteraction.SharedInteraction )
 				voteInteraction.NextInteraction = 999f;
+
+		ElectionsManager.Instance.Voted( WorldPosition );
 	}
 }

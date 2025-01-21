@@ -7,6 +7,8 @@ public sealed class ElectionsManager : Component
 {
 	[Property]
 	public List<Candidate> Candidates { get; set; } = new();
+	[Property]
+	public GameObject VotedParticle { get; set; }
 	public Dictionary<int, int> CurrentResults { get; set; } = new();
 
 	[Sync( SyncFlags.FromHost )]
@@ -119,6 +121,13 @@ public sealed class ElectionsManager : Component
 			var capitalPronoun = char.ToUpper( replacement[0] ) + replacement.Substring( 1 );
 			message = message.Replace( capitalKeyword, capitalPronoun );
 		}
+	}
+
+	[Rpc.Broadcast]
+	public void Voted( Vector3 position )
+	{
+		VotedParticle.Clone( position );
+		Sound.Play( "gift", position );
 	}
 
 	public async void QueryResults()
