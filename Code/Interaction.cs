@@ -45,6 +45,7 @@ public sealed class Interaction : Component
 		{
 			PlayerAction?.Invoke( player );
 			player.HasVoted = true;
+			player.Tags.Add( "voted" );
 			NextInteraction = InteractionCooldown;
 		}
 	}

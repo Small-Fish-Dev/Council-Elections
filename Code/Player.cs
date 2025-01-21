@@ -1,4 +1,5 @@
 using Sandbox;
+using System.Numerics;
 
 public sealed class Player : Actor
 {
@@ -42,6 +43,8 @@ public sealed class Player : Actor
 			var vote = Sandbox.Services.Stats.GetPlayerStats( Game.Ident, Connection.Local.SteamId )
 				.FirstOrDefault( x => x.Name == "vote" );
 			HasVoted = !vote.Equals( default( Sandbox.Services.Stats.PlayerStat ) );
+			if ( HasVoted )
+				Tags.Add( "voted" );
 
 			if ( HasVoted )
 			{

@@ -14430,7 +14430,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 22,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -15023,7 +15023,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 22,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -15616,7 +15616,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 22,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -16209,7 +16209,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 22,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -16802,7 +16802,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 22,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -17395,7 +17395,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 22,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -17988,7 +17988,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 6,
+                    "Id": 22,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -18301,15 +18301,408 @@
     {
       "__guid": "bc2033f4-e68b-4d94-917b-2cf81218fe8f",
       "Flags": 0,
-      "Name": "voter_male",
-      "Position": "389.7111,76.71533,12.00003",
+      "Name": "bodyguard",
+      "Position": "424.159,-732.1025,12.00006",
       "Rotation": "0,0.00000000372529,0.9977646,0.06682679",
-      "Tags": "person",
+      "Tags": "person,bodyguard",
       "Enabled": true,
       "NetworkMode": 1,
       "NetworkOrphaned": 1,
-      "__Prefab": "prefabs/voter_male.prefab",
-      "__PrefabVariables": {}
+      "Components": [
+        {
+          "__type": "Voter",
+          "__guid": "aa47eefa-60aa-4c6e-8c60-d9ab88eb9c2f",
+          "Agent": {
+            "_type": "component",
+            "component_id": "63739dd9-b430-4b7b-9bbc-1a7ed4e595fc",
+            "go": "bc2033f4-e68b-4d94-917b-2cf81218fe8f",
+            "component_type": "NavMeshAgent"
+          },
+          "AnimationHelper": {
+            "_type": "component",
+            "component_id": "7e3c16f3-06e5-4ae5-834c-3d468f0a1b1c",
+            "go": "bc2033f4-e68b-4d94-917b-2cf81218fe8f",
+            "component_type": "CitizenAnimationHelper"
+          },
+          "Collider": {
+            "_type": "component",
+            "component_id": "0018a7fa-55de-4838-ac02-83c1101d23b2",
+            "go": "bc2033f4-e68b-4d94-917b-2cf81218fe8f",
+            "component_type": "BoxCollider"
+          },
+          "DefaultExpression": "Frown",
+          "FaceClothing": {
+            "Choiches": [
+              "models/citizen_clothes/glasses/nerdy_glasses/nerdy_glasses.clothing",
+              "models/citizen_clothes/glasses/party_glasses/party_glasses.clothing"
+            ],
+            "EmptyWeight": 10
+          },
+          "FacialClothing": {
+            "Choiches": [
+              "models/citizen_clothes/hair/moustache/moustache.clothing",
+              "models/citizen_clothes/hair/patchy_beard/patchy_beard.clothing",
+              "models/citizen_clothes/hair/mutton_chops/mutton_chops.clothing",
+              "models/citizen_clothes/hair/medium_beard/medium_beard.clothing",
+              "models/citizen_clothes/hair/handlebar_moustache/handlebar_moustache.clothing",
+              "models/citizen_clothes/hair/goatee/goatee.clothing",
+              "models/citizen_clothes/hair/decorated_beard/decorated_beard.clothing",
+              "models/citizen_clothes/hair/braided_long_beard/braided_long_beard.clothing"
+            ],
+            "EmptyWeight": 5
+          },
+          "FirstName": "John",
+          "FullName": "Bodyguard",
+          "Gender": "Male",
+          "HairbrowsClothing": {
+            "Choiches": [
+              "models/citizen_clothes/hair/eyebrows_monobrow/monobrow.clothing",
+              "models/citizen_clothes/hair/eyebrows_bushy/eyebrows_bushy.clothing",
+              "models/citizen_clothes/hair/eyebrows/eyebrows.clothing"
+            ],
+            "EmptyWeight": 0.5
+          },
+          "HairClothing": {
+            "Choiches": [
+              "models/citizen_clothes/hair/hair_balding/hair_baldingbrown.clothing",
+              "models/citizen_clothes/hair/hair_shortscruffy/hair_shortscruffy_brown.clothing",
+              "models/citizen_clothes/hair/hair_thinning_short/thinning_short.clothing",
+              "models/citizen_clothes/hair/hair_slicked_back_balding/hair_slicked_back_balding.clothing",
+              "models/citizen_clothes/hair/hair_slickedback/hair_slickedback.clothing",
+              "models/citizen_clothes/hair/hair_bobcut/hair_bobcut.clothing",
+              "models/citizen_clothes/hair/hair_short_dreadlocks/short_dreadlocks.clothing",
+              "models/citizen_clothes/hair/hair_short_braids/hair_short_braids.clothing",
+              "models/citizen_clothes/hat/fedora/fedora.clothing",
+              "models/citizen_clothes/hat/flatcap/flatcap.clothing",
+              "models/citizen_clothes/hat/beanie/beanie.clothing",
+              "models/citizen_clothes/hat/baseball_cap/baseball_cap_black.clothing"
+            ],
+            "EmptyWeight": 5
+          },
+          "HeightRange": "1.2",
+          "HoodieClothing": {
+            "Choiches": [
+              "models/citizen_clothes/jumper/loose_jumper/loose_jumper_wooly.clothing",
+              "models/citizen_clothes/jumper/loose_jumper/loose_jumper_goalie.clothing",
+              "models/citizen_clothes/jumper/loose_jumper/loose_jumper.clothing",
+              "models/citizen_clothes/jacket/puffer_jacket/puffer_jacket_blue.clothing",
+              "models/citizen_clothes/jacket/winter_coat/winter_coat.clothing",
+              "models/citizen_clothes/jacket/puffer_jacket/puffer_jacket.clothing",
+              "models/citizen_clothes/jacket/hoodie/hoodie_black.clothing",
+              "models/citizen_clothes/jacket/hoodie/hoodie.clothing",
+              "models/citizen_clothes/jacket/brown_leather_jacket/brown_leather_jacket.clothing",
+              "models/citizen_clothes/jacket/brown_leather_jacket/black_leather_jacket.clothing",
+              "models/citizen_clothes/jacket/bomber_jacket/bomber_jacket.clothing",
+              "models/citizen_clothes/jacket/biker_jacket/biker_jacket.clothing"
+            ],
+            "EmptyWeight": 30
+          },
+          "Interaction": {
+            "_type": "component",
+            "component_id": "071a69cd-54f2-42fd-a7f3-cd3b37018850",
+            "go": "bc2033f4-e68b-4d94-917b-2cf81218fe8f",
+            "component_type": "Interaction"
+          },
+          "InteractPhrases": [
+            "\u003Copponent\u003EIf you want to go through, you must vote first."
+          ],
+          "LastName": "Doe",
+          "ModelRenderer": {
+            "_type": "component",
+            "component_id": "d72a5666-fc16-412c-ad97-1d5d4cd7067b",
+            "go": "ef175441-fef8-4c86-95ef-88de08dfe7e5",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "PantsClothing": {
+            "Choiches": [
+              "models/citizen_clothes/trousers/trackiebottoms/trackie_bottoms.clothing",
+              "models/citizen_clothes/trousers/trackiebottoms/trackie_bottoms_black.clothing",
+              "models/citizen_clothes/trousers/smarttrousers/trousers.smart.clothing",
+              "models/citizen_clothes/trousers/loosetrousers/loose_trousers.clothing",
+              "models/citizen_clothes/trousers/loosejeans/loose_jeans.clothing",
+              "models/citizen_clothes/trousers/jeans/jeans_black.clothing",
+              "models/citizen_clothes/trousers/jeans/jeans.clothing",
+              "models/citizen_clothes/trousers/cargopants/cargo_pants_army.clothing",
+              "models/citizen_clothes/trousers/cargopants/brown_cargo_pants.clothing",
+              "models/citizen_clothes/trousers/cargopants/binman_trousers.clothing",
+              "models/citizen_clothes/shorts/summer_shorts/summer shorts.clothing",
+              "models/citizen_clothes/shorts/shorts/shorts.clothing",
+              "models/citizen_clothes/shorts/football_shorts/football_shorts.clothing"
+            ],
+            "EmptyWeight": 0
+          },
+          "RandomNameOnSpawn": false,
+          "RunSpeed": 0,
+          "ShirtClothing": {
+            "Choiches": [
+              "models/citizen_clothes/shirt/tshirt/tshirt.clothing",
+              "models/citizen_clothes/shirt/waistcoat_and_shirt/waistcoat_and_shirt.clothing",
+              "models/citizen_clothes/shirt/tshirt/football_tshirt.clothing",
+              "models/citizen_clothes/shirt/tanktop/tanktop.clothing",
+              "models/citizen_clothes/shirt/polo_shirt/polo_shirt_white.clothing",
+              "models/citizen_clothes/shirt/polo_shirt/polo_shirt.clothing",
+              "models/citizen_clothes/shirt/polo_shirt/binman_shirt.clothing",
+              "models/citizen_clothes/shirt/loose_shirt/loose_shirt.clothing",
+              "models/citizen_clothes/shirt/hawaiian_shirt/hawaiian shirt.clothing",
+              "models/citizen_clothes/shirt/flannel_shirt/variations/blue_shirt/blue_shirt.clothing",
+              "models/citizen_clothes/shirt/flannel_shirt/flannel_shirt.clothing",
+              "models/citizen_clothes/shirt/army_shirt/army_shirt.clothing"
+            ],
+            "EmptyWeight": 0.2
+          },
+          "ShoesClothing": {
+            "Choiches": [
+              "models/citizen_clothes/shoes/flatshoes/textures/flat_shoes.clothing",
+              "models/citizen_clothes/shoes/trainers/trainers.clothing",
+              "models/citizen_clothes/shoes/sneakers/sneakers.clothing",
+              "models/citizen_clothes/shoes/sneakers/blue_sneakers.clothing",
+              "models/citizen_clothes/shoes/slippers/slippers.clothing",
+              "models/citizen_clothes/shoes/football_shoes/football_shoes.clothing",
+              "models/citizen_clothes/shoes/crocs_and_socks/clogs_and_socks.clothing",
+              "models/citizen_clothes/shoes/boxing_boots/boxing_boots_blue.clothing",
+              "models/citizen_clothes/shoes/boxing_boots/boxing_boots.clothing",
+              "models/citizen_clothes/shoes/boots/black_boots.clothing",
+              "models/citizen_clothes/shoes/boots/army_boots.clothing"
+            ],
+            "EmptyWeight": 0.2
+          },
+          "SkinClothing": {
+            "Choiches": [
+              "models/citizen_clothes/skin01.clothing",
+              "models/citizen_clothes/skin02.clothing",
+              "models/citizen_clothes/skin03.clothing",
+              "models/citizen_clothes/skin04.clothing",
+              "models/citizen_clothes/skin05.clothing",
+              "models/citizen_clothes/skin06.clothing",
+              "models/citizen_clothes/skin07.clothing",
+              "models/citizen_clothes/skin08.clothing"
+            ],
+            "EmptyWeight": 1
+          },
+          "UserName": "Bodyguard",
+          "VoicePitch": "0.4",
+          "WalkSpeed": 0
+        },
+        {
+          "__type": "Interaction",
+          "__guid": "071a69cd-54f2-42fd-a7f3-cd3b37018850",
+          "InteractionCooldown": 1,
+          "InteractionDescription": "Talk",
+          "InteractionName": "Bodyguard",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "PlayerAction": {
+            "__version": 9,
+            "__guid": "efa86c85-90e9-4623-85e0-54b4161cb67b",
+            "__changeId": 52,
+            "UserData": {
+              "Title": "Player Action",
+              "ReferencedComponentTypes": []
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input"
+              },
+              {
+                "Id": 10,
+                "Type": "property",
+                "ParentId": 0,
+                "Properties": {
+                  "_name": "GameObject",
+                  "_type": "Sandbox.Component"
+                }
+              },
+              {
+                "Id": 14,
+                "Type": "scene.ref",
+                "UserData": {
+                  "Position": "24,144"
+                }
+              },
+              {
+                "Id": 15,
+                "Type": "call",
+                "Properties": {
+                  "_isStatic": false,
+                  "_name": "Talk",
+                  "_type": "Voter"
+                },
+                "UserData": {
+                  "Position": "288,120"
+                }
+              }
+            ],
+            "Links": [
+              {
+                "SrcId": 0,
+                "SrcName": "obj",
+                "DstId": 10,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "_signal",
+                "DstId": 15,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 14,
+                "SrcName": "_result",
+                "DstId": 15,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 10,
+                "SrcName": "_result",
+                "DstId": 15,
+                "DstName": "target"
+              }
+            ],
+            "Defaults": {
+              "$14.component": {
+                "_type": "component",
+                "component_id": "aa47eefa-60aa-4c6e-8c60-d9ab88eb9c2f",
+                "go": "bc2033f4-e68b-4d94-917b-2cf81218fe8f",
+                "component_type": "Voter"
+              }
+            }
+          },
+          "SharedInteraction": true
+        },
+        {
+          "__type": "Sandbox.NavMeshAgent",
+          "__guid": "63739dd9-b430-4b7b-9bbc-1a7ed4e595fc",
+          "Acceleration": 200,
+          "Height": 64,
+          "MaxSpeed": 70,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Radius": 16,
+          "Separation": 0.2,
+          "UpdatePosition": true,
+          "UpdateRotation": true
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "0018a7fa-55de-4838-ac02-83c1101d23b2",
+          "Center": "0,0,36",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "32,32,72",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        },
+        {
+          "__type": "Sandbox.Citizen.CitizenAnimationHelper",
+          "__guid": "7e3c16f3-06e5-4ae5-834c-3d468f0a1b1c",
+          "BodyWeight": 1,
+          "EyeSource": null,
+          "EyesWeight": 1,
+          "HeadWeight": 1,
+          "Height": null,
+          "IkLeftFoot": null,
+          "IkLeftHand": null,
+          "IkRightFoot": null,
+          "IkRightHand": null,
+          "LookAt": null,
+          "LookAtEnabled": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Target": {
+            "_type": "component",
+            "component_id": "d72a5666-fc16-412c-ad97-1d5d4cd7067b",
+            "go": "ef175441-fef8-4c86-95ef-88de08dfe7e5",
+            "component_type": "SkinnedModelRenderer"
+          }
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "ef175441-fef8-4c86-95ef-88de08dfe7e5",
+          "Flags": 0,
+          "Name": "Body",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "d72a5666-fc16-412c-ad97-1d5d4cd7067b",
+              "AnimationGraph": null,
+              "BodyGroups": 341,
+              "BoneMergeTarget": null,
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/citizen/citizen.vmdl",
+              "Morphs": {
+                "openjawR": 0,
+                "lipcornerpullerL": 0,
+                "openjawL": 0,
+                "lippuckerer": 0,
+                "lipcornerpullerR": 0
+              },
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {
+                  "hit": true
+                },
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null
+              },
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            }
+          ]
+        }
+      ]
     },
     {
       "__guid": "1a3c0668-79e2-47d1-8fba-8fdac33a5e39",
