@@ -22,7 +22,7 @@
               "CandidateSteamId": 0,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "4b6cf032-a4f6-438d-9b8b-3dc05b76c515",
+                "component_id": "4b691aa9-d403-4d86-9841-58c2cfe07e53",
                 "go": "6822aac4-f05e-48a7-ac0b-f9a4fb2077c7",
                 "component_type": "President"
               },
@@ -53,7 +53,7 @@
               "CandidateSteamId": 76561198049395102,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "9e859b55-de87-4410-a381-25054d7c1b65",
+                "component_id": "9ddafa30-4534-43d1-91aa-47de3a47818d",
                 "go": "f04bdb6d-7a81-4c85-be82-b5f89f03e41d",
                 "component_type": "President"
               },
@@ -106,7 +106,7 @@
               "CandidateSteamId": 76561198031345517,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "d5a7a16d-33b3-4185-b15d-a5add5eacc93",
+                "component_id": "f66d07ca-35d5-4d18-9f31-939eb897cebd",
                 "go": "64bad74c-979c-419d-82ab-a408705d61f5",
                 "component_type": "President"
               },
@@ -125,7 +125,7 @@
               "CandidateSteamId": 76561198049083824,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "1aa1b16b-08e3-4361-a5b2-c33415e60515",
+                "component_id": "630b48b8-8f7c-4f2d-91b5-fba685d15980",
                 "go": "30b34e68-c065-42b5-baa9-ade5a8c85465",
                 "component_type": "President"
               },
@@ -152,7 +152,7 @@
               "CandidateSteamId": 76561198023685521,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "3f7ad446-7e6c-4e3b-b53b-3c7c058c0347",
+                "component_id": "85ff84a7-8b9b-4442-bef9-7233369af7d1",
                 "go": "84ec5c16-f58f-4865-928c-bc39cb874018",
                 "component_type": "President"
               },
@@ -171,7 +171,7 @@
               "CandidateSteamId": 76561198037527559,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "5fe2d077-aa47-473e-a5b9-35e999ac96a4",
+                "component_id": "f412a2c8-9a57-4016-8353-389768ac1a14",
                 "go": "4499e9e0-1972-4e71-9248-4ff43ccc2008",
                 "component_type": "President"
               },
@@ -814,35 +814,6 @@
                 "AfterUILayer": false
               },
               "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "__guid": "8e7eaa9c-97be-4c88-8281-5c4e5ad52884",
-          "Flags": 0,
-          "Name": "car_dev",
-          "Position": "19.33862,-698.9495,-528.3688",
-          "Rotation": "0,0,0.7071067,0.7071068",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.Prop",
-              "__guid": "42f05ecd-20e3-474e-95a4-7486610eb95a",
-              "BodyGroups": 18446744073709551615,
-              "Health": 0,
-              "IsStatic": false,
-              "MaterialGroup": null,
-              "Model": "models/dev/vehicle/car_dev.vmdl",
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnPropBreak": null,
-              "OnPropTakeDamage": null,
-              "StartAsleep": false,
               "Tint": "1,1,1,1"
             }
           ]
@@ -6400,36 +6371,36 @@
                 ],
                 "TextureUAxis": [
                   "1,0.00000003892547,-0.0000001285665",
-                  "1,0.00000003892547,-0.000000171422",
+                  "1,0.00000003892548,-0.000000171422",
                   "0,-1,0",
                   "-0.0000001167764,1,0",
                   "-1,0,0",
                   "1,0,0",
                   "1,0.000005650445,0",
                   "0,1,0",
-                  "1,-0.00000000000001610256,-0.0000001284185",
-                  "-0.001403009,-0.999999,0",
-                  "1,0.0000000001174244,-0.0000001712256",
+                  "1,0,0",
+                  "-0.0006056053,-0.9999998,0",
+                  "1,0.000000000000009456766,-0.0000001307099",
                   "0,1,0",
                   "1,0,0",
                   "1,0,0",
-                  "0.1788871,-0,0.9838696",
-                  "-0.04646192,-0.9989201,0",
+                  "0.1788871,0.00000000176937,0.9838696",
+                  "-0.003372701,-0.9999943,0",
                   "-1,0,0",
                   "0,1,0",
-                  "1,-0.0000001770725,0.00000000000004181603",
-                  "-0.0002013786,-1,0",
-                  "1,-0.0000001770725,0.00000000000003136202",
-                  "-0.0000001282251,1,0",
-                  "0.536876,-0.000000268691,0.8436612",
+                  "1,-0.0000001747413,-0.0000001714224",
+                  "-0.00004257632,-1,0",
+                  "1,-0.0000001747413,-0.0000001285668",
+                  "-0.0000001155969,1,0",
+                  "0.5368751,-0.0000002628633,0.8436618",
                   "-1,0,0",
-                  "1,-0.0000001282256,0",
-                  "1,0,0",
-                  "-0.002551551,-0.9999968,0",
+                  "1,-0.0000001252307,-0.000000000000004825428",
+                  "0.01040077,-0.9999459,0",
+                  "-0.00255155,-0.9999968,0",
                   "-0.9999968,0.002551147,0",
                   "1,-0.0000001086615,0.0000001359219",
                   "0.9999968,-0.002547266,0",
-                  "1,-0.0000001084206,0.0000001021485",
+                  "1,-0.0000001086615,0.0000001021485",
                   "-1,0,0"
                 ],
                 "TextureVAxis": [
@@ -6441,24 +6412,24 @@
                   "0,0,-1",
                   "0.00000005350804,0.0000000000003023442,-1",
                   "0,0,-1",
-                  "-0.0000005992861,-1,0.0000001253914",
+                  "-0.0000004676329,-1,-0",
                   "0,0,-1",
-                  "-0.0000005992861,-1,-0.0000000002401286",
-                  "0,0,-1",
-                  "-0,-1,-0",
+                  "-0.0000004676329,-1,-0.0000000723492",
+                  "-0,-0.00000004521123,-1",
+                  "-0,-1,0.00000004521123",
                   "0,0.0000001667627,-1",
-                  "-0.0000002441423,-1,-0.00000134277",
+                  "-0.0000002501102,-1,-0.000001341685",
+                  "-0.0000000001735684,-0.00000005146245,-1",
                   "0,0,-1",
                   "0,0,-1",
+                  "0.0000003185975,-1,-0.00000000000735315",
                   "0,0,-1",
-                  "0,-1,0.000000236152",
-                  "0.00000000000000001586112,0.00000000000007876271,-1",
-                  "-0,-1,0.000000177114",
-                  "0,-0,-1",
-                  "0.00000000000000220289,-1,-0.000000000000001401841",
+                  "0.0000003051358,-1,-0.000000000005513132",
+                  "-0.00000000000000006959669,0.0000000006020637,-1",
+                  "0.00000009536746,-1,-0.00000006068833",
                   "0,0,-1",
-                  "0,-1,0",
-                  "0,0,-1",
+                  "-0,-1,-0.0000000385323",
+                  "-0.0000000004716036,0.00000004534068,-1",
                   "0.0000000002766149,0.0000001084102,-1",
                   "0,-0,-1",
                   "0.000000103361,-1,-0.0000001080641",
@@ -6467,8 +6438,8 @@
                   "0,0,-1"
                 ],
                 "TextureScale": [
-                  "0.25,0.25",
-                  "0.25,0.25",
+                  "0.2500001,0.25",
+                  "0.2500001,0.25",
                   "0.25,0.25",
                   "0.25,0.25",
                   "0.25,0.25",
@@ -6476,23 +6447,23 @@
                   "0.25,0.2500001",
                   "0.25,0.25",
                   "0.25,0.2499999",
-                  "0.2500002,0.2500001",
+                  "0.2500003,0.2500001",
                   "0.25,0.2499999",
                   "0.25,0.25",
                   "0.250001,0.25",
                   "0.2500009,0.25",
                   "1.397533,0.25",
-                  "5.380764,0.25",
+                  "5.385766,0.25",
                   "0.25,0.25",
                   "0.25,0.25",
                   "0.25,0.2500001",
                   "0.2500001,0.2500001",
                   "0.25,0.2500001",
                   "0.25,0.25",
-                  "0.4656584,0.25",
+                  "0.4656582,0.25",
                   "0.2500003,0.25",
                   "0.2500008,0.25",
-                  "0.2500008,0.25",
+                  "24.03674,0.2500001",
                   "0.2500009,0.2500001",
                   "0.2500007,0.25",
                   "0.25,0.2500001",
@@ -6501,37 +6472,37 @@
                   "0.25,0.25"
                 ],
                 "TextureOffset": [
-                  "16,40.00098",
-                  "16.00049,40.00049",
+                  "15.99988,40.00098",
+                  "16.00037,40.00049",
                   "296,384",
                   "216,128",
                   "496,384",
                   "16,384",
                   "15.98535,128.0001",
                   "0,0",
-                  "0.0001220703,0.0004882812",
-                  "2.396484,255.9995",
-                  "0.0008544922,0.0004882812",
+                  "0.0001220703,0.0004272461",
+                  "1.044922,255.9995",
+                  "0.0004882812,0.0006408691",
                   "0,0.0002441406",
-                  "255.9957,0",
+                  "255.9957,255.9999",
                   "255.9958,0.0002441406",
-                  "190.2085,255.9998",
-                  "247.2975,0.0004882812",
+                  "190.2085,255.9996",
+                  "249.6217,0.0009765625",
                   "239.9999,128.0002",
                   "0,0",
-                  "255.9987,0.002929688",
-                  "0.3452148,255.9998",
+                  "255.9991,0.002441406",
+                  "0.07617188,255.9998",
                   "255.9987,0.003417969",
-                  "0,0.0001068115",
-                  "13.26938,255.999",
+                  "0,0.0001106262",
+                  "13.26907,0",
                   "0.001342773,0.0002441406",
-                  "255.9956,255.999",
-                  "255.9965,0.0002441406",
-                  "53.51514,127.9998",
+                  "255.9956,0",
+                  "56.73825,0.0002441406",
+                  "53.51611,127.9995",
                   "13.55286,255.9999",
                   "0.0009765625,0.00100708",
                   "255.2651,0",
-                  "0.001464844,255.9998",
+                  "0.001464844,255.9999",
                   "239.9999,128.0002"
                 ],
                 "MaterialIndex": [
@@ -16361,7 +16332,7 @@
                 ],
                 "TextureUAxis": [
                   "1,0,0",
-                  "1,-0.0000003014084,-0",
+                  "1,-0.0000003014083,-0",
                   "0.0000005023472,-1,0.0000000000001381119",
                   "-0.0000005023472,1,-0.0000000000001381119",
                   "-1,0,-0.0000002749331",
@@ -16373,46 +16344,46 @@
                   "-1,0,0",
                   "-1,0,0",
                   "0.0000004768372,1,0",
-                  "1,-0,0",
+                  "1,-0.0000004768372,0",
                   "-0.0000004768372,-1,0",
-                  "1,0,0",
+                  "1,-0.0000004768372,0",
                   "-1,0,0",
-                  "0.0000006883664,1,0",
+                  "0.0000006883665,1,0",
                   "1,0,0",
-                  "-0.0000006883664,-1,0",
-                  "1,0,0",
+                  "-0.0000006883665,-1,0",
+                  "1,0.0000002295115,0",
                   "-1,0,0",
-                  "0.000001441775,1,0",
-                  "1,-0,0",
-                  "-0.000001441775,-1,0",
-                  "1,0,0",
+                  "0.000001441774,1,0",
+                  "1,0.0000004807086,0",
+                  "-0.000001441774,-1,0",
+                  "1,-0.000001441774,0",
                   "-1,0,0",
                   "0.0000004677026,1,0",
                   "1,0,0",
                   "-0.0000004677026,-1,0",
-                  "1,0,0",
+                  "1,0.0000004676456,0",
+                  "1,0.0000002295115,0",
+                  "0.0000006883664,1,-0.0000000000003637623",
+                  "1,0,-0.0000005284429",
+                  "-0.0000006883664,-1,0.0000000000003637623",
+                  "-1,0,-0.0000005285073",
+                  "1,-0.0000004677027,0",
+                  "0.0000004677027,1,0",
                   "1,-0,0",
-                  "0.0000006883664,1,-0.0000000000003637624",
-                  "1,-0,0",
-                  "-0.0000006883664,-1,0.0000000000003637624",
-                  "-1,0,0",
-                  "1,-0,0",
-                  "0.0000004677026,1,0",
-                  "1,-0,0",
-                  "-0.0000004677026,-1,0",
+                  "-0.0000004677027,-1,0",
                   "-1,0,0"
                 ],
                 "TextureVAxis": [
                   "0,-1,0",
                   "0,-1,0",
                   "0.0000002749332,0.0000000000001381119,-1",
-                  "0.0000002749332,0.0000000000001381119,-1",
+                  "0.0000002749331,0.0000000000001381119,-1",
                   "0,0,-1",
                   "-0,0,-1",
                   "0,-1,0",
+                  "-0.00000000000006308817,0.0000001255868,-1",
                   "0,0,-1",
-                  "0,0,-1",
-                  "0,0,-1",
+                  "-0.00000000000006308819,0.0000001255868,-1",
                   "0,0,-1",
                   "0,0,-1",
                   "0,0,-1",
@@ -16435,9 +16406,9 @@
                   "0,0,-1",
                   "0,-1,0",
                   "-0,-1,-0",
-                  "-0.0000005284429,0.0000000000003637624,-1",
+                  "-0.0000005284428,0.0000000000003637623,-1",
                   "-0,0,-1",
-                  "-0.0000005284429,0.0000000000003637624,-1",
+                  "-0.0000005284428,0.0000000000003637623,-1",
                   "0,0,-1",
                   "-0,-1,-0",
                   "-0,0,-1",
@@ -16447,89 +16418,89 @@
                 ],
                 "TextureScale": [
                   "0.1,0.1",
+                  "0.1,0.1000003",
+                  "0.1000003,0.1",
+                  "0.1000003,0.1",
+                  "0.1000025,0.1",
                   "0.1,0.1",
-                  "0.1,0.1",
-                  "0.1,0.1",
-                  "0.09999999,0.1",
-                  "0.1,0.1",
-                  "0.1,0.1",
-                  "0.25,0.2499999",
-                  "0.25,0.25",
-                  "0.25,0.2499999",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
+                  "0.1,0.1000003",
+                  "0.2499999,0.2499999",
+                  "0.2499847,0.25",
+                  "0.2499999,0.25",
                   "0.25,0.25",
                   "0.25,0.25",
                   "0.25,0.2499999",
-                  "0.25,0.25",
+                  "0.2500153,0.25",
                   "0.25,0.2499999",
+                  "0.2500153,0.25",
                   "0.25,0.25",
+                  "0.2500001,0.2499999",
                   "0.25,0.25",
+                  "0.2500001,0.2499999",
+                  "0.2500153,0.2500001",
                   "0.25,0.25",
+                  "0.2500001,0.2499999",
+                  "0.2500153,0.2500001",
+                  "0.2500001,0.2499999",
+                  "0.2500153,0.2500001",
+                  "0.2500153,0.2499999",
+                  "0.2499999,0.2499999",
                   "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25",
-                  "0.25,0.25"
+                  "0.2499999,0.2499999",
+                  "0.2499847,0.2499999",
+                  "0.2500153,0.2500001",
+                  "0.2500001,0.25",
+                  "0.2500153,0.25",
+                  "0.2500001,0.25",
+                  "0.2500153,0.25",
+                  "0.2499847,0.2499999",
+                  "0.2499999,0.25",
+                  "0.2499847,0.25",
+                  "0.2499999,0.25",
+                  "0.2500153,0.25"
                 ],
                 "TextureOffset": [
                   "61.40991,262.7703",
-                  "61.40723,262.772",
-                  "262.7715,287.9989",
-                  "249.2295,287.9989",
-                  "450.5906,288",
-                  "61.41016,288.0001",
-                  "61.41406,262.7715",
-                  "511.9993,0.0001220703",
-                  "0,0.00009155273",
-                  "0.0007324219,0.0001220703",
+                  "61.40723,262.7915",
+                  "262.79,287.9988",
+                  "249.2085,287.9989",
+                  "450.4866,288",
+                  "61.41016,288",
+                  "61.41406,262.792",
+                  "511.9976,0.0006408691",
+                  "511.8965,0",
+                  "0.001953125,0.0004577637",
                   "0,0",
                   "0,0",
-                  "511.9993,0.00006103516",
+                  "511.9995,0.0002441406",
+                  "0.1020508,511.9998",
+                  "0.0004882812,0.0002441406",
+                  "0.1020508,511.9998",
                   "0,0",
-                  "0.0007324219,0.00009155273",
+                  "511.9978,0.0003051758",
                   "0,0",
+                  "0.002197266,0.0002746582",
+                  "0.1040039,0.0009765625",
                   "0,0",
-                  "511.9988,0.00006103516",
+                  "511.9968,0.0002441406",
+                  "0.1046143,0.0009765625",
+                  "0.003173828,0.0002441406",
+                  "0.1002197,0.0009765625",
+                  "511.8966,0.0002746582",
+                  "0,0.0002441406",
                   "0,0",
-                  "0.001220703,0.00009155273",
-                  "0,0",
-                  "0,0",
-                  "511.9976,0.0001220703",
-                  "0,0",
-                  "0.002441406,0.0001525879",
-                  "0,0",
-                  "0,0.00009155273",
-                  "511.9991,0.00006103516",
-                  "0,0",
-                  "0.0007324219,0.00009155273",
-                  "0,0",
-                  "0,0",
-                  "511.9988,0.0009155273",
-                  "0,0.00003051758",
-                  "0.001220703,0.0009155273",
-                  "0,0.00003051758",
-                  "0,0",
-                  "511.9991,0.00003051758",
-                  "0,0.00003051758",
-                  "0.0007324219,0.00003051758",
-                  "0,0.00003051758"
+                  "511.9999,0.0002441406",
+                  "511.8973,511.9991",
+                  "0.104248,0.0009765625",
+                  "511.9978,0.0008850098",
+                  "0.1036377,0.00006103516",
+                  "0.002197266,0.0008850098",
+                  "511.8967,0.00006103516",
+                  "511.8954,511.9991",
+                  "511.9998,0",
+                  "511.8964,0.00006103516",
+                  "0.0001220703,0",
+                  "511.8966,0"
                 ],
                 "MaterialIndex": [
                   1,
@@ -16760,6 +16731,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "3f9522ba-b6dc-47b0-8849-ba7533206d91",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -16789,6 +16787,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "bd2b1577-a147-4e9f-a03a-7587f6c0809b",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -16818,6 +16843,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "1bb7f880-db2f-456a-a4c9-90aa3a4a79b3",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -16847,6 +16899,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "57a27c6d-eacd-4fb0-bfe8-a01f0f50ac4d",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -16876,6 +16955,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "180f0991-016f-44cb-8460-61bf7f7731d8",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -16905,6 +17011,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "f90b5756-f1f9-40b3-95f2-b05bb47bc070",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -16934,6 +17067,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "af9a051c-f766-4ccf-823c-303fc9bdb97c",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -16963,6 +17123,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "f689e12e-1265-41ad-bd7e-be853e661d7d",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -16992,6 +17179,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "2326c27c-b5dd-40a6-8d22-bda20ddc72e5",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -17021,6 +17235,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "7ea1c77a-dcee-420d-b403-adf7a36d67f0",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -17050,6 +17291,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "b239af13-6754-459a-ab0f-83194b62cc3e",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -17079,6 +17347,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "fee4467a-e436-4939-a04a-c60ee4cd539a",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -17108,6 +17403,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "fe6260e2-f96c-4cad-b696-fdbdccfffa00",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -17136,6 +17458,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "be2e7744-58a3-4d34-ad74-4c1b0600671b",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -17164,6 +17513,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "dc2690a0-f503-4168-93bc-43fc37130688",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -17469,7 +17845,7 @@
               "BodyGroups": 18446744073709551615,
               "Health": 0,
               "IsStatic": true,
-              "MaterialGroup": "Both",
+              "MaterialGroup": null,
               "Model": "models/sign/bathroom/sign_bathroom.vmdl",
               "OnComponentDestroy": null,
               "OnComponentDisabled": null,
@@ -17481,6 +17857,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "644b748d-7fe0-4abc-9235-8843a380d030",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -17511,6 +17914,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "7af70c69-6431-4e66-81dc-52d8477cf943",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -17540,6 +17970,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "a7238e93-ea79-4a56-a30a-4a0840139f01",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -17828,6 +18285,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelPhysics",
+              "__guid": "6516c605-761a-433b-8fde-f8fbaa1fac10",
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "Model": "models/sbox_props/wheely_bin/wheely_bin.vmdl",
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Renderer": {
+                "_type": "component",
+                "component_id": "df056d00-b150-477e-a796-3b5c0e309f07",
+                "go": "d6ad18f6-27a7-44ca-810b-8eff88e74999",
+                "component_type": "SkinnedModelRenderer"
+              },
+              "RigidbodyFlags": 0
             }
           ]
         },
@@ -17857,6 +18341,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.ModelPhysics",
+              "__guid": "6e0ec8d5-a9af-4ada-b165-df99e7d1c097",
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "Model": "models/sbox_props/wheely_bin/wheely_bin.vmdl",
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Renderer": {
+                "_type": "component",
+                "component_id": "68340246-a99b-4fa7-9358-deae74c9a0d9",
+                "go": "379ae06a-727a-46bd-8bd4-254956c3a6fe",
+                "component_type": "SkinnedModelRenderer"
+              },
+              "RigidbodyFlags": 0
             }
           ]
         },
@@ -17887,6 +18398,33 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "b789d468-2560-49d7-bcb4-9c719e7b40c7",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
             }
           ]
         },
@@ -17917,6 +18455,513 @@
               "OnPropTakeDamage": null,
               "StartAsleep": false,
               "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "2c0887f4-3007-47f7-9856-79b4a38ed89a",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            }
+          ]
+        },
+        {
+          "__guid": "c26a5740-3ab3-4564-b856-1d38d9828fda",
+          "Flags": 0,
+          "Name": "lct3000 (9)",
+          "Position": "-140.6621,-2773.95,-529.8135",
+          "Rotation": "0.000000003716963,0.0000000002489501,0.0000001509958,-1",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "cc874de2-79c5-45c2-ac2e-9e6ba02796db",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.47442,0.28594,0.19859,1"
+            }
+          ]
+        },
+        {
+          "__guid": "d338bb63-a339-4b41-9134-f67901d91554",
+          "Flags": 0,
+          "Name": "lct3000 (7)",
+          "Position": "47.33846,1407.05,-529.8135",
+          "Rotation": "-0.0000000002489494,0.000000003716963,1,-0.00000004371139",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "2881f0ab-5357-4d48-bb78-3895a4f7f275",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.47442,0.28594,0.19859,1"
+            }
+          ]
+        },
+        {
+          "__guid": "e14a5b7e-f359-40c5-8b84-0a0283137c95",
+          "Flags": 0,
+          "Name": "lct3000 (11)",
+          "Position": "31.33805,-2397.95,-529.8135",
+          "Rotation": "0.000000003716963,0.0000000002489501,0.0000001509958,-1",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "f32f1c72-6460-400d-a9d9-4f740413dcbb",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.47442,0.28594,0.19859,1"
+            }
+          ]
+        },
+        {
+          "__guid": "3854fbc2-3383-4c34-9ef7-950b06d31801",
+          "Flags": 0,
+          "Name": "lct3000 (5)",
+          "Position": "-124.6615,1031.05,-529.8135",
+          "Rotation": "-0.0000000002489494,0.000000003716963,1,-0.00000004371139",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "05cd35b3-7b60-48cb-a4b3-db6eb8fbf406",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.47442,0.28594,0.19859,1"
+            }
+          ]
+        },
+        {
+          "__guid": "69576f20-bca4-4ec3-8ff8-69d44a3568b8",
+          "Flags": 0,
+          "Name": "lct3000 (12)",
+          "Position": "35.3379,-2853.95,-529.8136",
+          "Rotation": "0.000000003716963,0.0000000002489501,0.0000001509958,-1",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "edf55f8c-0277-4fcb-a336-4f1fb41310d7",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.19859,0.28594,0.47442,1"
+            }
+          ]
+        },
+        {
+          "__guid": "2b7b2810-36fe-4dab-ae5a-1a625594f585",
+          "Flags": 0,
+          "Name": "lct3000 (3)",
+          "Position": "-128.6615,1487.05,-529.8135",
+          "Rotation": "-0.0000000002489494,0.000000003716963,1,-0.00000004371139",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "01d05a14-6894-4182-b4f5-a97a70d76526",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.19859,0.28594,0.47442,1"
+            }
+          ]
+        },
+        {
+          "__guid": "4b8a260c-ab9d-40ec-b3b5-74c259a1454b",
+          "Flags": 0,
+          "Name": "lct3000 (10)",
+          "Position": "-128.6619,-2211.95,-529.8137",
+          "Rotation": "0.000000003716963,0.0000000002489501,0.0000001509958,-1",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "d7ebecf0-ae98-41bf-9b06-acb2bf0a63e9",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.19859,0.28594,0.47442,1"
+            }
+          ]
+        },
+        {
+          "__guid": "b36ed284-3b0a-4ae0-ae65-d21c306bc400",
+          "Flags": 0,
+          "Name": "lct3000",
+          "Position": "35.33849,845.0504,-529.8136",
+          "Rotation": "-0.0000000002489494,0.000000003716963,1,-0.00000004371139",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "57085bd6-fcf4-4560-80ea-16f87334a666",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.19859,0.28594,0.47442,1"
+            }
+          ]
+        },
+        {
+          "__guid": "ae2a0480-e10f-46a4-a908-d21f100b2a8a",
+          "Flags": 0,
+          "Name": "lct3000 (1)",
+          "Position": "35.3384,1961.05,-529.8136",
+          "Rotation": "-0.0000000002489494,0.000000003716963,1,-0.00000004371139",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "bad61f2c-2001-4d58-9329-e975b6c360e3",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.19859,0.28594,0.47442,1"
+            }
+          ]
+        },
+        {
+          "__guid": "787ed801-8def-4cca-9331-604be0bb3d87",
+          "Flags": 0,
+          "Name": "lct3000 (13)",
+          "Position": "-128.6622,-3327.95,-529.8137",
+          "Rotation": "0.000000003716963,0.0000000002489501,0.0000001509958,-1",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "56162c0d-4dea-4df1-bae5-3c1ced586521",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.19859,0.28594,0.47442,1"
+            }
+          ]
+        },
+        {
+          "__guid": "23cd4eb3-e918-44b2-bb9b-87a095a10d6b",
+          "Flags": 0,
+          "Name": "lct3000 (2)",
+          "Position": "-128.6616,2603.05,-529.8135",
+          "Rotation": "-0.0000000002489494,0.000000003716963,1,-0.00000004371139",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "b980208f-659d-4b22-988e-92a26228a8b0",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.19859,0.28594,0.47442,1"
+            }
+          ]
+        },
+        {
+          "__guid": "5672103b-8746-4c3a-bfea-69d1fa0eefd3",
+          "Flags": 0,
+          "Name": "lct3000 (15)",
+          "Position": "35.33756,-3969.95,-529.8136",
+          "Rotation": "0.000000003716963,0.0000000002489501,0.0000001509958,-1",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "b6332ef8-dfd9-4a69-8bd8-36a9d7923513",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.19859,0.28594,0.47442,1"
+            }
+          ]
+        },
+        {
+          "__guid": "18b9e01e-bc18-4f96-810d-51c08ef64091",
+          "Flags": 0,
+          "Name": "lct3000 (4)",
+          "Position": "-124.6616,2147.05,-529.8135",
+          "Rotation": "-0.0000000002489494,0.000000003716963,1,-0.00000004371139",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "4ffcf333-2f73-4f83-88ea-025dcee1cbdc",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.47442,0.28594,0.19859,1"
+            }
+          ]
+        },
+        {
+          "__guid": "5cfbd89a-8872-4a58-aab9-4557c0989a3b",
+          "Flags": 0,
+          "Name": "lct3000 (14)",
+          "Position": "31.33768,-3513.95,-529.8135",
+          "Rotation": "0.000000003716963,0.0000000002489501,0.0000001509958,-1",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "5d0cff07-1da4-4def-a3a0-eba8a8a4fd7a",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.47442,0.28594,0.19859,1"
+            }
+          ]
+        },
+        {
+          "__guid": "0f6d1d25-6b60-4e2f-be51-bb7665d8ba8e",
+          "Flags": 0,
+          "Name": "lct3000 (6)",
+          "Position": "47.33837,2523.05,-529.8135",
+          "Rotation": "-0.0000000002489494,0.000000003716963,1,-0.00000004371139",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "ec2f8d8e-5550-4f1a-87a4-8ae73358573c",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.47442,0.28594,0.19859,1"
+            }
+          ]
+        },
+        {
+          "__guid": "654ada08-e043-4a27-99da-5ada7153e405",
+          "Flags": 0,
+          "Name": "lct3000 (8)",
+          "Position": "-140.6625,-3889.95,-529.8135",
+          "Rotation": "0.000000003716963,0.0000000002489501,0.0000001509958,-1",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "8c055cce-ba1a-458b-84df-1416325a3516",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/lct3000.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "0.47442,0.28594,0.19859,1"
             }
           ]
         }
@@ -18349,7 +19394,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 4,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -18942,7 +19987,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 4,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -19535,7 +20580,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 4,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -20128,7 +21173,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 4,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -20721,7 +21766,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 4,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -21314,7 +22359,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 4,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -21907,7 +22952,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 4,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -22518,7 +23563,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 116,
+                "Id": 125,
                 "Value": "Thank you for voting.",
                 "DstId": 18,
                 "DstName": "phrase"
@@ -22542,7 +23587,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 118,
+                "Id": 126,
                 "Value": "If you want to go through, you must vote first.",
                 "DstId": 46,
                 "DstName": "phrase"
@@ -22744,7 +23789,6 @@
     "creation.vendingmachine02#24921",
     "ekansh.woodstall#66606",
     "exorealms.officewall01#85251",
-    "facepunch.car_dev#58005",
     "facepunch.carpet_b#18623",
     "facepunch.ceiling_plaster_01#33577",
     "facepunch.conc_pol_pnt_01#18753",
@@ -22767,6 +23811,7 @@
     "microrost.building7out#16611",
     "microrost.building8out#16612",
     "microrost.building9out#16613",
+    "pbs.90_light_commercial_truck#78159",
     "rust.water_bottle#25336",
     "rustextended.concrete_damage_a#43235",
     "rustextended.floor_carpet_a#43393",
