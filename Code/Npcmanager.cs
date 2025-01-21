@@ -18,6 +18,23 @@ public sealed class Npcmanager : Component
 	public GameObject NpcDespawn { get; set; }
 
 
+	private TimeUntil _nextSpawn;
+
+	protected override void OnFixedUpdate()
+	{
+		if ( _nextSpawn )
+		{
+			var toSpawn = Game.Random.FromList( Voters );
+			var spawned = toSpawn.Clone( NpcSpawn.WorldPosition );
+
+			if ( spawned.Components.TryGet<Actor>( out var actor ) )
+				actor.WalkTo( NpcInterior.WorldPosition );
+
+			_nextSpawn = 0.3f;
+		}
+	}
+
+
 	protected override void OnUpdate()
 	{
 
