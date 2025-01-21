@@ -50,6 +50,7 @@
           "Choiches": [],
           "EmptyWeight": 0
         },
+        "HasVoted": false,
         "HeightRange": "0.5 1.5",
         "HoodieClothing": {
           "Choiches": [],
@@ -416,6 +417,53 @@
             "Quality": "High",
             "Radius": 45,
             "ThinCompensation": 0
+          }
+        ]
+      },
+      {
+        "__guid": "263cb9bc-a080-4b9b-807f-7d9fea3ef4a6",
+        "Flags": 0,
+        "Name": "Name",
+        "Position": "0,0,83.5",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "ac2cdd58-f10d-45ef-a33f-e067ac87371d",
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "PanelSize": "2048,512",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderScale": 1,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "Sandbox.Nametag",
+            "__guid": "bc51ebc9-c166-4780-8e65-345ac6fb69f0",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Owner": {
+              "_type": "component",
+              "component_id": "0065b80b-81ee-42cd-b072-d210b8270910",
+              "go": "965ef498-3fe8-466b-ab3e-2cbac2c7be71",
+              "component_type": "Player"
+            }
           }
         ]
       }

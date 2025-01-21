@@ -1,0 +1,17 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+    <div class="title">@Name</div>
+</root>
+
+@code
+{
+    [Property]
+    public Player Owner { get; set; }
+    public string Name => Owner.FullName;
+
+    protected override int BuildHash() => System.HashCode.Combine(Name);
+}
