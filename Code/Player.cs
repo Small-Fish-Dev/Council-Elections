@@ -19,6 +19,7 @@ public sealed class Player : Actor
 	public float InteractRange { get; set; } = 120f;
 
 	[Sync]
+	[Property]
 	public bool HasVoted { get; set; } = false;
 	public Interaction CurrentInteraction;
 	public string LastMessage { get; set; }

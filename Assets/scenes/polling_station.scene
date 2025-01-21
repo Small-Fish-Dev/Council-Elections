@@ -149,7 +149,7 @@
               "CandidateName": "Josh Wilson",
               "CandidateGender": "Male",
               "CandidateParty": "Independent",
-              "CandidateSteamId": 0,
+              "CandidateSteamId": 76561198023685521,
               "SceneCandidate": {
                 "_type": "component",
                 "component_id": "3f7ad446-7e6c-4e3b-b53b-3c7c058c0347",
@@ -352,68 +352,6 @@
       ]
     },
     {
-      "__guid": "f8b23890-42bc-40cc-9e9b-f6062e677ce5",
-      "Flags": 0,
-      "Name": "\uD83E\uDC47\uD83E\uDC47\uD83E\uDC47",
-      "Position": "415.875,-536,164",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.TextRenderer",
-          "__guid": "382c6141-cbe9-4acd-a166-4db8712fd0b0",
-          "__version": 1,
-          "BlendMode": "Normal",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "RenderOptions": {
-            "GameLayer": true,
-            "OverlayLayer": false,
-            "BloomLayer": false,
-            "AfterUILayer": false
-          },
-          "Scale": 0.1,
-          "TextAlignment": "Center",
-          "TextScope": {
-            "Text": "\uD83E\uDC47\uD83E\uDC47\uD83E\uDC47",
-            "TextColor": "0.91163,0.85863,0.80562,1",
-            "FontName": "Poppins",
-            "FontSize": 128,
-            "FontWeight": 581,
-            "FontItalic": false,
-            "LineHeight": 1,
-            "LetterSpacing": 0,
-            "WordSpacing": 0,
-            "Outline": {
-              "Enabled": true,
-              "Size": 13.599997,
-              "Color": "0,0,0,1"
-            },
-            "Shadow": {
-              "Enabled": false,
-              "Size": 0.1,
-              "Color": "0,0,0,1",
-              "Offset": "0,8"
-            },
-            "OutlineUnder": {
-              "Enabled": false,
-              "Size": 4,
-              "Color": "0,1,0,1"
-            },
-            "ShadowUnder": {
-              "Enabled": false,
-              "Size": 6,
-              "Color": "0,0,0,1",
-              "Offset": "0,8"
-            }
-          }
-        }
-      ]
-    },
-    {
       "__guid": "530270c7-f990-4443-bfe5-5376b650d7f8",
       "Flags": 0,
       "Name": "NPC Nodes",
@@ -439,130 +377,6 @@
           "Name": "NPC Interior",
           "Position": "848,-596,11.99999",
           "Enabled": true
-        }
-      ]
-    },
-    {
-      "__guid": "d6d41e1f-e61a-40cf-8b51-98395e1f1aa1",
-      "Flags": 0,
-      "Name": "ENTRANCE",
-      "Position": "415.875,-537,179",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.TextRenderer",
-          "__guid": "cec91f1d-161c-4f5c-9598-3f79c7b36387",
-          "__version": 1,
-          "BlendMode": "Normal",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "RenderOptions": {
-            "GameLayer": true,
-            "OverlayLayer": false,
-            "BloomLayer": false,
-            "AfterUILayer": false
-          },
-          "Scale": 0.13,
-          "TextAlignment": "Center",
-          "TextScope": {
-            "Text": "ENTRANCE",
-            "TextColor": "0.91163,0.85863,0.80562,1",
-            "FontName": "Poppins",
-            "FontSize": 128,
-            "FontWeight": 581,
-            "FontItalic": false,
-            "LineHeight": 1,
-            "LetterSpacing": 0,
-            "WordSpacing": 0,
-            "Outline": {
-              "Enabled": true,
-              "Size": 10.079997,
-              "Color": "0,0,0,1"
-            },
-            "Shadow": {
-              "Enabled": false,
-              "Size": 0.1,
-              "Color": "0,0,0,1",
-              "Offset": "0,8"
-            },
-            "OutlineUnder": {
-              "Enabled": false,
-              "Size": 4,
-              "Color": "0,1,0,1"
-            },
-            "ShadowUnder": {
-              "Enabled": false,
-              "Size": 6,
-              "Color": "0,0,0,1",
-              "Offset": "0,8"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "__guid": "66517edb-d059-4ac4-ab9d-0f6062cd635c",
-      "Flags": 0,
-      "Name": "VOTING",
-      "Position": "415.875,-537,196",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.TextRenderer",
-          "__guid": "3d5efc49-188d-4599-9f29-db80eedb7d5e",
-          "__version": 1,
-          "BlendMode": "Normal",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "RenderOptions": {
-            "GameLayer": true,
-            "OverlayLayer": false,
-            "BloomLayer": false,
-            "AfterUILayer": false
-          },
-          "Scale": 0.13,
-          "TextAlignment": "Center",
-          "TextScope": {
-            "Text": "VOTING",
-            "TextColor": "0.91163,0.85863,0.80562,1",
-            "FontName": "Poppins",
-            "FontSize": 128,
-            "FontWeight": 581,
-            "FontItalic": false,
-            "LineHeight": 1,
-            "LetterSpacing": 0,
-            "WordSpacing": 0,
-            "Outline": {
-              "Enabled": true,
-              "Size": 10.079997,
-              "Color": "0,0,0,1"
-            },
-            "Shadow": {
-              "Enabled": false,
-              "Size": 0.1,
-              "Color": "0,0,0,1",
-              "Offset": "0,8"
-            },
-            "OutlineUnder": {
-              "Enabled": false,
-              "Size": 4,
-              "Color": "0,1,0,1"
-            },
-            "ShadowUnder": {
-              "Enabled": false,
-              "Size": 6,
-              "Color": "0,0,0,1",
-              "Offset": "0,8"
-            }
-          }
         }
       ]
     },
@@ -15931,6 +15745,192 @@
               "SurfaceVelocity": "0,0,0"
             }
           ]
+        },
+        {
+          "__guid": "d6d41e1f-e61a-40cf-8b51-98395e1f1aa1",
+          "Flags": 0,
+          "Name": "ENTRANCE",
+          "Position": "307.2136,-723.9496,-350.8136",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "cec91f1d-161c-4f5c-9598-3f79c7b36387",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.13,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "ENTRANCE",
+                "TextColor": "0.91163,0.85863,0.80562,1",
+                "FontName": "Poppins",
+                "FontSize": 128,
+                "FontWeight": 581,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": true,
+                  "Size": 10.079997,
+                  "Color": "0,0,0,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 0.1,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": false,
+                  "Size": 6,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "f8b23890-42bc-40cc-9e9b-f6062e677ce5",
+          "Flags": 0,
+          "Name": "\uD83E\uDC47\uD83E\uDC47\uD83E\uDC47",
+          "Position": "307.2136,-722.9496,-365.8136",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "382c6141-cbe9-4acd-a166-4db8712fd0b0",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.1,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "\uD83E\uDC47\uD83E\uDC47\uD83E\uDC47",
+                "TextColor": "0.91163,0.85863,0.80562,1",
+                "FontName": "Poppins",
+                "FontSize": 128,
+                "FontWeight": 581,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": true,
+                  "Size": 13.599997,
+                  "Color": "0,0,0,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 0.1,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": false,
+                  "Size": 6,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "66517edb-d059-4ac4-ab9d-0f6062cd635c",
+          "Flags": 0,
+          "Name": "VOTING",
+          "Position": "307.2136,-723.9496,-333.8136",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "3d5efc49-188d-4599-9f29-db80eedb7d5e",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.13,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "VOTING",
+                "TextColor": "0.91163,0.85863,0.80562,1",
+                "FontName": "Poppins",
+                "FontSize": 128,
+                "FontWeight": 581,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": true,
+                  "Size": 10.079997,
+                  "Color": "0,0,0,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 0.1,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": false,
+                  "Size": 6,
+                  "Color": "0,0,0,1",
+                  "Offset": "0,8"
+                }
+              }
+            }
+          ]
         }
       ]
     },
@@ -20390,7 +20390,7 @@
           "PlayerAction": {
             "__version": 9,
             "__guid": "bbbc12a4-352a-4e40-81aa-d4615c4e76d4",
-            "__changeId": 54,
+            "__changeId": 177,
             "UserData": {
               "Title": "Player Action",
               "ReferencedComponentTypes": []
@@ -20408,25 +20408,87 @@
                 "Properties": {
                   "_name": "GameObject",
                   "_type": "Sandbox.Component"
+                },
+                "UserData": {
+                  "Labels": {
+                    "_result": "playerObj"
+                  }
                 }
               },
               {
                 "Id": 14,
                 "Type": "scene.ref",
                 "UserData": {
-                  "Position": "24,144"
+                  "Position": "36,84",
+                  "Labels": {
+                    "_result": "bodyguard"
+                  }
                 }
               },
               {
-                "Id": 15,
+                "Id": 16,
+                "Type": "property",
+                "Properties": {
+                  "_name": "HasVoted",
+                  "_type": "Player"
+                },
+                "UserData": {
+                  "Position": "216,24"
+                }
+              },
+              {
+                "Id": 17,
+                "Type": "if",
+                "UserData": {
+                  "Position": "504,0"
+                }
+              },
+              {
+                "Id": 18,
                 "Type": "call",
                 "Properties": {
                   "_isStatic": false,
-                  "_name": "Talk",
-                  "_type": "Voter"
+                  "_name": "StartTalk",
+                  "_type": "Actor"
                 },
                 "UserData": {
-                  "Position": "288,120"
+                  "Position": "768,36"
+                }
+              },
+              {
+                "Id": 46,
+                "Type": "call",
+                "Properties": {
+                  "_isStatic": false,
+                  "_name": "StartTalk",
+                  "_type": "Actor"
+                },
+                "UserData": {
+                  "Position": "780,144"
+                }
+              },
+              {
+                "Id": 119,
+                "Type": "call",
+                "Properties": {
+                  "_isStatic": false,
+                  "_name": "HappyFace",
+                  "_type": "Actor"
+                },
+                "UserData": {
+                  "Position": "1020,48"
+                }
+              },
+              {
+                "Id": 120,
+                "Type": "call",
+                "Properties": {
+                  "_isStatic": false,
+                  "_name": "AngryFace",
+                  "_type": "Actor"
+                },
+                "UserData": {
+                  "Position": "1056,168"
                 }
               }
             ],
@@ -20439,21 +20501,93 @@
               },
               {
                 "SrcId": 0,
+                "SrcName": "obj",
+                "DstId": 16,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 0,
                 "SrcName": "_signal",
-                "DstId": 15,
+                "DstId": 17,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 16,
+                "SrcName": "_result",
+                "DstId": 17,
+                "DstName": "condition"
+              },
+              {
+                "SrcId": 17,
+                "SrcName": "true",
+                "DstId": 18,
                 "DstName": "_signal"
               },
               {
                 "SrcId": 14,
                 "SrcName": "_result",
-                "DstId": 15,
+                "DstId": 18,
                 "DstName": "_target"
+              },
+              {
+                "Id": 116,
+                "Value": "Thank you for voting.",
+                "DstId": 18,
+                "DstName": "phrase"
               },
               {
                 "SrcId": 10,
                 "SrcName": "_result",
-                "DstId": 15,
+                "DstId": 18,
                 "DstName": "target"
+              },
+              {
+                "SrcId": 17,
+                "SrcName": "false",
+                "DstId": 46,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 14,
+                "SrcName": "_result",
+                "DstId": 46,
+                "DstName": "_target"
+              },
+              {
+                "Id": 118,
+                "Value": "If you want to go through, you must vote first.",
+                "DstId": 46,
+                "DstName": "phrase"
+              },
+              {
+                "SrcId": 10,
+                "SrcName": "_result",
+                "DstId": 46,
+                "DstName": "target"
+              },
+              {
+                "SrcId": 18,
+                "SrcName": "_signal",
+                "DstId": 119,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 14,
+                "SrcName": "_result",
+                "DstId": 119,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 46,
+                "SrcName": "_signal",
+                "DstId": 120,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 14,
+                "SrcName": "_result",
+                "DstId": 120,
+                "DstName": "_target"
               }
             ],
             "Defaults": {
@@ -20589,6 +20723,574 @@
           ]
         }
       ]
+    },
+    {
+      "__guid": "275fb693-d478-4d0e-bee3-8a4d887dde01",
+      "Flags": 0,
+      "Name": "Box",
+      "Position": "368.6475,-830.3074,71.99999",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "2435e92c-eee2-4df9-adf9-6e968088e2a0",
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "Friction": null,
+          "HideInGame": false,
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACk2Vh3NUdRSFvxR20zbJZjcJ2bBZygIJVUGRXpQeihULRUGlivRiAaQp/3WcM3xv5r2ZN6/cc9u55dcF3gELvL96gX6gAgwAQ8AIMAosB1rACmAOmAc2AJuALcBOYDewF9gPHAdOAqeAM8B3wA/ABeAScB24CfwG/A48Bf4E/gaeAz3eXWMprjqwzFj7gHXAoNj8a/q/T9xHQK2U27TPXFVgpc8\u002B854Qu0y7Q9ruN45GiaNh\u002BekRH\u002ByUtqr6HVVeETspNjbGtNkjPthx/Re5Vv2uKquV9BvaKLiYKMkq\u002BhpW1iM3Ray9clHmasqc\u002B33OWPOiH9IDq0q9MWs/VMQHu9b3\u002BG3bKxXxwW4v5d3RZsFlsKvNdUBfHb\u002BxVihLzGvUraof3R3yOGgsMyWOu\u002BZd1HW9OQz6P730gXWqORcPjWPEnv\u002BwVNeNwFHrUHMePlaWHDcDn8n7qLPyibLY2woctM5jztE2ZSP62up7r7H162tILtcrH1N3s\u002B81Y1nwvc9ZWGMso8ay0fdhuWurn5h2AV/bJ\u002BPO\u002BANtpNf2AOesYd35PyIfufcBX1mDCXfDMfmIvQPA5/Zdw73xqbYiPySmbo7h6q59MCa3W5Q31N2n/bqxPLYvwsFha9QwnmPm0JCDo9ao6eycAN7YF0132hfykZgXgatyNum\u002B\u002B0Y\u002BgjkN/GxfT7kLv5WP2DsL/GQPTrsnvxTb1NdZv8flaqfYhtzuVz6t7mntTxrLCWV1a7nb\u002BKaMZdHvCWu5V/3c37uzW2Kyw187B/l33n3eEh/sr/KRnC6661vewV6Tj9j7UZst8cFe8T3yy2Jm5SNc/eNcT8vtGeWz6l7U/oyx/OuMhI9frFFbn9fMoS0fV63RnP9ueEZ13F05s\u002B65D4K55fnVER/sI/st/257tnXEB/vE\u002BYm9O9rseAd73/5eoa87fo/Y\u002B/P6H3cWDynvqHtb\u002B21juSG\u002B5i47bHxzxnLL77qzskv96PzhmdzVR87ol85DdP7yvO6KD/atfMfGM8/yrvhg/zOH2Huhza74YF9Z35X6euF309of1/9yezE9Enn0oxufBUeJJTkEn/pnltMDiS/xJJbkkO/0S3olPR/9paWlpeyEzEUxX7FRnFGxH7/B5cruzb7Ozs1ezb/sozyzh7Jr8p4ZzVxnNjN/Rc9Hln5NTxZ9kPqnhqlTwU04SV6J/X/WVxgfwAkAAA==",
+            "Positions": [
+              "54.85254,-56.1925,47.00002",
+              "55.85254,-56.1925,47.00002",
+              "55.85248,65.30743,47.00001",
+              "54.85248,65.30743,47.00001",
+              "54.85251,65.30743,-63.99998",
+              "55.85251,65.30743,-63.99998",
+              "55.85257,-56.1925,-63.99998",
+              "54.85257,-56.1925,-63.99998",
+              "54.85254,-56.1925,84.00001",
+              "55.85254,-56.1925,84.00001",
+              "55.85248,65.30743,84.00001",
+              "54.85248,65.30743,84.00001",
+              "55.85251,129.3074,47.00001",
+              "54.85251,129.3074,47.00001",
+              "54.85251,129.3074,84.00001",
+              "55.85251,129.3074,84.00001",
+              "55.8526,262.3074,47.00001",
+              "54.8526,262.3074,47.00001",
+              "54.8526,262.3074,84.00001",
+              "55.8526,262.3074,84.00001",
+              "55.85269,325.8075,47.00001",
+              "54.85269,325.8075,47.00001",
+              "54.85269,325.8075,84.00001",
+              "55.85269,325.8075,84.00001",
+              "55.85275,456.3074,47.00001",
+              "54.85275,456.3074,47.00001",
+              "54.85275,456.3074,84.00001",
+              "55.85275,456.3074,84.00001",
+              "55.85245,129.3074,-68.49999",
+              "54.85245,129.3074,-68.49999",
+              "54.85254,262.3074,-68.49999",
+              "55.85254,262.3074,-68.49999",
+              "55.85269,325.8075,-68.99999",
+              "54.85269,325.8075,-68.99999",
+              "54.85275,456.3074,-68.99999",
+              "55.85275,456.3074,-68.99999"
+            ],
+            "TextureCoord": [
+              "3.316407,-0.9296876",
+              "8.391426,-1.761719",
+              "-5.976562,-0.9296875",
+              "-16.82767,-1.761719",
+              "3.308594,5.976562",
+              "-7.410957,-1.761719",
+              "6.925781,-0.9296876",
+              "15.45463,-1.761719",
+              "8.410957,15.45463",
+              "-7.391426,0.4062496",
+              "8.410959,17.82767",
+              "-14.45463,0.4062497",
+              "8.391428,17.82767",
+              "8.410959,0.4062497",
+              "8.391426,15.45463",
+              "17.82767,0.4062496",
+              "17.82767,-1.761719",
+              "8.391428,0.4062497",
+              "15.45463,0.4062496",
+              "-7.391426,-1.761719",
+              "-16.82767,0.4062497",
+              "8.410957,-1.761719",
+              "-14.45463,-1.761719",
+              "-7.410957,0.4062496",
+              "8.410957,17.82767",
+              "3.308594,-1.21875",
+              "8.410957,15.45463",
+              "-6.925781,-1.21875",
+              "8.391426,15.45463",
+              "3.316406,5.976562",
+              "8.391426,17.82767",
+              "5.976562,-1.21875",
+              "6.925781,-1.21875",
+              "3.308594,-0.9296876",
+              "5.976562,-0.9296875",
+              "5.976562,-1.21875",
+              "3.316407,-1.21875",
+              "-6.925781,-0.9296876",
+              "-5.976562,-1.21875",
+              "-5.976562,-0.9296875",
+              "3.308594,-0.9296875",
+              "3.316406,5.476562",
+              "5.476562,-1.21875",
+              "5.476562,-0.9296875",
+              "3.316406,5.476562",
+              "3.308594,5.476562",
+              "-5.476562,-0.9296875",
+              "-5.476562,-1.21875",
+              "-5.476562,-0.9296875",
+              "3.316406,5.976562",
+              "-5.976562,-1.21875",
+              "3.316406,5.476562",
+              "3.308594,5.476562",
+              "5.976562,-0.9296875",
+              "5.476562,-1.21875",
+              "3.308594,5.976562",
+              "3.308595,4.4375",
+              "-3.316407,-0.9296875",
+              "4.4375,-1.21875",
+              "4.4375,-0.9296875",
+              "3.316407,4.4375",
+              "3.308595,4.4375",
+              "-4.4375,-0.9296875",
+              "-4.4375,-1.21875",
+              "-4.4375,-0.9296875",
+              "-5.476562,-0.9296875",
+              "-5.476562,-1.21875",
+              "3.316407,4.4375",
+              "4.4375,-0.9296875",
+              "5.476562,-0.9296875",
+              "4.4375,-1.21875",
+              "3.308594,5.476562",
+              "3.308595,-0.9296875",
+              "3.316408,3.941406",
+              "3.941406,-1.21875",
+              "3.941406,-0.9296875",
+              "3.316408,3.941406",
+              "3.308595,3.941406",
+              "-3.941406,-0.9296875",
+              "-3.941406,-1.21875",
+              "-3.941406,-0.9296875",
+              "3.316407,4.4375",
+              "-4.4375,-1.21875",
+              "3.316408,3.941406",
+              "3.308595,3.941406",
+              "4.4375,-0.9296875",
+              "3.941406,-1.21875",
+              "3.308595,4.4375",
+              "-3.308596,-0.9296875",
+              "-3.316408,-0.9296875",
+              "-3.308596,-1.21875",
+              "2.921875,-0.9296875",
+              "-3.316408,-1.21875",
+              "3.308596,2.921875",
+              "-3.316408,-0.9296875",
+              "-2.921875,-1.21875",
+              "-2.921875,-0.9296875",
+              "-3.941406,-0.9296875",
+              "-3.941406,-1.21875",
+              "3.316408,2.921875",
+              "2.921875,-0.9296875",
+              "3.941406,-0.9296875",
+              "2.921875,-1.21875",
+              "3.308595,3.941406",
+              "3.308594,5.476562",
+              "3.316406,-0.02734375",
+              "3.308594,4.4375",
+              "5.476562,-0.02734375",
+              "3.316407,4.4375",
+              "-3.308594,-0.02734375",
+              "3.316406,5.476562",
+              "-4.4375,-0.02734375",
+              "-5.476562,-0.02734375",
+              "3.316406,-0.9296875",
+              "-4.4375,-0.9296875",
+              "-3.316407,-0.02734375",
+              "3.308594,-0.02734375",
+              "5.476562,-0.9296875",
+              "4.4375,-0.02734375",
+              "-3.308595,-0.9296875",
+              "3.308595,3.941406",
+              "3.316408,-0.0234375",
+              "3.308596,2.921875",
+              "3.941406,-0.0234375",
+              "3.316408,2.921875",
+              "-3.308596,-0.0234375",
+              "3.316408,3.941406",
+              "-2.921875,-0.0234375",
+              "-3.941406,-0.0234375",
+              "3.316408,-0.9296875",
+              "-2.921875,-0.9296875",
+              "-3.316408,-0.0234375",
+              "3.308595,-0.0234375",
+              "3.941406,-0.9296875",
+              "2.921875,-0.0234375",
+              "-3.308596,-0.9296875"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,-0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,-0,0",
+              "1,0,0",
+              "0,-1,0",
+              "1,0,0",
+              "0,1,0",
+              "-1,0,0",
+              "-1,0,0",
+              "0,1,0",
+              "1,0,0",
+              "0,-1,0",
+              "1,0,0",
+              "-1,0,0",
+              "0,1,0",
+              "1,0,0",
+              "0,-1,0",
+              "1,0,0",
+              "-1,0,0",
+              "0,1,0",
+              "1,0,0",
+              "0,-1,0",
+              "1,0,0",
+              "-1,0,0",
+              "0,1,0",
+              "1,0,0",
+              "0,-1,0",
+              "1,0,0",
+              "1,0,0",
+              "0,1,0",
+              "1,0,0",
+              "0,-1,0",
+              "-1,0,0",
+              "1,0,0",
+              "0,1,0",
+              "1,0,0",
+              "0,-1,0",
+              "-1,0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "-0,0,-1",
+              "0,0,-1",
+              "-0,0,-1",
+              "0,-1,0",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1",
+              "0,-1,0",
+              "0,0,-1",
+              "0,-1,0",
+              "0,0,-1",
+              "0,0,-1",
+              "0,-1,0",
+              "0,0,-1",
+              "0,-1,0",
+              "0,0,-1",
+              "0,0,-1",
+              "0,-1,0",
+              "0,0,-1",
+              "0,-1,0",
+              "0,0,-1",
+              "0,0,-1",
+              "0,-1,0",
+              "0,0,-1",
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1",
+              "0,-1,0",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1"
+            ],
+            "TextureScale": [
+              "0.1,0.1",
+              "0.1,0.1",
+              "0.1,0.1",
+              "0.1,0.1",
+              "0.1,0.1",
+              "0.1,0.1",
+              "0.1,0.1",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureOffset": [
+              "61.40991,262.7703",
+              "61.40991,262.7703",
+              "262.7703,288",
+              "249.2297,288",
+              "450.5901,288",
+              "61.40991,288",
+              "61.40991,262.7703",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0",
+              "0,0"
+            ],
+            "MaterialIndex": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat",
+              "materials/glass_tiling/glass_tiling.vmat"
+            ]
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "SmoothingAngle": 40,
+          "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -20639,6 +21341,7 @@
     "microrost.building9out#16613",
     "rustextended.concrete_damage_a#43235",
     "rustextended.floor_carpet_a#43393",
+    "rustextended.glass_tiling#43278",
     "rustextended.road_b#43363",
     "sboxchile.semaforo5#23955",
     "stardrive.rope_barrier_a#26473",
