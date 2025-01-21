@@ -1,0 +1,30 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+    <div class="action">
+        <div class="container">
+            <Image class="icon" Texture=@Input.GetGlyph( "voice", InputGlyphSize.Medium, GlyphStyle.Knockout.WithSolidABXY())></Image>
+            <div class="description">Voice</div>
+        </div>
+    </div>
+    <div class="action">
+        <div class="container">
+            <Image class="icon" Texture=@Input.GetGlyph( "use", InputGlyphSize.Medium, GlyphStyle.Knockout.WithSolidABXY())></Image>
+            <div class="description">Use</div>
+        </div>
+    </div>
+    <div class="action">
+        <div class="container">
+            <Image class="icon" Texture=@Input.GetGlyph( "chat", InputGlyphSize.Medium, GlyphStyle.Knockout.WithSolidABXY())></Image>
+            <div class="description">Chat</div>
+        </div>
+    </div>
+</root>
+
+@code
+{
+    protected override int BuildHash() => System.HashCode.Combine(Screen.Height);
+}

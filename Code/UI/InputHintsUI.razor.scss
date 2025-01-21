@@ -1,0 +1,39 @@
+InputHintsUI {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-direction: column;
+	padding: 15px;
+
+	.action {
+		justify-content: center;
+		align-items: center;
+		padding: 2px;
+
+		.container {
+			padding: 7px;
+			background-color: rgba(0,0,0,0.7);
+			border-radius: 15px;
+
+			.icon {
+				height: 45px;
+				margin-right: 3px;
+				aspect-ratio: 1;
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+
+			.description {
+				font-size: 30px;
+				font-family: Poppins;
+				color: white;
+				margin-right: 7px;
+			}
+		}
+	}
+}

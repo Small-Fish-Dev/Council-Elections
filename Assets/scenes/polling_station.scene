@@ -402,6 +402,16 @@
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null
+        },
+        {
+          "__type": "Sandbox.InputHintsUI",
+          "__guid": "57790172-8f5e-414e-ad46-943e47a149f5",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
         }
       ]
     },
@@ -19539,7 +19549,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 36,
+                    "Id": 38,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -20132,7 +20142,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 36,
+                    "Id": 38,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -20725,7 +20735,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 36,
+                    "Id": 38,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -21318,7 +21328,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 36,
+                    "Id": 38,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -21911,7 +21921,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 36,
+                    "Id": 38,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -22504,7 +22514,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 36,
+                    "Id": 38,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -23097,7 +23107,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 36,
+                    "Id": 38,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -23703,7 +23713,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 189,
+                "Id": 193,
                 "Value": "Thank you for voting.",
                 "DstId": 18,
                 "DstName": "phrase"
@@ -23727,7 +23737,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 190,
+                "Id": 194,
                 "Value": "If you want to go through, you must vote first.",
                 "DstId": 46,
                 "DstName": "phrase"
