@@ -44,7 +44,7 @@ public sealed class Npcmanager : Component
 			if ( spawned.Components.TryGet<Actor>( out var actor ) )
 				actor.WalkTo( NpcInterior.WorldPosition );
 
-			_nextSpawn = 7f;
+			_nextSpawn = 9f;
 		}
 
 		if ( _nextCheck )
