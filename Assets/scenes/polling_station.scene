@@ -328,6 +328,192 @@
       ]
     },
     {
+      "__guid": "f8b23890-42bc-40cc-9e9b-f6062e677ce5",
+      "Flags": 0,
+      "Name": "\uD83E\uDC47\uD83E\uDC47\uD83E\uDC47",
+      "Position": "407,-536,164",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.TextRenderer",
+          "__guid": "382c6141-cbe9-4acd-a166-4db8712fd0b0",
+          "__version": 1,
+          "BlendMode": "Normal",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "Scale": 0.1,
+          "TextAlignment": "Center",
+          "TextScope": {
+            "Text": "\uD83E\uDC47\uD83E\uDC47\uD83E\uDC47",
+            "TextColor": "0.91163,0.85863,0.80562,1",
+            "FontName": "Poppins",
+            "FontSize": 128,
+            "FontWeight": 581,
+            "FontItalic": false,
+            "LineHeight": 1,
+            "LetterSpacing": 0,
+            "WordSpacing": 0,
+            "Outline": {
+              "Enabled": true,
+              "Size": 13.599997,
+              "Color": "0,0,0,1"
+            },
+            "Shadow": {
+              "Enabled": false,
+              "Size": 0.1,
+              "Color": "0,0,0,1",
+              "Offset": "0,8"
+            },
+            "OutlineUnder": {
+              "Enabled": false,
+              "Size": 4,
+              "Color": "0,1,0,1"
+            },
+            "ShadowUnder": {
+              "Enabled": false,
+              "Size": 6,
+              "Color": "0,0,0,1",
+              "Offset": "0,8"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "__guid": "d6d41e1f-e61a-40cf-8b51-98395e1f1aa1",
+      "Flags": 0,
+      "Name": "ENTRANCE",
+      "Position": "407,-537,179",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.TextRenderer",
+          "__guid": "cec91f1d-161c-4f5c-9598-3f79c7b36387",
+          "__version": 1,
+          "BlendMode": "Normal",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "Scale": 0.13,
+          "TextAlignment": "Center",
+          "TextScope": {
+            "Text": "ENTRANCE",
+            "TextColor": "0.91163,0.85863,0.80562,1",
+            "FontName": "Poppins",
+            "FontSize": 128,
+            "FontWeight": 581,
+            "FontItalic": false,
+            "LineHeight": 1,
+            "LetterSpacing": 0,
+            "WordSpacing": 0,
+            "Outline": {
+              "Enabled": true,
+              "Size": 10.079997,
+              "Color": "0,0,0,1"
+            },
+            "Shadow": {
+              "Enabled": false,
+              "Size": 0.1,
+              "Color": "0,0,0,1",
+              "Offset": "0,8"
+            },
+            "OutlineUnder": {
+              "Enabled": false,
+              "Size": 4,
+              "Color": "0,1,0,1"
+            },
+            "ShadowUnder": {
+              "Enabled": false,
+              "Size": 6,
+              "Color": "0,0,0,1",
+              "Offset": "0,8"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "__guid": "66517edb-d059-4ac4-ab9d-0f6062cd635c",
+      "Flags": 0,
+      "Name": "VOTING",
+      "Position": "407,-537,196",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.TextRenderer",
+          "__guid": "3d5efc49-188d-4599-9f29-db80eedb7d5e",
+          "__version": 1,
+          "BlendMode": "Normal",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "Scale": 0.13,
+          "TextAlignment": "Center",
+          "TextScope": {
+            "Text": "VOTING",
+            "TextColor": "0.91163,0.85863,0.80562,1",
+            "FontName": "Poppins",
+            "FontSize": 128,
+            "FontWeight": 581,
+            "FontItalic": false,
+            "LineHeight": 1,
+            "LetterSpacing": 0,
+            "WordSpacing": 0,
+            "Outline": {
+              "Enabled": true,
+              "Size": 10.079997,
+              "Color": "0,0,0,1"
+            },
+            "Shadow": {
+              "Enabled": false,
+              "Size": 0.1,
+              "Color": "0,0,0,1",
+              "Offset": "0,8"
+            },
+            "OutlineUnder": {
+              "Enabled": false,
+              "Size": 4,
+              "Color": "0,1,0,1"
+            },
+            "ShadowUnder": {
+              "Enabled": false,
+              "Size": 6,
+              "Color": "0,0,0,1",
+              "Offset": "0,8"
+            }
+          }
+        }
+      ]
+    },
+    {
       "__guid": "d7ad61be-493a-45d7-a51d-b1d77f6f6397",
       "Flags": 0,
       "Name": "Map",
@@ -14244,7 +14430,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -14837,7 +15023,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -15430,7 +15616,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -16023,7 +16209,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -16616,7 +16802,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -17209,7 +17395,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -17414,7 +17600,7 @@
             {
               "__guid": "dd2408f0-fa32-4860-bef8-3245d480dc33",
               "Flags": 0,
-              "Name": "ubre",
+              "Name": "Golden G. Godfrey",
               "Position": "0,20.12501,108",
               "Rotation": "0,0,-0.7071067,0.7071068",
               "Enabled": true,
@@ -17477,7 +17663,7 @@
             {
               "__guid": "fc474d2f-a965-4449-9b01-f4ce5ff0ad09",
               "Flags": 0,
-              "Name": "Programmer Party",
+              "Name": "Gleeks Party",
               "Position": "0,20.12501,97.99997",
               "Rotation": "0,0,-0.7071067,0.7071068",
               "Enabled": true,
@@ -17802,7 +17988,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 6,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
