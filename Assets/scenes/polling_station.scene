@@ -6170,7 +6170,7 @@
           "__guid": "beb756d0-033d-4dc6-afe8-782267267a0c",
           "Flags": 0,
           "Name": "rope_barrier_a (4)",
-          "Position": "243.3386,69.0504,-521.8136",
+          "Position": "251.3386,69.0504,-521.8136",
           "Enabled": true,
           "Components": [
             {
@@ -6241,9 +6241,9 @@
               },
               "UseVectorPoints": true,
               "VectorPoints": [
-                "352,133.12,47.52",
-                "352,192,37.91999",
-                "352,251.52,47.2"
+                "360,133.12,47.52",
+                "360,192,37.91999",
+                "360,251.52,47.2"
               ],
               "Width": {
                 "rangey": "0,0.3",
@@ -6265,7 +6265,7 @@
           "__guid": "9dd3e25a-2f62-4a58-b3bb-70db1e0ba9b9",
           "Flags": 0,
           "Name": "rope_barrier_a (2)",
-          "Position": "243.3386,-58.9496,-521.8136",
+          "Position": "251.3386,-58.9496,-521.8136",
           "Enabled": true,
           "Components": [
             {
@@ -6363,9 +6363,9 @@
               },
               "UseVectorPoints": true,
               "VectorPoints": [
-                "352,133.12,47.52",
-                "352,192,37.91999",
-                "352,251.52,47.2"
+                "360,133.12,47.52",
+                "360,192,37.91999",
+                "360,251.52,47.2"
               ],
               "Width": {
                 "rangey": "0,0.3",
@@ -6387,7 +6387,7 @@
           "__guid": "c863f8a1-2704-42a4-af5c-5b8640614331",
           "Flags": 0,
           "Name": "rope_barrier_a (1)",
-          "Position": "243.3386,-186.9496,-521.8136",
+          "Position": "251.3386,-186.9496,-521.8136",
           "Enabled": true,
           "Components": [
             {
@@ -6485,9 +6485,9 @@
               },
               "UseVectorPoints": true,
               "VectorPoints": [
-                "352,5.12,47.52",
-                "352,64,37.91999",
-                "352,123.52,47.2"
+                "360,5.12,47.52",
+                "360,64,37.91999",
+                "360,123.52,47.2"
               ],
               "Width": {
                 "rangey": "0,0.3",
@@ -6509,7 +6509,7 @@
           "__guid": "50010fa8-1e5d-41b8-8b29-23c8cd29f6ee",
           "Flags": 0,
           "Name": "rope_barrier_a (3)",
-          "Position": "243.3386,-314.9496,-521.8136",
+          "Position": "251.3386,-314.9496,-521.8136",
           "Enabled": true,
           "Components": [
             {
@@ -6607,9 +6607,9 @@
               },
               "UseVectorPoints": true,
               "VectorPoints": [
-                "352,-122.88,47.52",
-                "352,-64,37.91999",
-                "352,-4.48,47.2"
+                "360,-122.88,47.52",
+                "360,-64,37.91999",
+                "360,-4.48,47.2"
               ],
               "Width": {
                 "rangey": "0,0.3",
@@ -6631,7 +6631,7 @@
           "__guid": "d75a4898-9376-45cd-9f9c-141f8d438baa",
           "Flags": 0,
           "Name": "rope_barrier_a",
-          "Position": "243.3386,-442.9496,-521.8136",
+          "Position": "251.3386,-442.9496,-521.8136",
           "Enabled": true,
           "Components": [
             {
@@ -6702,9 +6702,9 @@
               },
               "UseVectorPoints": true,
               "VectorPoints": [
-                "344,-250.8799,47.52",
-                "344,-192,37.91999",
-                "344,-132.48,47.2"
+                "360,-250.8799,47.52",
+                "360,-192,37.91999",
+                "360,-132.48,47.2"
               ],
               "Width": {
                 "rangey": "0,0.3",
@@ -7158,7 +7158,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 22,
+                    "Id": 36,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -7751,7 +7751,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 22,
+                    "Id": 36,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -8344,7 +8344,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 22,
+                    "Id": 36,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -8937,7 +8937,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 16,
+                    "Id": 30,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -9530,7 +9530,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 22,
+                    "Id": 36,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -10123,7 +10123,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 22,
+                    "Id": 36,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -10716,7 +10716,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 22,
+                    "Id": 36,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -11057,40 +11057,40 @@
           "Mesh": {
             "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f\u002BlaMRGsohUVbFn1\u002Bt04ANs\u002BZ0VsM69AwfgBFyAKZ9MPXdgk3qLnsI\u002BUm/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt\u002BivpXZ3XnozaOndVn9vvVkkTjEAQAA",
             "Positions": [
-              "-10,-268,84",
-              "10,-268,84",
-              "10,268,84",
-              "-10,268,84",
-              "-10,268,-84",
-              "10,268,-84",
-              "10,-268,-84",
-              "-10,-268,-84"
+              "0,-268,-20.00001",
+              "20,-268,-20.00001",
+              "20,268,-20.00001",
+              "0,268,-20.00001",
+              "0,268,-92.00001",
+              "20,268,-92.00001",
+              "20,-268,-92.00001",
+              "0,-268,-92.00001"
             ],
             "TextureCoord": [
-              "0.09375,2.125",
-              "-0.09375,-1",
-              "0.09375,-2.125",
-              "-2.125,-1",
-              "-0.09375,-2.125",
-              "-0.09375,-1",
-              "-0.09375,2.125",
-              "-2.125,-1",
-              "0.09375,-2.125",
-              "0.09375,1",
-              "0.09375,2.125",
-              "2.125,1",
-              "-0.09375,2.125",
-              "0.09375,1",
-              "-0.09375,-2.125",
-              "2.125,1",
-              "2.125,-1",
-              "-0.09375,1",
-              "-2.125,1",
-              "0.09375,-1",
-              "-2.125,1",
-              "0.09375,-1",
-              "2.125,-1",
-              "-0.09375,1"
+              "4.1875,2.125",
+              "4,0.2380952",
+              "4.1875,-2.125",
+              "-1.125,0.2380952",
+              "4,-2.125",
+              "-3.1875,0.2380953",
+              "4,2.125",
+              "-2.125,0.2380954",
+              "4.1875,-2.125",
+              "-3,1.095238",
+              "4.1875,2.125",
+              "3.125,1.095238",
+              "4,2.125",
+              "4.1875,1.095238",
+              "4,-2.125",
+              "2.125,1.095238",
+              "2.125,0.2380954",
+              "4,1.095238",
+              "-2.125,1.095238",
+              "-3,0.2380953",
+              "-1.125,1.095238",
+              "4.1875,0.2380952",
+              "3.125,0.2380952",
+              "-3.1875,1.095238"
             ],
             "TextureUAxis": [
               "1,0,0",
@@ -11179,6 +11179,668 @@
           "SurfaceVelocity": "0,0,0"
         }
       ]
+    },
+    {
+      "__guid": "6854c844-1004-4880-b825-dc1513ff030e",
+      "Flags": 0,
+      "Name": "window011",
+      "Position": "439.9999,-179.9999,120",
+      "Rotation": "-0.00000003108464,0.7071067,0.7071068,-0.00000003073259",
+      "Scale": "1,0.94,0.75",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "15a74416-cce3-4e9d-99ca-f89aa74a49a4",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/props_2fort/window011.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "dd3e5a3a-8a07-40cb-93c3-8279087b266e",
+      "Flags": 0,
+      "Name": "window011 (3)",
+      "Position": "439.9999,-375,120",
+      "Rotation": "-0.00000003108464,0.7071067,0.7071068,-0.00000003073259",
+      "Scale": "1,0.94,0.75",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "b34b4a1d-9d0d-4554-b485-5334a9089be7",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/props_2fort/window011.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "c64eb1ea-f64d-404c-82cb-903bfc3fb993",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ]
+    },
+    {
+      "__guid": "0f68e145-2050-4380-9919-8b0d7d417900",
+      "Flags": 0,
+      "Name": "window011 (5)",
+      "Position": "439.9998,-507,120",
+      "Rotation": "-0.00000003108464,0.7071067,0.7071068,-0.00000003073259",
+      "Scale": "1,0.94,0.75",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "89cb6b00-10e4-4827-8e69-d84c4b497de9",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/props_2fort/window011.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "0261f694-a882-4220-8e03-0db67b735693",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ]
+    },
+    {
+      "__guid": "7fe6f27d-3261-4aca-ab1f-20527fed7abb",
+      "Flags": 0,
+      "Name": "window011 (7)",
+      "Position": "439.9998,-703,120",
+      "Rotation": "-0.00000003108464,0.7071067,0.7071068,-0.00000003073259",
+      "Scale": "1,0.94,0.75",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "e238f47d-26b4-4502-8da6-02d9bb7ac812",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/props_2fort/window011.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "a3d032f1-6e11-4ac3-b308-068a523380a5",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ]
+    },
+    {
+      "__guid": "b61573fa-82a9-4d55-bcdd-a2a639a407ce",
+      "Flags": 0,
+      "Name": "window011 (1)",
+      "Position": "439.9999,-113.9999,119.9999",
+      "Rotation": "-0.00000003108464,0.7071067,0.7071068,-0.00000003073259",
+      "Scale": "1,0.94,0.75",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "e48907e4-567c-4c27-b79e-d75b005f938b",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/props_2fort/window011.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "0e1e8a61-6eb2-4a69-86d4-f09153b1af1b",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ]
+    },
+    {
+      "__guid": "76228d9e-621d-4661-bce5-9efc992c7454",
+      "Flags": 0,
+      "Name": "window011 (2)",
+      "Position": "439.9999,-309,119.9999",
+      "Rotation": "-0.00000003108464,0.7071067,0.7071068,-0.00000003073259",
+      "Scale": "1,0.94,0.75",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "3c50f30b-d4de-4988-9e37-e818134d9c60",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/props_2fort/window011.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "1f279db5-2c4a-4a7b-8875-2d2557d61bf4",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ]
+    },
+    {
+      "__guid": "09ffc183-427b-48d9-a15d-4e4ef4943c39",
+      "Flags": 0,
+      "Name": "window011 (4)",
+      "Position": "439.9998,-441,119.9999",
+      "Rotation": "-0.00000003108464,0.7071067,0.7071068,-0.00000003073259",
+      "Scale": "1,0.94,0.75",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "986a6bc7-9283-418b-8f72-60f583c26328",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/props_2fort/window011.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "90d48859-eca4-4bbc-ba19-3254d0c7ede2",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ]
+    },
+    {
+      "__guid": "aeb0fac9-479a-4f4b-bb0a-86de822d02ef",
+      "Flags": 0,
+      "Name": "window011 (6)",
+      "Position": "439.9998,-637,119.9999",
+      "Rotation": "-0.00000003108464,0.7071067,0.7071068,-0.00000003073259",
+      "Scale": "1,0.94,0.75",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "84990fd3-81f7-46f0-865d-bd522e2524ac",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/props_2fort/window011.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "b076841f-30e9-4be3-900a-69364b9d1934",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ]
+    },
+    {
+      "__guid": "4523eaf6-4f54-4595-a2c6-c0eb2133f2a1",
+      "Flags": 0,
+      "Name": "door_frame",
+      "Position": "432,-212,7.999989",
+      "Rotation": "-0.0000000002489494,0.000000003716963,1,-0.00000004371139",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "e7c954c1-7263-4f44-a01c-a2b9997fcb67",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/doors/door_frame.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "79db8810-0811-43c9-ad38-bdcc50f578c9",
+          "Flags": 0,
+          "Name": "telephone_box_door",
+          "Position": "0.00006818771,57.99979,-7.999982",
+          "Rotation": "-0.0000000000000002220446,0.0000000000000002220446,-0.6087614,0.7933534",
+          "Scale": "1.5,1.403286,1.230057",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "7ccf932a-38a6-4355-827b-f7742b6365b6",
+              "BodyGroups": 1,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/props/telephone_box/telephone_box_door.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "5a39a80d-f893-420f-8b18-469e7b1b7f77",
+      "Flags": 0,
+      "Name": "door_frame (1)",
+      "Position": "432,-540,7.999991",
+      "Rotation": "-0.0000000002489494,0.000000003716963,1,-0.00000004371139",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "3374a6ee-ef95-4d24-823d-90374d3ea6be",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/doors/door_frame.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "5cbc5751-b3c7-44f9-a994-6fd4d76fa8e8",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "cfe92aef-a0c4-4764-a226-fb50220b2f59",
+          "Flags": 0,
+          "Name": "telephone_box_door",
+          "Position": "0.00006818771,57.99979,-7.999982",
+          "Rotation": "-0.0000000000000002220446,0.0000000000000002220446,-0.6087614,0.7933534",
+          "Scale": "1.5,1.403286,1.230057",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "15360ede-c846-4da8-9503-72b0b2c6fbdb",
+              "BodyGroups": 1,
+              "Health": 0,
+              "IsStatic": true,
+              "MaterialGroup": null,
+              "Model": "models/props/telephone_box/telephone_box_door.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "66006570-b979-4e1d-8c27-4dcc0176dfbf",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {
+                "X": false,
+                "Y": false,
+                "Z": false,
+                "Pitch": false,
+                "Yaw": false,
+                "Roll": false
+              },
+              "MassCenterOverride": "0,0,0",
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OverrideMassCenter": false,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "c028d56f-807d-4de2-a587-9f1381142fde",
+      "Flags": 0,
+      "Name": "exit_sign01",
+      "Position": "440.539,-572.8641,146",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "f21f01e6-1288-4a33-a827-838a49b95175",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": false,
+          "MaterialGroup": null,
+          "Model": "models/props_spytech/exit_sign01.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "0905d2d7-8023-4555-8e12-6639f6482f53",
+      "Flags": 0,
+      "Name": "exit_sign01 (1)",
+      "Position": "436.0001,-572.8642,146",
+      "Rotation": "-0.00000002959603,-0.00000000511186,1,-0.00000004371139",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "6c581aa3-4a04-43c6-849c-ba31bab49e85",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": false,
+          "MaterialGroup": null,
+          "Model": "models/props_spytech/exit_sign01.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -11211,8 +11873,10 @@
     "ekansh.woodstall#66606",
     "facepunch.car_dev#58005",
     "facepunch.storage_box_01#43562",
+    "facepunch.telephone_box_door#43070",
     "fdd.sign_billboard#35335",
     "gbonn.concretefloor01#49285",
+    "gkaf.door_frame#27898",
     "microrost.building3out#16606",
     "microrost.building4out#16608",
     "microrost.building7out#16611",
@@ -11222,6 +11886,8 @@
     "rustextended.road_b#43363",
     "sboxchile.semaforo5#23955",
     "stardrive.rope_barrier_a#26473",
+    "tfassets.exit_sign01#22802",
+    "tfassets.window011#20649",
     "titanovsky.roadblock#54559"
   ],
   "__version": 2
