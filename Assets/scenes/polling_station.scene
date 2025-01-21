@@ -8329,7 +8329,7 @@
           "__guid": "c028d56f-807d-4de2-a587-9f1381142fde",
           "Flags": 0,
           "Name": "exit_sign01",
-          "Position": "319.8776,-918.4496,-391.8137",
+          "Position": "317.3386,-918.4496,-391.8137",
           "Enabled": true,
           "Components": [
             {
@@ -8357,7 +8357,7 @@
           "__guid": "0905d2d7-8023-4555-8e12-6639f6482f53",
           "Flags": 0,
           "Name": "exit_sign01 (1)",
-          "Position": "315.3387,-918.4497,-391.8137",
+          "Position": "317.3387,-918.4497,-391.8137",
           "Rotation": "-0.00000002959603,-0.00000000511186,1,-0.00000004371139",
           "Enabled": true,
           "Components": [
@@ -14590,7 +14590,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 27,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -15183,7 +15183,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 27,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -15776,7 +15776,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 27,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -16369,7 +16369,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 27,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -16962,7 +16962,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 27,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -17555,7 +17555,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 27,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -18148,7 +18148,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 5,
+                    "Id": 27,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -18464,6 +18464,7 @@
       "Name": "bodyguard (1)",
       "Position": "423.4347,-729.987,12.00013",
       "Rotation": "0,0.00000000372529,0.9977646,0.06682679",
+      "Scale": "1.4,1.4,1.4",
       "Tags": "person,bodyguard",
       "Enabled": true,
       "NetworkMode": 1,
@@ -18492,11 +18493,8 @@
           },
           "DefaultExpression": "Frown",
           "FaceClothing": {
-            "Choiches": [
-              "models/citizen_clothes/glasses/nerdy_glasses/nerdy_glasses.clothing",
-              "models/citizen_clothes/glasses/party_glasses/party_glasses.clothing"
-            ],
-            "EmptyWeight": 10
+            "Choiches": [],
+            "EmptyWeight": 0
           },
           "FacialClothing": {
             "Choiches": [
@@ -18524,38 +18522,16 @@
           },
           "HairClothing": {
             "Choiches": [
-              "models/citizen_clothes/hair/hair_balding/hair_baldingbrown.clothing",
-              "models/citizen_clothes/hair/hair_shortscruffy/hair_shortscruffy_brown.clothing",
-              "models/citizen_clothes/hair/hair_thinning_short/thinning_short.clothing",
-              "models/citizen_clothes/hair/hair_slicked_back_balding/hair_slicked_back_balding.clothing",
-              "models/citizen_clothes/hair/hair_slickedback/hair_slickedback.clothing",
-              "models/citizen_clothes/hair/hair_bobcut/hair_bobcut.clothing",
-              "models/citizen_clothes/hair/hair_short_dreadlocks/short_dreadlocks.clothing",
-              "models/citizen_clothes/hair/hair_short_braids/hair_short_braids.clothing",
-              "models/citizen_clothes/hat/fedora/fedora.clothing",
-              "models/citizen_clothes/hat/flatcap/flatcap.clothing",
-              "models/citizen_clothes/hat/beanie/beanie.clothing",
-              "models/citizen_clothes/hat/baseball_cap/baseball_cap_black.clothing"
+              "models/citizen_clothes/hat/police_hat/police_hat.clothing"
             ],
-            "EmptyWeight": 5
+            "EmptyWeight": 0
           },
-          "HeightRange": "1.2",
+          "HeightRange": "0.9",
           "HoodieClothing": {
             "Choiches": [
-              "models/citizen_clothes/jumper/loose_jumper/loose_jumper_wooly.clothing",
-              "models/citizen_clothes/jumper/loose_jumper/loose_jumper_goalie.clothing",
-              "models/citizen_clothes/jumper/loose_jumper/loose_jumper.clothing",
-              "models/citizen_clothes/jacket/puffer_jacket/puffer_jacket_blue.clothing",
-              "models/citizen_clothes/jacket/winter_coat/winter_coat.clothing",
-              "models/citizen_clothes/jacket/puffer_jacket/puffer_jacket.clothing",
-              "models/citizen_clothes/jacket/hoodie/hoodie_black.clothing",
-              "models/citizen_clothes/jacket/hoodie/hoodie.clothing",
-              "models/citizen_clothes/jacket/brown_leather_jacket/brown_leather_jacket.clothing",
-              "models/citizen_clothes/jacket/brown_leather_jacket/black_leather_jacket.clothing",
-              "models/citizen_clothes/jacket/bomber_jacket/bomber_jacket.clothing",
-              "models/citizen_clothes/jacket/biker_jacket/biker_jacket.clothing"
+              "models/citizen_clothes/jacket/brown_leather_jacket/black_leather_jacket.clothing"
             ],
-            "EmptyWeight": 30
+            "EmptyWeight": 0
           },
           "Interaction": {
             "_type": "component",
@@ -18581,19 +18557,7 @@
           "OnComponentUpdate": null,
           "PantsClothing": {
             "Choiches": [
-              "models/citizen_clothes/trousers/trackiebottoms/trackie_bottoms.clothing",
-              "models/citizen_clothes/trousers/trackiebottoms/trackie_bottoms_black.clothing",
-              "models/citizen_clothes/trousers/smarttrousers/trousers.smart.clothing",
-              "models/citizen_clothes/trousers/loosetrousers/loose_trousers.clothing",
-              "models/citizen_clothes/trousers/loosejeans/loose_jeans.clothing",
-              "models/citizen_clothes/trousers/jeans/jeans_black.clothing",
-              "models/citizen_clothes/trousers/jeans/jeans.clothing",
-              "models/citizen_clothes/trousers/cargopants/cargo_pants_army.clothing",
-              "models/citizen_clothes/trousers/cargopants/brown_cargo_pants.clothing",
-              "models/citizen_clothes/trousers/cargopants/binman_trousers.clothing",
-              "models/citizen_clothes/shorts/summer_shorts/summer shorts.clothing",
-              "models/citizen_clothes/shorts/shorts/shorts.clothing",
-              "models/citizen_clothes/shorts/football_shorts/football_shorts.clothing"
+              "models/citizen_clothes/trousers/jeans/jeans.clothing"
             ],
             "EmptyWeight": 0
           },
@@ -18618,19 +18582,9 @@
           },
           "ShoesClothing": {
             "Choiches": [
-              "models/citizen_clothes/shoes/flatshoes/textures/flat_shoes.clothing",
-              "models/citizen_clothes/shoes/trainers/trainers.clothing",
-              "models/citizen_clothes/shoes/sneakers/sneakers.clothing",
-              "models/citizen_clothes/shoes/sneakers/blue_sneakers.clothing",
-              "models/citizen_clothes/shoes/slippers/slippers.clothing",
-              "models/citizen_clothes/shoes/football_shoes/football_shoes.clothing",
-              "models/citizen_clothes/shoes/crocs_and_socks/clogs_and_socks.clothing",
-              "models/citizen_clothes/shoes/boxing_boots/boxing_boots_blue.clothing",
-              "models/citizen_clothes/shoes/boxing_boots/boxing_boots.clothing",
-              "models/citizen_clothes/shoes/boots/black_boots.clothing",
-              "models/citizen_clothes/shoes/boots/army_boots.clothing"
+              "models/citizen_clothes/shoes/flatshoes/textures/flat_shoes.clothing"
             ],
-            "EmptyWeight": 0.2
+            "EmptyWeight": 0
           },
           "SkinClothing": {
             "Choiches": [
