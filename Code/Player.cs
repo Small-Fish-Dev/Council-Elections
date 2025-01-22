@@ -44,7 +44,7 @@ public sealed class Player : Actor
 
 	public Interaction CurrentInteraction;
 	public string LastMessage { get; set; }
-	ulong _steamId;
+	public ulong SteamId;
 	TimeUntil _nextShoot;
 
 	protected override void OnStart()
@@ -53,7 +53,7 @@ public sealed class Player : Actor
 
 		if ( ElectionsManager.Instance.IsValid() && ElectionsManager.Instance.Candidates != null )
 		{
-			var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == Network.Owner.SteamId );
+			var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == SteamId );
 
 			if ( presidentCopy.CandidateId != 0 && presidentCopy.SceneCandidate.IsValid() )
 			{
@@ -62,8 +62,6 @@ public sealed class Player : Actor
 				IsPresident = true;
 			}
 		}
-
-		_steamId = Network.Owner.SteamId;
 
 		if ( !IsProxy )
 		{
@@ -117,7 +115,7 @@ public sealed class Player : Actor
 	{
 		Player.All.Remove( this );
 
-		var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == _steamId );
+		var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == SteamId );
 
 		if ( presidentCopy.CandidateId != 0 )
 			if ( presidentCopy.SceneCandidate.IsValid() )

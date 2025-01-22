@@ -21,7 +21,7 @@
               "CandidateSteamId": 0,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "f04b1482-fedd-41c8-8f22-8164fbf6913c",
+                "component_id": "eed35e5e-1412-4bdb-8f19-9a0a46b8ac62",
                 "go": "6822aac4-f05e-48a7-ac0b-f9a4fb2077c7",
                 "component_type": "President"
               },
@@ -52,7 +52,7 @@
               "CandidateSteamId": 76561198049395102,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "fb0b7012-c6a6-4528-bdaa-54f3f9ffe09d",
+                "component_id": "beab1e9f-6b64-47fc-9f23-2fad7d1dd254",
                 "go": "f04bdb6d-7a81-4c85-be82-b5f89f03e41d",
                 "component_type": "President"
               },
@@ -83,7 +83,7 @@
               "CandidateSteamId": 76561198000586141,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "9278866f-d95e-41f0-a316-13621241a7be",
+                "component_id": "bd081335-e531-4d28-b108-a535a7352041",
                 "go": "df20f969-0a1b-4bbb-bfc8-98b3e40e6de0",
                 "component_type": "President"
               },
@@ -110,7 +110,7 @@
               "CandidateSteamId": 76561198031345517,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "684155df-3147-4cdf-a692-986adf6c53f2",
+                "component_id": "382778a8-a16a-4a87-b805-990c431c447a",
                 "go": "64bad74c-979c-419d-82ab-a408705d61f5",
                 "component_type": "President"
               },
@@ -129,7 +129,7 @@
               "CandidateSteamId": 76561198049083824,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "92eee314-7d41-4670-b2a0-4558977d3335",
+                "component_id": "5d9a584b-e4c3-46f2-854d-b0073ea89ce0",
                 "go": "30b34e68-c065-42b5-baa9-ade5a8c85465",
                 "component_type": "President"
               },
@@ -156,7 +156,7 @@
               "CandidateSteamId": 76561198023685521,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "d0a2d835-43e2-4fa1-8fb3-234563523b99",
+                "component_id": "495b6061-ed12-4af5-a9bd-4edde93fa7bc",
                 "go": "84ec5c16-f58f-4865-928c-bc39cb874018",
                 "component_type": "President"
               },
@@ -183,7 +183,7 @@
               "CandidateSteamId": 76561198037527559,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "955e166d-54fa-4850-9094-99f63855d2d8",
+                "component_id": "f05ccfbf-0488-4af6-98c2-9111222c5750",
                 "go": "4499e9e0-1972-4e71-9248-4ff43ccc2008",
                 "component_type": "President"
               },
@@ -213,51 +213,6 @@
             "_type": "gameobject",
             "prefab": "prefabs/particle/voted.prefab"
           }
-        },
-        {
-          "__type": "Sandbox.NetworkHelper",
-          "__guid": "f8d64ceb-f7a9-4bc6-86e3-d89c2f8697ae",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "PlayerPrefab": {
-            "_type": "gameobject",
-            "prefab": "prefabs/player.prefab"
-          },
-          "SpawnPoints": [
-            {
-              "_type": "gameobject",
-              "go": "c1bd63be-b4a0-41d3-a684-1d4d385bd205"
-            },
-            {
-              "_type": "gameobject",
-              "go": "a1cb9129-a8d5-46e4-bd58-067b6ce84574"
-            },
-            {
-              "_type": "gameobject",
-              "go": "8c62cdf1-9c22-4e76-b0c5-50c80f6124aa"
-            },
-            {
-              "_type": "gameobject",
-              "go": "c4b65b80-c800-4378-ab34-c346b84267d7"
-            },
-            {
-              "_type": "gameobject",
-              "go": "e827c1b2-dc0b-41c9-8b17-3845842460ec"
-            },
-            {
-              "_type": "gameobject",
-              "go": "dfa9c8c4-4e6d-487a-ad28-feaae8f08562"
-            },
-            {
-              "_type": "gameobject",
-              "go": "65512d5e-8450-41e6-8afe-669d2ccdc5cc"
-            }
-          ],
-          "StartServer": true
         },
         {
           "__type": "Sandbox.Npcmanager",
@@ -346,6 +301,50 @@
             {
               "_type": "gameobject",
               "prefab": "prefabs/voter_female.prefab"
+            }
+          ]
+        },
+        {
+          "__type": "Sandbox.ElectionsNetworkHelper",
+          "__guid": "15185961-825d-40bc-8f54-1d4e40d50214",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "PlayerPrefab": {
+            "_type": "gameobject",
+            "prefab": "prefabs/player.prefab"
+          },
+          "Spawners": [
+            {
+              "_type": "gameobject",
+              "go": "c1bd63be-b4a0-41d3-a684-1d4d385bd205"
+            },
+            {
+              "_type": "gameobject",
+              "go": "a1cb9129-a8d5-46e4-bd58-067b6ce84574"
+            },
+            {
+              "_type": "gameobject",
+              "go": "8c62cdf1-9c22-4e76-b0c5-50c80f6124aa"
+            },
+            {
+              "_type": "gameobject",
+              "go": "c4b65b80-c800-4378-ab34-c346b84267d7"
+            },
+            {
+              "_type": "gameobject",
+              "go": "e827c1b2-dc0b-41c9-8b17-3845842460ec"
+            },
+            {
+              "_type": "gameobject",
+              "go": "dfa9c8c4-4e6d-487a-ad28-feaae8f08562"
+            },
+            {
+              "_type": "gameobject",
+              "go": "65512d5e-8450-41e6-8afe-669d2ccdc5cc"
             }
           ]
         }

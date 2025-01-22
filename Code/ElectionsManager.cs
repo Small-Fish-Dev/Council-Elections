@@ -23,6 +23,7 @@ public sealed class ElectionsManager : Component
 
 	protected override void OnStart()
 	{
+		Instance = this; // I forgot the call order
 		QueryResults();
 	}
 
