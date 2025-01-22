@@ -21,7 +21,7 @@
               "CandidateSteamId": 0,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "8817686f-4c8a-4035-9998-88851c89b7f2",
+                "component_id": "f04b1482-fedd-41c8-8f22-8164fbf6913c",
                 "go": "6822aac4-f05e-48a7-ac0b-f9a4fb2077c7",
                 "component_type": "President"
               },
@@ -52,7 +52,7 @@
               "CandidateSteamId": 76561198049395102,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "9a02de02-725e-4918-8328-99055889af8a",
+                "component_id": "fb0b7012-c6a6-4528-bdaa-54f3f9ffe09d",
                 "go": "f04bdb6d-7a81-4c85-be82-b5f89f03e41d",
                 "component_type": "President"
               },
@@ -83,7 +83,7 @@
               "CandidateSteamId": 76561198000586141,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "ceb36d81-255a-45d8-91c4-6e97fc99292d",
+                "component_id": "9278866f-d95e-41f0-a316-13621241a7be",
                 "go": "df20f969-0a1b-4bbb-bfc8-98b3e40e6de0",
                 "component_type": "President"
               },
@@ -110,7 +110,7 @@
               "CandidateSteamId": 76561198031345517,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "52c4456d-0ced-4a9a-a5af-63f1bcf83635",
+                "component_id": "684155df-3147-4cdf-a692-986adf6c53f2",
                 "go": "64bad74c-979c-419d-82ab-a408705d61f5",
                 "component_type": "President"
               },
@@ -129,7 +129,7 @@
               "CandidateSteamId": 76561198049083824,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "42d51e9a-fd0c-4016-b50a-3e995d687ac8",
+                "component_id": "92eee314-7d41-4670-b2a0-4558977d3335",
                 "go": "30b34e68-c065-42b5-baa9-ade5a8c85465",
                 "component_type": "President"
               },
@@ -156,7 +156,7 @@
               "CandidateSteamId": 76561198023685521,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "0c1c42d8-db11-4f77-8b38-381bbd88eb17",
+                "component_id": "d0a2d835-43e2-4fa1-8fb3-234563523b99",
                 "go": "84ec5c16-f58f-4865-928c-bc39cb874018",
                 "component_type": "President"
               },
@@ -183,7 +183,7 @@
               "CandidateSteamId": 76561198037527559,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "5cb2ff9e-0fca-40bd-adcb-3f42614f9768",
+                "component_id": "955e166d-54fa-4850-9094-99f63855d2d8",
                 "go": "4499e9e0-1972-4e71-9248-4ff43ccc2008",
                 "component_type": "President"
               },
@@ -19549,7 +19549,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 11,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -20142,7 +20142,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 11,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -20735,7 +20735,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 11,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -21328,7 +21328,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 11,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -21921,7 +21921,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 11,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -22514,7 +22514,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 11,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -23107,7 +23107,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 11,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -23713,7 +23713,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 139,
+                "Id": 121,
                 "Value": "Thank you for voting.",
                 "DstId": 18,
                 "DstName": "phrase"
@@ -23737,7 +23737,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 140,
+                "Id": 122,
                 "Value": "If you want to go through, you must vote first.",
                 "DstId": 46,
                 "DstName": "phrase"
