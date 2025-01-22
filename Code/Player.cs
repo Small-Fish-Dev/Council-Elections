@@ -113,6 +113,17 @@ public sealed class Player : Actor
 		{
 			if ( NameTag.IsValid() )
 				NameTag.Enabled = true;
+
+			foreach ( var child in ModelRenderer.GameObject.Children )
+			{
+				if ( child.Components.TryGet<ModelRenderer>( out var renderer ) )
+					renderer.RenderType = Sandbox.ModelRenderer.ShadowRenderType.ShadowsOnly;
+			}
+
+			ModelRenderer.RenderType = Sandbox.ModelRenderer.ShadowRenderType.ShadowsOnly;
+
+			if ( GunWorldModel.Components.TryGet<ModelRenderer>( out var gunRenderer, FindMode.EverythingInSelf ) )
+				gunRenderer.RenderType = Sandbox.ModelRenderer.ShadowRenderType.ShadowsOnly;
 		}
 
 		if ( IsProxy && Camera.IsValid() )
