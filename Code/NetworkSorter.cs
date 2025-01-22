@@ -37,19 +37,12 @@ public sealed class NetworkSorter : Component
 				{
 					LoadingScreen.Title = "Lobby found, joining...";
 					Log.Info( "Lobby found, joining..." );
-					var joined = await Networking.JoinBestLobby( Game.Ident );
 
-					if ( !joined )
-					{
-						LoadingScreen.Title = "Could not join, trying newest lobby...";
-						Log.Info( "Could not join, trying newest lobby..." );
+					var freeLobbies = lobbies.Where( x => !x.IsFull );
+					var newestLobby = freeLobbies.OrderByDescending( x => long.Parse( x.Name ) )
+						.FirstOrDefault(); // Join the latest lobby opened, in case there's toxic ones
 
-						var freeLobbies = lobbies.Where( x => !x.IsFull );
-						var newestLobby = freeLobbies.OrderByDescending( x => long.Parse( x.Name ) )
-							.FirstOrDefault(); // Join the latest lobby opened, in case there's toxic ones
-
-						Networking.Connect( newestLobby.LobbyId );
-					}
+					Networking.Connect( newestLobby.LobbyId );
 				}
 			}
 
