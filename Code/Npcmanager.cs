@@ -186,10 +186,15 @@ public sealed class Npcmanager : Component
 
 
 	[ConCmd( "kill_voters" )]
+	public static void DebugKillVoters()
+	{
+		if ( !Player.Local.IsPresident && Connection.Local != Connection.Host ) return;
+		KillVoters();
+	}
+
+	[Rpc.Broadcast]
 	public static void KillVoters()
 	{
-		if ( Connection.Local != Connection.Host ) return;
-
 		foreach ( var voter in Instance.Actors )
 			voter.DestroyGameObject();
 
