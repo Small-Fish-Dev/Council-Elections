@@ -29,6 +29,15 @@ public sealed class Player : Actor
 	[Sync( SyncFlags.FromHost )]
 	[Property]
 	public bool IsPresident { get; set; } = false;
+
+	[Sync]
+	public bool GunOut { get; set; } = false;
+
+	[Property]
+	public GameObject GunViewModel { get; set; }
+	[Property]
+	public GameObject GunWorldModel { get; set; }
+
 	public Interaction CurrentInteraction;
 	public string LastMessage { get; set; }
 	ulong _steamId;
@@ -93,7 +102,7 @@ public sealed class Player : Actor
 		}
 
 		if ( IsProxy && Camera.IsValid() )
-			Camera.DestroyGameObject();
+			Camera.Destroy();
 
 		UserName = Network.Owner.DisplayName;
 		Pitch = (Network.Owner.SteamId % 100) / 100f + 0.5f;
@@ -139,6 +148,15 @@ public sealed class Player : Actor
 		if ( Input.Pressed( "use" ) )
 			if ( CurrentInteraction.IsValid() && CurrentInteraction.CanInteract )
 				CurrentInteraction.Interact( this );
+
+		if ( Input.Pressed( "gun" ) && IsPresident )
+		{
+			if ( GunOut )
+				DisableGun();
+			else
+				EnableGun();
+		}
+
 	}
 	public override void Talk( GameObject target )
 	{
@@ -174,5 +192,35 @@ public sealed class Player : Actor
 				voteInteraction.NextInteraction = 999f;
 
 		ElectionsManager.Instance.Voted( WorldPosition );
+	}
+
+	[Rpc.Broadcast]
+	public void EnableGun()
+	{
+		GunOut = true;
+
+		if ( GunWorldModel.IsValid() )
+			GunWorldModel.Enabled = true;
+
+		if ( GunViewModel.IsValid() )
+			GunViewModel.Enabled = true;
+
+		if ( ModelRenderer.IsValid() )
+			ModelRenderer.Set( "holdtype", 1 );
+	}
+
+	[Rpc.Broadcast]
+	public void DisableGun()
+	{
+		GunOut = false;
+
+		if ( GunWorldModel.IsValid() )
+			GunWorldModel.Enabled = false;
+
+		if ( GunViewModel.IsValid() )
+			GunViewModel.Enabled = false;
+
+		if ( ModelRenderer.IsValid() )
+			ModelRenderer.Set( "holdtype", 0 );
 	}
 }

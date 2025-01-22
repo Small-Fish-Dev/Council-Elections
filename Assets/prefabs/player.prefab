@@ -42,6 +42,14 @@
         "FirstName": "John",
         "FullName": "John Doe",
         "Gender": "Undefined",
+        "GunViewModel": {
+          "_type": "gameobject",
+          "go": "c09b9fc6-4ef4-4335-8dbe-b253e11b340d"
+        },
+        "GunWorldModel": {
+          "_type": "gameobject",
+          "go": "90df8d8f-f41a-4255-8ba4-b5dda56c1344"
+        },
         "HairbrowsClothing": {
           "Choiches": [],
           "EmptyWeight": 0
@@ -59,6 +67,7 @@
         "Interaction": null,
         "InteractPhrases": [],
         "InteractRange": 100,
+        "IsPresident": false,
         "LastName": "Doe",
         "ModelRenderer": {
           "_type": "component",
@@ -207,64 +216,6 @@
         "Priority": 0,
         "StepDownHeight": 18,
         "StepUpHeight": 18
-      },
-      {
-        "__type": "Sandbox.Voice",
-        "__guid": "fa74a9e0-c70d-475f-b589-6f0b31a5e69d",
-        "Distance": 15000,
-        "Falloff": [
-          {
-            "x": 0,
-            "y": 1,
-            "in": 0,
-            "out": -1.8,
-            "mode": "Mirrored"
-          },
-          {
-            "x": 0.05,
-            "y": 0.22,
-            "in": 3.5,
-            "out": -3.5,
-            "mode": "Mirrored"
-          },
-          {
-            "x": 0.2,
-            "y": 0.04,
-            "in": 0.16,
-            "out": -0.16,
-            "mode": "Mirrored"
-          },
-          {
-            "x": 1,
-            "y": 0,
-            "in": 0,
-            "out": 0,
-            "mode": "Mirrored"
-          }
-        ],
-        "Loopback": false,
-        "Mode": "PushToTalk",
-        "MorphScale": 5,
-        "MorphSmoothTime": 0.1,
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null,
-        "PushToTalkInput": "voice",
-        "Renderer": {
-          "_type": "component",
-          "component_id": "b4eabb1c-8c1b-4b96-9149-2f92c463e0a3",
-          "go": "24080bed-422b-4d8d-bdf2-3a52560dabfa",
-          "component_type": "SkinnedModelRenderer"
-        },
-        "VoiceMixer": {
-          "Name": "unknown",
-          "Id": "00000000-0000-0000-0000-000000000000"
-        },
-        "Volume": 1,
-        "WorldspacePlayback": true
       }
     ],
     "Children": [
@@ -280,7 +231,7 @@
             "AnimationGraph": null,
             "BodyGroups": 341,
             "BoneMergeTarget": null,
-            "CreateAttachments": false,
+            "CreateAttachments": true,
             "CreateBoneObjects": false,
             "MaterialGroup": null,
             "MaterialOverride": null,
@@ -311,6 +262,320 @@
             },
             "Tint": "1,1,1,1",
             "UseAnimGraph": true
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "f6dfb3ba-400e-4a5f-8ea3-b7038bdecce6",
+            "Flags": 8,
+            "Name": "aim_matrix_01",
+            "Position": "5.905499,0.000007053394,11.811",
+            "Enabled": true
+          },
+          {
+            "__guid": "da6966c2-4084-4b10-8322-bd508877d6a2",
+            "Flags": 8,
+            "Name": "aim_matrix_02a",
+            "Position": "5.905499,0.000007053394,9.8425",
+            "Enabled": true
+          },
+          {
+            "__guid": "3d6faaee-19be-415e-a6ce-d8f080d125a8",
+            "Flags": 8,
+            "Name": "aim_matrix_02b",
+            "Position": "9.842502,0.000006571145,9.842498",
+            "Enabled": true
+          },
+          {
+            "__guid": "d34e00b1-60c4-49c8-9a01-8643757216b9",
+            "Flags": 8,
+            "Name": "ankle_R",
+            "Position": "0.3825186,-4.427244,3.807906",
+            "Rotation": "0.6508966,0.2762882,-0.2762862,0.6508951",
+            "Enabled": true
+          },
+          {
+            "__guid": "d1773dc1-7e23-48b4-9455-602b64c8da78",
+            "Flags": 8,
+            "Name": "ankle_L",
+            "Position": "0.3824453,4.427549,3.80795",
+            "Rotation": "0.6508969,0.276289,-0.2762875,0.6508939",
+            "Enabled": true
+          },
+          {
+            "__guid": "d12e0bbd-9c1c-4db7-aee4-061e0a52e393",
+            "Flags": 8,
+            "Name": "arm_lower_R",
+            "Position": "-0.1237709,-14.62092,43.90746",
+            "Rotation": "0.3300996,0.1505789,-0.5848846,0.7254449",
+            "Enabled": true
+          },
+          {
+            "__guid": "e488570b-d39d-4b3c-8c2e-fb786cd9edef",
+            "Flags": 8,
+            "Name": "arm_lower_L",
+            "Position": "-0.1237296,14.62096,43.90764",
+            "Rotation": "0.7254471,0.5848832,-0.1505784,0.3300981",
+            "Enabled": true
+          },
+          {
+            "__guid": "75eb5c25-ef7d-4674-9788-e25112ac9632",
+            "Flags": 8,
+            "Name": "hand_R",
+            "Position": "1.960701,-20.39465,39.24789",
+            "Rotation": "0.2871267,0.2142488,-0.5281321,0.769891",
+            "Enabled": true,
+            "Children": [
+              {
+                "__guid": "90df8d8f-f41a-4255-8ba4-b5dda56c1344",
+                "Flags": 0,
+                "Name": "Gun",
+                "Position": "7.504387,-1.95243,-4.435127",
+                "Rotation": "-0.5525569,0.1495069,0.1277198,0.8099485",
+                "Scale": "1.7,1.7,1.7",
+                "Enabled": true,
+                "Components": [
+                  {
+                    "__type": "Sandbox.ModelRenderer",
+                    "__guid": "c299f831-c90c-4560-883f-980455369cb0",
+                    "BodyGroups": 39,
+                    "CreateAttachments": false,
+                    "MaterialGroup": null,
+                    "MaterialOverride": null,
+                    "Model": "models/weapons/sbox_pistol_usp/w_usp.vmdl",
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "RenderOptions": {
+                      "GameLayer": true,
+                      "OverlayLayer": false,
+                      "BloomLayer": false,
+                      "AfterUILayer": false
+                    },
+                    "RenderType": "On",
+                    "Tint": "1,1,1,1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "__guid": "f3a6cef7-b96f-41c5-ab7f-ad6a2ae7b7fb",
+            "Flags": 8,
+            "Name": "hand_L",
+            "Position": "1.960729,20.39482,39.24817",
+            "Rotation": "0.7698927,0.528131,-0.2142483,0.2871251",
+            "Enabled": true
+          },
+          {
+            "__guid": "497f065d-11a9-4ab7-899a-b3e119bea9a9",
+            "Flags": 8,
+            "Name": "hold_R",
+            "Position": "4.330786,-21.65338,33.46444",
+            "Rotation": "0.0000009536743,0.7071074,-0.000002224834,0.7071063",
+            "Enabled": true
+          },
+          {
+            "__guid": "f19b73ac-a7d4-4048-bbaa-b78dc24eae06",
+            "Flags": 8,
+            "Name": "hold_L",
+            "Position": "4.330697,21.65357,33.46472",
+            "Rotation": "0.000002413988,0.7071078,0.0000008952888,0.7071062",
+            "Enabled": true
+          },
+          {
+            "__guid": "e22a1179-8865-4c7f-bbbf-b4e11ea2df4d",
+            "Flags": 8,
+            "Name": "IK_right_hand",
+            "Position": "1.960569,-20.39471,39.24799",
+            "Rotation": "0.2871271,0.2142481,-0.5281312,0.7698917",
+            "Enabled": true
+          },
+          {
+            "__guid": "bd08e78b-c1e9-41bd-86e3-15d44d7da6a5",
+            "Flags": 8,
+            "Name": "IK_left_hand",
+            "Position": "1.960678,20.39471,39.24793",
+            "Rotation": "0.7698929,0.5281297,-0.2142481,0.2871266",
+            "Enabled": true
+          },
+          {
+            "__guid": "735f69e2-4e56-44b1-a7fb-3ec2aac481f0",
+            "Flags": 8,
+            "Name": "leg_lower_R",
+            "Position": "0.8400744,-4.427293,16.31507",
+            "Rotation": "0.4907753,0.5090599,-0.5090557,0.4907748",
+            "Enabled": true
+          },
+          {
+            "__guid": "aa84967e-24f1-4567-9793-f0b96ff5f64f",
+            "Flags": 8,
+            "Name": "leg_lower_L",
+            "Position": "0.8400415,4.427499,16.31512",
+            "Rotation": "0.4907736,0.5090613,-0.5090557,0.490775",
+            "Enabled": true
+          },
+          {
+            "__guid": "9a846418-c0c0-4c1e-94e0-47c1c024ba6c",
+            "Flags": 8,
+            "Name": "middle_of_both_hands",
+            "Position": "3.753839,0.00008678436,36.00737",
+            "Rotation": "0.000002446368,0.94361,-0.00000119371,0.3310592",
+            "Enabled": true
+          },
+          {
+            "__guid": "515e90ae-f88c-40c1-8f01-3f25daffa244",
+            "Flags": 8,
+            "Name": "driver_arm_upper_R_twist1",
+            "Position": "-0.02462603,-10.87953,47.25685",
+            "Enabled": true
+          },
+          {
+            "__guid": "b7d71c41-0a6b-44dc-bbd7-52e71f2f2410",
+            "Flags": 8,
+            "Name": "driver_arm_lower_R_twist1",
+            "Position": "0.9184657,-17.50779,41.57767",
+            "Enabled": true
+          },
+          {
+            "__guid": "f8974ec8-f72f-4e1c-9cf7-301e73fafe2e",
+            "Flags": 8,
+            "Name": "driver_elbow_R_position",
+            "Position": "-0.1159379,-14.62463,43.90593",
+            "Rotation": "0.09355088,0.3500555,-0.9305706,0.05242028",
+            "Enabled": true
+          },
+          {
+            "__guid": "fb2c9d89-7c4e-467b-be70-13748f8a4fe6",
+            "Flags": 8,
+            "Name": "driver_elbow_L_position",
+            "Position": "-0.1158983,14.62469,43.90613",
+            "Rotation": "0.02578768,0.925451,-0.3465833,0.1508494",
+            "Enabled": true
+          },
+          {
+            "__guid": "71693c08-4d36-471f-b34d-eebb263bb05d",
+            "Flags": 8,
+            "Name": "driver_arm_upper_L_twist1",
+            "Position": "-0.02458639,10.8795,47.25699",
+            "Enabled": true
+          },
+          {
+            "__guid": "d0d69549-09c5-40be-b2a2-70c318b4cef0",
+            "Flags": 8,
+            "Name": "driver_arm_lower_L_twist1",
+            "Position": "0.9184999,17.50789,41.57791",
+            "Enabled": true
+          },
+          {
+            "__guid": "642698a3-6fd2-4a1c-b7e0-1f60d1d94a94",
+            "Flags": 8,
+            "Name": "driver_leg_upper_R_twist1",
+            "Position": "0.8401078,-4.427324,23.55025",
+            "Enabled": true
+          },
+          {
+            "__guid": "b15ecd39-e0ef-4461-b6b1-ba5606f37de7",
+            "Flags": 8,
+            "Name": "driver_leg_upper_L_twist1",
+            "Position": "0.8400913,4.427451,23.5503",
+            "Enabled": true
+          },
+          {
+            "__guid": "545998c2-60a0-4a3b-bd1a-9af03f4a5e16",
+            "Flags": 8,
+            "Name": "driver_kneecap_R_position",
+            "Position": "0.8940678,-4.427284,16.28995",
+            "Rotation": "0.4953896,0.5045515,-0.5045483,0.4954272",
+            "Enabled": true
+          },
+          {
+            "__guid": "f112ca46-2efa-4b98-b28c-6f6fe2b1f8df",
+            "Flags": 8,
+            "Name": "driver_kneecap_L_position",
+            "Position": "0.8940505,4.427493,16.29",
+            "Rotation": "0.7072473,0.006467535,-0.006464988,0.7069072",
+            "Enabled": true
+          },
+          {
+            "__guid": "cbd24799-4493-4af9-92e9-3bb4ec929f3d",
+            "Flags": 8,
+            "Name": "driver_leg_lower_R_twist1",
+            "Position": "0.6112952,-4.427269,10.06149",
+            "Enabled": true
+          },
+          {
+            "__guid": "2235863a-e423-4b05-823f-5483a47f9f96",
+            "Flags": 8,
+            "Name": "driver_leg_lower_L_twist1",
+            "Position": "0.611243,4.427524,10.06154",
+            "Enabled": true
+          },
+          {
+            "__guid": "aa085922-6976-4e86-ac21-7dc309b72328",
+            "Flags": 8,
+            "Name": "forward_reference_modelspace",
+            "Position": "-0.04869491,-0.00007134424,43.80869",
+            "Enabled": true
+          },
+          {
+            "__guid": "700c34c2-e901-46de-8960-23be40a1c983",
+            "Flags": 8,
+            "Name": "eyes",
+            "Position": "6.313199,-0.000210637,63.43349",
+            "Rotation": "0.0000005811453,0.0000009834766,-0.000003501773,1",
+            "Enabled": true
+          },
+          {
+            "__guid": "157948c3-e710-4a17-b093-904549157388",
+            "Flags": 8,
+            "Name": "eye_R_forward",
+            "Position": "6.313175,-3.346658,63.43349",
+            "Rotation": "0.0000005811453,0.0000009834766,-0.000003501773,1",
+            "Enabled": true
+          },
+          {
+            "__guid": "7602df85-3cc8-4294-a9ba-563bdc994310",
+            "Flags": 8,
+            "Name": "eye_L_forward",
+            "Position": "6.313221,3.346237,63.43351",
+            "Rotation": "0.0000005811453,0.0000009834766,-0.000003501773,1",
+            "Enabled": true
+          },
+          {
+            "__guid": "6ebab72c-d9b5-4654-85e5-4dd86ebbc16b",
+            "Flags": 8,
+            "Name": "forward_reference",
+            "Position": "0.9982252,-0.0001634301,56.54376",
+            "Rotation": "0.0000005811453,0.0000009834766,-0.000003501773,1",
+            "Enabled": true
+          },
+          {
+            "__guid": "26e32c3a-4d0f-4e88-9655-0c432c35f443",
+            "Flags": 8,
+            "Name": "foot_R",
+            "Position": "2.022254,-4.683148,0.1888112",
+            "Rotation": "0.000001937151,0.0000006098692,0.000002424704,1",
+            "Enabled": true
+          },
+          {
+            "__guid": "241c8540-3644-470f-898e-b6948e8ad2ff",
+            "Flags": 8,
+            "Name": "foot_L",
+            "Position": "2.022171,4.683476,1.054991",
+            "Rotation": "0.000001387577,-1,-0.000002264977,0.000001160307",
+            "Enabled": true
+          },
+          {
+            "__guid": "1369fb19-6003-4fdb-95b1-d49acaf79b3a",
+            "Flags": 8,
+            "Name": "hat",
+            "Position": "1.293549,0.0002647697,71.70121",
+            "Rotation": "0.0000005811453,0.0000009834766,-0.000003501773,1",
+            "Enabled": true
           }
         ]
       },
@@ -421,6 +686,106 @@
             "Quality": "High",
             "Radius": 45,
             "ThinCompensation": 0
+          },
+          {
+            "__type": "Sandbox.Voice",
+            "__guid": "382ff957-5983-421b-a5f8-cb5027cd7c54",
+            "Distance": 15000,
+            "Falloff": [
+              {
+                "x": 0,
+                "y": 1,
+                "in": 0,
+                "out": -1.8,
+                "mode": "Mirrored"
+              },
+              {
+                "x": 0.05,
+                "y": 0.22,
+                "in": 3.5,
+                "out": -3.5,
+                "mode": "Mirrored"
+              },
+              {
+                "x": 0.2,
+                "y": 0.04,
+                "in": 0.16,
+                "out": -0.16,
+                "mode": "Mirrored"
+              },
+              {
+                "x": 1,
+                "y": 0,
+                "in": 0,
+                "out": 0,
+                "mode": "Mirrored"
+              }
+            ],
+            "Loopback": false,
+            "Mode": "PushToTalk",
+            "MorphScale": 5,
+            "MorphSmoothTime": 0.1,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "PushToTalkInput": "voice",
+            "Renderer": null,
+            "VoiceMixer": {
+              "Name": "unknown",
+              "Id": "00000000-0000-0000-0000-000000000000"
+            },
+            "Volume": 1,
+            "WorldspacePlayback": true
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "c09b9fc6-4ef4-4335-8dbe-b253e11b340d",
+            "Flags": 0,
+            "Name": "Gun",
+            "Components": [
+              {
+                "__type": "Sandbox.SkinnedModelRenderer",
+                "__guid": "26e3c95e-a69e-493b-8aee-c596bb8b3695",
+                "AnimationGraph": null,
+                "BodyGroups": 147,
+                "BoneMergeTarget": null,
+                "CreateAttachments": false,
+                "CreateBoneObjects": false,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/weapons/sbox_pistol_usp/v_usp.vmdl",
+                "Morphs": {},
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Parameters": {
+                  "bools": {},
+                  "ints": {},
+                  "floats": {},
+                  "vectors": {},
+                  "rotations": {}
+                },
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Sequence": {
+                  "Name": null
+                },
+                "Tint": "1,1,1,1",
+                "UseAnimGraph": true
+              }
+            ]
           }
         ]
       },
@@ -502,6 +867,9 @@
   "MenuIcon": null,
   "DontBreakAsTemplate": false,
   "ResourceVersion": 1,
-  "__references": [],
+  "__references": [
+    "facepunch.v_usp#84434",
+    "facepunch.w_usp#77979"
+  ],
   "__version": 1
 }
