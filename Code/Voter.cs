@@ -30,4 +30,12 @@ public partial class Voter : Actor
 		else
 			HappyFace();
 	}
+
+	public override void Unragdoll()
+	{
+		if ( FullName.Contains( "Guard" ) )
+			base.Unragdoll();
+		else
+			GameObject.Destroy();
+	}
 }

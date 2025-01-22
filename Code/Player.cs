@@ -1,6 +1,7 @@
 using Sandbox;
 using System;
 using System.Numerics;
+using static Sandbox.Gizmo;
 
 public sealed class Player : Actor
 {
@@ -31,6 +32,9 @@ public sealed class Player : Actor
 	public bool IsPresident { get; set; } = false;
 
 	[Sync]
+	public bool GunEnabled { get; set; } = false;
+
+	[Sync]
 	public bool GunOut { get; set; } = false;
 
 	[Property]
@@ -41,6 +45,7 @@ public sealed class Player : Actor
 	public Interaction CurrentInteraction;
 	public string LastMessage { get; set; }
 	ulong _steamId;
+	TimeUntil _nextShoot;
 
 	protected override void OnStart()
 	{
@@ -126,6 +131,8 @@ public sealed class Player : Actor
 		if ( !Camera.IsValid() ) return;
 		if ( IsProxy ) return;
 
+		Controller.Enabled = !Ragdolled;
+
 		if ( CurrentInteraction.IsValid() )
 		{
 			CurrentInteraction.HighlightOutline.Enabled = false;
@@ -149,7 +156,7 @@ public sealed class Player : Actor
 			if ( CurrentInteraction.IsValid() && CurrentInteraction.CanInteract )
 				CurrentInteraction.Interact( this );
 
-		if ( Input.Pressed( "gun" ) && IsPresident )
+		if ( Input.Pressed( "gun" ) && IsPresident && GunEnabled )
 		{
 			if ( GunOut )
 				DisableGun();
@@ -157,7 +164,53 @@ public sealed class Player : Actor
 				EnableGun();
 		}
 
+		if ( GunEnabled && GunOut && IsPresident )
+		{
+			if ( Input.Pressed( "attack1" ) && _nextShoot )
+			{
+				var shootTrace = Scene.Trace.Ray( Camera.WorldPosition, Camera.WorldPosition + Camera.WorldRotation.Forward * 9999f )
+					.IgnoreGameObjectHierarchy( GameObject )
+					.Run();
+
+				if ( shootTrace.Hit )
+					if ( shootTrace.GameObject.Components.TryGet<Actor>( out var actor ) )
+						actor.Ragdoll( 15f, shootTrace.HitPosition, shootTrace.Direction * 500f );
+				ShootAnimation();
+
+				_nextShoot = 1f;
+			}
+		}
+
 	}
+
+	[Rpc.Broadcast]
+	public void ShootAnimation()
+	{
+		if ( ModelRenderer.IsValid() )
+			ModelRenderer.Set( "b_attack", true );
+
+		Sound.Play( "shoot", GunWorldModel.WorldPosition );
+	}
+
+	protected override void OnUpdate()
+	{
+		base.OnUpdate();
+
+		if ( Ragdolled )
+			if ( Camera.IsValid() && ModelRenderer.IsValid() )
+				Camera.WorldTransform = ModelRenderer.GetAttachmentObject( "eyes" ).WorldTransform;
+
+
+		if ( Scene.Camera is null )
+			return;
+
+		if ( GunOut )
+		{
+			var hud = Scene.Camera.Hud;
+			hud.DrawCircle( new Vector2( Screen.Width / 2f, Screen.Height / 2f ), 5, Color.White );
+		}
+	}
+
 	public override void Talk( GameObject target )
 	{
 		StartTalk( LastMessage, null );
@@ -197,12 +250,14 @@ public sealed class Player : Actor
 	[Rpc.Broadcast]
 	public void EnableGun()
 	{
+		if ( !GunEnabled || !IsPresident ) return;
+
 		GunOut = true;
 
 		if ( GunWorldModel.IsValid() )
 			GunWorldModel.Enabled = true;
 
-		if ( GunViewModel.IsValid() )
+		if ( GunViewModel.IsValid() && !IsProxy )
 			GunViewModel.Enabled = true;
 
 		if ( ModelRenderer.IsValid() )
@@ -212,6 +267,8 @@ public sealed class Player : Actor
 	[Rpc.Broadcast]
 	public void DisableGun()
 	{
+		if ( !GunEnabled || !IsPresident ) return;
+
 		GunOut = false;
 
 		if ( GunWorldModel.IsValid() )
@@ -222,5 +279,12 @@ public sealed class Player : Actor
 
 		if ( ModelRenderer.IsValid() )
 			ModelRenderer.Set( "holdtype", 0 );
+	}
+
+	[ConCmd( "enable_gun", ConVarFlags.Hidden )]
+	public static void DebugGun()
+	{
+		Player.Local.GunEnabled = true;
+		Log.Info( "Gun enabled" );
 	}
 }

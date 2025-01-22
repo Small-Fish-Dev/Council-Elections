@@ -156,6 +156,12 @@ public abstract partial class Actor : Component
 	public TimeUntil StopTalking { get; set; }
 	public TimeUntil StopLooking { get; set; }
 
+	[Sync]
+	public TimeUntil UnragdollTimer { get; set; }
+	[Sync]
+	public bool Ragdolled { get; set; } = false;
+
+
 	protected override void OnStart()
 	{
 		if ( IsProxy ) return;
@@ -262,6 +268,10 @@ public abstract partial class Actor : Component
 			LookAt( LookingTo );
 		else
 			StopLook();
+
+		if ( !IsProxy )
+			if ( Ragdolled && UnragdollTimer )
+				Unragdoll();
 	}
 
 	protected override void DrawGizmos()
@@ -276,8 +286,9 @@ public abstract partial class Actor : Component
 	}
 
 	[Category( "Debug" ), Order( 6 )]
+	[Rpc.Broadcast]
 	[Button( "Ragdoll", "person_off" )]
-	public void Ragdoll()
+	public virtual void Ragdoll( float duration = 5f, Vector3 position = default, Vector3 force = default )
 	{
 		if ( !ModelRenderer.IsValid() ) return;
 		if ( _ragdoll.IsValid() ) return;
@@ -287,17 +298,34 @@ public abstract partial class Actor : Component
 		_ragdoll.Model = ModelRenderer.Model;
 
 		Collider.Enabled = false;
+		Ragdolled = true;
+		UnragdollTimer = duration;
+
+		if ( position == default || force == default ) return;
+
+		if ( _ragdoll.PhysicsGroup.IsValid() )
+		{
+			foreach ( var body in _ragdoll.PhysicsGroup.Bodies )
+			{
+				if ( body.Position.Distance( position ) <= 30f )
+					body.ApplyImpulseAt( position, force * body.Mass );
+			}
+		}
 	}
 
 	[Category( "Debug" ), Order( 6 )]
+	[Rpc.Broadcast]
 	[Button( "Unragdoll", "person_outline" )]
-	public void Unragdoll()
+	public virtual void Unragdoll()
 	{
 		if ( !ModelRenderer.IsValid() ) return;
 		if ( !_ragdoll.IsValid() ) return;
 
 		_ragdoll.Destroy();
 		Collider.Enabled = true;
+		Ragdolled = false;
+		ModelRenderer.LocalPosition = Vector3.Zero;
+		ModelRenderer.LocalRotation = Rotation.Identity;
 	}
 
 	/// <summary>
