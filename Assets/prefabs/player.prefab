@@ -333,7 +333,6 @@
                 "Position": "7.504387,-1.95243,-4.435127",
                 "Rotation": "-0.5525569,0.1495069,0.1277198,0.8099485",
                 "Scale": "1.7,1.7,1.7",
-                "Enabled": true,
                 "Components": [
                   {
                     "__type": "Sandbox.ModelRenderer",
