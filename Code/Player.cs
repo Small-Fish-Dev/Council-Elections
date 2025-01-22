@@ -33,12 +33,15 @@ public sealed class Player : Actor
 	{
 		Player.All.Add( this );
 
-		var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == Network.Owner.SteamId );
-
-		if ( presidentCopy.CandidateId != 0 && presidentCopy.SceneCandidate.IsValid() )
+		if ( ElectionsManager.Instance.IsValid() && ElectionsManager.Instance.Candidates != null )
 		{
-			presidentCopy.SceneCandidate.GameObject.Enabled = false;
-			WorldPosition = presidentCopy.SceneCandidate.WorldPosition;
+			var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == Network.Owner.SteamId );
+
+			if ( presidentCopy.CandidateId != 0 && presidentCopy.SceneCandidate.IsValid() )
+			{
+				presidentCopy.SceneCandidate.GameObject.Enabled = false;
+				WorldPosition = presidentCopy.SceneCandidate.WorldPosition;
+			}
 		}
 
 		_steamId = Network.Owner.SteamId;
