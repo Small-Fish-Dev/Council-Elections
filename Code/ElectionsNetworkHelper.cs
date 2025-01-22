@@ -25,6 +25,7 @@ public sealed class ElectionsNetworkHelper : Component, Component.INetworkListen
 
 	public void OnActive( Connection channel )
 	{
+		Log.Info( $"{channel.DisplayName} connected!" );
 		var cloned = PlayerPrefab.Clone();
 		cloned.WorldPosition = Game.Random.FromList( Spawners ).WorldPosition;
 
