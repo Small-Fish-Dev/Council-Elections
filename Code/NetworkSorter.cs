@@ -45,15 +45,6 @@ public sealed class NetworkSorter : Component
 					Networking.Connect( newestLobby.LobbyId );
 				}
 			}
-
-			await Task.DelaySeconds( 10f );
-
-			if ( Connection.Local.IsConnecting )
-			{
-				LoadingScreen.Title = "Creating lobby...";
-				Log.Info( $"Couldn't connect, creating lobby..." );
-				CreateAndLoad();
-			}
 		}
 		catch ( Exception exception )
 		{
