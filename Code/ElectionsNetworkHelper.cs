@@ -33,4 +33,22 @@ public sealed class ElectionsNetworkHelper : Component, Component.INetworkListen
 
 		cloned.NetworkSpawn( channel );
 	}
+
+	/// <summary>
+	/// Close a lobby
+	/// </summary>
+	[ConCmd( "lobby_close" )]
+	public static void DebugCloseLobby()
+	{
+		if ( !Player.Local.IsPresident && !Connection.Local.IsHost ) return;
+
+		CloseLobby();
+	}
+
+	[Rpc.Broadcast]
+	public static void CloseLobby()
+	{
+		Networking.Disconnect();
+		Game.Close();
+	}
 }
