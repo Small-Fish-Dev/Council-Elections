@@ -21,7 +21,7 @@
               "CandidateSteamId": 0,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "e9ac885e-a681-4439-94bf-4b1ef2de52ed",
+                "component_id": "8817686f-4c8a-4035-9998-88851c89b7f2",
                 "go": "6822aac4-f05e-48a7-ac0b-f9a4fb2077c7",
                 "component_type": "President"
               },
@@ -52,7 +52,7 @@
               "CandidateSteamId": 76561198049395102,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "8a2a838b-8111-4588-b4fc-e14faa8a9532",
+                "component_id": "9a02de02-725e-4918-8328-99055889af8a",
                 "go": "f04bdb6d-7a81-4c85-be82-b5f89f03e41d",
                 "component_type": "President"
               },
@@ -83,7 +83,7 @@
               "CandidateSteamId": 76561198000586141,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "5c0741c2-3c76-4a48-9296-e30183423d21",
+                "component_id": "ceb36d81-255a-45d8-91c4-6e97fc99292d",
                 "go": "df20f969-0a1b-4bbb-bfc8-98b3e40e6de0",
                 "component_type": "President"
               },
@@ -110,7 +110,7 @@
               "CandidateSteamId": 76561198031345517,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "5b4edc6b-1d25-45b7-b97e-3f0bb8ef8bf8",
+                "component_id": "52c4456d-0ced-4a9a-a5af-63f1bcf83635",
                 "go": "64bad74c-979c-419d-82ab-a408705d61f5",
                 "component_type": "President"
               },
@@ -129,7 +129,7 @@
               "CandidateSteamId": 76561198049083824,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "520b9593-d8f2-477f-9dcf-f77c388a2478",
+                "component_id": "42d51e9a-fd0c-4016-b50a-3e995d687ac8",
                 "go": "30b34e68-c065-42b5-baa9-ade5a8c85465",
                 "component_type": "President"
               },
@@ -156,7 +156,7 @@
               "CandidateSteamId": 76561198023685521,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "701ae979-ba3d-4f70-8294-f85e8a5617ac",
+                "component_id": "0c1c42d8-db11-4f77-8b38-381bbd88eb17",
                 "go": "84ec5c16-f58f-4865-928c-bc39cb874018",
                 "component_type": "President"
               },
@@ -183,7 +183,7 @@
               "CandidateSteamId": 76561198037527559,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "cfa6e791-c899-4b8c-aa26-3929518c8593",
+                "component_id": "5cb2ff9e-0fca-40bd-adcb-3f42614f9768",
                 "go": "4499e9e0-1972-4e71-9248-4ff43ccc2008",
                 "component_type": "President"
               },
@@ -19549,7 +19549,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 11,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -20142,7 +20142,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 11,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -20735,7 +20735,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 11,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -21328,7 +21328,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 11,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -21921,7 +21921,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 11,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -22514,7 +22514,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 11,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -23107,7 +23107,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 11,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -23713,7 +23713,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 121,
+                "Id": 139,
                 "Value": "Thank you for voting.",
                 "DstId": 18,
                 "DstName": "phrase"
@@ -23737,7 +23737,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 122,
+                "Id": 140,
                 "Value": "If you want to go through, you must vote first.",
                 "DstId": 46,
                 "DstName": "phrase"
@@ -24582,6 +24582,184 @@
           "Tint": "1,1,1,1"
         }
       ]
+    },
+    {
+      "__guid": "667f088c-5e33-47d8-9142-1cbe1054d7a0",
+      "Flags": 0,
+      "Name": "speaker",
+      "Position": "579.8277,-285.6711,144",
+      "Rotation": "0.04812203,0.1397565,-0.3219921,0.935133",
+      "Tags": "noblock",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "23aa5610-064c-47d6-b069-660112659043",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/electronics/speaker/speaker.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "dacb6ecc-7272-4de7-bbd1-82ab5b2dc5b5",
+          "Flags": 0,
+          "Name": "Podcast",
+          "Position": "10.86898,0.00001978874,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SoundPointComponent",
+              "__guid": "0303d37b-bf0a-4046-a2c8-81760a0db56b",
+              "Distance": 1000,
+              "DistanceAttenuation": true,
+              "DistanceAttenuationOverride": false,
+              "Falloff": [
+                {
+                  "x": 0,
+                  "y": 1,
+                  "in": 3.1415927,
+                  "out": -3.1415927,
+                  "mode": "Mirrored"
+                },
+                {
+                  "x": 1,
+                  "y": 0,
+                  "in": 0,
+                  "out": 0,
+                  "mode": "Mirrored"
+                }
+              ],
+              "Force2d": false,
+              "MaxRepeatTime": 1,
+              "MinRepeatTime": 1,
+              "Occlusion": false,
+              "OcclusionOverride": false,
+              "OcclusionRadius": 32,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Pitch": 1,
+              "PlayOnStart": true,
+              "ReflectionOverride": false,
+              "Reflections": false,
+              "Repeat": true,
+              "SoundEvent": "sounds/podcast.sound",
+              "SoundOverride": false,
+              "StopOnNew": false,
+              "TargetMixer": {
+                "Name": "unknown",
+                "Id": "00000000-0000-0000-0000-000000000000"
+              },
+              "Volume": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "3ca4f7a5-1ec4-4d91-85ea-e70fa6c6dff5",
+      "Flags": 0,
+      "Name": "speaker (1)",
+      "Position": "584,-988,144",
+      "Rotation": "-0.04812202,0.1397565,0.3219921,0.9351329",
+      "Tags": "noblock",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Prop",
+          "__guid": "2c4057d3-8d99-4675-b947-c361da39edb6",
+          "BodyGroups": 18446744073709551615,
+          "Health": 0,
+          "IsStatic": true,
+          "MaterialGroup": null,
+          "Model": "models/electronics/speaker/speaker.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnPropBreak": null,
+          "OnPropTakeDamage": null,
+          "StartAsleep": false,
+          "Tint": "1,1,1,1"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "b6d01794-c4b6-4b4e-9ce5-6733ce28355f",
+          "Flags": 0,
+          "Name": "Podcast",
+          "Position": "10.86898,0.00001978874,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SoundPointComponent",
+              "__guid": "106725b3-9c03-4c09-a5e8-8207fd1f62c8",
+              "Distance": 1000,
+              "DistanceAttenuation": true,
+              "DistanceAttenuationOverride": false,
+              "Falloff": [
+                {
+                  "x": 0,
+                  "y": 1,
+                  "in": 3.1415927,
+                  "out": -3.1415927,
+                  "mode": "Mirrored"
+                },
+                {
+                  "x": 1,
+                  "y": 0,
+                  "in": 0,
+                  "out": 0,
+                  "mode": "Mirrored"
+                }
+              ],
+              "Force2d": false,
+              "MaxRepeatTime": 1,
+              "MinRepeatTime": 1,
+              "Occlusion": false,
+              "OcclusionOverride": false,
+              "OcclusionRadius": 32,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Pitch": 1,
+              "PlayOnStart": true,
+              "ReflectionOverride": false,
+              "Reflections": false,
+              "Repeat": true,
+              "SoundEvent": "sounds/podcast.sound",
+              "SoundOverride": false,
+              "StopOnNew": false,
+              "TargetMixer": {
+                "Name": "unknown",
+                "Id": "00000000-0000-0000-0000-000000000000"
+              },
+              "Volume": 1
+            }
+          ]
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -24630,6 +24808,7 @@
     "facepunch.wall_concrete_painted_a#18711",
     "facepunch.wheely_bin#33699",
     "fdd.sign_billboard#35335",
+    "frogpond.speaker#12960",
     "gbonn.concretefloor01#49285",
     "gkaf.bathroom_sign#8687",
     "gkaf.door_1#26044",
