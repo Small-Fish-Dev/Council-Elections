@@ -133,6 +133,7 @@ public sealed class ElectionsManager : Component
 	public async void QueryResults()
 	{
 		var results = Sandbox.Services.Leaderboards.Get( "vote" );
+		results.MaxEntries = 999;
 		await results.Refresh();
 		var oldResults = CurrentResults.Clone();
 

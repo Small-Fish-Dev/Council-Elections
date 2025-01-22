@@ -49,12 +49,8 @@ public sealed class Player : Actor
 
 			if ( HasVoted )
 			{
-				Tags.Add( "voted" );
 				Sandbox.Services.Achievements.Unlock( "voted" );
-			}
-
-			if ( HasVoted )
-			{
+				Tags.Add( "voted" );
 				Log.Info( "Player has already voted, disabling ballots." );
 
 				foreach ( var voteInteraction in Scene.GetAllComponents<Interaction>() )
