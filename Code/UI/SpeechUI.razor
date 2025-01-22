@@ -46,6 +46,8 @@
     /// <param name="pitch"></param>
     public static void AddSpeech(string speaker, string text, float speed = 30f, float lifeTime = 2f, GameObject talker = null, Gender gender = Gender.Undefined, float pitch = 1f)
     {
+        if (!Instance.IsValid()) return;
+
         var bubble = Instance.Panel.AddChild<SpeechBubble>("SpeechBubble");
         bubble.Speaker = speaker;
         bubble.Text = text;
