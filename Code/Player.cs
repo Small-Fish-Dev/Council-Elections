@@ -25,6 +25,10 @@ public sealed class Player : Actor
 	[Sync]
 	[Property]
 	public bool HasVoted { get; set; } = false;
+
+	[Sync( SyncFlags.FromHost )]
+	[Property]
+	public bool IsPresident { get; set; } = false;
 	public Interaction CurrentInteraction;
 	public string LastMessage { get; set; }
 	ulong _steamId;
@@ -41,6 +45,7 @@ public sealed class Player : Actor
 			{
 				presidentCopy.SceneCandidate.GameObject.Enabled = false;
 				WorldPosition = presidentCopy.SceneCandidate.WorldPosition;
+				IsPresident = true;
 			}
 		}
 
