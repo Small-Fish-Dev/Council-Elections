@@ -56,6 +56,7 @@ public sealed class ElectionsManager : Component
 	public static string CleanMessage( string message, Candidate pick, out bool isAboutOpponent )
 	{
 		isAboutOpponent = false;
+		var isAboutCandidate = false;
 		if ( string.IsNullOrWhiteSpace( message ) ) return message; // Don't bother..
 
 		Candidate target = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateId == pick.CandidateId );
@@ -65,6 +66,7 @@ public sealed class ElectionsManager : Component
 			message = message.Replace( "<pick>", "", StringComparison.OrdinalIgnoreCase );
 			target = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateId == pick.CandidateId );
 			isAboutOpponent = false;
+			isAboutCandidate = true;
 		}
 
 		if ( message.Contains( "<opponent>", StringComparison.OrdinalIgnoreCase ) )
@@ -72,25 +74,31 @@ public sealed class ElectionsManager : Component
 			message = message.Replace( "<opponent>", "", StringComparison.OrdinalIgnoreCase );
 			target = ElectionsManager.RandomCandidate( pick.CandidateId );
 			isAboutOpponent = true;
+			isAboutCandidate = true;
 		}
 
-		// GENDER //
-		var gender = target.CandidateGender;
-		ReplacePronoun( ref message, "they're", gender, "he's", "she's", "they're" );
-		ReplacePronoun( ref message, "they are", gender, "he is", "she is", "they are" );
-		ReplacePronoun( ref message, "are they", gender, "is he", "is she", "are they" );
-		ReplacePronoun( ref message, "they", gender, "he", "she", "they" ); // Do this after "they are" and "they're" or else it ruins those
-		ReplacePronoun( ref message, "theirs", gender, "his", "hers", "theirs" );
-		ReplacePronoun( ref message, "their", gender, "his", "her", "their" );
-		ReplacePronoun( ref message, "themself", gender, "himself", "herself", "themself" );
-		ReplacePronoun( ref message, "them", gender, "him", "her", "them" );
+		if ( isAboutCandidate )
+		{
+			// GENDER //
+			var gender = target.CandidateGender;
+			ReplacePronoun( ref message, "they're", gender, "he's", "she's", "they're" );
+			ReplacePronoun( ref message, "they are", gender, "he is", "she is", "they are" );
+			ReplacePronoun( ref message, "are they", gender, "is he", "is she", "are they" );
+			ReplacePronoun( ref message, "they've", gender, "he's", "she's'", "they've" );
+			ReplacePronoun( ref message, "they have", gender, "he has", "she has", "they have" );
+			ReplacePronoun( ref message, "they", gender, "he", "she", "they" ); // Do this after "they are" and "they're" or else it ruins those
+			ReplacePronoun( ref message, "theirs", gender, "his", "hers", "theirs" );
+			ReplacePronoun( ref message, "their", gender, "his", "her", "their" );
+			ReplacePronoun( ref message, "themself", gender, "himself", "herself", "themself" );
+			ReplacePronoun( ref message, "them", gender, "him", "her", "them" );
 
-		// CANDIDATE //
+			// CANDIDATE //
 
-		ReplaceWord( ref message, "<name>", target.CandidateName );
-		var randomPolicy = target.RandomPolicy();
-		ReplaceWord( ref message, "<policy.name>", randomPolicy.Name );
-		ReplaceWord( ref message, "<policy.info>", randomPolicy.Info );
+			ReplaceWord( ref message, "<name>", target.CandidateName );
+			var randomPolicy = target.RandomPolicy();
+			ReplaceWord( ref message, "<policy.name>", randomPolicy.Name );
+			ReplaceWord( ref message, "<policy.info>", randomPolicy.Info );
+		}
 
 		return message;
 	}
