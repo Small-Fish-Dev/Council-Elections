@@ -97,6 +97,17 @@ public sealed class Player : Actor
 				.Serialize();
 
 			BroadcastClothing( json );
+
+			foreach ( var child in ModelRenderer.GameObject.Children )
+			{
+				if ( child.Components.TryGet<ModelRenderer>( out var renderer ) )
+					renderer.RenderType = Sandbox.ModelRenderer.ShadowRenderType.ShadowsOnly;
+			}
+
+			ModelRenderer.RenderType = Sandbox.ModelRenderer.ShadowRenderType.ShadowsOnly;
+
+			if ( GunWorldModel.Components.TryGet<ModelRenderer>( out var gunRenderer, FindMode.EverythingInSelf ) )
+				gunRenderer.RenderType = Sandbox.ModelRenderer.ShadowRenderType.ShadowsOnly;
 		}
 		else
 		{
@@ -105,7 +116,7 @@ public sealed class Player : Actor
 		}
 
 		if ( IsProxy && Camera.IsValid() )
-			Camera.Destroy();
+			Camera.Enabled = false;
 
 		UserName = Network.Owner.DisplayName;
 		Pitch = (Network.Owner.SteamId % 100) / 100f + 0.5f;
@@ -194,10 +205,18 @@ public sealed class Player : Actor
 	{
 		base.OnUpdate();
 
-		if ( Ragdolled )
-			if ( Camera.IsValid() && ModelRenderer.IsValid() )
-				Camera.WorldTransform = ModelRenderer.GetAttachmentObject( "eyes" ).WorldTransform;
+		if ( IsProxy ) return;
 
+		if ( Camera.IsValid() && ModelRenderer.IsValid() )
+		{
+			if ( Ragdolled )
+				Camera.WorldTransform = ModelRenderer.GetAttachmentObject( "eyes" ).WorldTransform;
+			else
+			{
+				Camera.LocalPosition = Vector3.Lerp( Camera.LocalPosition, Vector3.Up * (Controller.IsDucking ? 32f : 64f), Time.Delta * 30f );
+				Camera.WorldRotation = Controller.EyeAngles;
+			}
+		}
 
 		if ( Scene.Camera is null )
 			return;

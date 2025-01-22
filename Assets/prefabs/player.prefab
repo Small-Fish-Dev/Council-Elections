@@ -170,7 +170,7 @@
         "ToggleCameraModeButton": "",
         "UseAnimatorControls": true,
         "UseButton": "use",
-        "UseCameraControls": true,
+        "UseCameraControls": false,
         "UseFovFromPreferences": true,
         "UseInputControls": true,
         "UseLookControls": true,
