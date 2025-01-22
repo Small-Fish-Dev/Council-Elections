@@ -161,6 +161,9 @@ public abstract partial class Actor : Component
 	[Sync]
 	public bool Ragdolled { get; set; } = false;
 
+	[Sync]
+	public Vector3 Velocity { get; set; }
+
 
 	protected override void OnStart()
 	{
@@ -181,6 +184,8 @@ public abstract partial class Actor : Component
 
 		Clothe();
 		NeutralFace();
+
+		Network.Refresh();
 	}
 
 	public virtual void Clothe()
@@ -225,35 +230,43 @@ public abstract partial class Actor : Component
 
 	protected override void OnFixedUpdate()
 	{
+
 		if ( ModelRenderer.IsValid() && AnimationHelper.IsValid() && Agent.IsValid() )
 		{
-			AnimationHelper.WithVelocity( Agent.Velocity );
+			if ( !IsProxy )
+				Velocity = Agent.Velocity;
+
+			AnimationHelper.WithVelocity( Velocity );
 		}
 
-		if ( Agent.IsValid() )
+		if ( !IsProxy )
 		{
-			if ( CanMove )
+
+			if ( Agent.IsValid() )
 			{
-				if ( InLine && _nextForwardCheck )
+				if ( CanMove )
 				{
-					var forwardTrace = Scene.Trace.Ray( WorldPosition + Vector3.Up * 32f, WorldPosition + Vector3.Up * 32f + WorldRotation.Forward * 70f )
-						.Size( 12f )
-						.IgnoreGameObjectHierarchy( GameObject )
-						.WithTag( "voter" )
-						.Run();
+					if ( InLine && _nextForwardCheck )
+					{
+						var forwardTrace = Scene.Trace.Ray( WorldPosition + Vector3.Up * 32f, WorldPosition + Vector3.Up * 32f + WorldRotation.Forward * 70f )
+							.Size( 12f )
+							.IgnoreGameObjectHierarchy( GameObject )
+							.WithTag( "voter" )
+							.Run();
 
-					_shouldStop = forwardTrace.Hit;
-					_nextForwardCheck = 0.2f;
+						_shouldStop = forwardTrace.Hit;
+						_nextForwardCheck = 0.2f;
+					}
+
+					if ( !InLine )
+						_shouldStop = false;
 				}
+				else
+					_shouldStop = true;
 
-				if ( !InLine )
-					_shouldStop = false;
+				Agent.MaxSpeed = _shouldStop ? 0f : WishSpeed;
+				Agent.UpdateRotation = Agent.Velocity.Length >= 60f;
 			}
-			else
-				_shouldStop = true;
-
-			Agent.MaxSpeed = _shouldStop ? 0f : WishSpeed;
-			Agent.UpdateRotation = Agent.Velocity.Length >= 60f;
 		}
 
 		if ( Talking )
