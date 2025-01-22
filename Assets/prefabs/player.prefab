@@ -3,7 +3,7 @@
     "__guid": "965ef498-3fe8-466b-ab3e-2cbac2c7be71",
     "Flags": 0,
     "Name": "player",
-    "Tags": "person,player",
+    "Tags": "person,player,noblock",
     "Enabled": true,
     "NetworkMode": 1,
     "Components": [
