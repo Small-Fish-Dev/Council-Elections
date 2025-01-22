@@ -19,6 +19,9 @@ public sealed class Player : Actor
 	[Category( "Stats" )]
 	public float InteractRange { get; set; } = 120f;
 
+	[Property]
+	public GameObject NameTag { get; set; }
+
 	[Sync]
 	[Property]
 	public bool HasVoted { get; set; } = false;
@@ -43,6 +46,10 @@ public sealed class Player : Actor
 		if ( !IsProxy )
 		{
 			Player.Local = this;
+
+			if ( NameTag.IsValid() )
+				NameTag.Enabled = false;
+
 			var vote = Sandbox.Services.Stats.GetPlayerStats( Game.Ident, Connection.Local.SteamId )
 				.FirstOrDefault( x => x.Name == "vote" );
 			HasVoted = !vote.Equals( default( Sandbox.Services.Stats.PlayerStat ) );
@@ -70,6 +77,11 @@ public sealed class Player : Actor
 				.Serialize();
 
 			BroadcastClothing( json );
+		}
+		else
+		{
+			if ( NameTag.IsValid() )
+				NameTag.Enabled = true;
 		}
 
 		if ( IsProxy && Camera.IsValid() )

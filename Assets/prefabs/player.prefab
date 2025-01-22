@@ -66,6 +66,10 @@
           "go": "24080bed-422b-4d8d-bdf2-3a52560dabfa",
           "component_type": "SkinnedModelRenderer"
         },
+        "NameTag": {
+          "_type": "gameobject",
+          "go": "263cb9bc-a080-4b9b-807f-7d9fea3ef4a6"
+        },
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
