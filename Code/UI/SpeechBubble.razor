@@ -43,10 +43,13 @@
             {
                 if (_lastSpoken != charactersToDisplay)
                 {
-                    var toSpeak = _displayedText.Last();
+                    if (!string.IsNullOrEmpty(_displayedText))
+                    {
+                        var toSpeak = _displayedText.Last();
 
-                    if ( toSpeak >= 'A' && toSpeak <= 'Z' || toSpeak >= 'a' && toSpeak <= 'z' ) // Only pronounce normal letters
-                        Sound.Play(toSpeak.ToString().ToLower(), TalkerPosition).Pitch *= Pitch;
+                        if ( toSpeak >= 'A' && toSpeak <= 'Z' || toSpeak >= 'a' && toSpeak <= 'z' ) // Only pronounce normal letters
+                            Sound.Play(toSpeak.ToString().ToLower(), TalkerPosition).Pitch *= Pitch;
+                    }
                 }
             }
 
