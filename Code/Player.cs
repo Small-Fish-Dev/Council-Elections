@@ -46,8 +46,12 @@ public sealed class Player : Actor
 			var vote = Sandbox.Services.Stats.GetPlayerStats( Game.Ident, Connection.Local.SteamId )
 				.FirstOrDefault( x => x.Name == "vote" );
 			HasVoted = !vote.Equals( default( Sandbox.Services.Stats.PlayerStat ) );
+
 			if ( HasVoted )
+			{
 				Tags.Add( "voted" );
+				Sandbox.Services.Achievements.Unlock( "voted" );
+			}
 
 			if ( HasVoted )
 			{
@@ -145,6 +149,7 @@ public sealed class Player : Actor
 		if ( IsProxy ) return;
 
 		Sandbox.Services.Stats.SetValue( "vote", candidate.CandidateId );
+		Sandbox.Services.Achievements.Unlock( "voted" );
 		Log.Info( $"Voted for {candidate.CandidateName}" );
 		Log.Info( "Disabling ballots." );
 
