@@ -206,10 +206,15 @@ public sealed class ElectionsManager : Component
 	}
 
 	[ConCmd( "reset_cooldowns" )]
+	public static void DebugResetCooldowns()
+	{
+		if ( !Player.Local.IsPresident && Connection.Local != Connection.Host ) return;
+		ResetCooldowns();
+	}
+
+	[Rpc.Broadcast]
 	public static void ResetCooldowns()
 	{
-		if ( Connection.Local != Connection.Host ) return;
-
 		foreach ( var interaction in Game.ActiveScene.GetAllComponents<Interaction>() )
 			interaction.NextInteraction = 0f;
 
