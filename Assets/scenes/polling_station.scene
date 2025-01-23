@@ -19,12 +19,7 @@
               "CandidateGender": "Male",
               "CandidateParty": "Gleeks",
               "CandidateSteamId": 0,
-              "SceneCandidate": {
-                "_type": "component",
-                "component_id": "eed35e5e-1412-4bdb-8f19-9a0a46b8ac62",
-                "go": "6822aac4-f05e-48a7-ac0b-f9a4fb2077c7",
-                "component_type": "President"
-              },
+              "SceneCandidate": null,
               "CandidatePolicies": [
                 {
                   "Name": "Carbon Neutral",
@@ -50,12 +45,7 @@
               "CandidateGender": "Male",
               "CandidateParty": "Programmer",
               "CandidateSteamId": 76561198049395102,
-              "SceneCandidate": {
-                "_type": "component",
-                "component_id": "beab1e9f-6b64-47fc-9f23-2fad7d1dd254",
-                "go": "f04bdb6d-7a81-4c85-be82-b5f89f03e41d",
-                "component_type": "President"
-              },
+              "SceneCandidate": null,
               "CandidatePolicies": [
                 {
                   "Name": "Beginner Friendly",
@@ -81,12 +71,7 @@
               "CandidateGender": "Male",
               "CandidateParty": "Programmer",
               "CandidateSteamId": 76561198000586141,
-              "SceneCandidate": {
-                "_type": "component",
-                "component_id": "bd081335-e531-4d28-b108-a535a7352041",
-                "go": "df20f969-0a1b-4bbb-bfc8-98b3e40e6de0",
-                "component_type": "President"
-              },
+              "SceneCandidate": null,
               "CandidatePolicies": [
                 {
                   "Name": "Stack the Council",
@@ -108,12 +93,7 @@
               "CandidateGender": "Undefined",
               "CandidateParty": "Programmer",
               "CandidateSteamId": 76561198031345517,
-              "SceneCandidate": {
-                "_type": "component",
-                "component_id": "382778a8-a16a-4a87-b805-990c431c447a",
-                "go": "64bad74c-979c-419d-82ab-a408705d61f5",
-                "component_type": "President"
-              },
+              "SceneCandidate": null,
               "CandidatePolicies": [
                 {
                   "Name": "Linux",
@@ -127,12 +107,7 @@
               "CandidateGender": "Male",
               "CandidateParty": "Artist",
               "CandidateSteamId": 76561198049083824,
-              "SceneCandidate": {
-                "_type": "component",
-                "component_id": "5d9a584b-e4c3-46f2-854d-b0073ea89ce0",
-                "go": "30b34e68-c065-42b5-baa9-ade5a8c85465",
-                "component_type": "President"
-              },
+              "SceneCandidate": null,
               "CandidatePolicies": [
                 {
                   "Name": "Better Tools",
@@ -154,12 +129,7 @@
               "CandidateGender": "Male",
               "CandidateParty": "Independent",
               "CandidateSteamId": 76561198023685521,
-              "SceneCandidate": {
-                "_type": "component",
-                "component_id": "495b6061-ed12-4af5-a9bd-4edde93fa7bc",
-                "go": "84ec5c16-f58f-4865-928c-bc39cb874018",
-                "component_type": "President"
-              },
+              "SceneCandidate": null,
               "CandidatePolicies": [
                 {
                   "Name": "Unity Over Division",
@@ -181,12 +151,7 @@
               "CandidateGender": "Female",
               "CandidateParty": "Artist",
               "CandidateSteamId": 76561198037527559,
-              "SceneCandidate": {
-                "_type": "component",
-                "component_id": "f05ccfbf-0488-4af6-98c2-9111222c5750",
-                "go": "4499e9e0-1972-4e71-9248-4ff43ccc2008",
-                "component_type": "President"
-              },
+              "SceneCandidate": null,
               "CandidatePolicies": [
                 {
                   "Name": "More Council Transparency",
@@ -307,6 +272,10 @@
         {
           "__type": "Sandbox.ElectionsNetworkHelper",
           "__guid": "15185961-825d-40bc-8f54-1d4e40d50214",
+          "ApeTavernSpawn": {
+            "_type": "gameobject",
+            "go": "079c0f1b-c9e7-43fc-9297-7f65747bb77f"
+          },
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -668,6 +637,13 @@
           "Name": "Spawn (6)",
           "Position": "-46.38852,-201.4267,-189.4935",
           "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true
+        },
+        {
+          "__guid": "079c0f1b-c9e7-43fc-9297-7f65747bb77f",
+          "Flags": 0,
+          "Name": "ApeSpawnPoint",
+          "Position": "-406.241,-1975.658,817.9489",
           "Enabled": true
         }
       ]
@@ -19118,6 +19094,286 @@
               "Tint": "1,1,1,1"
             }
           ]
+        },
+        {
+          "__guid": "98c9ea4a-f8ac-47f5-9e42-38b88048ffd3",
+          "Flags": 0,
+          "Name": "Box",
+          "Position": "-757.7238,-660.1169,159.574",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.MeshComponent",
+              "__guid": "a72e285a-dfa6-4cd8-ba70-e28be425ffcd",
+              "Collision": "Mesh",
+              "Color": "1,1,1,1",
+              "Friction": null,
+              "HideInGame": false,
+              "IsTrigger": false,
+              "Mesh": {
+                "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f\u002BlaMRGsohUVbFn1\u002Bt04ANs\u002BZ0VsM69AwfgBFyAKZ9MPXdgk3qLnsI\u002BUm/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt\u002BivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+                "Positions": [
+                  "-356.0497,-773.7875,3.359741",
+                  "356.0497,-773.7875,3.359741",
+                  "356.0497,773.7875,3.359741",
+                  "-356.0497,773.7875,3.359741",
+                  "-356.0497,773.7875,-3.359741",
+                  "356.0497,773.7875,-3.359741",
+                  "356.0497,-773.7875,-3.359741",
+                  "-356.0497,-773.7875,-3.359741"
+                ],
+                "TextureCoord": [
+                  "2.781638,6.045215",
+                  "-2.781638,-0.02624798",
+                  "2.781638,-6.045215",
+                  "-6.045215,-0.02624798",
+                  "-2.781638,-6.045215",
+                  "-2.781638,-0.02624798",
+                  "-2.781638,6.045215",
+                  "-6.045215,-0.02624798",
+                  "2.781638,-6.045215",
+                  "2.781638,0.02624798",
+                  "2.781638,6.045215",
+                  "6.045215,0.02624798",
+                  "-2.781638,6.045215",
+                  "2.781638,0.02624798",
+                  "-2.781638,-6.045215",
+                  "6.045215,0.02624798",
+                  "6.045215,-0.02624798",
+                  "-2.781638,0.02624798",
+                  "-6.045215,0.02624798",
+                  "2.781638,-0.02624798",
+                  "-6.045215,0.02624798",
+                  "2.781638,-0.02624798",
+                  "6.045215,-0.02624798",
+                  "-2.781638,0.02624798"
+                ],
+                "TextureUAxis": [
+                  "1,0,0",
+                  "1,0,-0",
+                  "0,-1,0",
+                  "0,1,0",
+                  "-1,0,0",
+                  "1,-0,0"
+                ],
+                "TextureVAxis": [
+                  "0,-1,0",
+                  "0,-1,0",
+                  "0,0,-1",
+                  "-0,0,-1",
+                  "0,0,-1",
+                  "-0,0,-1"
+                ],
+                "TextureScale": [
+                  "0.2500001,0.25",
+                  "0.2500001,0.25",
+                  "0.25,0.25",
+                  "0.25,0.25",
+                  "0.2500001,0.25",
+                  "0.2500001,0.25"
+                ],
+                "TextureOffset": [
+                  "36.24915,155.3303",
+                  "36.24915,155.3307",
+                  "155.3307,197.5505",
+                  "356.6693,197.5505",
+                  "475.7507,197.5503",
+                  "36.24927,197.5503"
+                ],
+                "MaterialIndex": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "EdgeFlags": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "Materials": [
+                  "materials/dev/reflectivity_30.vmat"
+                ]
+              },
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "SmoothingAngle": 40,
+              "Static": true,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
+        },
+        {
+          "__guid": "a4157687-df18-4de2-9046-e2b3ea2c41c7",
+          "Flags": 0,
+          "Name": "Box",
+          "Position": "-557.1375,-1692.458,465.2919",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.MeshComponent",
+              "__guid": "36bf304a-b84b-4372-9f4c-e427f9c0837a",
+              "Collision": "Mesh",
+              "Color": "1,1,1,1",
+              "Friction": null,
+              "HideInGame": false,
+              "IsTrigger": false,
+              "Mesh": {
+                "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f\u002BlaMRGsohUVbFn1\u002Bt04ANs\u002BZ0VsM69AwfgBFyAKZ9MPXdgk3qLnsI\u002BUm/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt\u002BivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+                "Positions": [
+                  "-164.7807,-1313.894,3.359863",
+                  "164.7806,-1313.894,3.359863",
+                  "164.7806,254.9448,3.359741",
+                  "-164.7806,254.9448,3.359741",
+                  "-164.7806,254.9448,-3.359741",
+                  "164.7806,254.9448,-3.359741",
+                  "164.7806,-1313.894,-3.359619",
+                  "-164.7807,-1313.894,-3.359619"
+                ],
+                "TextureCoord": [
+                  "-1.712652,22.2648",
+                  "-4.287349,-7.026249",
+                  "-1.712651,10.00824",
+                  "-21.2648,-7.026249",
+                  "-4.287349,10.00824",
+                  "2.712651,-7.026248",
+                  "-4.287349,22.2648",
+                  "10.00824,-7.026248",
+                  "-1.712651,10.00824",
+                  "5.287349,-6.973752",
+                  "-1.712652,22.2648",
+                  "-9.008244,-6.973752",
+                  "-4.287349,22.2648",
+                  "-1.712652,-6.973753",
+                  "-4.287349,10.00824",
+                  "22.2648,-6.973753",
+                  "22.2648,-7.026249",
+                  "-4.287349,-6.973753",
+                  "10.00824,-6.973752",
+                  "5.287349,-7.026248",
+                  "-21.2648,-6.973753",
+                  "-1.712652,-7.026249",
+                  "-9.008244,-7.026248",
+                  "2.712651,-6.973752"
+                ],
+                "TextureUAxis": [
+                  "1,0.00000007780937,-0.000000000000006054296",
+                  "1,0.00000007780937,-0.000000000000006054296",
+                  "-0.00000007780935,-1,0",
+                  "0,1,0",
+                  "-1,0,0",
+                  "1,-0,0"
+                ],
+                "TextureVAxis": [
+                  "-0,-1,0.00000007780936",
+                  "0,-1,0.00000007780936",
+                  "0,0,-1",
+                  "0,0,-1",
+                  "0,0,-1",
+                  "-0,0,-1"
+                ],
+                "TextureScale": [
+                  "0.2500001,0.2499999",
+                  "0.2500001,0.2499999",
+                  "0.2499999,0.25",
+                  "0.2499999,0.25",
+                  "0.2499999,0.25",
+                  "0.2500001,0.25"
+                ],
+                "TextureOffset": [
+                  "257.9048,121.9619",
+                  "257.9048,121.9619",
+                  "121.9619,396.4219",
+                  "390.0347,396.4219",
+                  "254.0946,396.4219",
+                  "257.9038,396.4219"
+                ],
+                "MaterialIndex": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "EdgeFlags": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "Materials": [
+                  "materials/dev/reflectivity_30.vmat"
+                ]
+              },
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "SmoothingAngle": 40,
+              "Static": true,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
         }
       ]
     },
@@ -19548,7 +19804,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -20141,7 +20397,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -20734,7 +20990,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -21327,7 +21583,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -21920,7 +22176,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -22513,7 +22769,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -23106,7 +23362,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 2,
+                    "Id": 3,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -23712,7 +23968,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 121,
+                "Id": 123,
                 "Value": "Thank you for voting.",
                 "DstId": 18,
                 "DstName": "phrase"
@@ -23736,7 +23992,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 122,
+                "Id": 124,
                 "Value": "If you want to go through, you must vote first.",
                 "DstId": 46,
                 "DstName": "phrase"

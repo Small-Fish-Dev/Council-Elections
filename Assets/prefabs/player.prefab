@@ -12,6 +12,14 @@
         "__guid": "0065b80b-81ee-42cd-b072-d210b8270910",
         "Agent": null,
         "AnimationHelper": null,
+        "ApeGunViewModel": {
+          "_type": "gameobject",
+          "go": "d33a1fa1-824e-4375-af88-2aa7bd2ecb24"
+        },
+        "ApeGunWorldModel": {
+          "_type": "gameobject",
+          "go": "f2f82750-4a17-41fa-b357-a5f61bee2c6d"
+        },
         "Camera": {
           "_type": "component",
           "component_id": "f73f8740-0cb1-4b34-a8da-31cf9fa168d0",
@@ -342,6 +350,39 @@
                     "MaterialGroup": null,
                     "MaterialOverride": null,
                     "Model": "models/weapons/sbox_pistol_usp/w_usp.vmdl",
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "RenderOptions": {
+                      "GameLayer": true,
+                      "OverlayLayer": false,
+                      "BloomLayer": false,
+                      "AfterUILayer": false
+                    },
+                    "RenderType": "On",
+                    "Tint": "1,1,1,1"
+                  }
+                ]
+              },
+              {
+                "__guid": "f2f82750-4a17-41fa-b357-a5f61bee2c6d",
+                "Flags": 0,
+                "Name": "ApeGun",
+                "Position": "7.504387,-1.95243,-4.435127",
+                "Rotation": "-0.5525569,0.1495069,0.1277198,0.8099486",
+                "Scale": "1.7,1.7,1.7",
+                "Components": [
+                  {
+                    "__type": "Sandbox.ModelRenderer",
+                    "__guid": "509eca34-6bbb-4ee2-9d2a-29dbafb89943",
+                    "BodyGroups": 171,
+                    "CreateAttachments": false,
+                    "MaterialGroup": null,
+                    "MaterialOverride": null,
+                    "Model": "models/weapons/sbox_sniper_m700/w_m700.vmdl",
                     "OnComponentDestroy": null,
                     "OnComponentDisabled": null,
                     "OnComponentEnabled": null,
@@ -785,6 +826,52 @@
                 "UseAnimGraph": true
               }
             ]
+          },
+          {
+            "__guid": "d33a1fa1-824e-4375-af88-2aa7bd2ecb24",
+            "Flags": 0,
+            "Name": "ApeGun",
+            "Position": "4.111322,0,0",
+            "Components": [
+              {
+                "__type": "Sandbox.SkinnedModelRenderer",
+                "__guid": "4047403a-fda1-4914-a849-320ce428ea51",
+                "AnimationGraph": null,
+                "BodyGroups": 1299,
+                "BoneMergeTarget": null,
+                "CreateAttachments": false,
+                "CreateBoneObjects": false,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/weapons/sbox_sniper_m700/v_m700.vmdl",
+                "Morphs": {},
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Parameters": {
+                  "bools": {},
+                  "ints": {},
+                  "floats": {},
+                  "vectors": {},
+                  "rotations": {}
+                },
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Sequence": {
+                  "Name": null
+                },
+                "Tint": "1,1,1,1",
+                "UseAnimGraph": true
+              }
+            ]
           }
         ]
       },
@@ -867,7 +954,9 @@
   "DontBreakAsTemplate": false,
   "ResourceVersion": 1,
   "__references": [
+    "facepunch.v_m700#85358",
     "facepunch.v_usp#84434",
+    "facepunch.w_m700#71263",
     "facepunch.w_usp#77979"
   ],
   "__version": 1

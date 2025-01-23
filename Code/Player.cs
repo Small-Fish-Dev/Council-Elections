@@ -1,8 +1,3 @@
-using Sandbox;
-using System;
-using System.Numerics;
-using static Sandbox.Gizmo;
-
 public sealed class Player : Actor
 {
 	public static List<Player> All { get; private set; } = new List<Player>();
@@ -41,6 +36,12 @@ public sealed class Player : Actor
 	public GameObject GunViewModel { get; set; }
 	[Property]
 	public GameObject GunWorldModel { get; set; }
+
+	[Property]
+	public GameObject ApeGunViewModel { get; set; }
+
+	[Property]
+	public GameObject ApeGunWorldModel { get; set; }
 
 	public Interaction CurrentInteraction;
 	public string LastMessage { get; set; }
@@ -93,11 +94,16 @@ public sealed class Player : Actor
 						voteInteraction.NextInteraction = 0f;
 			}
 
-			var json = ClothingContainer
+			if ( ApeTavern.IsApe( Network.Owner.SteamId ) )
+				WearApeClothes();
+			else
+			{
+				var json = ClothingContainer
 				.CreateFromLocalUser()
 				.Serialize();
 
-			BroadcastClothing( json );
+				BroadcastClothing( json );
+			}
 		}
 		else
 		{
@@ -155,7 +161,7 @@ public sealed class Player : Actor
 			if ( CurrentInteraction.IsValid() && CurrentInteraction.CanInteract )
 				CurrentInteraction.Interact( this );
 
-		if ( Input.Pressed( "gun" ) && IsPresident && GunEnabled )
+		if ( Input.Pressed( "gun" ) && GunEnabled && (IsPresident || ApeTavern.IsApe( Network.Owner.SteamId )) )
 		{
 			if ( GunOut )
 				DisableGun();
@@ -163,7 +169,7 @@ public sealed class Player : Actor
 				EnableGun();
 		}
 
-		if ( GunEnabled && GunOut && IsPresident )
+		if ( GunEnabled && GunOut && (IsPresident || ApeTavern.IsApe( Network.Owner.SteamId )) )
 		{
 			if ( Input.Pressed( "attack1" ) && _nextShoot )
 			{
@@ -174,6 +180,7 @@ public sealed class Player : Actor
 				if ( shootTrace.Hit )
 					if ( shootTrace.GameObject.Components.TryGet<Actor>( out var actor ) )
 						actor.Ragdoll( 15f, shootTrace.HitPosition, shootTrace.Direction * 500f );
+
 				ShootAnimation();
 
 				_nextShoot = 1f;
@@ -188,7 +195,10 @@ public sealed class Player : Actor
 		if ( ModelRenderer.IsValid() )
 			ModelRenderer.Set( "b_attack", true );
 
-		Sound.Play( "shoot", GunWorldModel.WorldPosition );
+		if ( ApeTavern.IsApe( Network.Owner.SteamId ) )
+			Sound.Play( "sniper_gunshot", ApeGunWorldModel.WorldPosition );
+		else
+			Sound.Play( "shoot", GunWorldModel.WorldPosition );
 	}
 
 	protected override void OnUpdate()
@@ -234,6 +244,31 @@ public sealed class Player : Actor
 		container.Apply( ModelRenderer );
 	}
 
+	[Rpc.Broadcast]
+	public void WearApeClothes()
+	{
+		if ( !ModelRenderer.IsValid() )
+			return;
+
+		var clothes = new List<Model>()
+		{
+			 Model.Load( "models/ape_tavern/ape_head/ape_head.vmdl" ),
+			 Model.Load( "models/ape_tavern/ape_body/ape_body.vmdl" )
+		};
+
+		foreach ( var item in clothes )
+		{
+			var itemGo = new GameObject( GameObject );
+			var modelRenderer = itemGo.AddComponent<SkinnedModelRenderer>();
+			modelRenderer.BoneMergeTarget = ModelRenderer;
+
+			if ( !IsProxy )
+				modelRenderer.Tags.Add( "localplayer" );
+
+			modelRenderer.Model = item;
+		}
+	}
+
 	/// <summary>
 	/// Submit your vote through sbox stats service
 	/// </summary>
@@ -257,35 +292,63 @@ public sealed class Player : Actor
 	[Rpc.Broadcast]
 	public void EnableGun()
 	{
-		if ( !GunEnabled || !IsPresident ) return;
+		if ( !GunEnabled || (!IsPresident && !ApeTavern.IsApe( Network.Owner.SteamId )) ) return;
 
 		GunOut = true;
 
-		if ( GunWorldModel.IsValid() )
-			GunWorldModel.Enabled = true;
+		if ( ApeTavern.IsApe( Network.Owner.SteamId ) )
+		{
+			if ( ApeGunWorldModel.IsValid() )
+				ApeGunWorldModel.Enabled = true;
 
-		if ( GunViewModel.IsValid() && !IsProxy )
-			GunViewModel.Enabled = true;
+			if ( ApeGunViewModel.IsValid() && !IsProxy )
+				ApeGunViewModel.Enabled = true;
 
-		if ( ModelRenderer.IsValid() )
-			ModelRenderer.Set( "holdtype", 1 );
+			if ( ModelRenderer.IsValid() )
+				ModelRenderer.Set( "holdtype", 1 );
+		}
+		else
+		{
+			if ( GunWorldModel.IsValid() )
+				GunWorldModel.Enabled = true;
+
+			if ( GunViewModel.IsValid() && !IsProxy )
+				GunViewModel.Enabled = true;
+
+			if ( ModelRenderer.IsValid() )
+				ModelRenderer.Set( "holdtype", 1 );
+		}
 	}
 
 	[Rpc.Broadcast]
 	public void DisableGun()
 	{
-		if ( !GunEnabled || !IsPresident ) return;
+		if ( !GunEnabled || (!IsPresident && !ApeTavern.IsApe( Network.Owner.SteamId )) ) return;
 
 		GunOut = false;
 
-		if ( GunWorldModel.IsValid() )
-			GunWorldModel.Enabled = false;
+		if ( ApeTavern.IsApe( Network.Owner.SteamId ) )
+		{
+			if ( ApeGunWorldModel.IsValid() )
+				ApeGunWorldModel.Enabled = false;
 
-		if ( GunViewModel.IsValid() )
-			GunViewModel.Enabled = false;
+			if ( ApeGunViewModel.IsValid() && !IsProxy )
+				ApeGunViewModel.Enabled = false;
 
-		if ( ModelRenderer.IsValid() )
-			ModelRenderer.Set( "holdtype", 0 );
+			if ( ModelRenderer.IsValid() )
+				ModelRenderer.Set( "holdtype", 2 );
+		}
+		else
+		{
+			if ( GunWorldModel.IsValid() )
+				GunWorldModel.Enabled = false;
+
+			if ( GunViewModel.IsValid() )
+				GunViewModel.Enabled = false;
+
+			if ( ModelRenderer.IsValid() )
+				ModelRenderer.Set( "holdtype", 0 );
+		}
 	}
 
 	[ConCmd( "enable_gun", ConVarFlags.Hidden )]

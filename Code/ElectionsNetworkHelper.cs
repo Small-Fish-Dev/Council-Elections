@@ -10,6 +10,9 @@ public sealed class ElectionsNetworkHelper : Component, Component.INetworkListen
 	[Property]
 	public List<GameObject> Spawners { get; set; }
 
+	[Property]
+	public GameObject ApeTavernSpawn { get; set; }
+
 	protected override async Task OnLoad()
 	{
 		if ( Scene.IsEditor )
@@ -27,7 +30,11 @@ public sealed class ElectionsNetworkHelper : Component, Component.INetworkListen
 	{
 		Log.Info( $"{channel.DisplayName} connected!" );
 		var cloned = PlayerPrefab.Clone();
-		cloned.WorldPosition = Game.Random.FromList( Spawners ).WorldPosition;
+
+		if ( ApeTavern.IsApe( channel.SteamId ) )
+			cloned.WorldPosition = ApeTavernSpawn.WorldPosition;
+		else
+			cloned.WorldPosition = Game.Random.FromList( Spawners ).WorldPosition;
 
 		if ( cloned.Components.TryGet<Player>( out var player ) )
 			player.SteamId = channel.SteamId;
