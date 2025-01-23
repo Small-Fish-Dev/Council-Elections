@@ -1,0 +1,64 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "shaders/complex.shader"
+
+	//---- PBR ----
+	F_DIFFUSE_WRAP 1
+	F_SPECULAR 1
+
+	//---- Rendering ----
+	F_RENDER_BACKFACES 1
+
+	//---- Translucent ----
+	F_ALPHA_TEST 1
+
+	//---- Ambient Occlusion ----
+	g_flAmbientOcclusionDirectDiffuse "0.000"
+	g_flAmbientOcclusionDirectSpecular "0.000"
+	TextureAmbientOcclusion "models/ape_tavern/ape_head/materials/fur/ape_head_ao.png"
+
+	//---- Color ----
+	g_flModelTintAmount "1.000"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureColor "models/ape_tavern/ape_head/materials/fur/ape_head_color.png"
+
+	//---- Fade ----
+	g_flFadeExponent "1.000"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Metalness ----
+	g_flMetalness "0.000"
+
+	//---- Normal ----
+	TextureNormal "models/ape_tavern/ape_head/materials/fur/ape_head_normal.png"
+
+	//---- Roughness ----
+	g_flRoughnessScaleFactor "1.000"
+	TextureRoughness "models/ape_tavern/ape_head/materials/fur/ape_head_rough.png"
+
+	//---- Texture Coordinates ----
+	g_nScaleTexCoordUByModelScaleAxis "0"
+	g_nScaleTexCoordVByModelScaleAxis "0"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+
+	//---- Translucent ----
+	g_flAlphaTestReference "0.550"
+	g_flAntiAliasedEdgeStrength "1.000"
+	TextureTranslucency "models/ape_tavern/ape_head/materials/fur/ape_head_height.png"
+
+	//---- Transmission ----
+	g_flDiffuseExponent "1.000"
+	g_flDiffuseWrap "1.000"
+	g_vDiffuseWrapColor "[1.000000 0.501961 0.301961 0.000000]"
+
+	DynamicParams
+	{
+		g_vColorTint "headcolor"
+	}
+}
