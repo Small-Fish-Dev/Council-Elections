@@ -1,0 +1,1149 @@
+{
+  "RootObject": {
+    "__guid": "71a3de53-914d-481d-8af9-1b70a5f40534",
+    "Flags": 0,
+    "Name": "godfrey_dead",
+    "Enabled": true,
+    "Children": [
+      {
+        "__guid": "01204046-d8e0-4eee-afcb-c9706b14f3c6",
+        "Flags": 0,
+        "Name": "stallfinal",
+        "Position": "-32.22238,159.1449,22.82714",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "2b56c2d0-9674-4f7f-9ef3-38f386e9990f",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": true,
+            "MaterialGroup": null,
+            "Model": "models/backupstall/stallfinal.vmdl",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnPropBreak": null,
+            "OnPropTakeDamage": null,
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "94abbcf6-1f44-491a-8636-70c874abcec1",
+            "Flags": 0,
+            "Name": "Golden G. Godfrey",
+            "Position": "0,20.12501,108",
+            "Rotation": "0,0,-0.7071067,0.7071068",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "41d2da9c-51e0-42fd-aaf9-5ffa9c062bb3",
+                "__version": 1,
+                "BlendMode": "Normal",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "Scale": 0.1,
+                "TextAlignment": "Center",
+                "TextScope": {
+                  "Text": "Golden G. Godfrey",
+                  "TextColor": "0.91163,0.85863,0.80562,1",
+                  "FontName": "Poppins",
+                  "FontSize": 71.82,
+                  "FontWeight": 581,
+                  "FontItalic": false,
+                  "LineHeight": 1,
+                  "LetterSpacing": 0,
+                  "WordSpacing": 0,
+                  "Outline": {
+                    "Enabled": true,
+                    "Size": 6,
+                    "Color": "0,0,0,1"
+                  },
+                  "Shadow": {
+                    "Enabled": false,
+                    "Size": 0.1,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,8"
+                  },
+                  "OutlineUnder": {
+                    "Enabled": false,
+                    "Size": 4,
+                    "Color": "0,1,0,1"
+                  },
+                  "ShadowUnder": {
+                    "Enabled": false,
+                    "Size": 6,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,8"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "__guid": "965ace10-8d7c-4e71-95fd-410e73a8d863",
+            "Flags": 0,
+            "Name": "Gleeks Party",
+            "Position": "0,20.12501,97.99997",
+            "Rotation": "0,0,-0.7071067,0.7071068",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "7e60e86a-7bb6-4edc-bfdc-6663aa9abc8d",
+                "__version": 1,
+                "BlendMode": "Normal",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "Scale": 0.08,
+                "TextAlignment": "Center",
+                "TextScope": {
+                  "Text": "Gleeks Party",
+                  "TextColor": "0.91163,0.85863,0.80562,1",
+                  "FontName": "Poppins",
+                  "FontSize": 68.38,
+                  "FontWeight": 581,
+                  "FontItalic": false,
+                  "LineHeight": 1,
+                  "LetterSpacing": 0,
+                  "WordSpacing": 0,
+                  "Outline": {
+                    "Enabled": true,
+                    "Size": 6,
+                    "Color": "0,0,0,1"
+                  },
+                  "Shadow": {
+                    "Enabled": false,
+                    "Size": 0.1,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,8"
+                  },
+                  "OutlineUnder": {
+                    "Enabled": false,
+                    "Size": 4,
+                    "Color": "0,1,0,1"
+                  },
+                  "ShadowUnder": {
+                    "Enabled": false,
+                    "Size": 12,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,12"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "__guid": "0867f436-dfc8-42fb-9a0e-898ce95669c5",
+            "Flags": 0,
+            "Name": "1. Carbon Neutral",
+            "Position": "0,21.62503,28.99997",
+            "Rotation": "0,0,-0.7071067,0.7071068",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "af546fd2-c228-423a-a2e7-dd83665d1330",
+                "__version": 1,
+                "BlendMode": "Normal",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "Scale": 0.12,
+                "TextAlignment": "Center",
+                "TextScope": {
+                  "Text": "1. Carbon Neutral",
+                  "TextColor": "0.91163,0.85863,0.80562,1",
+                  "FontName": "Poppins",
+                  "FontSize": 45,
+                  "FontWeight": 581,
+                  "FontItalic": false,
+                  "LineHeight": 1,
+                  "LetterSpacing": 0,
+                  "WordSpacing": 0,
+                  "Outline": {
+                    "Enabled": true,
+                    "Size": 4,
+                    "Color": "0.10233,0.04788,0.00333,1"
+                  },
+                  "Shadow": {
+                    "Enabled": false,
+                    "Size": 0.1,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,8"
+                  },
+                  "OutlineUnder": {
+                    "Enabled": false,
+                    "Size": 4,
+                    "Color": "0,1,0,1"
+                  },
+                  "ShadowUnder": {
+                    "Enabled": false,
+                    "Size": 12,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,12"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "__guid": "f252289b-a2c7-4f45-9565-974a435ab68f",
+            "Flags": 0,
+            "Name": "YOUR",
+            "Position": "0,21.8551,25.17286",
+            "Rotation": "-0.03084356,0.03084357,-0.7064337,0.7064338",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "c7917216-9616-4976-b742-aee560dc9a39",
+                "__version": 1,
+                "BlendMode": "Normal",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "Scale": 0.12,
+                "TextAlignment": "Center",
+                "TextScope": {
+                  "Text": "YOUR",
+                  "TextColor": "0.75349,0.09462,0.09462,1",
+                  "FontName": "Poppins",
+                  "FontSize": 102.15,
+                  "FontWeight": 800,
+                  "FontItalic": false,
+                  "LineHeight": 5,
+                  "LetterSpacing": 15.600002,
+                  "WordSpacing": 0,
+                  "Outline": {
+                    "Enabled": true,
+                    "Size": 14.6399975,
+                    "Color": "0.32558,0.02423,0.02423,1"
+                  },
+                  "Shadow": {
+                    "Enabled": false,
+                    "Size": 0.1,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,8"
+                  },
+                  "OutlineUnder": {
+                    "Enabled": false,
+                    "Size": 4,
+                    "Color": "0,1,0,1"
+                  },
+                  "ShadowUnder": {
+                    "Enabled": false,
+                    "Size": 12,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,12"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "__guid": "f47a4194-a065-4bf8-8056-16dc4330974b",
+            "Flags": 0,
+            "Name": "NEXT",
+            "Position": "-0.02761841,23.3551,14.17286",
+            "Rotation": "0.02467768,-0.02467767,-0.7066759,0.706676",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "85699e05-1cf9-4a6b-9080-a1a74e97b6df",
+                "__version": 1,
+                "BlendMode": "Normal",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "Scale": 0.12,
+                "TextAlignment": "Center",
+                "TextScope": {
+                  "Text": "NEXT",
+                  "TextColor": "0.75349,0.09462,0.09462,1",
+                  "FontName": "Poppins",
+                  "FontSize": 102.15,
+                  "FontWeight": 800,
+                  "FontItalic": false,
+                  "LineHeight": 5,
+                  "LetterSpacing": 15.600002,
+                  "WordSpacing": 0,
+                  "Outline": {
+                    "Enabled": true,
+                    "Size": 14.6399975,
+                    "Color": "0.32558,0.02423,0.02423,1"
+                  },
+                  "Shadow": {
+                    "Enabled": false,
+                    "Size": 0.1,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,8"
+                  },
+                  "OutlineUnder": {
+                    "Enabled": false,
+                    "Size": 4,
+                    "Color": "0,1,0,1"
+                  },
+                  "ShadowUnder": {
+                    "Enabled": false,
+                    "Size": 12,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,12"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "__guid": "1dd6898a-1f36-4b2a-ac6c-d7ff2ae51cb8",
+            "Flags": 0,
+            "Name": "RETIRED",
+            "Position": "0.4419861,22.60504,105.5186",
+            "Rotation": "0.02467768,-0.02467767,-0.7066759,0.706676",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "14136ce6-7395-4f60-bd46-051feeb6695e",
+                "__version": 1,
+                "BlendMode": "Normal",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "Scale": 0.12,
+                "TextAlignment": "Center",
+                "TextScope": {
+                  "Text": "RETIRED",
+                  "TextColor": "0.75349,0.09462,0.09462,1",
+                  "FontName": "Poppins",
+                  "FontSize": 102.15,
+                  "FontWeight": 800,
+                  "FontItalic": false,
+                  "LineHeight": 5,
+                  "LetterSpacing": 15.600002,
+                  "WordSpacing": 0,
+                  "Outline": {
+                    "Enabled": true,
+                    "Size": 14.6399975,
+                    "Color": "0.32558,0.02423,0.02423,1"
+                  },
+                  "Shadow": {
+                    "Enabled": false,
+                    "Size": 0.1,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,8"
+                  },
+                  "OutlineUnder": {
+                    "Enabled": false,
+                    "Size": 4,
+                    "Color": "0,1,0,1"
+                  },
+                  "ShadowUnder": {
+                    "Enabled": false,
+                    "Size": 12,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,12"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "__guid": "77ad0809-5a18-413b-b005-2f75a01ec2ff",
+            "Flags": 0,
+            "Name": "2. Paper Cups",
+            "Position": "-0.125,21.62506,19.87497",
+            "Rotation": "0,-0,-0.7071068,0.7071068",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "2ac42102-0089-4723-ae31-0e0828526177",
+                "__version": 1,
+                "BlendMode": "Normal",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "Scale": 0.12,
+                "TextAlignment": "Center",
+                "TextScope": {
+                  "Text": "2. Paper Cups",
+                  "TextColor": "0.91163,0.85863,0.80562,1",
+                  "FontName": "Poppins",
+                  "FontSize": 45,
+                  "FontWeight": 581,
+                  "FontItalic": false,
+                  "LineHeight": 1,
+                  "LetterSpacing": 0,
+                  "WordSpacing": 0,
+                  "Outline": {
+                    "Enabled": true,
+                    "Size": 4,
+                    "Color": "0.10233,0.04788,0.00333,1"
+                  },
+                  "Shadow": {
+                    "Enabled": false,
+                    "Size": 0.1,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,8"
+                  },
+                  "OutlineUnder": {
+                    "Enabled": false,
+                    "Size": 4,
+                    "Color": "0,1,0,1"
+                  },
+                  "ShadowUnder": {
+                    "Enabled": false,
+                    "Size": 12,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,12"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "__guid": "d341e442-495c-4d37-a856-5d9250186fc4",
+            "Flags": 0,
+            "Name": "3. Plant Trees",
+            "Position": "-0.3750153,22.75003,11.12497",
+            "Rotation": "0.0000000006585444,0.0000000006585446,-0.7071067,0.7071068",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "b62c8d33-cc0b-46af-bf15-79e59834d8a8",
+                "__version": 1,
+                "BlendMode": "Normal",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "Scale": 0.12,
+                "TextAlignment": "Center",
+                "TextScope": {
+                  "Text": "3. Plant Trees",
+                  "TextColor": "0.91163,0.85863,0.80562,1",
+                  "FontName": "Poppins",
+                  "FontSize": 45,
+                  "FontWeight": 581,
+                  "FontItalic": false,
+                  "LineHeight": 1,
+                  "LetterSpacing": 0,
+                  "WordSpacing": 0,
+                  "Outline": {
+                    "Enabled": true,
+                    "Size": 4,
+                    "Color": "0.10233,0.04788,0.00333,1"
+                  },
+                  "Shadow": {
+                    "Enabled": false,
+                    "Size": 0.1,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,8"
+                  },
+                  "OutlineUnder": {
+                    "Enabled": false,
+                    "Size": 4,
+                    "Color": "0,1,0,1"
+                  },
+                  "ShadowUnder": {
+                    "Enabled": false,
+                    "Size": 12,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,12"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "af786859-c777-48c3-b0d0-41634cbafd25",
+        "Flags": 0,
+        "Name": "godfrey",
+        "Position": "-32.22238,120,63",
+        "Rotation": "-0.2705981,0.2705981,0.6532814,0.6532815",
+        "Tags": "person",
+        "Enabled": true,
+        "NetworkMode": 1,
+        "NetworkOrphaned": 1,
+        "Components": [
+          {
+            "__type": "President",
+            "__guid": "28f915e4-a348-4741-820e-b3ba157a8433",
+            "Agent": null,
+            "AnimationHelper": null,
+            "Collider": null,
+            "DefaultExpression": "Surprise",
+            "FaceClothing": {
+              "Choiches": [],
+              "EmptyWeight": 0
+            },
+            "FacialClothing": {
+              "Choiches": [],
+              "EmptyWeight": 0
+            },
+            "FirstName": "Golden G.",
+            "FullName": "Golden G. Godfrey",
+            "Gender": "Male",
+            "HairbrowsClothing": {
+              "Choiches": [],
+              "EmptyWeight": 0
+            },
+            "HairClothing": {
+              "Choiches": [],
+              "EmptyWeight": 0
+            },
+            "HeightRange": "1.2",
+            "HoodieClothing": {
+              "Choiches": [],
+              "EmptyWeight": 0
+            },
+            "Interaction": {
+              "_type": "component",
+              "component_id": "f6c7c517-b884-4d38-a3ec-881d53786a62",
+              "go": "af786859-c777-48c3-b0d0-41634cbafd25",
+              "component_type": "Interaction"
+            },
+            "InteractPhrases": [
+              "\u003Cpick\u003EListen Jack, you gotta vote \u003Cname\u003E 2025.",
+              "\u003Copponent\u003EI can\u0027t find my ballot box...",
+              "\u003Copponent\u003EWill you shut up, man.",
+              "\u003Copponent\u003EListen fat.",
+              "\u003Copponent\u003EIf you have a problem figuring out whether you\u0027re for me or \u003Cname\u003E, then you ain\u0027t a bozer.",
+              "\u003Cpick\u003ERegarding \u003Cpolicy.name\u003E, I think \u003Cpolicy.info\u003E!"
+            ],
+            "LastName": "Godfrey",
+            "ModelRenderer": null,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "PantsClothing": {
+              "Choiches": [],
+              "EmptyWeight": 0
+            },
+            "RandomNameOnSpawn": false,
+            "RunSpeed": 240,
+            "Self": {
+              "CandidateId": 0,
+              "CandidateName": "Golden G. Godfrey",
+              "CandidateGender": "Male",
+              "CandidateParty": null,
+              "CandidateSteamId": 0,
+              "SceneCandidate": null,
+              "CandidatePolicies": []
+            },
+            "ShirtClothing": {
+              "Choiches": [],
+              "EmptyWeight": 0
+            },
+            "ShoesClothing": {
+              "Choiches": [],
+              "EmptyWeight": 0
+            },
+            "SkinClothing": {
+              "Choiches": [],
+              "EmptyWeight": 0
+            },
+            "SkinMaterial": "models/citizen/skin/citizen_skin08.vmat",
+            "UserName": "",
+            "VoicePitch": "1.5",
+            "WalkSpeed": 120
+          },
+          {
+            "__type": "Interaction",
+            "__guid": "f6c7c517-b884-4d38-a3ec-881d53786a62",
+            "InteractionCooldown": 1,
+            "InteractionDescription": "Talk",
+            "InteractionName": "Golden G. Godfrey",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "PlayerAction": {
+              "__version": 9,
+              "__guid": "74a0b490-d9dd-4b40-be38-0b819eb96bcf",
+              "__changeId": 42,
+              "UserData": {
+                "Title": "Player Action",
+                "ReferencedComponentTypes": []
+              },
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 7,
+                  "Type": "call",
+                  "Properties": {
+                    "_isStatic": false,
+                    "_name": "Talk",
+                    "_type": "President"
+                  },
+                  "UserData": {
+                    "Position": "276,72"
+                  }
+                },
+                {
+                  "Id": 10,
+                  "Type": "property",
+                  "ParentId": 0,
+                  "Properties": {
+                    "_name": "GameObject",
+                    "_type": "Sandbox.Component"
+                  }
+                },
+                {
+                  "Id": 12,
+                  "Type": "scene.ref",
+                  "UserData": {
+                    "Position": "24,108"
+                  }
+                }
+              ],
+              "Links": [
+                {
+                  "SrcId": 0,
+                  "SrcName": "_signal",
+                  "DstId": 7,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 12,
+                  "SrcName": "_result",
+                  "DstId": 7,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 10,
+                  "SrcName": "_result",
+                  "DstId": 7,
+                  "DstName": "target"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "obj",
+                  "DstId": 10,
+                  "DstName": "_target"
+                }
+              ],
+              "Defaults": {
+                "$12.component": {
+                  "_type": "component",
+                  "component_id": "821a38e8-4a32-42ce-b1dc-1779797d9004",
+                  "go": "4499e9e0-1972-4e71-9248-4ff43ccc2008",
+                  "component_type": "President"
+                }
+              }
+            },
+            "SharedInteraction": true
+          },
+          {
+            "__type": "Sandbox.ModelPhysics",
+            "__guid": "9a269d21-5ace-49d8-8b2f-3defb22d00de",
+            "Locking": {
+              "X": false,
+              "Y": false,
+              "Z": false,
+              "Pitch": false,
+              "Yaw": false,
+              "Roll": false
+            },
+            "Model": "models/citizen/citizen.vmdl",
+            "MotionEnabled": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Renderer": {
+              "_type": "component",
+              "component_id": "41d1394a-4185-47a1-9a37-63dc51d45d03",
+              "go": "91ba4e1a-0413-457b-afec-369b9c22a1e8",
+              "component_type": "SkinnedModelRenderer"
+            },
+            "RigidbodyFlags": 0
+          },
+          {
+            "__type": "Sandbox.HighlightOutline",
+            "__guid": "022548e1-9ccb-4219-ac6d-cd4a21d58d25",
+            "__enabled": false,
+            "Color": "1,1,1,1",
+            "InsideColor": "0,0,0,0",
+            "InsideObscuredColor": "0,0,0,0",
+            "Material": null,
+            "ObscuredColor": "0,0,0,0.4",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Width": 0.25
+          },
+          {
+            "__type": "Sandbox.HighlightOutline",
+            "__guid": "21d1b0b8-1640-4ecc-8df0-acb230913bdf",
+            "__enabled": false,
+            "Color": "1,1,1,1",
+            "InsideColor": "0,0,0,0",
+            "InsideObscuredColor": "0,0,0,0",
+            "Material": null,
+            "ObscuredColor": "0,0,0,0.4",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Width": 0.25
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "91ba4e1a-0413-457b-afec-369b9c22a1e8",
+            "Flags": 0,
+            "Name": "Body",
+            "Position": "10.31163,0.1588769,16.51734",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.SkinnedModelRenderer",
+                "__guid": "41d1394a-4185-47a1-9a37-63dc51d45d03",
+                "AnimationGraph": null,
+                "BodyGroups": 65,
+                "BoneMergeTarget": null,
+                "CreateAttachments": false,
+                "CreateBoneObjects": false,
+                "MaterialGroup": "Skin01",
+                "MaterialOverride": null,
+                "Model": "models/citizen/citizen.vmdl",
+                "Morphs": {
+                  "openjawR": 0,
+                  "lipcornerpullerL": 0,
+                  "openjawL": 0,
+                  "lippuckerer": 0,
+                  "lipcornerpullerR": 0
+                },
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Parameters": {
+                  "bools": {
+                    "hit": true
+                  },
+                  "ints": {
+                    "face_override": 3
+                  },
+                  "floats": {},
+                  "vectors": {},
+                  "rotations": {}
+                },
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Sequence": {
+                  "Name": null
+                },
+                "Tint": "1,1,1,1",
+                "UseAnimGraph": true
+              }
+            ],
+            "Children": [
+              {
+                "__guid": "9f79bab5-55fa-4567-9d42-27e7054c3f94",
+                "Flags": 0,
+                "Name": "Clothing - hair",
+                "Tags": "clothing",
+                "Enabled": true,
+                "Components": [
+                  {
+                    "__type": "Sandbox.SkinnedModelRenderer",
+                    "__guid": "e0f377e0-9e5a-4d13-b5e7-c0e70bb426c5",
+                    "AnimationGraph": null,
+                    "BodyGroups": 18446744073709551615,
+                    "BoneMergeTarget": {
+                      "_type": "component",
+                      "component_id": "41d1394a-4185-47a1-9a37-63dc51d45d03",
+                      "go": "91ba4e1a-0413-457b-afec-369b9c22a1e8",
+                      "component_type": "SkinnedModelRenderer"
+                    },
+                    "CreateAttachments": false,
+                    "CreateBoneObjects": false,
+                    "MaterialGroup": null,
+                    "MaterialOverride": null,
+                    "Model": "models/citizen_clothes/hair/hair_slickedback/models/hair_slickedback.vmdl",
+                    "Morphs": {},
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "Parameters": {
+                      "bools": {},
+                      "ints": {},
+                      "floats": {},
+                      "vectors": {},
+                      "rotations": {}
+                    },
+                    "RenderOptions": {
+                      "GameLayer": true,
+                      "OverlayLayer": false,
+                      "BloomLayer": false,
+                      "AfterUILayer": false
+                    },
+                    "RenderType": "On",
+                    "Sequence": {
+                      "Name": null
+                    },
+                    "Tint": "1,1,1,1",
+                    "UseAnimGraph": true
+                  }
+                ]
+              },
+              {
+                "__guid": "121cdc69-2882-4aa6-8f2c-2f08df2c36f1",
+                "Flags": 0,
+                "Name": "Clothing - eyebrows",
+                "Tags": "clothing",
+                "Enabled": true,
+                "Components": [
+                  {
+                    "__type": "Sandbox.SkinnedModelRenderer",
+                    "__guid": "bc03a613-95b3-49e8-8934-3f5225080076",
+                    "AnimationGraph": null,
+                    "BodyGroups": 18446744073709551615,
+                    "BoneMergeTarget": {
+                      "_type": "component",
+                      "component_id": "41d1394a-4185-47a1-9a37-63dc51d45d03",
+                      "go": "91ba4e1a-0413-457b-afec-369b9c22a1e8",
+                      "component_type": "SkinnedModelRenderer"
+                    },
+                    "CreateAttachments": false,
+                    "CreateBoneObjects": false,
+                    "MaterialGroup": null,
+                    "MaterialOverride": null,
+                    "Model": "models/citizen_clothes/hair/eyebrows/models/eyebrows.vmdl",
+                    "Morphs": {},
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "Parameters": {
+                      "bools": {},
+                      "ints": {},
+                      "floats": {},
+                      "vectors": {},
+                      "rotations": {}
+                    },
+                    "RenderOptions": {
+                      "GameLayer": true,
+                      "OverlayLayer": false,
+                      "BloomLayer": false,
+                      "AfterUILayer": false
+                    },
+                    "RenderType": "On",
+                    "Sequence": {
+                      "Name": null
+                    },
+                    "Tint": "1,1,1,1",
+                    "UseAnimGraph": true
+                  }
+                ]
+              },
+              {
+                "__guid": "2ec3cd4a-21b3-4ebd-80ec-c0b09e03db41",
+                "Flags": 0,
+                "Name": "Clothing - shirt",
+                "Tags": "clothing",
+                "Enabled": true,
+                "Components": [
+                  {
+                    "__type": "Sandbox.SkinnedModelRenderer",
+                    "__guid": "bf200707-3042-4dce-9a5f-3e5670acc72b",
+                    "AnimationGraph": null,
+                    "BodyGroups": 18446744073709551615,
+                    "BoneMergeTarget": {
+                      "_type": "component",
+                      "component_id": "41d1394a-4185-47a1-9a37-63dc51d45d03",
+                      "go": "91ba4e1a-0413-457b-afec-369b9c22a1e8",
+                      "component_type": "SkinnedModelRenderer"
+                    },
+                    "CreateAttachments": false,
+                    "CreateBoneObjects": false,
+                    "MaterialGroup": null,
+                    "MaterialOverride": null,
+                    "Model": "models/citizen_clothes/shirt/waistcoat_and_shirt/models/waistcoat_and_shirt.vmdl",
+                    "Morphs": {},
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "Parameters": {
+                      "bools": {},
+                      "ints": {},
+                      "floats": {},
+                      "vectors": {},
+                      "rotations": {}
+                    },
+                    "RenderOptions": {
+                      "GameLayer": true,
+                      "OverlayLayer": false,
+                      "BloomLayer": false,
+                      "AfterUILayer": false
+                    },
+                    "RenderType": "On",
+                    "Sequence": {
+                      "Name": null
+                    },
+                    "Tint": "1,1,1,1",
+                    "UseAnimGraph": true
+                  }
+                ]
+              },
+              {
+                "__guid": "e5a4f9e5-867b-464a-9cd8-dd378fa80c39",
+                "Flags": 0,
+                "Name": "Clothing - smart trousers",
+                "Tags": "clothing",
+                "Enabled": true,
+                "Components": [
+                  {
+                    "__type": "Sandbox.SkinnedModelRenderer",
+                    "__guid": "2a6738ee-aa7c-411c-9635-ae8e7d34a261",
+                    "AnimationGraph": null,
+                    "BodyGroups": 18446744073709551615,
+                    "BoneMergeTarget": {
+                      "_type": "component",
+                      "component_id": "41d1394a-4185-47a1-9a37-63dc51d45d03",
+                      "go": "91ba4e1a-0413-457b-afec-369b9c22a1e8",
+                      "component_type": "SkinnedModelRenderer"
+                    },
+                    "CreateAttachments": false,
+                    "CreateBoneObjects": false,
+                    "MaterialGroup": null,
+                    "MaterialOverride": null,
+                    "Model": "models/citizen_clothes/trousers/smarttrousers/smarttrousers.vmdl",
+                    "Morphs": {},
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "Parameters": {
+                      "bools": {},
+                      "ints": {},
+                      "floats": {},
+                      "vectors": {},
+                      "rotations": {}
+                    },
+                    "RenderOptions": {
+                      "GameLayer": true,
+                      "OverlayLayer": false,
+                      "BloomLayer": false,
+                      "AfterUILayer": false
+                    },
+                    "RenderType": "On",
+                    "Sequence": {
+                      "Name": null
+                    },
+                    "Tint": "1,1,1,1",
+                    "UseAnimGraph": true
+                  }
+                ]
+              },
+              {
+                "__guid": "f9e20aeb-4036-4afd-b198-60f446901de6",
+                "Flags": 0,
+                "Name": "Clothing - flat shoes",
+                "Tags": "clothing",
+                "Enabled": true,
+                "Components": [
+                  {
+                    "__type": "Sandbox.SkinnedModelRenderer",
+                    "__guid": "ae4343df-2d19-4c9d-b0dd-142fe0cbdf16",
+                    "AnimationGraph": null,
+                    "BodyGroups": 18446744073709551615,
+                    "BoneMergeTarget": {
+                      "_type": "component",
+                      "component_id": "41d1394a-4185-47a1-9a37-63dc51d45d03",
+                      "go": "91ba4e1a-0413-457b-afec-369b9c22a1e8",
+                      "component_type": "SkinnedModelRenderer"
+                    },
+                    "CreateAttachments": false,
+                    "CreateBoneObjects": false,
+                    "MaterialGroup": null,
+                    "MaterialOverride": null,
+                    "Model": "models/citizen_clothes/shoes/boots/models/black_boots.vmdl",
+                    "Morphs": {},
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "Parameters": {
+                      "bools": {},
+                      "ints": {},
+                      "floats": {},
+                      "vectors": {},
+                      "rotations": {}
+                    },
+                    "RenderOptions": {
+                      "GameLayer": true,
+                      "OverlayLayer": false,
+                      "BloomLayer": false,
+                      "AfterUILayer": false
+                    },
+                    "RenderType": "On",
+                    "Sequence": {
+                      "Name": null
+                    },
+                    "Tint": "1,1,1,1",
+                    "UseAnimGraph": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [
+    "ekansh.woodstall#66606"
+  ],
+  "__version": 1
+}

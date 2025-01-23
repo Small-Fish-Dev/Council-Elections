@@ -19,12 +19,7 @@
               "CandidateGender": "Male",
               "CandidateParty": "Gleeks",
               "CandidateSteamId": 0,
-              "SceneCandidate": {
-                "_type": "component",
-                "component_id": "dc73226f-1aad-4549-b73e-08eec3692ebd",
-                "go": "6822aac4-f05e-48a7-ac0b-f9a4fb2077c7",
-                "component_type": "President"
-              },
+              "SceneCandidate": null,
               "CandidatePolicies": [
                 {
                   "Name": "Carbon Neutral",
@@ -52,7 +47,7 @@
               "CandidateSteamId": 76561198049395102,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "6272973f-35bb-4398-ab2d-7c31f26652c4",
+                "component_id": "c7488468-2943-4b4d-b480-2f63892d0dd3",
                 "go": "f04bdb6d-7a81-4c85-be82-b5f89f03e41d",
                 "component_type": "President"
               },
@@ -83,7 +78,7 @@
               "CandidateSteamId": 76561198000586141,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "57e444ba-077b-499e-859d-3aa300fd76fa",
+                "component_id": "6e61a6bb-0a3d-43b1-80be-b165496c0929",
                 "go": "df20f969-0a1b-4bbb-bfc8-98b3e40e6de0",
                 "component_type": "President"
               },
@@ -110,7 +105,7 @@
               "CandidateSteamId": 76561198031345517,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "dba3379c-f552-4546-8276-462291f5c3d1",
+                "component_id": "934c3be4-f76a-4563-ae91-8d6c71e6d001",
                 "go": "64bad74c-979c-419d-82ab-a408705d61f5",
                 "component_type": "President"
               },
@@ -129,7 +124,7 @@
               "CandidateSteamId": 76561198049083824,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "90acbc51-9151-45cf-a193-0051630bff67",
+                "component_id": "c0fdf543-638b-437a-b74b-75926f707a3a",
                 "go": "30b34e68-c065-42b5-baa9-ade5a8c85465",
                 "component_type": "President"
               },
@@ -156,7 +151,7 @@
               "CandidateSteamId": 76561198023685521,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "ab0940dd-93d3-449e-86da-7565ad75f361",
+                "component_id": "389a1763-4fd0-4b67-b7bc-7acdb79fce4d",
                 "go": "84ec5c16-f58f-4865-928c-bc39cb874018",
                 "component_type": "President"
               },
@@ -183,7 +178,7 @@
               "CandidateSteamId": 76561198037527559,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "5c0ba6fa-1239-4dac-8c43-a05f3eda96bd",
+                "component_id": "517d3f99-a0ea-4f6f-a2c1-57268e88f398",
                 "go": "4499e9e0-1972-4e71-9248-4ff43ccc2008",
                 "component_type": "President"
               },
@@ -22976,7 +22971,6 @@
       "Name": "Golden G. Godfrey\u0027s stall",
       "Position": "1343.999,-608.0001,-16",
       "Rotation": "0,0,0.7071067,0.7071068",
-      "Enabled": true,
       "Children": [
         {
           "__guid": "3f76b508-dfac-4218-8c0f-cbd7ec5188a2",
@@ -25113,6 +25107,16 @@
           }
         }
       ]
+    },
+    {
+      "__guid": "59590dc2-eb8c-4c53-99be-19f928adf537",
+      "Flags": 0,
+      "Name": "Golden G. Godfrey\u0027s stall (1)",
+      "Position": "1344,-608,-16",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Enabled": true,
+      "__Prefab": "prefabs/godfrey_dead.prefab",
+      "__PrefabVariables": {}
     }
   ],
   "SceneProperties": {
