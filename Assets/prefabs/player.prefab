@@ -674,6 +674,7 @@
         "__guid": "792cf21c-b7b0-4fc4-a5cc-3fab1c28e4fd",
         "Flags": 0,
         "Name": "Camera",
+        "Position": "0,0,62.68291",
         "Tags": "maincamera",
         "Enabled": true,
         "Components": [
