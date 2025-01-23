@@ -209,10 +209,10 @@ public sealed class Player : Actor
 
 		if ( IsProxy ) return;
 
-		Camera.FieldOfView = Preferences.FieldOfView;
-
 		if ( Camera.IsValid() && ModelRenderer.IsValid() )
 		{
+			Camera.FieldOfView = Preferences.FieldOfView;
+
 			if ( Ragdolled )
 				Camera.WorldTransform = ModelRenderer.GetAttachmentObject( "eyes" ).WorldTransform;
 			else
