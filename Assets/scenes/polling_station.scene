@@ -19804,7 +19804,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 1,
                       "CandidateName": "ubre",
@@ -20397,7 +20397,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 4,
                       "CandidateName": "Grodbert",
@@ -20990,7 +20990,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 5,
                       "CandidateName": "Josh Wilson",
@@ -21583,7 +21583,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 6,
                       "CandidateName": "StellaWisps",
@@ -22176,7 +22176,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 2,
                       "CandidateName": "ducc",
@@ -22769,7 +22769,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 3,
                       "CandidateName": "Kaydax",
@@ -23362,7 +23362,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -23968,7 +23968,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 123,
+                "Id": 121,
                 "Value": "Thank you for voting.",
                 "DstId": 18,
                 "DstName": "phrase"
@@ -23992,7 +23992,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 124,
+                "Id": 122,
                 "Value": "If you want to go through, you must vote first.",
                 "DstId": 46,
                 "DstName": "phrase"
@@ -25013,6 +25013,69 @@
               "Volume": 1
             }
           ]
+        }
+      ]
+    },
+    {
+      "__guid": "f12ba9d2-00b2-4d11-bde3-2a98c0b31009",
+      "Flags": 0,
+      "Name": "Text",
+      "Position": "971.9923,-122.8092,19.97092",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.TextRenderer",
+          "__guid": "e7909ff5-3886-4a2a-935c-45ddef162287",
+          "__version": 1,
+          "BlendMode": "Normal",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "Scale": 0.05,
+          "TextAlignment": "Center",
+          "TextScope": {
+            "Text": "\uD83D\uDC1F",
+            "TextColor": "0.45103,0.47149,0.5297,1",
+            "FontName": "Poppins",
+            "FontSize": 64,
+            "FontWeight": 800,
+            "FontItalic": false,
+            "LineHeight": 1,
+            "LetterSpacing": 0,
+            "WordSpacing": 0,
+            "Outline": {
+              "Enabled": false,
+              "Size": 4,
+              "Color": "0,0,1,1"
+            },
+            "Shadow": {
+              "Enabled": false,
+              "Size": 4,
+              "Color": "0,0,0,1",
+              "Offset": "4,4"
+            },
+            "OutlineUnder": {
+              "Enabled": false,
+              "Size": 4,
+              "Color": "0,1,0,1"
+            },
+            "ShadowUnder": {
+              "Enabled": false,
+              "Size": 4,
+              "Color": "0,0,0,1",
+              "Offset": "4,4"
+            }
+          }
         }
       ]
     }

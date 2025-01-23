@@ -209,6 +209,8 @@ public sealed class Player : Actor
 
 		if ( IsProxy ) return;
 
+		Camera.FieldOfView = Preferences.FieldOfView;
+
 		if ( Camera.IsValid() && ModelRenderer.IsValid() )
 		{
 			if ( Ragdolled )
