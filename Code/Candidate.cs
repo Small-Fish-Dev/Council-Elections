@@ -1,6 +1,6 @@
 
 [Icon( "ballot" )]
-public struct Candidate
+public class Candidate
 {
 	/// <summary>
 	/// Unique ID for the candidate, used for votes too

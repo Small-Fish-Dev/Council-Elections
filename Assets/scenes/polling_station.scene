@@ -19,7 +19,12 @@
               "CandidateGender": "Male",
               "CandidateParty": "Gleeks",
               "CandidateSteamId": 0,
-              "SceneCandidate": null,
+              "SceneCandidate": {
+                "_type": "component",
+                "component_id": "dc73226f-1aad-4549-b73e-08eec3692ebd",
+                "go": "6822aac4-f05e-48a7-ac0b-f9a4fb2077c7",
+                "component_type": "President"
+              },
               "CandidatePolicies": [
                 {
                   "Name": "Carbon Neutral",
@@ -45,7 +50,12 @@
               "CandidateGender": "Male",
               "CandidateParty": "Programmer",
               "CandidateSteamId": 76561198049395102,
-              "SceneCandidate": null,
+              "SceneCandidate": {
+                "_type": "component",
+                "component_id": "6272973f-35bb-4398-ab2d-7c31f26652c4",
+                "go": "f04bdb6d-7a81-4c85-be82-b5f89f03e41d",
+                "component_type": "President"
+              },
               "CandidatePolicies": [
                 {
                   "Name": "Beginner Friendly",
@@ -71,7 +81,12 @@
               "CandidateGender": "Male",
               "CandidateParty": "Programmer",
               "CandidateSteamId": 76561198000586141,
-              "SceneCandidate": null,
+              "SceneCandidate": {
+                "_type": "component",
+                "component_id": "57e444ba-077b-499e-859d-3aa300fd76fa",
+                "go": "df20f969-0a1b-4bbb-bfc8-98b3e40e6de0",
+                "component_type": "President"
+              },
               "CandidatePolicies": [
                 {
                   "Name": "Stack the Council",
@@ -93,7 +108,12 @@
               "CandidateGender": "Undefined",
               "CandidateParty": "Programmer",
               "CandidateSteamId": 76561198031345517,
-              "SceneCandidate": null,
+              "SceneCandidate": {
+                "_type": "component",
+                "component_id": "dba3379c-f552-4546-8276-462291f5c3d1",
+                "go": "64bad74c-979c-419d-82ab-a408705d61f5",
+                "component_type": "President"
+              },
               "CandidatePolicies": [
                 {
                   "Name": "Linux",
@@ -107,7 +127,12 @@
               "CandidateGender": "Male",
               "CandidateParty": "Artist",
               "CandidateSteamId": 76561198049083824,
-              "SceneCandidate": null,
+              "SceneCandidate": {
+                "_type": "component",
+                "component_id": "90acbc51-9151-45cf-a193-0051630bff67",
+                "go": "30b34e68-c065-42b5-baa9-ade5a8c85465",
+                "component_type": "President"
+              },
               "CandidatePolicies": [
                 {
                   "Name": "Better Tools",
@@ -129,7 +154,12 @@
               "CandidateGender": "Male",
               "CandidateParty": "Independent",
               "CandidateSteamId": 76561198023685521,
-              "SceneCandidate": null,
+              "SceneCandidate": {
+                "_type": "component",
+                "component_id": "ab0940dd-93d3-449e-86da-7565ad75f361",
+                "go": "84ec5c16-f58f-4865-928c-bc39cb874018",
+                "component_type": "President"
+              },
               "CandidatePolicies": [
                 {
                   "Name": "Unity Over Division",
@@ -151,7 +181,12 @@
               "CandidateGender": "Female",
               "CandidateParty": "Artist",
               "CandidateSteamId": 76561198037527559,
-              "SceneCandidate": null,
+              "SceneCandidate": {
+                "_type": "component",
+                "component_id": "5c0ba6fa-1239-4dac-8c43-a05f3eda96bd",
+                "go": "4499e9e0-1972-4e71-9248-4ff43ccc2008",
+                "component_type": "President"
+              },
               "CandidatePolicies": [
                 {
                   "Name": "More Council Transparency",
