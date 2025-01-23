@@ -82,6 +82,7 @@ public sealed class Npcmanager : Component
 					if ( distanceFromInside <= 20f )
 					{
 						actor.Inside = false;
+						actor.Tags.Add( "voted" );
 
 						if ( actor is Voter voter )
 						{

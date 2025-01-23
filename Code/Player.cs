@@ -106,6 +106,8 @@ public sealed class Player : Actor
 
 				BroadcastClothing( json );
 			}
+
+			Network.Refresh();
 		}
 		else
 		{

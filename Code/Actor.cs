@@ -165,6 +165,7 @@ public abstract partial class Actor : Component
 	public Vector3 Velocity { get; set; }
 
 
+
 	protected override void OnStart()
 	{
 		if ( IsProxy ) return;
@@ -241,7 +242,6 @@ public abstract partial class Actor : Component
 
 		if ( !IsProxy )
 		{
-
 			if ( Agent.IsValid() )
 			{
 				if ( CanMove )
@@ -252,6 +252,7 @@ public abstract partial class Actor : Component
 							.Size( 12f )
 							.IgnoreGameObjectHierarchy( GameObject )
 							.WithTag( "voter" )
+							.WithoutTags( "voted" )
 							.Run();
 
 						_shouldStop = forwardTrace.Hit;
