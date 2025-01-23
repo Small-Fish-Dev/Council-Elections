@@ -58,7 +58,7 @@ public sealed class Player : Actor
 		{
 			var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == SteamId );
 
-			if ( presidentCopy.CandidateId != 0 && presidentCopy.SceneCandidate.IsValid() )
+			if ( presidentCopy != null && presidentCopy.SceneCandidate.IsValid() )
 			{
 				presidentCopy.SceneCandidate.GameObject.Enabled = false;
 				WorldPosition = presidentCopy.SceneCandidate.WorldPosition;
@@ -129,7 +129,7 @@ public sealed class Player : Actor
 
 		var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == SteamId );
 
-		if ( presidentCopy.CandidateId != 0 )
+		if ( presidentCopy != null )
 			if ( presidentCopy.SceneCandidate.IsValid() )
 				presidentCopy.SceneCandidate.GameObject.Enabled = true;
 	}

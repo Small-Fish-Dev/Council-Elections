@@ -47,7 +47,7 @@
               "CandidateSteamId": 76561198049395102,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "c7488468-2943-4b4d-b480-2f63892d0dd3",
+                "component_id": "e7c1b9cd-2f82-4bb2-a8ba-d42264c6ee83",
                 "go": "f04bdb6d-7a81-4c85-be82-b5f89f03e41d",
                 "component_type": "President"
               },
@@ -78,7 +78,7 @@
               "CandidateSteamId": 76561198000586141,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "6e61a6bb-0a3d-43b1-80be-b165496c0929",
+                "component_id": "cb337e4a-c9b5-4426-abea-988a92d3eb15",
                 "go": "df20f969-0a1b-4bbb-bfc8-98b3e40e6de0",
                 "component_type": "President"
               },
@@ -105,7 +105,7 @@
               "CandidateSteamId": 76561198031345517,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "934c3be4-f76a-4563-ae91-8d6c71e6d001",
+                "component_id": "21da36b1-50eb-494a-9515-68c2815a5b5a",
                 "go": "64bad74c-979c-419d-82ab-a408705d61f5",
                 "component_type": "President"
               },
@@ -124,7 +124,7 @@
               "CandidateSteamId": 76561198049083824,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "c0fdf543-638b-437a-b74b-75926f707a3a",
+                "component_id": "ebc2a26e-6f1c-4ef4-a9e5-76f4e50ec4d0",
                 "go": "30b34e68-c065-42b5-baa9-ade5a8c85465",
                 "component_type": "President"
               },
@@ -151,7 +151,7 @@
               "CandidateSteamId": 76561198023685521,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "389a1763-4fd0-4b67-b7bc-7acdb79fce4d",
+                "component_id": "3aa230bc-c34c-46ae-b05a-eb71f6930d8c",
                 "go": "84ec5c16-f58f-4865-928c-bc39cb874018",
                 "component_type": "President"
               },
@@ -178,7 +178,7 @@
               "CandidateSteamId": 76561198037527559,
               "SceneCandidate": {
                 "_type": "component",
-                "component_id": "517d3f99-a0ea-4f6f-a2c1-57268e88f398",
+                "component_id": "779d6ce8-48db-4615-82c7-ab48130bc92d",
                 "go": "4499e9e0-1972-4e71-9248-4ff43ccc2008",
                 "component_type": "President"
               },
@@ -23391,7 +23391,7 @@
                     "DstName": "_target"
                   },
                   {
-                    "Id": 3,
+                    "Id": 2,
                     "Value": {
                       "CandidateId": 0,
                       "CandidateName": "Golden G. Godfrey",
@@ -25117,6 +25117,257 @@
       "Enabled": true,
       "__Prefab": "prefabs/godfrey_dead.prefab",
       "__PrefabVariables": {}
+    },
+    {
+      "__guid": "5740a867-95f7-428e-9a75-c6d4549125a1",
+      "Flags": 0,
+      "Name": "FALSE",
+      "Position": "1276.25,-640.5,184",
+      "Rotation": "-0.04361939,0.00000001117587,-0.00000005960464,0.9990482",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.TextRenderer",
+          "__guid": "5fabba09-0d40-42ec-b174-e6f834beb5b2",
+          "__version": 1,
+          "BlendMode": "Normal",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "Scale": 0.17,
+          "TextAlignment": "Center",
+          "TextScope": {
+            "Text": "FALSE",
+            "TextColor": "0.75349,0.09462,0.09462,1",
+            "FontName": "Poppins",
+            "FontSize": 102.15,
+            "FontWeight": 800,
+            "FontItalic": false,
+            "LineHeight": 5,
+            "LetterSpacing": 15.600002,
+            "WordSpacing": 0,
+            "Outline": {
+              "Enabled": true,
+              "Size": 14.6399975,
+              "Color": "0.32558,0.02423,0.02423,1"
+            },
+            "Shadow": {
+              "Enabled": false,
+              "Size": 0.1,
+              "Color": "0,0,0,1",
+              "Offset": "0,8"
+            },
+            "OutlineUnder": {
+              "Enabled": false,
+              "Size": 4,
+              "Color": "0,1,0,1"
+            },
+            "ShadowUnder": {
+              "Enabled": false,
+              "Size": 12,
+              "Color": "0,0,0,1",
+              "Offset": "0,12"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "__guid": "fb51f482-37f6-4f31-ae83-600be33bc549",
+      "Flags": 0,
+      "Name": "x",
+      "Position": "1276.25,-623.75,218.75",
+      "Rotation": "-0.04361939,0.00000001117587,-0.00000005960464,0.9990482",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.TextRenderer",
+          "__guid": "f793505b-95e9-4187-800d-31626ad65a48",
+          "__version": 1,
+          "BlendMode": "Normal",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "Scale": 0.12,
+          "TextAlignment": "Center",
+          "TextScope": {
+            "Text": "x",
+            "TextColor": "0.75349,0.09462,0.09462,1",
+            "FontName": "Poppins",
+            "FontSize": 102.15,
+            "FontWeight": 800,
+            "FontItalic": false,
+            "LineHeight": 5,
+            "LetterSpacing": 15.600002,
+            "WordSpacing": 0,
+            "Outline": {
+              "Enabled": true,
+              "Size": 14.6399975,
+              "Color": "0.32558,0.02423,0.02423,1"
+            },
+            "Shadow": {
+              "Enabled": false,
+              "Size": 0.1,
+              "Color": "0,0,0,1",
+              "Offset": "0,8"
+            },
+            "OutlineUnder": {
+              "Enabled": false,
+              "Size": 4,
+              "Color": "0,1,0,1"
+            },
+            "ShadowUnder": {
+              "Enabled": false,
+              "Size": 12,
+              "Color": "0,0,0,1",
+              "Offset": "0,12"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "__guid": "fa64694e-8f9f-4ebd-874d-5670f978f4f9",
+      "Flags": 0,
+      "Name": "x (1)",
+      "Position": "1276.25,-639,217",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.TextRenderer",
+          "__guid": "21453f3d-d029-471e-b72e-5501e41ab8b2",
+          "__version": 1,
+          "BlendMode": "Normal",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "Scale": 0.12,
+          "TextAlignment": "Center",
+          "TextScope": {
+            "Text": "x",
+            "TextColor": "0.75349,0.09462,0.09462,1",
+            "FontName": "Poppins",
+            "FontSize": 102.15,
+            "FontWeight": 800,
+            "FontItalic": false,
+            "LineHeight": 5,
+            "LetterSpacing": 15.600002,
+            "WordSpacing": 0,
+            "Outline": {
+              "Enabled": true,
+              "Size": 14.6399975,
+              "Color": "0.32558,0.02423,0.02423,1"
+            },
+            "Shadow": {
+              "Enabled": false,
+              "Size": 0.1,
+              "Color": "0,0,0,1",
+              "Offset": "0,8"
+            },
+            "OutlineUnder": {
+              "Enabled": false,
+              "Size": 4,
+              "Color": "0,1,0,1"
+            },
+            "ShadowUnder": {
+              "Enabled": false,
+              "Size": 12,
+              "Color": "0,0,0,1",
+              "Offset": "0,12"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "__guid": "37714062-4b5e-45a6-9a31-8aec5434b77e",
+      "Flags": 0,
+      "Name": "GOD",
+      "Position": "1276.25,-640.5,163.5",
+      "Rotation": "0.04361937,0.00000001632823,-0.00000005840378,0.9990483",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.TextRenderer",
+          "__guid": "12c4a992-1807-4739-9b71-b1a685e78b52",
+          "__version": 1,
+          "BlendMode": "Normal",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "Scale": 0.17,
+          "TextAlignment": "Center",
+          "TextScope": {
+            "Text": "GOD",
+            "TextColor": "0.75349,0.09462,0.09462,1",
+            "FontName": "Poppins",
+            "FontSize": 102.15,
+            "FontWeight": 800,
+            "FontItalic": false,
+            "LineHeight": 5,
+            "LetterSpacing": 15.600002,
+            "WordSpacing": 0,
+            "Outline": {
+              "Enabled": true,
+              "Size": 14.6399975,
+              "Color": "0.32558,0.02423,0.02423,1"
+            },
+            "Shadow": {
+              "Enabled": false,
+              "Size": 0.1,
+              "Color": "0,0,0,1",
+              "Offset": "0,8"
+            },
+            "OutlineUnder": {
+              "Enabled": false,
+              "Size": 4,
+              "Color": "0,1,0,1"
+            },
+            "ShadowUnder": {
+              "Enabled": false,
+              "Size": 12,
+              "Color": "0,0,0,1",
+              "Offset": "0,12"
+            }
+          }
+        }
+      ]
     }
   ],
   "SceneProperties": {
