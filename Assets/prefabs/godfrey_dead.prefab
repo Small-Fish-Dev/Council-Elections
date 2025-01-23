@@ -540,6 +540,231 @@
         ]
       },
       {
+        "__guid": "64ab1dc2-7fcb-439c-b895-42a5d5fdb595",
+        "Flags": 0,
+        "Name": "storage_box",
+        "Position": "-6.5,134.5,28.5",
+        "Rotation": "-0.3826834,0.0000001192093,0.0000001490116,-0.9238795",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Interaction",
+            "__guid": "820fb6f7-2a27-4fe8-96cd-3e023dba2850",
+            "InteractionCooldown": 999,
+            "InteractionDescription": "Vote for Golden G. Godfrey!",
+            "InteractionName": "Golden G. Godfrey\u0027s Ballot Box",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "PlayerAction": {
+              "__version": 9,
+              "__guid": "b129bf16-06ab-4b67-ba86-0ad85c753d80",
+              "__changeId": 8,
+              "UserData": {
+                "Title": "Player Action",
+                "ReferencedComponentTypes": []
+              },
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 1,
+                  "Type": "call",
+                  "Properties": {
+                    "_isStatic": false,
+                    "_name": "Vote",
+                    "_type": "Player"
+                  },
+                  "UserData": {
+                    "Position": "240,0"
+                  }
+                }
+              ],
+              "Links": [
+                {
+                  "SrcId": 0,
+                  "SrcName": "_signal",
+                  "DstId": 1,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "obj",
+                  "DstId": 1,
+                  "DstName": "_target"
+                },
+                {
+                  "Id": 2,
+                  "Value": {
+                    "CandidateId": 0,
+                    "CandidateName": "Golden G. Godfrey",
+                    "CandidateGender": "Undefined",
+                    "CandidateSteamId": 0,
+                    "CandidatePolicies": []
+                  },
+                  "DstId": 1,
+                  "DstName": "candidate"
+                }
+              ]
+            },
+            "SharedInteraction": false
+          },
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "a0e93895-b9ae-4644-88ba-80e070b5e8ef",
+            "BodyGroups": 18446744073709551615,
+            "Health": 5,
+            "IsStatic": true,
+            "MaterialGroup": "bare",
+            "Model": "models/props/trim_sheets/storage/storage_box_01.vmdl",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnPropBreak": null,
+            "OnPropTakeDamage": null,
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "8bbcdee6-20e1-40c9-847c-3bd1f61c3f88",
+            "Flags": 0,
+            "Name": "Slot",
+            "Position": "-0.2500799,0.2498705,8.586487",
+            "Rotation": "-0.7071068,-0.00000008940697,0.7071068,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "fa21cb92-b2fe-42c9-9f5c-18cc31c81605",
+                "__version": 1,
+                "BlendMode": "Normal",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "Scale": 0.05,
+                "TextAlignment": "Center",
+                "TextScope": {
+                  "Text": "\u23E4",
+                  "TextColor": "0,0,0,1",
+                  "FontName": "Poppins",
+                  "FontSize": 128,
+                  "FontWeight": 581,
+                  "FontItalic": false,
+                  "LineHeight": 1,
+                  "LetterSpacing": 0,
+                  "WordSpacing": 0,
+                  "Outline": {
+                    "Enabled": false,
+                    "Size": 6,
+                    "Color": "0.13953,0.06204,0.01038,1"
+                  },
+                  "Shadow": {
+                    "Enabled": false,
+                    "Size": 0.1,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,8"
+                  },
+                  "OutlineUnder": {
+                    "Enabled": false,
+                    "Size": 4,
+                    "Color": "0,1,0,1"
+                  },
+                  "ShadowUnder": {
+                    "Enabled": true,
+                    "Size": 2.6000004,
+                    "Color": "0,0,0,1",
+                    "Offset": "1.76,0"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "__guid": "b493ba83-1196-4f7d-bf45-f90c5bf90e13",
+            "Flags": 0,
+            "Name": "VOTE",
+            "Position": "5.999963,-0.00009989738,3.586506",
+            "Rotation": "0,0,1,-0.00000004371139",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.TextRenderer",
+                "__guid": "99d73889-06c9-4a92-adb2-b8f26d0dfe57",
+                "__version": 1,
+                "BlendMode": "Normal",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "Scale": 0.06,
+                "TextAlignment": "Center",
+                "TextScope": {
+                  "Text": "VOTE",
+                  "TextColor": "0.91163,0.85863,0.80562,1",
+                  "FontName": "Poppins",
+                  "FontSize": 75.96,
+                  "FontWeight": 581,
+                  "FontItalic": false,
+                  "LineHeight": 1,
+                  "LetterSpacing": 0,
+                  "WordSpacing": 0,
+                  "Outline": {
+                    "Enabled": true,
+                    "Size": 6,
+                    "Color": "0,0,0,1"
+                  },
+                  "Shadow": {
+                    "Enabled": false,
+                    "Size": 0.1,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,8"
+                  },
+                  "OutlineUnder": {
+                    "Enabled": false,
+                    "Size": 4,
+                    "Color": "0,1,0,1"
+                  },
+                  "ShadowUnder": {
+                    "Enabled": false,
+                    "Size": 6,
+                    "Color": "0,0,0,1",
+                    "Offset": "0,8"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "__guid": "af786859-c777-48c3-b0d0-41634cbafd25",
         "Flags": 0,
         "Name": "godfrey",
@@ -581,12 +806,7 @@
               "Choiches": [],
               "EmptyWeight": 0
             },
-            "Interaction": {
-              "_type": "component",
-              "component_id": "f6c7c517-b884-4d38-a3ec-881d53786a62",
-              "go": "af786859-c777-48c3-b0d0-41634cbafd25",
-              "component_type": "Interaction"
-            },
+            "Interaction": null,
             "InteractPhrases": [
               "\u003Cpick\u003EListen Jack, you gotta vote \u003Cname\u003E 2025.",
               "\u003Copponent\u003EI can\u0027t find my ballot box...",
@@ -596,7 +816,12 @@
               "\u003Cpick\u003ERegarding \u003Cpolicy.name\u003E, I think \u003Cpolicy.info\u003E!"
             ],
             "LastName": "Godfrey",
-            "ModelRenderer": null,
+            "ModelRenderer": {
+              "_type": "component",
+              "component_id": "41d1394a-4185-47a1-9a37-63dc51d45d03",
+              "go": "91ba4e1a-0413-457b-afec-369b9c22a1e8",
+              "component_type": "SkinnedModelRenderer"
+            },
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
             "OnComponentEnabled": null,
@@ -636,98 +861,6 @@
             "WalkSpeed": 120
           },
           {
-            "__type": "Interaction",
-            "__guid": "f6c7c517-b884-4d38-a3ec-881d53786a62",
-            "InteractionCooldown": 1,
-            "InteractionDescription": "Talk",
-            "InteractionName": "Golden G. Godfrey",
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "PlayerAction": {
-              "__version": 9,
-              "__guid": "74a0b490-d9dd-4b40-be38-0b819eb96bcf",
-              "__changeId": 42,
-              "UserData": {
-                "Title": "Player Action",
-                "ReferencedComponentTypes": []
-              },
-              "Variables": [],
-              "Nodes": [
-                {
-                  "Id": 0,
-                  "Type": "input"
-                },
-                {
-                  "Id": 7,
-                  "Type": "call",
-                  "Properties": {
-                    "_isStatic": false,
-                    "_name": "Talk",
-                    "_type": "President"
-                  },
-                  "UserData": {
-                    "Position": "276,72"
-                  }
-                },
-                {
-                  "Id": 10,
-                  "Type": "property",
-                  "ParentId": 0,
-                  "Properties": {
-                    "_name": "GameObject",
-                    "_type": "Sandbox.Component"
-                  }
-                },
-                {
-                  "Id": 12,
-                  "Type": "scene.ref",
-                  "UserData": {
-                    "Position": "24,108"
-                  }
-                }
-              ],
-              "Links": [
-                {
-                  "SrcId": 0,
-                  "SrcName": "_signal",
-                  "DstId": 7,
-                  "DstName": "_signal"
-                },
-                {
-                  "SrcId": 12,
-                  "SrcName": "_result",
-                  "DstId": 7,
-                  "DstName": "_target"
-                },
-                {
-                  "SrcId": 10,
-                  "SrcName": "_result",
-                  "DstId": 7,
-                  "DstName": "target"
-                },
-                {
-                  "SrcId": 0,
-                  "SrcName": "obj",
-                  "DstId": 10,
-                  "DstName": "_target"
-                }
-              ],
-              "Defaults": {
-                "$12.component": {
-                  "_type": "component",
-                  "component_id": "821a38e8-4a32-42ce-b1dc-1779797d9004",
-                  "go": "4499e9e0-1972-4e71-9248-4ff43ccc2008",
-                  "component_type": "President"
-                }
-              }
-            },
-            "SharedInteraction": true
-          },
-          {
             "__type": "Sandbox.ModelPhysics",
             "__guid": "9a269d21-5ace-49d8-8b2f-3defb22d00de",
             "Locking": {
@@ -753,40 +886,6 @@
               "component_type": "SkinnedModelRenderer"
             },
             "RigidbodyFlags": 0
-          },
-          {
-            "__type": "Sandbox.HighlightOutline",
-            "__guid": "022548e1-9ccb-4219-ac6d-cd4a21d58d25",
-            "__enabled": false,
-            "Color": "1,1,1,1",
-            "InsideColor": "0,0,0,0",
-            "InsideObscuredColor": "0,0,0,0",
-            "Material": null,
-            "ObscuredColor": "0,0,0,0.4",
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "Width": 0.25
-          },
-          {
-            "__type": "Sandbox.HighlightOutline",
-            "__guid": "21d1b0b8-1640-4ecc-8df0-acb230913bdf",
-            "__enabled": false,
-            "Color": "1,1,1,1",
-            "InsideColor": "0,0,0,0",
-            "InsideObscuredColor": "0,0,0,0",
-            "Material": null,
-            "ObscuredColor": "0,0,0,0.4",
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "Width": 0.25
           }
         ],
         "Children": [
@@ -1143,7 +1242,8 @@
   "DontBreakAsTemplate": false,
   "ResourceVersion": 1,
   "__references": [
-    "ekansh.woodstall#66606"
+    "ekansh.woodstall#66606",
+    "facepunch.storage_box_01#43562"
   ],
   "__version": 1
 }

@@ -124,6 +124,7 @@ public sealed class Player : Actor
 
 	protected override void OnDestroy()
 	{
+		if ( !ElectionsManager.Instance.IsValid() || ElectionsManager.Instance.Candidates == null ) return;
 		Player.All.Remove( this );
 
 		var presidentCopy = ElectionsManager.Instance.Candidates.FirstOrDefault( x => x.CandidateSteamId == SteamId );
