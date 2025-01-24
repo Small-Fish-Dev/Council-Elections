@@ -4,7 +4,11 @@
 @namespace Sandbox
 
 <root>
-    <Image class="chart" Texture=@ChartImage></Image>
+    @if(ChartImage.IsValid()) 
+    {
+        <Image class="chart" Texture=@ChartImage></Image>
+    }
+    
 </root>
 
 @code
@@ -16,7 +20,7 @@
     protected override void OnFixedUpdate()
     {
         if (Text.IsValid())
-            Text.Text = $"Updates in: {(int)ElectionsManager.Instance.NextResults.Relative}s";
+            Text.Text = $"Updates in: {(int)ElectionsManager.Instance?.NextResults.Relative}s";
     }
 
     protected override int BuildHash() => System.HashCode.Combine(ChartImage);
