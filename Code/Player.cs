@@ -291,8 +291,6 @@ public sealed class Player : Actor
 		Sandbox.Services.Achievements.Unlock( "voted" );
 		Log.Info( $"Voted for {candidate.CandidateName}" );
 		Log.Info( "Disabling ballots." );
-<<<<<<< HEAD
-=======
 		
 		if ( candidate.CandidateId != 5 )
 		{
@@ -305,8 +303,7 @@ public sealed class Player : Actor
 				}
 			}
 		}
->>>>>>> 7497a53 (Add important change)
-
+		
 		foreach ( var voteInteraction in Scene.GetAllComponents<Interaction>() )
 			if ( !voteInteraction.SharedInteraction )
 				voteInteraction.NextInteraction = 999f;
