@@ -31,7 +31,6 @@ public sealed class ElectionsManager : Component
 	{
 		if ( NextResults )
 		{
-			QueryResults();
 			NextResults = 60f; // 1 minute
 		}
 	}

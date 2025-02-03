@@ -74,38 +74,6 @@ public sealed class Player : Actor
 			if ( NameTag.IsValid() )
 				NameTag.Enabled = false;
 
-			var vote = Sandbox.Services.Stats.GetPlayerStats( Game.Ident, Connection.Local.SteamId )
-				.FirstOrDefault( x => x.Name == "vote" );
-			HasVoted = !vote.Equals( default( Sandbox.Services.Stats.PlayerStat ) );
-
-			if ( HasVoted )
-			{
-				Sandbox.Services.Achievements.Unlock( "voted" );
-				Tags.Add( "voted" );
-				Log.Info( "Player has already voted, disabling ballots." );
-
-				foreach ( var voteInteraction in Scene.GetAllComponents<Interaction>() )
-					if ( !voteInteraction.SharedInteraction )
-						voteInteraction.NextInteraction = 999f;
-			}
-			else
-			{
-				// If the owner has already voted and someone new joins, they get the snapshot from the owner so we reenable them
-				foreach ( var voteInteraction in Scene.GetAllComponents<Interaction>() )
-					if ( !voteInteraction.SharedInteraction )
-						voteInteraction.NextInteraction = 0f;
-			}
-
-			if ( ApeTavern.IsApe( Network.Owner.SteamId ) )
-				WearApeClothes();
-			else
-			{
-				var json = ClothingContainer
-				.CreateFromLocalUser()
-				.Serialize();
-
-				BroadcastClothing( json );
-			}
 
 			Network.Refresh();
 		}
